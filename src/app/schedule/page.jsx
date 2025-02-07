@@ -5,6 +5,7 @@ import Icon from '@/components/Icon';
 import Image from 'next/image';
 
 import { SCHEDULE } from '@/schedule';
+import Link from 'next/link';
 
 const TimeBadge = ({ time, className = '' }) => {
   return (
@@ -96,25 +97,43 @@ const Schedule = () => {
             {session.map((parallelSession, subIndex) => (
               <div
                 key={subIndex}
-                className="flex-1 p-2 border-2 border-solid border-gray-400 dark:border-gray-600 rounded-md shadow-sm"
+                className="flex-1 p-5 border-2 border-solid border-gray-400 dark:border-gray-600 rounded-md shadow-sm"
               >
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col">
                   <Heading
                     tag={3}
                     level={5}
-                    className="my-0.5 text-center font-normal text-gray-950 dark:text-gray-50 spacing-y-2"
+                    className="my-1 font-normal text-gray-950 dark:text-gray-50 spacing-y-2"
                   >
                     {parallelSession.title}
                   </Heading>
-                  {parallelSession.speaker && (
-                    <div className="flex flex-col space-y-2">
-                      <SpeakerCard speaker={parallelSession.speaker} />
-                    </div>
-                  )}
-                  <div className="flex flex-wrap justify-center">
-                    <TimeBadge className="my-1" time={parallelSession.time} />
+                  {parallelSession.speakers &&
+                    parallelSession.speakers.map((speaker, index) =>
+                      speaker.activeSpeakerPage ? (
+                        <Link
+                          href={`/speakers/${speaker.slug}`}
+                          target="_self"
+                          className="flex flex-col space-y-2 my-1"
+                          key={index}
+                        >
+                          <SpeakerCard speaker={speaker} />
+                        </Link>
+                      ) : (
+                        <div
+                          className="flex flex-col space-y-2 my-1"
+                          key={index}
+                        >
+                          <SpeakerCard speaker={speaker} />
+                        </div>
+                      )
+                    )}
+                  <div className="flex flex-wrap">
+                    <TimeBadge
+                      className="my-1 mr-2"
+                      time={parallelSession.time}
+                    />
                     <LocationBadge
-                      className="ml-2 my-1"
+                      className="my-1"
                       location={parallelSession.location}
                     />
                   </div>

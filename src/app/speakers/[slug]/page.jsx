@@ -29,14 +29,18 @@ const getTalkDetailsBySlug = (slug) => {
     day.sessions.forEach((sessionGroup) => {
       sessionGroup.forEach((session) => {
         // Check if the speaker is assigned to the session
-        if (session.speaker && session.speaker.slug === slug) {
-          talkDetails.push({
-            day: day.title,
-            date: day.date,
-            type: session.type,
-            sessionTitle: session.title,
-            time: session.time,
-            location: session.location,
+        if (session.speakers) {
+          session.speakers.forEach((speaker) => {
+            if (speaker.slug === slug) {
+              talkDetails.push({
+                day: day.title,
+                date: day.date,
+                type: session.type,
+                sessionTitle: session.title,
+                time: session.time,
+                location: session.location,
+              });
+            }
           });
         }
       });
@@ -85,7 +89,7 @@ export default async function SpeakerPage({ params }) {
               {speaker.title}
             </Span>
           )}
-          {speaker.description && (
+          {speaker.bio && (
             <>
               <Paragraph
                 level={3}
@@ -95,7 +99,7 @@ export default async function SpeakerPage({ params }) {
               </Paragraph>
               <Paragraph
                 className="mb-2 text-gray-600 dark:text-gray-400"
-                dangerouslySetInnerHTML={{ __html: speaker.description }}
+                dangerouslySetInnerHTML={{ __html: speaker.bio }}
               ></Paragraph>
             </>
           )}

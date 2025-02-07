@@ -4,8 +4,7 @@ export const SPEAKERS = [
     slug: 'anthony-shaw',
     activeSpeakerPage: true,
     type: 'Keynote',
-    description:
-      'Anthony Shaw is from Sydney, Australia. Anthony is a contributor to many open-source communities and tools for DevOps, Security, Automation and Code Quality.<br> He has been recognised for his contribution to open source, including as Fellow of the Python Software Foundation, Fellow of Macquarie University, and member of the Apache Software Foundation. Anthony runs a Python blog and YouTube channel and has published a book on the Python compiler.',
+    bio: 'Anthony Shaw is from Sydney, Australia. Anthony is a contributor to many open-source communities and tools for DevOps, Security, Automation and Code Quality.<br> He has been recognised for his contribution to open source, including as Fellow of the Python Software Foundation, Fellow of Macquarie University, and member of the Apache Software Foundation. Anthony runs a Python blog and YouTube channel and has published a book on the Python compiler.',
     imgUrl: '/images/speakers/anthony-shaw.jpg',
     imgAlt: "Anthony Shaw's picture",
     socials: [
@@ -53,8 +52,7 @@ export const SPEAKERS = [
     type: 'Session',
     activeSpeakerPage: true,
     title: 'Software Lead at Trinnovate Synergy Technologies',
-    description:
-      'Software Lead at Trinnovate, specializing in Autonomous Robots, Cloud, and AI. With over 5 years of experience, I’ve designed and built advanced GCS, connected systems, and cloud-based solutions for robotics. Sharing insights through blogs & videos.',
+    bio: 'Software Lead at Trinnovate, specializing in Autonomous Robots, Cloud, and AI. With over 5 years of experience, I’ve designed and built advanced GCS, connected systems, and cloud-based solutions for robotics. Sharing insights through blogs & videos.',
     imgUrl: '/images/speakers/harsh-mittal.jpg',
     imgAlt: 'Picture of Harsh Mittal.',
     socials: [
@@ -92,8 +90,7 @@ export const SPEAKERS = [
     activeSpeakerPage: true,
     title: 'Software Architect at EPAM Systems',
     type: 'Session',
-    description:
-      'Vivek is a Python developer, speaker, and open-source enthusiast having 12+ years of experience. He focuses on app development, software architecture & developer productivity. He enjoys exploring innovative challenges, sharing insights and learning.',
+    bio: 'Vivek is a Python developer, speaker, and open-source enthusiast having 12+ years of experience. He focuses on app development, software architecture & developer productivity. He enjoys exploring innovative challenges, sharing insights and learning.',
     imgUrl: '/images/speakers/vivek-keshore.jpg',
     imgAlt: 'Picture of Vivek Kishore.',
     socials: [
@@ -110,8 +107,7 @@ export const SPEAKERS = [
     type: 'Session',
     activeSpeakerPage: true,
     title: 'Software Engineer',
-    description:
-      'Ria Bhatia is a software engineer passionate about databases, automation, and system efficiency. An enthusiastic speaker, she enjoys sharing her learnings at tech conferences and mentors aspiring engineers while advocating for diversity in tech.',
+    bio: 'Ria Bhatia is a software engineer passionate about databases, automation, and system efficiency. An enthusiastic speaker, she enjoys sharing her learnings at tech conferences and mentors aspiring engineers while advocating for diversity in tech.',
     imgUrl: '/images/speakers/ria-bhatia.jpg',
     imgAlt: 'Picture of Ria Bhatia',
     socials: [
@@ -139,9 +135,35 @@ export const SPEAKERS = [
     name: 'Sejal Gupta',
     slug: 'sejal-gupta',
     type: 'Session',
-    activeSpeakerPage: false,
-    imgUrl: '/images/speakers/placeholder-2.svg',
-    imgAlt: 'Placeholder image',
+    activeSpeakerPage: true,
+    title: 'Engineer, SDE 2',
+    bio: 'Sejal Gupta (She/Her) is a software engineer and an inclusive ally. She has founded (WIT++: Women in Tech), mentoring women in STEM career. She has also authored research articles and presented her work at international Conferences.',
+    imgUrl: '/images/speakers/sejal-gupta.jpg',
+    imgAlt: 'Picture of Sejal Gupta',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/sejal-gupta-she-her/',
+        ariaLabel: "Hyperlink to Sejal Gupta's LinkedIn page.",
+      },
+    ],
+  },
+  {
+    name: 'Sidhant Gupta',
+    slug: 'sidhant-gupta',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'SDE 2 @Salesforce',
+    bio: 'Sidhant Gupta is a software engineer at Salesforce, with a passion for solving complex technical challenges. He has presented research on IoV algorithms at IEEE ICC and shared his expertise at PyCon APAC, always pushing boundaries in tech.',
+    imgUrl: '/images/speakers/sidhant-gupta.jpg',
+    imgAlt: 'Picture of Sidhant Gupta',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/sidhant-gupta-69a098180/',
+        ariaLabel: "Hyperlink to Sidhant Gupta's LinkedIn page.",
+      },
+    ],
   },
   {
     name: 'S Anand',
@@ -155,9 +177,23 @@ export const SPEAKERS = [
     name: 'Aditi Juneja',
     slug: 'aditi-juneja',
     type: 'Session',
-    activeSpeakerPage: false,
+    activeSpeakerPage: true,
+    title: 'Contributing around in the Scientific Python ecosystem :)',
+    bio: "Hi, I'm Aditi. I've been involved in dispatching work in the Scientific Python ecosystem(mostly with NetworkX n scikit-image). I'm a NetworkX's Core Dev. Other than that, I enjoy math, graphs, algorithms, data sci, HPC, plants n making comics n stuff!",
     imgUrl: '/images/speakers/placeholder-1.svg',
-    imgAlt: 'Placeholder image',
+    imgAlt: 'Picture of Aditi Juneja',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/aditi-juneja-940838204/',
+        ariaLabel: "Hyperlink to Aditi Juneja's LinkedIn page.",
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/Schefflera-Arboricola/',
+        ariaLabel: "Hyperlink to Aditi Juneja's GitHub page.",
+      },
+    ],
   },
   {
     name: 'Bowrna Prabhakaran',
@@ -171,9 +207,28 @@ export const SPEAKERS = [
     name: 'Tarun Jain',
     slug: 'tarun-jain',
     type: 'Session',
-    activeSpeakerPage: false,
-    imgUrl: '/images/speakers/placeholder-2.svg',
-    imgAlt: 'Placeholder image',
+    activeSpeakerPage: true,
+    title: 'Lead Data Scientist at AI Planet',
+    bio: 'Tarun Jain is a Data Scientist at AI Planet. He is also recognised as Google Developer Expert in AI/ML. Furthermore, he has contributed to various Open Source repo and was part of Google Summer of Code 2024 at RedHenLab and GSoC 23 at caMicroscope.',
+    imgUrl: '/images/speakers/tarun-jain.jpg',
+    imgAlt: 'Picture of Tarun Jain.',
+    socials: [
+      {
+        name: 'X',
+        url: 'https://x.com/trj_0751/',
+        ariaLabel: "Hyperlink to Tarun Jain's X page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/jaintarun75/',
+        ariaLabel: "Hyperlink to Tarun Jain's LinkedIn page.",
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/lucifertrj',
+        ariaLabel: "Hyperlink to Tarun Jain's GitHub page.",
+      },
+    ],
   },
   {
     name: 'G R Akhil Teja',
@@ -181,7 +236,7 @@ export const SPEAKERS = [
     type: 'Session',
     activeSpeakerPage: true,
     title: 'Sr ML Engineer @DBS',
-    description: 'Sr ML Engineer at DBS and Pycon 2024 speaker. Loves to contribute to open source technology in python, rust and zig.',
+    bio: 'Sr ML Engineer at DBS and Pycon 2024 speaker. Loves to contribute to open source technology in python, rust and zig.',
     imgUrl: '/images/speakers/g-r-akhil-teja.jpg',
     imgAlt: 'Picture of G R Akhil Teja',
     socials: [
@@ -197,8 +252,7 @@ export const SPEAKERS = [
     slug: 'kuldeep-pisda',
     type: 'Session',
     activeSpeakerPage: true,
-    description:
-      'A full stack developer with expertise in AWS cloud infrastructure, PostgreSQL databases, Python/Django backend development, and modern frontend frameworks including React, Vue.js, and Next.js.',
+    bio: 'A full stack developer with expertise in AWS cloud infrastructure, PostgreSQL databases, Python/Django backend development, and modern frontend frameworks including React, Vue.js, and Next.js.',
     title: 'Senior Software at Astel Ventures',
     imgUrl: '/images/speakers/kuldeep-pisda.jpg',
     imgAlt: 'Picture of Kuldeep Pisda.',
@@ -236,8 +290,7 @@ export const SPEAKERS = [
     type: 'Session',
     activeSpeakerPage: true,
     title: 'Co-founder and CTO at Sporo Health',
-    description:
-      'Sonu Kumar, AI Engineer & Co-Founder & CTO of Sporo Health, leads AI-driven healthcare solutions. He runs AI Anytime, a YouTube channel simplifying AI. With expertise in AI/ML, he builds cutting-edge clinical tools and advocates open-source AI.',
+    bio: 'Sonu Kumar, AI Engineer & Co-Founder & CTO of Sporo Health, leads AI-driven healthcare solutions. He runs AI Anytime, a YouTube channel simplifying AI. With expertise in AI/ML, he builds cutting-edge clinical tools and advocates open-source AI.',
     imgUrl: '/images/speakers/sonu-kumar.jpg',
     imgAlt: 'Picture of Sonu Kumar',
     socials: [
@@ -264,8 +317,7 @@ export const SPEAKERS = [
     type: 'Session',
     activeSpeakerPage: true,
     title: 'Consultant at Silver Stripe Software Pvt Ltd',
-    description:
-      'I\'m Siddharta, a Python developer and trainer. I have been a speaker at PyCon India 2009, 2011 & 2023 and author of the book "Test-Driven Python Development". Today I run the site playfulpython.com where I write on python topics.',
+    bio: 'I\'m Siddharta, a Python developer and trainer. I have been a speaker at PyCon India 2009, 2011 & 2023 and author of the book "Test-Driven Python Development". Today I run the site playfulpython.com where I write on python topics.',
     imgUrl: '/images/speakers/siddharta-govindaraj.jpg',
     imgAlt: 'Picture of Siddharta Govindaraj',
     socials: [
@@ -285,9 +337,18 @@ export const SPEAKERS = [
     name: 'Ankur Gupta',
     slug: 'ankur-gupta',
     type: 'Session',
-    activeSpeakerPage: false,
-    imgUrl: '/images/speakers/placeholder-1.svg',
-    imgAlt: 'Placeholder image',
+    activeSpeakerPage: true,
+    title: 'Senior Engineering Manager',
+    bio: 'Python Programmer since 2007. Hands on Sr. Engineering Manager.',
+    imgUrl: '/images/speakers/ankur-gupta.jpg',
+    imgAlt: 'Picture of Ankur Gupta',
+    socials: [
+      {
+        name: 'X',
+        url: 'https://x.com/getpy',
+        ariaLabel: "Hyperlink to Ankur Gupta's X page.",
+      },
+    ],
   },
   {
     name: 'Sourav Saha',
@@ -295,8 +356,7 @@ export const SPEAKERS = [
     type: 'Session',
     activeSpeakerPage: true,
     title: 'Senior Research Engineer at NEC Corporation',
-    description:
-      'Sourav has 11 years of professional experience at NEC Corporation, Japan in the diverse fields of High Performance Computing, Distributed Programming, and Data Science. He is mostly passionate about program optimization and public speaking.',
+    bio: 'Sourav has 11 years of professional experience at NEC Corporation, Japan in the diverse fields of High Performance Computing, Distributed Programming, and Data Science. He is mostly passionate about program optimization and public speaking.',
     imgUrl: '/images/speakers/sourav-saha.jpg',
     imgAlt: 'Picture of Sourav Saha',
     socials: [
@@ -313,8 +373,7 @@ export const SPEAKERS = [
     type: 'Session',
     activeSpeakerPage: true,
     title: 'Technical Manager at SenecaGlobal Pvt. Ltd.',
-    description:
-      'Python expert with 8+ yrs exp, Open-Source contributor (PyPI: lazy-alchemy, py-lambda-warmer). Tech Lead at SenecaGlobal, delivering Python full-stack solutions.',
+    bio: 'Python expert with 8+ yrs exp, Open-Source contributor (PyPI: lazy-alchemy, py-lambda-warmer). Tech Lead at SenecaGlobal, delivering Python full-stack solutions.',
     imgUrl: '/images/speakers/satyam-soni.jpg',
     imgAlt: 'Picture of Satyam Soni.',
     socials: [
@@ -328,6 +387,14 @@ export const SPEAKERS = [
   {
     name: 'Bhagirathi Hegde',
     slug: 'bhagirathi-hegde',
+    type: 'Session',
+    activeSpeakerPage: false,
+    imgUrl: '/images/speakers/placeholder-2.svg',
+    imgAlt: 'Placeholder image',
+  },
+  {
+    name: 'Sarath Srinivas',
+    slug: 'sarath-srinivas',
     type: 'Session',
     activeSpeakerPage: false,
     imgUrl: '/images/speakers/placeholder-2.svg',

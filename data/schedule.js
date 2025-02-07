@@ -22,7 +22,7 @@ export const SCHEDULE = {
           title: 'Opening Note',
           time: '09:00 - 09:10 AM',
           location: 'Main Hall',
-          speaker: getSpeaker('pyconf-hyderabad-team'),
+          speakers: [getSpeaker('pyconf-hyderabad-team')],
         },
       ],
       [
@@ -32,7 +32,7 @@ export const SCHEDULE = {
           type: 'Talk',
           time: '09:10 - 09:25 AM',
           location: 'Main Hall',
-          speaker: getSpeaker('srivardhan'),
+          speakers: [getSpeaker('srivardhan')],
         },
       ],
       [
@@ -41,7 +41,7 @@ export const SCHEDULE = {
           type: 'Talk',
           time: '09:25 - 10:15 AM',
           location: 'Main Hall',
-          speaker: getSpeaker('anthony-shaw'),
+          speakers: [getSpeaker('anthony-shaw')],
         },
       ],
       [
@@ -51,7 +51,7 @@ export const SCHEDULE = {
           type: 'Talk',
           time: '10:15 - 10:45 AM',
           location: 'Main Hall',
-          speaker: getSpeaker('harsh-mittal'),
+          speakers: [getSpeaker('harsh-mittal')],
         },
       ],
       [
@@ -61,7 +61,7 @@ export const SCHEDULE = {
           type: 'Talk',
           time: '10:45 - 11:15 AM',
           location: 'Main Hall',
-          speaker: getSpeaker('vivek-keshore'),
+          speakers: [getSpeaker('vivek-keshore')],
         },
       ],
       [
@@ -77,7 +77,7 @@ export const SCHEDULE = {
           type: 'Talk',
           time: '11:30 - 12:00 PM',
           location: 'Main Hall',
-          speaker: getSpeaker('ria-bhatia'),
+          speakers: [getSpeaker('ria-bhatia')],
         },
       ],
       [
@@ -86,7 +86,7 @@ export const SCHEDULE = {
           type: 'Talk',
           time: '12:00 - 12:30 PM',
           location: 'Main Hall',
-          speaker: getSpeaker('sai-rahul-poruri'),
+          speakers: [getSpeaker('sai-rahul-poruri')],
         },
       ],
       [
@@ -110,7 +110,7 @@ export const SCHEDULE = {
           type: 'Talk',
           time: '02:25 - 02:55 PM',
           location: 'Main Hall',
-          speaker: getSpeaker('sejal-gupta'),
+          speakers: [getSpeaker('sejal-gupta'), getSpeaker('sidhant-gupta')],
         },
       ],
       [
@@ -119,7 +119,7 @@ export const SCHEDULE = {
           type: 'Talk',
           time: '02:55 - 03:25 PM',
           location: 'Main Hall',
-          speaker: getSpeaker('s-anand'),
+          speakers: [getSpeaker('s-anand')],
         },
       ],
       [
@@ -128,14 +128,14 @@ export const SCHEDULE = {
           type: 'Talk',
           time: '03:25 - 03:55 PM',
           location: 'Main Hall',
-          speaker: getSpeaker('aditi-juneja'),
+          speakers: [getSpeaker('aditi-juneja')],
         },
       ],
       [
         {
           title: 'Keynote by Bowrna Prabhakaran',
           time: '03:55 - 04:45 PM',
-          speaker: getSpeaker('bowrna-prabhakaran'),
+          speakers: [getSpeaker('bowrna-prabhakaran')],
           location: 'Main Hall',
         },
       ],
@@ -152,7 +152,7 @@ export const SCHEDULE = {
           type: 'Talk',
           time: '05:00 - 05:30 PM',
           location: 'Main Hall',
-          speaker: getSpeaker('tarun-jain'),
+          speakers: [getSpeaker('tarun-jain')],
         },
       ],
       [
@@ -161,7 +161,7 @@ export const SCHEDULE = {
           type: 'Talk',
           time: '05:30 - 06:00 PM',
           location: 'Main Hall',
-          speaker: getSpeaker('g-r-akhil-teja'),
+          speakers: [getSpeaker('g-r-akhil-teja')],
         },
       ],
       [
@@ -192,21 +192,21 @@ export const SCHEDULE = {
           title:
             'Mastering Test Driven Development in Django: A Comprehensive Guide with factory_boy and faker',
           location: 'Track 1',
-          speaker: getSpeaker('kuldeep-pisda'),
+          speakers: [getSpeaker('kuldeep-pisda')],
         },
         {
           time: '10:00 - 11:30 AM',
           type: 'Workshop',
           title:
             'Causal Inference & Uplift Modeling in Python: Beyond Correlation',
-          speaker: getSpeaker('sonu-kumar'),
+          speakers: [getSpeaker('sonu-kumar')],
           location: 'Track 2',
         },
         {
           time: '10:00 - 11:30 AM',
           type: 'Workshop',
           title: 'Writing bug free python code with functional programming',
-          speaker: getSpeaker('siddharta-govindaraj'),
+          speakers: [getSpeaker('siddharta-govindaraj')],
           location: 'Track 3',
         },
       ],
@@ -216,7 +216,7 @@ export const SCHEDULE = {
           type: 'Workshop',
           title:
             'Duckdb: In-Process Analytics Database that saves you millions and makes you look smart',
-          speaker: getSpeaker('ankur-gupta'),
+          speakers: [getSpeaker('ankur-gupta')],
           location: 'Track 1',
         },
         {
@@ -224,7 +224,7 @@ export const SCHEDULE = {
           type: 'Workshop',
           title: 'Building AI Agents',
           location: 'Track 2',
-          speaker: getSpeaker('anthony-shaw'),
+          speakers: [getSpeaker('anthony-shaw')],
         },
         {
           time: '11:30 - 1:00 PM',
@@ -232,7 +232,7 @@ export const SCHEDULE = {
           title:
             'Unveiling the lazy execution benefit of FireDucks - A Multithreaded DataFrame Library with JIT compiler',
           location: 'Track 3',
-          speaker: getSpeaker('sourav-saha'),
+          speakers: [getSpeaker('sourav-saha')],
         },
       ],
       [
@@ -241,7 +241,7 @@ export const SCHEDULE = {
           type: 'Workshop',
           title: 'Debugging Python applications like a Pro',
           location: 'Track 1',
-          speaker: getSpeaker('satyam-soni'),
+          speakers: [getSpeaker('satyam-soni')],
         },
         {
           time: '2:00 - 3:30 PM',
@@ -254,7 +254,10 @@ export const SCHEDULE = {
           type: 'Workshop',
           title: 'Distributed Computing',
           location: 'Track 3',
-          speaker: getSpeaker('bhagirathi-hegde'),
+          speakers: [
+            getSpeaker('bhagirathi-hegde'),
+            getSpeaker('sarath-srinivas'),
+          ],
         },
       ],
       [
