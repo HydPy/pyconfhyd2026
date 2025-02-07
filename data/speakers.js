@@ -180,7 +180,7 @@ export const SPEAKERS = [
     activeSpeakerPage: true,
     title: 'Contributing around in the Scientific Python ecosystem :)',
     bio: "Hi, I'm Aditi. I've been involved in dispatching work in the Scientific Python ecosystem(mostly with NetworkX n scikit-image). I'm a NetworkX's Core Dev. Other than that, I enjoy math, graphs, algorithms, data sci, HPC, plants n making comics n stuff!",
-    imgUrl: '/images/speakers/placeholder-1.svg',
+    imgUrl: '/images/speakers/aditi-juneja.jpg',
     imgAlt: 'Picture of Aditi Juneja',
     socials: [
       {
