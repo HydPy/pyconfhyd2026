@@ -15,18 +15,21 @@ const SponsorCard = ({ name, description, hyperLink, logoUrl }) => {
       rel="noopener noreferrer"
     >
       <div className="flex flex-col p-4 items-center bg-gray-50 dark:bg-gray-950 rounded-lg shadow-xl transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
-        <Image
-          src={logoUrl}
-          alt={`${name} logo`}
-          className="object-contain p-2"
-          priority={true}
-          width={200}
-          height={200}
-        />
+        <figure className="w-48 h-48 lg:w-64 lg:h-64 ">
+          <div className="relative shadow-md top-[-10%] h-full w-full rounded-xl">
+            <Image
+              className="object-cover rounded-xl"
+              src={logoUrl}
+              alt={`${name} logo`}
+              fill
+            />
+          </div>
+          <figcaption className="sr-only">{`${name} logo`}</figcaption>
+        </figure>
         <Heading
           tagLevel={4}
           level={6}
-          className="my-2 text-gray-950 dark:text-gray-50"
+          className="my-1 text-gray-950 dark:text-gray-50"
         >
           {name}
         </Heading>

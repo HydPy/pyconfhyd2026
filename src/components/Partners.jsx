@@ -14,18 +14,16 @@ const PartnerCard = ({ name, title, logoUrl, logoAlt, hyperLink }) => {
       rel="noopener noreferrer"
     >
       <div className="flex flex-col p-4 items-center bg-gray-50 dark:bg-gray-950 rounded-lg shadow-xl transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
-        <Image
-          src={logoUrl}
-          alt={logoAlt}
-          className="object-contain p-2"
-          priority={true}
-          width={250}
-          height={150}
-        />
+        <figure className="w-48 h-48 lg:w-64 lg:h-64 ">
+          <div className="relative h-full w-full">
+            <Image className="object-cover" src={logoUrl} alt={logoAlt} fill />
+          </div>
+          <figcaption className="sr-only">{logoAlt}</figcaption>
+        </figure>
         <Heading
           tagLevel={4}
           level={6}
-          className="my-2 text-gray-950 dark:text-gray-50"
+          className="my-1 text-gray-950 dark:text-gray-50"
         >
           {name}
         </Heading>
@@ -48,7 +46,7 @@ const Partners = () => {
       >
         {PARTNERS_INFO.title}
       </Heading>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-wrap items-center justify-center gap-3">
         {PARTNERS &&
           PARTNERS.map((partner, index) => (
             <PartnerCard key={index} {...partner} />
