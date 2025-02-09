@@ -14,7 +14,8 @@ const getSessionSpeakers = (SPEAKERS) => {
       speakers.set(name, speaker);
     }
   });
-  return Array.from(speakers.values());
+  const sortedSpeakers = Array.from(speakers.values()).sort((a, b) => a.slug.localeCompare(b.slug));
+  return sortedSpeakers;
 };
 
 export default function Page() {
