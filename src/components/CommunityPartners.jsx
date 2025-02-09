@@ -1,9 +1,64 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
-import { Heading, Paragraph, Span } from '@/components/Typography';
-import { COMMUNITY_PARTNERS_INFO } from '@/communityPartners';
-import { KEY_LINKS } from '@/conference';
+import { Heading, Span } from '@/components/Typography';
+import {
+  COMMUNITY_PARTNERS_INFO,
+  COMMUNITY_PARTNERS,
+} from '@/communityPartners';
+
+const PartnerLogo = ({ lightLogoUrl, darkLogoUrl, logoAlt, hyperLink }) => {
+  return (
+    <>
+      <div className="flex dark:hidden w-100 flex-col p-4 items-center bg-gray-50 dark:bg-gray-950 transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
+        <div className="w-32 h-32 lg:w-48 lg:h-48 ">
+          <div className="relative h-full w-full">
+            <Image
+              className="object-contain"
+              src={lightLogoUrl}
+              alt={logoAlt}
+              fill
+            />
+          </div>
+        </div>
+      </div>
+      <div className="hidden dark:flex flex-col p-4 items-center bg-gray-50 dark:bg-gray-950 transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
+      <div className="w-32 h-32 lg:w-48 lg:h-48 ">
+          <div className="relative h-full w-full">
+            <Image
+              className="object-contain"
+              src={darkLogoUrl}
+              alt={logoAlt}
+              fill
+            />
+          </div>
+        </div>
+        </div>
+    </>
+  );
+};
+
+const PartnerCard = (details) => {
+  return (
+    <>
+      {details.hyperLink ? (
+        <Link
+          href={details.hyperLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg shadow-md"
+        >
+          <PartnerLogo {...details} />
+        </Link>
+      ) : (
+        <div className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg shadow-md">
+          <PartnerLogo {...details} />
+        </div>
+      )}
+    </>
+  );
+};
 
 const CommunityPartners = () => {
   return (
@@ -14,28 +69,15 @@ const CommunityPartners = () => {
       <Heading
         tagLevel={2}
         level={1}
-        className="text-center my-8 text-secondary-600 dark:text-secondary-400"
+        className="text-center mt-8 mb-10 text-secondary-600 dark:text-secondary-400"
       >
         {COMMUNITY_PARTNERS_INFO.title}
       </Heading>
-      <div className="flex flex-col items-center">
-        <Paragraph className="lg:text-center text-gray-600 dark:text-gray-400 lg:w-11/12">
-          {COMMUNITY_PARTNERS_INFO.description}
-        </Paragraph>
-        <div className="flex flex-col sm:flex-row justify-center items-center my-2">
-          <div className="flex flex-col sm:flex-row justify-center items-center my-2">
-            <Link
-              href={KEY_LINKS.CommunityPartnersProspectusUrl}
-              target="_blank"
-              className="mt-2 sm:mr-4 px-5 py-3 bg-secondary-600 hover:bg-secondary-700 border rounded-lg"
-              rel="noopener noreferrer"
-            >
-              <div className="inline-flex items-center font-medium text-gray-50">
-                <Span>{KEY_LINKS.CommunityPartnersProspectusLabel}</Span>
-              </div>
-            </Link>
-          </div>
-        </div>
+      <div className="flex flex-wrap items-center justify-center gap-3">
+        {COMMUNITY_PARTNERS &&
+          COMMUNITY_PARTNERS.map((partner, index) => (
+            <PartnerCard key={index} {...partner} />
+          ))}
       </div>
     </section>
   );

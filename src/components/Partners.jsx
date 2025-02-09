@@ -21,7 +21,7 @@ const PartnerCard = ({ name, title, logoUrl, logoAlt, hyperLink }) => {
           <figcaption className="sr-only">{logoAlt}</figcaption>
         </figure>
         <Heading
-          tagLevel={4}
+          tagLevel={3}
           level={6}
           className="my-1 text-gray-950 dark:text-gray-50"
         >
