@@ -13,7 +13,7 @@ const PartnerCard = ({ name, title, logoUrl, logoAlt, hyperLink }) => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <div className="flex flex-col p-4 items-center bg-gray-50 dark:bg-gray-950 rounded-lg shadow-xl transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
+      <div className="flex flex-col p-4 items-center bg-gray-50 dark:bg-gray-200 rounded-lg shadow-xl transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
         <figure className="w-48 h-48 lg:w-64 lg:h-64 ">
           <div className="relative h-full w-full">
             <Image className="object-cover" src={logoUrl} alt={logoAlt} fill />
@@ -23,11 +23,11 @@ const PartnerCard = ({ name, title, logoUrl, logoAlt, hyperLink }) => {
         <Heading
           tagLevel={3}
           level={6}
-          className="my-1 text-gray-950 dark:text-gray-50"
+          className="my-1 text-gray-950"
         >
           {name}
         </Heading>
-        <Span>{title}</Span>
+        <Span className='text-gray-950'>{title}</Span>
       </div>
     </Link>
   );
