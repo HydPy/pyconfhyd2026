@@ -2,61 +2,39 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { Heading, Span } from '@/components/Typography';
+import { Heading } from '@/components/Typography';
 import {
   COMMUNITY_PARTNERS_INFO,
   COMMUNITY_PARTNERS,
 } from '@/communityPartners';
 
-const PartnerLogo = ({ lightLogoUrl, darkLogoUrl, logoAlt, hyperLink }) => {
+const PartnerLogo = ({ lightLogoUrl, logoAlt }) => {
   return (
-    <>
-      <div className="flex dark:hidden w-100 flex-col p-4 items-center bg-gray-50 dark:bg-gray-950 transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
-        <div className="w-32 h-32 lg:w-48 lg:h-48 ">
-          <div className="relative h-full w-full">
-            <Image
-              className="object-contain"
-              src={lightLogoUrl}
-              alt={logoAlt}
-              fill
-            />
-          </div>
+    <div className="flex w-100 flex-col p-4 items-center bg-gray-50 dark:bg-gray-200 transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
+      <div className="w-48 h-48 lg:w-48 lg:h-48">
+        <div className="relative h-full w-full">
+          <Image
+            className="object-contain"
+            src={lightLogoUrl}
+            alt={logoAlt}
+            fill
+          />
         </div>
       </div>
-      <div className="hidden dark:flex flex-col p-4 items-center bg-gray-50 dark:bg-gray-950 transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
-      <div className="w-32 h-32 lg:w-48 lg:h-48 ">
-          <div className="relative h-full w-full">
-            <Image
-              className="object-contain"
-              src={darkLogoUrl}
-              alt={logoAlt}
-              fill
-            />
-          </div>
-        </div>
-        </div>
-    </>
+    </div>
   );
 };
 
 const PartnerCard = (details) => {
   return (
-    <>
-      {details.hyperLink ? (
-        <Link
-          href={details.hyperLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg shadow-md"
-        >
-          <PartnerLogo {...details} />
-        </Link>
-      ) : (
-        <div className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg shadow-md">
-          <PartnerLogo {...details} />
-        </div>
-      )}
-    </>
+    <Link
+      href={details.hyperLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg shadow-md"
+    >
+      <PartnerLogo {...details} />
+    </Link>
   );
 };
 
@@ -73,7 +51,7 @@ const CommunityPartners = () => {
       >
         {COMMUNITY_PARTNERS_INFO.title}
       </Heading>
-      <div className="flex flex-wrap items-center justify-center gap-3">
+      <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-10">
         {COMMUNITY_PARTNERS &&
           COMMUNITY_PARTNERS.map((partner, index) => (
             <PartnerCard key={index} {...partner} />
