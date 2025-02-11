@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Heading, Paragraph, Span } from '@/components/Typography';
 import Icon from '@/components/Icon';
 import { CONFERENCE, ASSETS } from '@/conference';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -42,23 +43,38 @@ const Hero = () => {
             {CONFERENCE.dates}
           </Span>
         </div>
-        <Span
-          level={3}
-          className="text-center font-semibold ml-2 mt-2 text-secondary-600 dark:text-secondary-400"
-        >
-          Conference: {CONFERENCE.conferenceDate} | Venue:{' '}
-          {CONFERENCE.conferenceVenue}
-        </Span>
-        <Span
-          level={3}
-          className="text-center font-semibold ml-2 mt-2 text-secondary-600 dark:text-secondary-400"
-        >
-          Workshop: {CONFERENCE.workshopDate} | Venue:{' '}
-          {CONFERENCE.workshopVenue}
-        </Span>
-        <Paragraph className="mt-3 mb-6 text-center text-gray-600 dark:text-gray-400">
-          {CONFERENCE.announcement}
-        </Paragraph>
+        <div className="flex">
+          <Span
+            level={3}
+            className="text-center font-semibold ml-2 mt-2 text-secondary-600 dark:text-secondary-400"
+          >
+            Conference: {CONFERENCE.conferenceDate} | Venue:{' '}
+          </Span>
+          <Link
+            className="underline font-semibold ml-1 mt-2 text-secondary-600 dark:text-secondary-400"
+            href={CONFERENCE.conferenceMapsLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Span level={3}>{CONFERENCE.conferenceVenue}</Span>
+          </Link>
+        </div>
+        <div className="flex">
+          <Span
+            level={3}
+            className="text-center font-semibold ml-2 mt-2 text-secondary-600 dark:text-secondary-400"
+          >
+            Conference: {CONFERENCE.workshopDate} | Venue:{' '}
+          </Span>
+          <Link
+            className="underline font-semibold ml-1 mt-2 text-secondary-600 dark:text-secondary-400"
+            href={CONFERENCE.workshopMapsLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Span level={3}>{CONFERENCE.workshopVenue}</Span>
+          </Link>
+        </div>
       </div>
     </section>
   );

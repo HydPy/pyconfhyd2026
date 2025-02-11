@@ -5,7 +5,14 @@ import Link from 'next/link';
 import { Heading, Span } from '@/components/Typography';
 import { PARTNERS_INFO, PARTNERS } from '@/partners';
 
-const PartnerCard = ({ name, title, logoUrl, logoAlt, hyperLink }) => {
+const PartnerCard = ({
+  name,
+  title,
+  lightLogoUrl,
+  darkLogoUrl,
+  logoAlt,
+  hyperLink,
+}) => {
   return (
     <Link
       href={hyperLink}
@@ -16,7 +23,33 @@ const PartnerCard = ({ name, title, logoUrl, logoAlt, hyperLink }) => {
       <div className="flex flex-col p-4 items-center bg-gray-50 dark:bg-gray-200 rounded-lg shadow-xl transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
         <figure className="w-48 h-48 lg:w-64 lg:h-64 ">
           <div className="relative h-full w-full">
-            <Image className="object-cover" src={logoUrl} alt={logoAlt} fill />
+            <Image
+              className="object-contain"
+              src={lightLogoUrl}
+              alt={logoAlt}
+              fill
+            />
+          </div>
+          <figcaption className="sr-only">{logoAlt}</figcaption>
+        </figure>
+        <Heading
+          tagLevel={3}
+          level={6}
+          className="my-1 text-gray-950 dark:text-gray-50"
+        >
+          {name}
+        </Heading>
+        <Span>{title}</Span>
+      </div>
+      <div className="hidden dark:flex flex-col p-4 items-center bg-gray-50 dark:bg-gray-950 rounded-lg shadow-xl transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
+        <figure className="w-48 h-48 lg:w-64 lg:h-64 ">
+          <div className="relative h-full w-full">
+            <Image
+              className="object-contain"
+              src={darkLogoUrl}
+              alt={logoAlt}
+              fill
+            />
           </div>
           <figcaption className="sr-only">{logoAlt}</figcaption>
         </figure>

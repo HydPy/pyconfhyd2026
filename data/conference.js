@@ -11,8 +11,10 @@ export const CONFERENCE = {
   copyrightTitle: 'Copyright @ 2025 PyConf Hyderabad',
   conferenceDate: '22 Feb',
   conferenceVenue: 'T-Hub',
+  conferenceMapsLink: 'https://maps.app.goo.gl/xDkTnPApM7GsfE1F9',
   workshopDate: '23 Feb',
-  workshopVenue: 'TBD',
+  workshopVenue: 'EPAM Systems',
+  workshopMapsLink: 'https://maps.app.goo.gl/4Yd1nY3zNJd3kPaw9',
   infoText:
     'We have communicated the results to the speakers, and the schedule will be released by the end of January after receiving their confirmations.',
   creator: 'HydPy',
