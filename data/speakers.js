@@ -4,6 +4,7 @@ export const SPEAKERS = [
     slug: 'anthony-shaw',
     activeSpeakerPage: true,
     type: 'Keynote',
+    title: 'Python Advocacy Lead',
     bio: 'Anthony Shaw is from Sydney, Australia. Anthony is a contributor to many open-source communities and tools for DevOps, Security, Automation and Code Quality.<br> He has been recognised for his contribution to open source, including as Fellow of the Python Software Foundation, Fellow of Macquarie University, and member of the Apache Software Foundation. Anthony runs a Python blog and YouTube channel and has published a book on the Python compiler.',
     imgUrl: '/images/speakers/anthony-shaw.jpg',
     imgAlt: "Anthony Shaw's picture",

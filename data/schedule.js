@@ -37,7 +37,7 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Keynote by Anthony Shaw',
+          title: 'Keynote: When will AI take my job and what can I do about it',
           type: 'Talk',
           time: '09:25 - 10:15 AM',
           location: 'Main Hall',
