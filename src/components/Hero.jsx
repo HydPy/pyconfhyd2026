@@ -64,7 +64,7 @@ const Hero = () => {
             level={3}
             className="text-center font-semibold ml-2 mt-2 text-secondary-600 dark:text-secondary-400"
           >
-            Conference: {CONFERENCE.workshopDate} | Venue:{' '}
+            Workshop: {CONFERENCE.workshopDate} | Venue:{' '}
           </Span>
           <Link
             className="underline font-semibold ml-1 mt-2 text-secondary-600 dark:text-secondary-400"
