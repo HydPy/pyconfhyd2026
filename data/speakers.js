@@ -170,9 +170,35 @@ export const SPEAKERS = [
     name: 'S Anand',
     slug: 's-anand',
     type: 'Session',
-    activeSpeakerPage: false,
-    imgUrl: '/images/speakers/placeholder-1.svg',
-    imgAlt: 'Placeholder image',
+    activeSpeakerPage: true,
+    imgUrl: '/images/speakers/s-anand.jpg',
+    bio: `Anand is the world's first LLM psychologist. It's not an official job. He just calls himself that.
+          He's been speaking at PyCon since 2013 but decided to move away from Python in 2023. Almost. 
+          What brought him back is uv, which he'll talk about now.`,
+    title: 'LLM Psychologist at Straive',
+    imgAlt: 'Picture of S Anand',
+    socials: [
+      {
+        name: 'X',
+        url: 'https://x.com/sanand0/',
+        ariaLabel: "Hyperlink to S Anand's X page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/sanand0/',
+        ariaLabel: "Hyperlink to S Anand's LinkedIn page.",
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/sanand0/',
+        ariaLabel: "Hyperlink to S Anand's GitHub page.",
+      },
+      {
+        name: 'Globe',
+        url: 'https://s-anand.net/',
+        ariaLabel: "Hyperlink to S Anand's website.",
+      },
+    ],
   },
   {
     name: 'Aditi Juneja',
