@@ -32,6 +32,23 @@ export const SPEAKERS = [
     ],
   },
   {
+    name: 'Bowrna Prabhakaran',
+    slug: 'bowrna-prabhakaran',
+    type: 'Keynote',
+    activeSpeakerPage: false,
+    title: 'Software Developer',
+    imgUrl: '/images/speakers/bowrna.jpeg',
+    imgAlt: 'Placeholder image',
+    socials: [
+      {
+        name: 'GitHub',
+        url: 'https://github.com/Bowrna',
+        ariaLabel: "Hyperlink to Bowrna Prabhakaran's GitHub page.",
+      }
+    ]
+  },
+  // Session speakers
+  {
     name: 'PyConf Hyderabad Team',
     slug: 'pyconf-hyderabad-team',
     activeSpeakerPage: false,
@@ -221,14 +238,6 @@ export const SPEAKERS = [
         ariaLabel: "Hyperlink to Aditi Juneja's GitHub page.",
       },
     ],
-  },
-  {
-    name: 'Bowrna Prabhakaran',
-    slug: 'bowrna-prabhakaran',
-    type: 'Keynote',
-    activeSpeakerPage: false,
-    imgUrl: '/images/speakers/placeholder-2.svg',
-    imgAlt: 'Placeholder image',
   },
   {
     name: 'Tarun Jain',

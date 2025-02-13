@@ -5,6 +5,36 @@ export const SPONSORS_INFO = {
 };
 
 export const SPONSORS = {
+  Platinum: [
+    {
+      name: 'Snowflake',
+      hyperLink: 'https://www.snowflake.com/en/',
+      lightLogoUrl: '/images/sponsors/snowflake.png',
+      logoAlt: 'Snowflake logo',
+      socials: [
+        {
+          name: 'X',
+          url: 'https://twitter.com/SnowflakeDB',
+          ariaLabel: 'Hyperlink to Snowflake X page.',
+        },
+        {
+          name: 'LinkedIn',
+          url: 'https://www.linkedin.com/company/snowflake-computing',
+          ariaLabel: 'Hyperlink to Snowflake LinkedIn page.',
+        },
+        {
+          name: 'Facebook',
+          url: 'https://www.facebook.com/Snowflake-Computing-709171695819345/',
+          ariaLabel: 'Hyperlink to Snowflake Facebook page.',
+        },
+        {
+          name: 'Instagram',
+          url: 'https://www.instagram.com/_snowflake_inc/?hl=en',
+          ariaLabel: 'Hyperlink to Snowflake Instagram page.',
+        },
+      ],
+    },
+  ],
   Gold: [
     {
       name: 'LangDB.ai',
@@ -74,6 +104,31 @@ export const SPONSORS = {
           name: 'Instagram',
           url: ' https://www.instagram.com/gridlex_software/',
           ariaLabel: 'Hyperlink to Gridlex Instagram page.',
+        },
+      ],
+    },
+  ],
+  Associate: [
+    {
+      name: 'GlueOps',
+      hyperLink: 'https://www.glueops.dev/?utm_source=pyconfhyd',
+      lightLogoUrl: '/images/sponsors/glueops.png',
+      logoAlt: 'GlueOps logo',
+      socials: [
+        {
+          name: 'X',
+          url: 'https://x.com/GlueOps',
+          ariaLabel: 'Hyperlink to GlueOps X page.',
+        },
+        {
+          name: 'LinkedIn',
+          url: 'https://www.linkedin.com/company/glueops',
+          ariaLabel: 'Hyperlink to GlueOps LinkedIn page.',
+        },
+        {
+          name: 'Facebook',
+          url: 'https://www.facebook.com/glueops',
+          ariaLabel: 'Hyperlink to GlueOps Facebook page.',
         },
       ],
     },
