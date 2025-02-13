@@ -14,7 +14,7 @@ export default function KeynoteSpeakers({ speakers }) {
       >
         Keynote Speaker
       </Heading>
-      <div className="flex flex-wrap mt-10">
+      <div className="flex flex-wrap mt-10 gap-8">
         {speakers.map((speaker, index) => (
           <Speaker key={index} speaker={speaker} />
         ))}
