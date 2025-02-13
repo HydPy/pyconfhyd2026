@@ -8,7 +8,7 @@ export const SPONSORS = {
   Platinum: [
     {
       name: 'Snowflake',
-      hyperLink: 'https://www.snowflake.com/en/',
+      hyperLink: '/blogs/snowflake-platinum-sponsor/',
       lightLogoUrl: '/images/sponsors/snowflake.png',
       logoAlt: 'Snowflake logo',
       socials: [

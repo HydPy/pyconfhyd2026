@@ -54,7 +54,7 @@ const SponsorsSection = () => {
               >
                 {type}
               </Heading>
-              <div className="flex justify-center gap-5">
+              <div className="flex flex-wrap justify-center gap-5">
                 {SPONSORS[type].map((sponsor, index) => (
                   <SponsorCard key={index} {...sponsor} />
                 ))}
