@@ -78,6 +78,31 @@ export const SPONSORS = {
       ],
     },
   ],
+  Associate: [
+    {
+      name: 'GlueOps',
+      hyperLink: 'https://www.glueops.dev/?utm_source=pyconfhyd',
+      lightLogoUrl: '/images/sponsors/glueops.png',
+      logoAlt: 'GlueOps logo',
+      socials: [
+        {
+          name: 'X',
+          url: 'https://x.com/GlueOps',
+          ariaLabel: 'Hyperlink to GlueOps X page.',
+        },
+        {
+          name: 'LinkedIn',
+          url: 'https://www.linkedin.com/company/glueops',
+          ariaLabel: 'Hyperlink to GlueOps LinkedIn page.',
+        },
+        {
+          name: 'Facebook',
+          url: 'https://www.facebook.com/glueops',
+          ariaLabel: 'Hyperlink to GlueOps Facebook page.',
+        },
+      ],
+    },
+  ],
   'Workshop Venue Sponsor': [
     {
       name: 'EPAM Systems',
