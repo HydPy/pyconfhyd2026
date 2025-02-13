@@ -35,11 +35,17 @@ export const SPEAKERS = [
     name: 'Bowrna Prabhakaran',
     slug: 'bowrna-prabhakaran',
     type: 'Keynote',
-    activeSpeakerPage: false,
+    activeSpeakerPage: true,
     title: 'Software Developer',
-    imgUrl: '/images/speakers/bowrna.jpeg',
-    imgAlt: 'Placeholder image',
+    bio: 'Bowrna is a self-taught programmer who started building software after a non-CS degree. With the experience of about 12 years now, She thinks she has learned only a drop in the ocean and wants to explore more. She is an active open-source contributor to projects like Apache Airflow, and Listmonk and works on solutions to build interactive demo tools in her day job.',
+    imgUrl: '/images/speakers/bowrna-prabhakaran.jpg',
+    imgAlt: 'Picture of Bowrna Prabhakaran',
     socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/bowrna/',
+        ariaLabel: "Hyperlink to Bowrna Prabhakaran's LinkedIn page.",
+      },
       {
         name: 'GitHub',
         url: 'https://github.com/Bowrna',
