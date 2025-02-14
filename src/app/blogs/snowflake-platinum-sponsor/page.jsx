@@ -49,7 +49,7 @@ export default function Page() {
           <div className="relative h-full w-full">
             <Image
               className="object-contain"
-              src="/images/sponsors/snowflake.png"
+              src="/images/sponsors/snowflake.svg"
               alt=""
               fill
             />
