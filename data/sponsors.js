@@ -4,6 +4,16 @@ export const SPONSORS_INFO = {
     'PyConf Hyderabad is completely driven by volunteers. Sponsoring the event helps to sustain and grow the conference as well as the Community. Sponsor help in making the conference affordable, and maintaining the inventory for the conference.',
 };
 
+export const getSponsor = (name) => {
+  for (const category in SPONSORS) {
+    const sponsor = SPONSORS[category].find((s) => s.name === name);
+    if (sponsor) {
+      return sponsor;
+    }
+  }
+  return null;
+};
+
 export const SPONSORS = {
   Platinum: [
     {
@@ -38,7 +48,7 @@ export const SPONSORS = {
   Gold: [
     {
       name: 'LangDB.ai',
-      hyperLink: 'https://langdb.ai/',
+      hyperLink: '/blogs/langdb-ai-gold-sponsor/',
       lightLogoUrl: '/images/sponsors/langdb.png',
       logoAlt: 'LangDB.ai logo',
       socials: [
@@ -56,7 +66,7 @@ export const SPONSORS = {
     },
     {
       name: 'Cognida.ai',
-      hyperLink: 'https://www.cognida.ai/',
+      hyperLink: '/blogs/cognida-ai-gold-sponsor/',
       lightLogoUrl: '/images/sponsors/cognidaaai.png',
       logoAlt: 'Cognida.ai logo',
       socials: [
@@ -74,6 +84,47 @@ export const SPONSORS = {
           name: 'Instagram',
           url: 'https://www.instagram.com/cognidainc/',
           ariaLabel: 'Hyperlink to Cognida.ai Instagram page.',
+        },
+      ],
+    },
+    {
+      name: 'Storable India',
+      hyperLink: 'https://www.storable.com',
+      lightLogoUrl: '/images/sponsors/storable.jpg',
+      logoAlt: 'Storable India logo',
+      socials: [
+        {
+          name: 'LinkedIn',
+          url: 'https://www.linkedin.com/company/storable-india/?viewAsMember=true',
+          ariaLabel: 'Hyperlink to Storable India LinkedIn page.',
+        },
+      ],
+    },
+    {
+      name: 'Tiger Analytics',
+      hyperLink: 'https://www.tigeranalytics.com/',
+      lightLogoUrl: '/images/sponsors/tiger-analytics-black.png',
+      logoAlt: 'Tiger Analytics logo',
+      socials: [
+        {
+          name: 'X',
+          url: 'https://twitter.com/tigeranalytics',
+          ariaLabel: 'Hyperlink to Tiger Analytics X page.',
+        },
+        {
+          name: 'LinkedIn',
+          url: 'https://www.linkedin.com/company/tiger-analytics/posts/?feedView=all',
+          ariaLabel: 'Hyperlink to Tiger Analytics LinkedIn page.',
+        },
+        {
+          name: 'Facebook',
+          url: 'https://www.facebook.com/share/1H4etXYa6C/',
+          ariaLabel: 'Hyperlink to Tiger Analytics Facebook page.',
+        },
+        {
+          name: 'Instagram',
+          url: 'https://www.instagram.com/tigeranalytics',
+          ariaLabel: 'Hyperlink to Tiger Analytics Instagram page.',
         },
       ],
     },
@@ -133,7 +184,7 @@ export const SPONSORS = {
       ],
     },
   ],
-  'Workshop Venue Sponsor': [
+  'Workshop Venue': [
     {
       name: 'EPAM Systems',
       lightLogoUrl: '/images/sponsors/epam.svg',

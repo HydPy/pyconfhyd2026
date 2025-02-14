@@ -5,10 +5,10 @@ import Link from 'next/link';
 import { Heading } from '@/components/Typography';
 import { SPONSORS, SPONSORS_INFO } from '@/sponsors';
 
-const SponsorCard = ({ hyperLink, lightLogoUrl, logoAlt }) => {
+const SponsorCard = ({ slug, hyperLink, lightLogoUrl, logoAlt }) => {
   return (
     <Link
-      href={hyperLink}
+      href={`${hyperLink}`}
       className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg"
       target="_blank"
       rel="noopener noreferrer"

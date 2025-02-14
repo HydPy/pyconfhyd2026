@@ -25,14 +25,10 @@ const PartnerCard = ({ name, title, lightLogoUrl, logoAlt, hyperLink }) => {
           </div>
           <figcaption className="sr-only">{logoAlt}</figcaption>
         </figure>
-        <Heading
-          tagLevel={3}
-          level={6}
-          className="my-1 text-gray-950"
-        >
+        <Heading tagLevel={3} level={6} className="my-1 text-gray-950">
           {name}
         </Heading>
-        <Span className='text-gray-950'>{title}</Span>
+        <Span className="text-gray-950">{title}</Span>
       </div>
     </Link>
   );
