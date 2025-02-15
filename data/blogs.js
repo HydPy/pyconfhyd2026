@@ -5,6 +5,8 @@ import LangDBAIGoldSponsorMdx from '@/blogs/langdb-ai-gold-sponsor.mdx';
 import CognidaAIGoldSponsorMdx from '@/blogs/cognida-ai-gold-sponsor.mdx';
 import TigerAnalyticsGoldSponsorMdx from '@/blogs/tiger-analytics-gold-sponsor.mdx';
 import StorableIndiaGoldSponsorMdx from '@/blogs/storable-india-gold-sponsor.mdx';
+import GridlexSilverSponsorMdx from '@/blogs/gridlex-silver-sponsor.mdx';
+import GlueOpsAssociateSponsorMdx from '@/blogs/glueops-associate-sponsor.mdx';
 
 export const BLOGS = [
   {
@@ -46,5 +48,21 @@ export const BLOGS = [
     author: 'PyConf Hyderabad Team',
     publishedAt: 'February 15, 2025',
     socials: getSponsor('Storable India').socials,
+  },
+  {
+    slug: 'gridlex-silver-sponsor',
+    title: 'Announcing Gridlex as our Silver Sponsor',
+    markdownComponent: <GridlexSilverSponsorMdx />,
+    author: 'PyConf Hyderabad Team',
+    publishedAt: 'February 15, 2025',
+    socials: getSponsor('Gridlex').socials,
+  },
+  {
+    slug: 'glueops-associate-sponsor',
+    title: 'Announcing GlueOps as our Associate Sponsor',
+    markdownComponent: <GlueOpsAssociateSponsorMdx />,
+    author: 'PyConf Hyderabad Team',
+    publishedAt: 'February 15, 2025',
+    socials: getSponsor('GlueOps').socials,
   },
 ];

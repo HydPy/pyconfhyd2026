@@ -157,29 +157,34 @@ export const SPONSORS = {
   Silver: [
     {
       name: 'Gridlex',
-      hyperLink: 'https://gridlex.com/',
+      hyperLink: '/blogs/gridlex-silver-sponsor/',
       lightLogoUrl: '/images/sponsors/gridlex.png',
       logoAlt: 'Gridlex logo',
       socials: [
         {
           name: 'X',
-          url: ' https://x.com/Gridlex3/',
+          url: 'https://x.com/Gridlex3/',
           ariaLabel: 'Hyperlink to Gridlex X page.',
         },
         {
           name: 'LinkedIn',
-          url: ' https://www.linkedin.com/company/gridlex/',
+          url: 'https://www.linkedin.com/company/gridlex/',
           ariaLabel: 'Hyperlink to Gridlex LinkedIn page.',
         },
         {
           name: 'Facebook',
-          url: ' https://www.facebook.com/GridlexApps/',
+          url: 'https://www.facebook.com/GridlexApps/',
           ariaLabel: 'Hyperlink to Gridlex Facebook page.',
         },
         {
           name: 'Instagram',
-          url: ' https://www.instagram.com/gridlex_software/',
+          url: 'https://www.instagram.com/gridlex_software/',
           ariaLabel: 'Hyperlink to Gridlex Instagram page.',
+        },
+        {
+          name: 'Globe',
+          url: 'https://gridlex.com/',
+          ariaLabel: 'Hyperlink to Gridlex website.',
         },
       ],
     },
@@ -187,7 +192,7 @@ export const SPONSORS = {
   Associate: [
     {
       name: 'GlueOps',
-      hyperLink: 'https://www.glueops.dev/?utm_source=pyconfhyd',
+      hyperLink: '/blogs/glueops-associate-sponsor/',
       lightLogoUrl: '/images/sponsors/glueops.png',
       logoAlt: 'GlueOps logo',
       socials: [
@@ -205,6 +210,11 @@ export const SPONSORS = {
           name: 'Facebook',
           url: 'https://www.facebook.com/glueops',
           ariaLabel: 'Hyperlink to GlueOps Facebook page.',
+        },
+        {
+          name: 'Globe',
+          url: 'https://www.glueops.dev/?utm_source=pyconfhyd',
+          ariaLabel: 'Hyperlink to GlueOps website.',
         },
       ],
     },
