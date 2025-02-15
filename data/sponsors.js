@@ -42,6 +42,11 @@ export const SPONSORS = {
           url: 'https://www.instagram.com/_snowflake_inc/?hl=en',
           ariaLabel: 'Hyperlink to Snowflake Instagram page.',
         },
+        {
+          name: 'Globe',
+          url: 'https://snowflake.com/',
+          ariaLabel: 'Hyperlink to Snowflake website.',
+        },
       ],
     },
   ],
@@ -61,6 +66,11 @@ export const SPONSORS = {
           name: 'LinkedIn',
           url: 'https://www.linkedin.com/company/langdb/',
           ariaLabel: 'Hyperlink to LangDB.ai LinkedIn page.',
+        },
+        {
+          name: 'Globe',
+          url: 'https://langdb.ai/',
+          ariaLabel: 'Hyperlink to LangDB.ai website.',
         },
       ],
     },
@@ -85,24 +95,34 @@ export const SPONSORS = {
           url: 'https://www.instagram.com/cognidainc/',
           ariaLabel: 'Hyperlink to Cognida.ai Instagram page.',
         },
+        {
+          name: 'Globe',
+          url: 'https://www.cognida.ai/',
+          ariaLabel: 'Hyperlink to Cognida.ai website',
+        },
       ],
     },
     {
       name: 'Storable India',
-      hyperLink: 'https://www.storable.com',
+      hyperLink: '/blogs/storable-india-gold-sponsor/',
       lightLogoUrl: '/images/sponsors/storable.jpg',
       logoAlt: 'Storable India logo',
       socials: [
         {
           name: 'LinkedIn',
-          url: 'https://www.linkedin.com/company/storable-india/?viewAsMember=true',
+          url: 'https://www.linkedin.com/company/storable-india/',
           ariaLabel: 'Hyperlink to Storable India LinkedIn page.',
+        },
+        {
+          name: 'Globe',
+          url: 'https://www.storable.com',
+          ariaLabel: 'Hyperlink to Storable India website.',
         },
       ],
     },
     {
       name: 'Tiger Analytics',
-      hyperLink: 'https://www.tigeranalytics.com/',
+      hyperLink: '/blogs/tiger-analytics-gold-sponsor/',
       lightLogoUrl: '/images/sponsors/tiger-analytics-black.png',
       logoAlt: 'Tiger Analytics logo',
       socials: [
@@ -113,7 +133,7 @@ export const SPONSORS = {
         },
         {
           name: 'LinkedIn',
-          url: 'https://www.linkedin.com/company/tiger-analytics/posts/?feedView=all',
+          url: 'https://www.linkedin.com/company/tiger-analytics/',
           ariaLabel: 'Hyperlink to Tiger Analytics LinkedIn page.',
         },
         {
@@ -125,6 +145,11 @@ export const SPONSORS = {
           name: 'Instagram',
           url: 'https://www.instagram.com/tigeranalytics',
           ariaLabel: 'Hyperlink to Tiger Analytics Instagram page.',
+        },
+        {
+          name: 'Globe',
+          url: 'https://www.tigeranalytics.com/',
+          ariaLabel: 'Hyperlink to Tiger Analytics website.',
         },
       ],
     },

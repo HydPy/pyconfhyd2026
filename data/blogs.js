@@ -3,6 +3,8 @@ import { getSponsor } from '@/sponsors';
 import SnowflakePlatinumSponsorMdx from '@/blogs/snowflake-platinum-sponsor.mdx';
 import LangDBAIGoldSponsorMdx from '@/blogs/langdb-ai-gold-sponsor.mdx';
 import CognidaAIGoldSponsorMdx from '@/blogs/cognida-ai-gold-sponsor.mdx';
+import TigerAnalyticsGoldSponsorMdx from '@/blogs/tiger-analytics-gold-sponsor.mdx';
+import StorableIndiaGoldSponsorMdx from '@/blogs/storable-india-gold-sponsor.mdx';
 
 export const BLOGS = [
   {
@@ -28,5 +30,21 @@ export const BLOGS = [
     author: 'PyConf Hyderabad Team',
     publishedAt: 'February 14, 2025',
     socials: getSponsor('Cognida.ai').socials,
+  },
+  {
+    slug: 'tiger-analytics-gold-sponsor',
+    title: 'Announcing Tiger Analytics as our Gold Sponsor',
+    markdownComponent: <TigerAnalyticsGoldSponsorMdx />,
+    author: 'PyConf Hyderabad Team',
+    publishedAt: 'February 15, 2025',
+    socials: getSponsor('Tiger Analytics').socials,
+  },
+  {
+    slug: 'storable-india-gold-sponsor',
+    title: 'Announcing Storable India as our Gold Sponsor',
+    markdownComponent: <StorableIndiaGoldSponsorMdx />,
+    author: 'PyConf Hyderabad Team',
+    publishedAt: 'February 15, 2025',
+    socials: getSponsor('Storable India').socials,
   },
 ];
