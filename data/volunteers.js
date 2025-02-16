@@ -137,7 +137,7 @@ export const VOLUNTEERS = [
     socials: [
       {
         name: 'LinkedIn',
-        url: 'www.linkedin.com/in/karunasolanki',
+        url: 'https://www.linkedin.com/in/karunasolanki',
         ariaLabel: "Hyperlink to Karuna Solanki's LinkedIn page.",
       },
       {
