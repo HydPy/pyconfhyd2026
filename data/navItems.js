@@ -8,8 +8,8 @@ export const NAV_ITEMS = [
         target: '_self',
       },
       {
-        name: 'Keynote Speaker',
-        path: '/#keynote-speaker',
+        name: 'Keynote Speakers',
+        path: '/#keynote-speakers',
         target: '_self',
       },
       {

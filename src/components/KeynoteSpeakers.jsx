@@ -12,7 +12,7 @@ export default function KeynoteSpeakers({ speakers }) {
         level={1}
         className="text-center my-8 text-secondary-600 dark:text-secondary-400"
       >
-        Keynote Speaker
+        Keynote Speakers
       </Heading>
       <div className="flex flex-wrap justify-center mt-10 gap-8">
         {speakers.map((speaker, index) => (
