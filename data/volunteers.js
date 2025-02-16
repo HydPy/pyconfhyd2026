@@ -188,7 +188,7 @@ export const VOLUNTEERS = [
   },
   {
     name: 'Arthi Murali',
-    role: 'Content WG Volunteer ',
+    role: 'Communication WG Volunteer ',
     imgUrl: '/images/volunteers/arthi-murali.jpg',
     imgAlt: "Arthi Murali's picture",
     socials: [

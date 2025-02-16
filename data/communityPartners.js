@@ -42,4 +42,33 @@ export const COMMUNITY_PARTNERS = [
     logoAlt: 'Azure Developer Community logo',
     hyperLink: 'https://www.linkedin.com/in/azdevindia/',
   },
+  {
+    name: 'FOSS United',
+    lightLogoUrl: '/images/community-partners/foss-united.svg',
+    logoAlt: 'FOSS United logo',
+    hyperLink: 'https://fossunited.org',
+  },
+  {
+    name: 'AI Anytime',
+    lightLogoUrl: '/images/community-partners/ai-anytime.jpg',
+    logoAlt: 'AI Anytime logo',
+  },
+  {
+    name: 'So Called CS Engineers',
+    lightLogoUrl: '/images/community-partners/SCCSE.png',
+    logoAlt: 'So Called CS Engineers logo',
+    hyperLink: 'https://linktr.ee/socalledcsengineers',
+  },
+  {
+    name: 'NextGen Nexus',
+    lightLogoUrl: '/images/community-partners/nextgen-nexus.png',
+    logoAlt: 'NextGen Nexus logo',
+    hyperLink: 'https://bento.me/nextgen-nexus',
+  },
+  {
+    name: 'NEXUS Swarm',
+    lightLogoUrl: '/images/community-partners/nexus-swarm.jpg',
+    logoAlt: 'NEXUS Swarm logo',
+    hyperLink: 'https://linktr.ee/nexus_swarm',
+  },
 ];

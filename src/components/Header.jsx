@@ -115,7 +115,7 @@ const Header = ({ themeToggle }) => {
         <Link
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
-          title='Home'
+          title="Home"
         >
           <Image
             src={ASSETS.navbarLogoUrl}

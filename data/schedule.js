@@ -257,7 +257,8 @@ export const SCHEDULE = {
         {
           time: '2:00 - 3:30 PM',
           type: 'Workshop',
-          title: 'Distributed Computing with Ray: Transforming Local Python Applications into Scalable Systems',
+          title:
+            'Distributed Computing with Ray: Transforming Local Python Applications into Scalable Systems',
           location: 'Track 3',
           speakers: [
             getSpeaker('bhagirathi-hegde'),

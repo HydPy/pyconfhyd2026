@@ -11,7 +11,7 @@ import {
 const PartnerLogo = ({ lightLogoUrl, logoAlt }) => {
   return (
     <div className="flex w-100 flex-col p-4 items-center bg-gray-50 dark:bg-gray-200 transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
-      <div className="w-48 h-48 lg:w-48 lg:h-48">
+      <div className="w-32 h-32">
         <div className="relative h-full w-full">
           <Image
             className="object-contain"
@@ -27,14 +27,22 @@ const PartnerLogo = ({ lightLogoUrl, logoAlt }) => {
 
 const PartnerCard = (details) => {
   return (
-    <Link
-      href={details.hyperLink}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg shadow-md"
-    >
-      <PartnerLogo {...details} />
-    </Link>
+    <>
+      {details.hyperLink ? (
+        <Link
+          href={details.hyperLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg shadow-md"
+        >
+          <PartnerLogo {...details} />
+        </Link>
+      ) : (
+        <div className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg shadow-md">
+          <PartnerLogo {...details} />
+        </div>
+      )}
+    </>
   );
 };
 

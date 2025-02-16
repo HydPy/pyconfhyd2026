@@ -41,14 +41,18 @@ const SpeakerCard = ({ speaker }) => {
             src={speaker.imgUrl}
             alt={`Placeholder image of ${speaker.name}`}
             title={`Image of ${speaker.name}`}
-            loading='lazy'
+            loading="lazy"
             fill
           />
         </div>
       </div>
       <div className="flex flex-col ml-2">
         {speaker.name && (
-          <Heading className="text-gray-950 dark:text-gray-50" level={6} tagLevel={4}>
+          <Heading
+            className="text-gray-950 dark:text-gray-50"
+            level={6}
+            tagLevel={4}
+          >
             {speaker.name}
           </Heading>
         )}

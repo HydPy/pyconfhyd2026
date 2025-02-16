@@ -2,7 +2,6 @@ import Hero from '@/components/Hero';
 import KeynoteSpeakers from '@/components/KeynoteSpeakers';
 import MeetOrganizers from '@/components/MeetOrganizers';
 import SponsorsSection from '@/components/Sponsors';
-import Partners from '@/components/Partners';
 import Tickets from '@/components/Tickets';
 import CommunityPartners from '@/components/CommunityPartners';
 
@@ -31,7 +30,6 @@ export default function Home() {
       <KeynoteSpeakers speakers={getKeynoteSpeakers(SPEAKERS)} />
       <SponsorsSection />
       <CommunityPartners />
-      <Partners />
       <MeetOrganizers />
     </>
   );

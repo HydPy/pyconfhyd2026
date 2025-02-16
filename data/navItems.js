@@ -23,11 +23,6 @@ export const NAV_ITEMS = [
         target: '_self',
       },
       {
-        name: 'Partners',
-        path: '/#partners',
-        target: '_self',
-      },
-      {
         name: 'Meet our Organizers',
         path: '/#organizers',
         target: '_self',
