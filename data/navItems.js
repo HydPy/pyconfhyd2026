@@ -63,6 +63,11 @@ export const NAV_ITEMS = [
     name: 'About',
     children: [
       {
+        name: 'Our Team',
+        path: '/our-team',
+        target: '_self',
+      },
+      {
         name: 'Travel',
         path: '/travel',
         target: '_self',
