@@ -4,81 +4,77 @@ import React from 'react';
 import Icon from '@/components/Icon';
 import { CONFERENCE, SOCIALS, ASSETS } from '@/conference';
 import { PAST_EDITIONS, PYCON_INDIA_HYDPY_PAST_EDITIONS } from '@/pastEditions';
+import { Paragraph, Span } from '@/components/Typography';
 
-const Footer = () => {
-  return (
-    <footer>
-      <div
-        className="mt-4"
-        style={{
-          backgroundImage: `url(${ASSETS.monumentsSketchUrl})`,
-          backgroundPosition: 'center',
-          height: '100px',
-          ariaLabel: ASSETS.monumentsSketchAlt,
-        }}
-      ></div>
-      <div className="bg-gradient-to-r from-secondary-700 to-secondary-800 p-4">
-        <div className="sm:w-4/6 flex flex-row flex-wrap justify-between mx-auto gap-3">
-          <div className="flex flex-col flex-wrap mt-2">
-            <div className="font-medium text-gray-50">Contact Us On</div>
-            <div className="flex flex-row flex-wrap mt-2">
-              {SOCIALS.map((item, index) => (
+const Footer = () => (
+  <footer>
+    <div
+      className="mt-4 h-[100px] bg-center"
+      style={{ backgroundImage: `url(${ASSETS.monumentsSketchUrl})` }}
+      aria-label={ASSETS.monumentsSketchAlt}
+    />
+    <div className="bg-gradient-to-r from-secondary-700 to-secondary-800 p-4">
+      <div className="sm:w-9/12 flex flex-wrap justify-between mx-auto gap-3">
+        {/* Contact Section */}
+        <div className="flex flex-col mt-2">
+          <Span className="font-medium text-gray-50">Contact Us On</Span>
+          <div className="flex flex-wrap mt-2">
+            {SOCIALS.map(({ url, ariaLabel, name }, index) => (
+              <Link
+                key={index}
+                className="text-gray-300 hover:text-gray-50 mr-2"
+                href={url}
+                target="_blank"
+                aria-label={ariaLabel}
+                rel="noopener noreferrer"
+              >
+                <Icon name={name} />
+              </Link>
+            ))}
+          </div>
+          <Span className="font-medium text-gray-50 mt-4">
+            Emergency Contact
+          </Span>
+          <ul className="list-disc text-gray-300  mt-1 ml-4">
+            <li>
+              <Span>T-Hub: </Span>
+              <Link href="tel:040-66396639">
+                <Span className="hover:text-gray-50">040-66396639, </Span>
+              </Link>
+              <Link href="tel:09581474545">
+                <Span className="hover:text-gray-50">09581474545</Span>
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Past Editions Section */}
+        {[PAST_EDITIONS, PYCON_INDIA_HYDPY_PAST_EDITIONS].map(
+          ({ sectionTitle, editions }, idx) => (
+            <div key={idx} className="flex flex-col mt-2">
+              <Span className="font-medium text-gray-50">{sectionTitle}</Span>
+              {editions.map(({ url, ariaLabel, year }, index) => (
                 <Link
                   key={index}
-                  className="text-gray-300 hover:text-gray-50 mr-2"
-                  href={item.url}
+                  className="text-gray-300 hover:text-gray-50 mt-1"
+                  href={url}
                   target="_blank"
-                  aria-label={item.ariaLabel}
-                  rel="noopener noreferrer"
-                  title={item.ariaLabel}
+                  aria-label={ariaLabel}
                 >
-                  <Icon name={item.name} />
+                  <Span>{year}</Span>
                 </Link>
               ))}
             </div>
-          </div>
-          <div className="flex flex-col mt-2">
-            <div className="font-medium text-gray-50">
-              {PAST_EDITIONS.sectionTitle}
-            </div>
-            {PAST_EDITIONS.editions.map((item, index) => (
-              <Link
-                className="text-gray-300 hover:text-gray-50 mt-1"
-                key={index}
-                href={item.url}
-                target="_blank"
-                aria-label={item.ariaLabel}
-                title={item.ariaLabel}
-              >
-                {item.year}
-              </Link>
-            ))}
-          </div>
-          <div className="flex flex-col mt-2">
-            <div className="font-medium text-gray-50">
-              {PYCON_INDIA_HYDPY_PAST_EDITIONS.sectionTitle}
-            </div>
-            {PYCON_INDIA_HYDPY_PAST_EDITIONS.editions.map((item, index) => (
-              <Link
-                className="text-gray-300 hover:text-gray-50 mt-1"
-                key={index}
-                href={item.url}
-                target="_blank"
-                aria-label={item.ariaLabel}
-                title={item.ariaLabel}
-              >
-                {item.year}
-              </Link>
-            ))}
-          </div>
-        </div>
-        <hr className="h-px mt-4 text-gray-50" />
-        <div className="text-center mt-4 text-gray-100">
-          {CONFERENCE.copyrightTitle}
-        </div>
+          )
+        )}
       </div>
-    </footer>
-  );
-};
+
+      <hr className="h-px my-4 text-gray-50" />
+      <Paragraph className="text-center text-gray-100">
+        {CONFERENCE.copyrightTitle}
+      </Paragraph>
+    </div>
+  </footer>
+);
 
 export default Footer;
