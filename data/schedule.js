@@ -6,7 +6,7 @@ export const getSpeaker = (slug) => {
 
 export const SCHEDULE = {
   day1: {
-    title: 'Conference Day',
+    title: 'Conference',
     date: '22 Feb',
     day: 'Saturday',
     sessions: [
@@ -39,6 +39,7 @@ export const SCHEDULE = {
         {
           title: 'Keynote: When will AI take my job and what can I do about it',
           type: 'Talk',
+          keynote: true,
           time: '09:25 - 10:15 AM',
           location: 'Main Hall',
           speakers: [getSpeaker('anthony-shaw')],
@@ -67,6 +68,7 @@ export const SCHEDULE = {
       [
         {
           title: 'Break',
+          break: true,
           time: '11:15 - 11:30 AM',
           location: 'Main Hall',
         },
@@ -91,14 +93,15 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Lunch Break',
+          title: '🍱 Lunch Break',
+          break: true,
           time: '12:30 - 01:30 PM',
           location: 'Cafeteria',
         },
       ],
       [
         {
-          title: 'Lightning Talks',
+          title: '⚡️ Lightning Talks',
           time: '01:30 - 02:25 PM',
           location: 'Main Hall',
         },
@@ -134,6 +137,7 @@ export const SCHEDULE = {
       [
         {
           title: 'Keynote: Open Source: One Idea, Many Journeys',
+          keynote: true,
           time: '03:55 - 04:45 PM',
           speakers: [getSpeaker('bowrna-prabhakaran')],
           location: 'Main Hall',
@@ -141,7 +145,8 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Coffee Break',
+          title: '☕️ Tea/Coffee Break',
+          break: true,
           time: '04:45 - 05:00 PM',
           location: 'Main Hall',
         },
@@ -174,7 +179,7 @@ export const SCHEDULE = {
     ],
   },
   day2: {
-    title: 'Workshop Day',
+    title: 'Workshop',
     date: '23 Feb',
     day: 'Sunday',
     sessions: [

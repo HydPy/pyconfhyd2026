@@ -39,6 +39,7 @@ const NavItem = ({
           aria-current={activePath === item.path ? 'page' : undefined}
           onClick={() => handleItemClick(item)}
           target={item.target}
+          title={item.name}
         >
           <Span>{item.name}</Span>
         </Link>
@@ -114,6 +115,7 @@ const Header = ({ themeToggle }) => {
         <Link
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
+          title='Home'
         >
           <Image
             src={ASSETS.navbarLogoUrl}

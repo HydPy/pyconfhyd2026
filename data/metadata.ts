@@ -6,9 +6,11 @@ export const metadata: Metadata = {
   description: CONFERENCE.description,
   keywords: CONFERENCE.keywords,
   generator: CONFERENCE.generator,
-  robots: CONFERENCE.robots,
   verification: { google: 'SDiASvij4kTElFGJgQPndWo3eYgk5yHmr417E_6wu7A' },
   metadataBase: new URL(CONFERENCE.siteURL),
+  alternates: {
+    canonical: CONFERENCE.siteURL,
+  },
   icons: {
     icon: [
       { url: ASSETS.navbarLogoUrl },

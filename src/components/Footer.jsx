@@ -30,6 +30,7 @@ const Footer = () => {
                   target="_blank"
                   aria-label={item.ariaLabel}
                   rel="noopener noreferrer"
+                  title={item.ariaLabel}
                 >
                   <Icon name={item.name} />
                 </Link>
@@ -47,6 +48,7 @@ const Footer = () => {
                 href={item.url}
                 target="_blank"
                 aria-label={item.ariaLabel}
+                title={item.ariaLabel}
               >
                 {item.year}
               </Link>
@@ -63,6 +65,7 @@ const Footer = () => {
                 href={item.url}
                 target="_blank"
                 aria-label={item.ariaLabel}
+                title={item.ariaLabel}
               >
                 {item.year}
               </Link>
