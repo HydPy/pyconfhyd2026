@@ -10,11 +10,11 @@ import fetchSheetData from '@/utils/googleSheets';
 
 const fetchJobsData = async () => {
   try {
-    const sheetId = '1YXfaowCgD8NlOYfQgJukb3yRa9svux6hai9mczdqzbA';
+    const sheetId = '1r3qh6BzaYkurmO7N-diIz6xQbGaThJ4FO4Vd1PJldiU';
     const sheetIndex = 0;
     const jobsData = await fetchSheetData(sheetId, sheetIndex);
     const approvedJobs = jobsData
-      .filter(job => job.Approved === '')
+      .filter(job => job.Approved === 'TRUE')
       .map(row => ({
         email: row['Email'],
         companyName: row['Company Name'],

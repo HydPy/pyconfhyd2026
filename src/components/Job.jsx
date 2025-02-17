@@ -5,10 +5,16 @@ import { Heading } from '@/components/Typography';
 import Paragraph from '@/components/Paragraph';
 
 const Job = ({ job }) => {
+  // Check if both buttons exist
+  const hasApplyButton = !!job.jobApplicationLink;
+  const hasEmailButton = !!job.email;
+  const singleButton = hasApplyButton !== hasEmailButton; // True if only one button exists
+
   return (
-    <div className="flex flex-col items-center p-3 rounded-lg bg-gray-50 dark:bg-gray-800 gap-4 shadow-xl transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
+    <div className="flex flex-col items-center p-3 rounded-lg bg-gray-50 dark:bg-gray-800 gap-4 shadow-xl transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2 h-full">
       
-      <div className="py-4 flex gap-5 items-center justify-center text-lg font-semibold">
+      {/* Job Title with Fixed Height */}
+      <div className="flex items-center justify-center text-lg font-semibold text-center h-[50px] px-4">
         {job.jobTitle}
       </div>
 
@@ -36,12 +42,18 @@ const Job = ({ job }) => {
         </div>
       )}
 
-      {/* Job Description with Truncated Text */}
-      <Paragraph text={job.jobDescription} numberOfLines={3} />
+      {/* Job Description with Fixed Height & Ellipsis */}
+      <div className="h-[70px] overflow-hidden text-center text-gray-700 dark:text-gray-300 text-sm">
+        {job.jobDescription ? (
+          <Paragraph text={job.jobDescription} numberOfLines={3} />
+        ) : (
+          <span className="italic text-gray-400">No description available</span>
+        )}
+      </div>
 
-      {/* Apply and Email Buttons */}
-      <div className="flex gap-4 mt-4">
-        {job.jobApplicationLink && (
+      {/* Button Container (Ensures Consistent Position) */}
+      <div className={`flex gap-4 mt-auto pb-4 ${singleButton ? 'justify-center' : 'justify-between'}`}>
+        {hasApplyButton && (
           <Link
             href={job.jobApplicationLink}
             target="_blank"
@@ -51,7 +63,8 @@ const Job = ({ job }) => {
             Apply Now
           </Link>
         )}
-        {job.email && (
+        
+        {hasEmailButton && (
           <a
             href={`mailto:${job.email}`}
             className="text-secondary-600 hover:text-secondary-950 dark:text-secondary-400 dark:hover:text-gray-50 flex items-center gap-2 text-sm px-4 py-2 rounded-lg shadow-md"
@@ -60,6 +73,7 @@ const Job = ({ job }) => {
           </a>
         )}
       </div>
+
     </div>
   );
 };
