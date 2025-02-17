@@ -34,7 +34,7 @@ export const VOLUNTEERS = [
   },
   {
     name: 'Koti Vellanki',
-    role: 'Platform WG Lead',
+    role: 'Platform & Ticketing WG Lead',
     imgUrl: '/images/volunteers/koti-vellanki.jpg',
     imgAlt: "Koti Vellanki's picture",
     socials: [
@@ -188,7 +188,7 @@ export const VOLUNTEERS = [
   },
   {
     name: 'Arthi Murali',
-    role: 'Communication WG Volunteer ',
+    role: 'Communications WG Volunteer ',
     imgUrl: '/images/volunteers/arthi-murali.jpg',
     imgAlt: "Arthi Murali's picture",
     socials: [
