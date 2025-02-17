@@ -46,16 +46,15 @@ const Job = ({ job }) => {
             href={job.jobApplicationLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-primary hover:text-secondary-950 text-white text-sm px-4 py-2 rounded-lg shadow-md"
+            className="text-secondary-600 hover:text-secondary-950 dark:text-secondary-400 dark:hover:text-gray-50 text-sm px-4 py-2 rounded-lg shadow-md"
           >
             Apply Now
           </Link>
         )}
-
         {job.email && (
           <a
             href={`mailto:${job.email}`}
-            className="flex items-center gap-2 bg-primary hover:text-secondary-950 text-gray-800 text-sm px-4 py-2 rounded-lg shadow-md"
+            className="text-secondary-600 hover:text-secondary-950 dark:text-secondary-400 dark:hover:text-gray-50 flex items-center gap-2 text-sm px-4 py-2 rounded-lg shadow-md"
           >
             <FaEnvelope /> Email
           </a>
