@@ -5,10 +5,10 @@ import { Heading, Paragraph } from './Typography';
 import Icon from '@/components/Icon';
 
 export default function Volunteer({ volunteer }) {
-  const { name, imgUrl, imgAlt, role, socials } = volunteer;
+  const { name, imgUrl, imgAlt, role, socials, bio } = volunteer;
 
   return (
-    <div className="flex flex-col items-center p-3 rounded-lg bg-gray-50 dark:bg-gray-800 gap-4 shadow-xl transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
+    <div className="flex flex-col items-center p-4 rounded-lg bg-gray-50 dark:bg-gray-800 gap-4 shadow-xl transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
       {/* Avatar on left */}
       <div className="relative w-20 h-20 md:w-28 md:h-28 rounded-full overflow-hidden flex-shrink-0">
         <Image
@@ -30,6 +30,9 @@ export default function Volunteer({ volunteer }) {
         </Heading>
         <Paragraph className="text-center text-gray-600 dark:text-gray-300 mt-1">
           {role}
+        </Paragraph>
+        <Paragraph className="text-gray-600 dark:text-gray-400 mt-1 p-4 line-clamp-5" level={5}>
+          {bio}
         </Paragraph>
         {/* Social Icons */}
         {socials && (

@@ -2,6 +2,7 @@ export const VOLUNTEERS = [
   {
     name: 'Bhushan Kapkar',
     role: 'Community Partner WG Lead',
+    bio: 'Bhushan is a Senior GenAI Architect and Data Scientist with 11+ years of experience, passionate about AI and open-source. He actively contributes to HydPy, PyCon India and AWS Community Days.',
     imgUrl: '/images/volunteers/bhushan-kapkar.jpg',
     imgAlt: "Bhushan Kapkar's picture",
     socials: [
@@ -35,6 +36,7 @@ export const VOLUNTEERS = [
   {
     name: 'Koti Vellanki',
     role: 'Platform & Ticketing WG Lead',
+    bio: 'Koti is a full time DevOps engineer, passionate community builder who regularly attend, organize, volunteer conferences like PyCon’s, KCD’s and meet-ups related to Cloud,  DevOps, Docker, Kubernetes.',
     imgUrl: '/images/volunteers/koti-vellanki.jpg',
     imgAlt: "Koti Vellanki's picture",
     socials: [
@@ -58,6 +60,7 @@ export const VOLUNTEERS = [
   {
     name: 'Aravind Sekar',
     role: 'Design WG Lead',
+    bio: "Independent Product Design consultant who is enthusiastic and expertised in UI/UX, Creative design, Marketing, Solving and strategising business challenges.",
     imgUrl: '/images/volunteers/aravind-sekar.jpg',
     imgAlt: "Aravind Sekar's picture",
     socials: [
@@ -99,6 +102,7 @@ export const VOLUNTEERS = [
   {
     name: 'Vamsi Krishna Kolli',
     role: 'Technology WG Volunteer',
+    bio: 'Vamsi is a Platform Engineer, Co-Founder at Onemyle, and tech enthusiast with 8+ years in startups, passionate about scalable platforms, open-source, and the Python community.',
     imgUrl: '/images/volunteers/vamsi-krishna.png',
     imgAlt: "Vamsi Krishna Kolli's picture",
     socials: [
@@ -132,6 +136,7 @@ export const VOLUNTEERS = [
   {
     name: 'Karuna Solanki',
     role: 'Design WG Co-Lead',
+    bio: '',
     imgUrl: '/images/volunteers/karuna-solanki.jpeg',
     imgAlt: "Karuna Solanki's picture",
     socials: [
@@ -149,8 +154,8 @@ export const VOLUNTEERS = [
   },
   {
     name: 'Ashok Tankala',
-    slug: 'ashok-tankala',
     role: 'Communications WG Volunteer',
+    bio: 'Ashok is a tech leader with 17 years of experience, including 14 years as a founding team member at a unicorn. Now a Fractional CTO, he helps companies navigate their technological journeys.',
     imgUrl: '/images/volunteers/ashok-tankala.jpeg',
     imgAlt: "Ashok Tankala's picture",
     socials: [
@@ -189,6 +194,7 @@ export const VOLUNTEERS = [
   {
     name: 'Arthi Murali',
     role: 'Communications WG Volunteer ',
+    bio: 'Passionate about Python and data engineering, I volunteer with ChennaiPy and work as a Production Support Engineer at Saama. I enjoy fitness, travel, and movies.',
     imgUrl: '/images/volunteers/arthi-murali.jpg',
     imgAlt: "Arthi Murali's picture",
     socials: [
@@ -212,6 +218,7 @@ export const VOLUNTEERS = [
   {
     name: 'Bharat Saraswat',
     role: 'Technology WG Co-Lead & CFP Volunteer',
+    bio: 'Bharat Saraswat, a Senior Software Engineer at NewRelic with 8 years of experience, is proficient in full-stack frameworks and actively volunteers at HydPy for PyConf and community meetups.',
     imgUrl: '/images/volunteers/bharat-saraswat.png',
     imgAlt: "Bharat Saraswat's picture",
     socials: [
@@ -240,6 +247,7 @@ export const VOLUNTEERS = [
   {
     name: 'Priyanka Saraswat',
     role: 'Design WG Volunteer',
+    bio: 'Passionate UI/UX designer skilled in Figma and Canva, pursuing an Executive PG Certification from IIT Roorkee. An active community volunteer eager to explore and contribute to design opportunities.',
     imgUrl: '/images/volunteers/priyanka-saraswat.jpg',
     imgAlt: "Priyanka Saraswat's picture",
     socials: [
@@ -257,6 +265,54 @@ export const VOLUNTEERS = [
         name: 'GitHub',
         url: 'https://priyabhansa.github.io/',
         ariaLabel: "Hyperlink to Priyanka Saraswat's GitHub page.",
+      },
+    ],
+  },
+  {
+    name: 'Gurram Poorna Prudhvi',
+    role: 'CFP lead',
+    bio: 'Prudhvi, a Lead Software Engineer at Epam, specializes in machine learning, NLP, and backend engineering. He enjoys standup comedy, reading, and traveling, fueling his creativity and perspective.',
+    imgUrl: '/images/volunteers/gurram-poorna-prudhvi.jpg',
+    imgAlt: "Gurram Poorna Prudhvi's picture",
+    socials: [
+      {
+        name: 'X',
+        url: 'https://x.com/poornaprudhvi',
+        ariaLabel: "Hyperlink to Gurram Poorna Prudhvi's X page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/poornagurram',
+        ariaLabel: "Hyperlink to Gurram Poorna Prudhvi's LinkedIn page.",
+      },
+    ],
+  },
+  {
+    name: 'Mahendra Yadav',
+    role: 'Logistics Volunteer',
+    bio: '',
+    imgUrl: '/images/volunteers/mahendra-yadav.jpg',
+    imgAlt: "Mahendra Yadav's picture",
+    socials: [
+      {
+        name: 'X',
+        url: 'https://twitter.com/userimack',
+        ariaLabel: "Hyperlink to Mahendra Yadav's X page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://linkedin.com/in/userimack',
+        ariaLabel: "Hyperlink to Mahendra Yadav's LinkedIn page.",
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/userimack',
+        ariaLabel: "Hyperlink to Mahendra Yadav's GitHub page.",
+      },
+      {
+        name: 'Blog',
+        url: 'https://mahendra.dev',
+        ariaLabel: "Hyperlink to Mahendra Yadav's GitHub page.",
       },
     ],
   },
