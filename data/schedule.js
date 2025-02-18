@@ -32,7 +32,7 @@ export const SCHEDULE = {
           type: 'Talk',
           time: '09:10 - 09:25 AM',
           location: 'Main Hall',
-          speakers: [getSpeaker('srivardhan')],
+          speakers: [getSpeaker('srivardhan-sainath-talatm')],
         },
       ],
       [

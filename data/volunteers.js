@@ -60,7 +60,7 @@ export const VOLUNTEERS = [
   {
     name: 'Aravind Sekar',
     role: 'Design WG Lead',
-    bio: "Independent Product Design consultant who is enthusiastic and expertised in UI/UX, Creative design, Marketing, Solving and strategising business challenges.",
+    bio: 'Independent Product Design consultant who is enthusiastic and expertised in UI/UX, Creative design, Marketing, Solving and strategising business challenges.',
     imgUrl: '/images/volunteers/aravind-sekar.jpg',
     imgAlt: "Aravind Sekar's picture",
     socials: [
@@ -313,6 +313,30 @@ export const VOLUNTEERS = [
         name: 'Blog',
         url: 'https://mahendra.dev',
         ariaLabel: "Hyperlink to Mahendra Yadav's GitHub page.",
+      },
+    ],
+  },
+  {
+    name: 'Rajat Rajdeep',
+    role: 'Technology WG Lead',
+    bio: '',
+    imgUrl: '/images/volunteers/rajat-rajdeep.jpg',
+    imgAlt: "Rajat Rajdeep's picture",
+    socials: [
+      {
+        name: 'X',
+        url: 'https://twitter.com/RajatRajdeep',
+        ariaLabel: "Hyperlink to Rajat Rajdeep's X page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/rajatrajdeep',
+        ariaLabel: "Hyperlink to Rajat Rajdeep's LinkedIn page.",
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/rajatrajdeep',
+        ariaLabel: "Hyperlink to Rajat Rajdeep's GitHub page.",
       },
     ],
   },
