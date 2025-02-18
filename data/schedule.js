@@ -171,8 +171,16 @@ export const SCHEDULE = {
       ],
       [
         {
+          title: '🎉 PyConf Hyderabad 5th Edition Celebration',
+          time: '06:00 - 06:15 PM',
+          location: 'Main Hall',
+          speakers: [getSpeaker('pyconf-hyderabad-team')],
+        },
+      ],
+      [
+        {
           title: 'Closing Note',
-          time: '06:00 - 06:10 PM',
+          time: '06:15 - 06:25 PM',
           location: 'Main Hall',
         },
       ],
