@@ -218,6 +218,34 @@ export const SPONSORS = {
         },
       ],
     },
+    {
+      name: 'Sporo Health',
+      hyperLink: '/blogs/sporo-health-associate-sponsor/',
+      lightLogoUrl: '/images/sponsors/sporo-health.png',
+      logoAlt: 'Sporo Health logo',
+      socials: [
+        {
+          name: 'X',
+          url: 'https://x.com/SporoHealth',
+          ariaLabel: 'Hyperlink to Sporo Health X page.',
+        },
+        {
+          name: 'LinkedIn',
+          url: 'https://www.linkedin.com/company/sporo-health/',
+          ariaLabel: 'Hyperlink to Sporo Health LinkedIn page.',
+        },
+        {
+          name: 'Instagram',
+          url: 'https://www.instagram.com/sporohealth/',
+          ariaLabel: 'Hyperlink to Sporo Health Instagram page.',
+        },
+        {
+          name: 'Globe',
+          url: 'https://sporohealth.com/',
+          ariaLabel: 'Hyperlink to Sporo Health website.',
+        },
+      ],
+    },
   ],
   'Workshop Venue': [
     {

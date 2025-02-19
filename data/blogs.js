@@ -7,6 +7,8 @@ import TigerAnalyticsGoldSponsorMdx from '@/blogs/tiger-analytics-gold-sponsor.m
 import StorableIndiaGoldSponsorMdx from '@/blogs/storable-india-gold-sponsor.mdx';
 import GridlexSilverSponsorMdx from '@/blogs/gridlex-silver-sponsor.mdx';
 import GlueOpsAssociateSponsorMdx from '@/blogs/glueops-associate-sponsor.mdx';
+import SporoHealthAssociateSponsorMdx from '@/blogs/sporo-health-associate-sponsor.mdx';
+
 
 export const BLOGS = [
   {
@@ -64,5 +66,13 @@ export const BLOGS = [
     author: 'PyConf Hyderabad Team',
     publishedAt: 'February 15, 2025',
     socials: getSponsor('GlueOps').socials,
+  },
+  {
+    slug: 'sporo-health-associate-sponsor',
+    title: 'Announcing Sporo Health as our Associate Sponsor',
+    markdownComponent: <SporoHealthAssociateSponsorMdx />,
+    author: 'PyConf Hyderabad Team',
+    publishedAt: 'February 19, 2025',
+    socials: getSponsor('Sporo Health').socials,
   },
 ];
