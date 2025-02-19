@@ -16,6 +16,7 @@ import {
   FaGlobe,
   FaYoutube,
 } from 'react-icons/fa6';
+import {  FaExternalLinkAlt, FaArrowCircleRight } from 'react-icons/fa';
 import { MdLightMode, MdDarkMode } from 'react-icons/md';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdVolunteerActivism, MdCampaign } from 'react-icons/md';
@@ -42,6 +43,8 @@ const icons = {
   LocationDot: FaLocationDot,
   Globe: FaGlobe,
   Youtube: FaYoutube,
+  ExternalLink: FaExternalLinkAlt,
+  ArrowCircleRight: FaArrowCircleRight,
 };
 
 export const Icon = ({ name, size = 36, className = '', padding = 0 }) => {
