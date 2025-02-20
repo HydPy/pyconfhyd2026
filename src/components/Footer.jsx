@@ -7,7 +7,7 @@ import { PAST_EDITIONS, PYCON_INDIA_HYDPY_PAST_EDITIONS } from '@/pastEditions';
 import { Paragraph, Span } from '@/components/Typography';
 
 const Footer = () => (
-  <footer>
+  <footer id="footer">
     <div
       className="mt-4 h-[100px] bg-center"
       style={{ backgroundImage: `url(${ASSETS.monumentsSketchUrl})` }}
