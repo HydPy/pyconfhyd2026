@@ -2,7 +2,6 @@ import Hero from '@/components/Hero';
 import KeynoteSpeakers from '@/components/KeynoteSpeakers';
 import MeetOrganizers from '@/components/MeetOrganizers';
 import SponsorsSection from '@/components/Sponsors';
-import Tickets from '@/components/Tickets';
 import CommunityPartners from '@/components/CommunityPartners';
 
 import { SPEAKERS } from '@/speakers';
@@ -26,7 +25,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Tickets />
       <KeynoteSpeakers speakers={getKeynoteSpeakers(SPEAKERS)} />
       <SponsorsSection />
       <CommunityPartners />

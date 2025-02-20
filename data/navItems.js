@@ -3,11 +3,6 @@ export const NAV_ITEMS = [
     name: 'Home',
     children: [
       {
-        name: 'Tickets',
-        path: '/#tickets',
-        target: '_self',
-      },
-      {
         name: 'Keynote Speakers',
         path: '/#keynote-speakers',
         target: '_self',
@@ -40,6 +35,11 @@ export const NAV_ITEMS = [
     target: '_self',
   },
   {
+    name: 'Tickets',
+    path: '/tickets',
+    target: '_self',
+  },
+  {
     name: 'Jobs',
     children: [
       {
@@ -57,6 +57,11 @@ export const NAV_ITEMS = [
   {
     name: 'About',
     children: [
+      {
+        name: 'Welcome Guide',
+        path: '/welcome-guide',
+        target: '_self',
+      },
       {
         name: 'Our Team',
         path: '/our-team',

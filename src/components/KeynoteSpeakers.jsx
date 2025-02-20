@@ -4,7 +4,7 @@ import Speaker from '@/components/Speaker';
 export default function KeynoteSpeakers({ speakers }) {
   return (
     <section
-      id="keynote-speaker"
+      id="keynote-speakers"
       className="scroll-mt-20 flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto"
     >
       <Heading
@@ -14,7 +14,7 @@ export default function KeynoteSpeakers({ speakers }) {
       >
         Keynote Speakers
       </Heading>
-      <div className="flex flex-wrap justify-center mt-10 gap-8">
+      <div className="flex flex-wrap justify-center mt-10 gap-20">
         {speakers.map((speaker, index) => (
           <Speaker key={index} speaker={speaker} />
         ))}

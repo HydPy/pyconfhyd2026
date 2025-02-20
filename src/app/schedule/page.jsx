@@ -87,7 +87,7 @@ const ScheduleItem = ({
       tabIndex="0"
       className={`w-full focus:outline-none focus:ring-2 focus:ring-primary-600 flex flex-col md:p-6 p-4 mb-6 border-l-4 border-primary-600 dark:border-primary-400 dark:bg-gray-900 shadow-md rounded-sm transition-transform transform hover:scale-[1.02] ${getBGColor()}`}
     >
-      <header className="flex flex-row justify-between items-center mb-4">
+      <header className="flex flex-wrap justify-between items-center mb-4 gap-2">
         <TimeBadge time={time} />
         <LocationBadge location={location} />
       </header>

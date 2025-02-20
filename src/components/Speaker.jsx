@@ -6,7 +6,7 @@ import { Heading, Paragraph } from '@/components/Typography';
 
 const Speaker = ({ speaker }) => {
   return (
-    <div className="flex flex-col px-10 items-center border rounded-3xl shadow-xl transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
+    <div className="flex flex-col px-6 sm:px-10 md:px-20 items-center border rounded-3xl shadow-xl transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
       <Link
         className="flex flex-col items-center"
         href={`/speakers/${speaker.slug}`}

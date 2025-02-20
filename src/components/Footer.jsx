@@ -45,6 +45,15 @@ const Footer = () => (
                 <Span className="hover:text-gray-50">09581474545</Span>
               </Link>
             </li>
+            <li>
+              <Span>EPAM: </Span>
+              <Link href="tel:9166440031">
+                <Span className="hover:text-gray-50">Rajat (9166440031), </Span>
+              </Link>
+              <Link href="tel:9899838120">
+                <Span className="hover:text-gray-50">Sanchit (9899838120)</Span>
+              </Link>
+            </li>
           </ul>
         </div>
 

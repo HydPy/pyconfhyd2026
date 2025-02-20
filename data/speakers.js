@@ -448,4 +448,25 @@ export const SPEAKERS = [
     imgUrl: '/images/speakers/sarath-srinivas.jpg',
     imgAlt: 'Picture of Sarath Srinivas',
   },
+  {
+    name: 'Kamesh Sampath',
+    slug: 'kamesh-sampath',
+    type: 'Session',
+    activeSpeakerPage: true,
+    bio: "Veteran tech innovator with over 20 years in the trenches. As an author and developer advocate, I'm on a mission to demystify data and cloud technologies. My passion? Empowering developers to push boundaries and create the impossible. With a track record of crafting enterprise solutions across diverse industries, I bring battle-tested insights to the dev community. Let's code the future together.",
+    imgUrl: '/images/speakers/kamesh-sampath.jpg',
+    imgAlt: 'Picture of Kamesh Sampath',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://linkedin.com/in/kameshsampath',
+        ariaLabel: "Hyperlink to Kamesh Sampath's LinkedIn page.",
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/kameshsampath',
+        ariaLabel: "Hyperlink to Kamesh Sampath's GitHub page.",
+      },
+    ],
+  },
 ];

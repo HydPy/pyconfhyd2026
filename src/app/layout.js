@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           <Header themeToggle={<ThemeToggle />} />
           <main className="flex-grow">
-            {/* <InfoAlert text={CONFERENCE.infoText} /> */}
+            <InfoAlert text={CONFERENCE.infoText} />
             {children}
           </main>
           <Footer />
