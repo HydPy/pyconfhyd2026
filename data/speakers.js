@@ -154,6 +154,7 @@ export const SPEAKERS = [
     slug: 'sai-rahul-poruri',
     type: 'Session',
     activeSpeakerPage: true,
+    title: 'Learning and Development Consultant at Tiger Analytics',
     bio: 'Rahul wears many hats, one of which is "Learning & Development consultant at Tiger Analytics". After a career as a Scientific Software Developer at Enthought, he now creates training material to upskill and cross train the Tiger Tribe. He also works with the Tiger Tribe to spread institutional knowledge via talks and hands-on workshops. He desperately wants SciPy India to restart and if anyone is interested in lending a hand, please talk to him.',
     imgUrl: '/images/speakers/sai-rahul-poruri.jpg',
     imgAlt: 'Picture of Sai Rahul Poruri',
