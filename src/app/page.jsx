@@ -1,3 +1,6 @@
+"use client";
+import { useEffect } from "react";
+
 import Hero from '@/components/Hero';
 import KeynoteSpeakers from '@/components/KeynoteSpeakers';
 import MeetOrganizers from '@/components/MeetOrganizers';
@@ -22,6 +25,16 @@ const getKeynoteSpeakers = (SPEAKERS) => {
 };
 
 export default function Home() {
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, []);
+  
   return (
     <>
       <Hero />
