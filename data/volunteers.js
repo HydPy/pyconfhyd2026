@@ -154,7 +154,7 @@ export const VOLUNTEERS = [
   },
   {
     name: 'Ashok Tankala',
-    role: 'Communications WG Volunteer',
+    role: 'Logistics WG Co-Lead & Communications WG Volunteer',
     bio: 'Ashok is a tech leader with 17 years of experience, including 14 years as a founding team member at a unicorn. Now a Fractional CTO, he helps companies navigate their technological journeys.',
     imgUrl: '/images/volunteers/ashok-tankala.jpeg',
     imgAlt: "Ashok Tankala's picture",
@@ -270,7 +270,7 @@ export const VOLUNTEERS = [
   },
   {
     name: 'Gurram Poorna Prudhvi',
-    role: 'CFP lead',
+    role: 'CFP WG Lead',
     bio: 'Prudhvi, a Lead Software Engineer at Epam, specializes in machine learning, NLP, and backend engineering. He enjoys standup comedy, reading, and traveling, fueling his creativity and perspective.',
     imgUrl: '/images/volunteers/gurram-poorna-prudhvi.jpg',
     imgAlt: "Gurram Poorna Prudhvi's picture",
@@ -289,7 +289,7 @@ export const VOLUNTEERS = [
   },
   {
     name: 'Mahendra Yadav',
-    role: 'Logistics Volunteer',
+    role: 'CFP and Technology WG Volunteer',
     bio: '',
     imgUrl: '/images/volunteers/mahendra-yadav.jpg',
     imgAlt: "Mahendra Yadav's picture",
