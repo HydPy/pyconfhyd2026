@@ -340,4 +340,62 @@ export const VOLUNTEERS = [
       },
     ],
   },
+  {
+    name: 'Amritha Madam',
+    role: 'Communications WG Lead & CoC Squad',
+    bio: '',
+    imgUrl: '/images/volunteers/madam-amritha.jpeg',
+    imgAlt: "Amritha Madam's picture",
+    socials: [
+      {
+        name: 'X',
+        url: 'https://x.com/amritha_madam',
+        ariaLabel: "Hyperlink to Amritha Madam's X page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/amritha-madam-932a88144',
+        ariaLabel: "Hyperlink to Amritha Madam's LinkedIn page.",
+      },
+      {
+        name: 'Instagram',
+        url: 'https://www.instagram.com/madam_amritha',
+        ariaLabel: "Hyperlink to Amritha Madam's Instagram page.",
+      },
+      {
+        name: 'Facebook',
+        url: 'https://www.facebook.com/share/1JKXb6Nk2P/',
+        ariaLabel: "Hyperlink to Amritha Madam's Facebook page.",
+      },
+    ],
+  },
+  {
+    name: 'Snehith Allamraju',
+    role: 'Sponsorship WG Lead',
+    bio: '',
+    imgUrl: '/images/volunteers/snehith-allamraju.jpeg',
+    imgAlt: "Snehith Allamraju's picture",
+    socials: [
+      {
+        name: 'X',
+        url: 'https://twitter.com/Watrutalkin',
+        ariaLabel: "Hyperlink to Snehith Allamraju's X page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/snehithallamraju',
+        ariaLabel: "Hyperlink to Snehith Allamraju's LinkedIn page.",
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/Snehithallamraju',
+        ariaLabel: "Hyperlink to Snehith Allamraju's GitHub page.",
+      },
+      {
+        name: 'Instagram',
+        url: 'https://www.instagram.com/Snehithallamraju',
+        ariaLabel: "Hyperlink to Snehith Allamraju's Instagram page.",
+      },
+    ],
+  },
 ];
