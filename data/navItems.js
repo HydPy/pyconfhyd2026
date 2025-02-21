@@ -40,6 +40,11 @@ export const NAV_ITEMS = [
     target: '_self',
   },
   {
+    name: 'Blog',
+    path: '/blogs',
+    target: '_self',
+  },
+  {
     name: 'Jobs',
     children: [
       {
