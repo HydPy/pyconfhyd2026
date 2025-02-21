@@ -34,7 +34,7 @@ const LocationBadge = ({ location, className = '' }) => {
 const KeynoteBadge = ({ className = '' }) => {
   return (
     <div
-      className={`inline-flex justify-center items-center py-2 mb-2 bg-secondary-600 dark:bg-secondary-700 text-gray-50 ${className}`}
+      className={`inline-flex justify-center items-center py-2 bg-secondary-600 dark:bg-secondary-700 text-gray-50 ${className}`}
     >
       <Span className="font-semibold" level={4}>
         KEYNOTE
@@ -88,7 +88,7 @@ const ScheduleItem = ({
 }) => {
   const getBGColor = () => {
     if (isKeynote) {
-      return 'bg-gray-50 dark:bg-gray-900 border-secondary-600 dark:border-secondary-700 border-l-4 border-r-4';
+      return 'bg-gray-50 dark:bg-gray-900 border-secondary-600 dark:border-secondary-700 border-x-4 border-b-4';
     }
     if (isBreak) {
       return 'bg-gray-50 dark:bg-gray-900 border-secondary-600 border-l-4';
