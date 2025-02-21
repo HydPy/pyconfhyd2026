@@ -135,7 +135,7 @@ export const VOLUNTEERS = [
   },
   {
     name: 'Karuna Solanki',
-    role: 'Design WG Co-Lead',
+    role: 'Design WG Co-Lead & CoC Squad',
     bio: '',
     imgUrl: '/images/volunteers/karuna-solanki.jpeg',
     imgAlt: "Karuna Solanki's picture",
