@@ -11,7 +11,7 @@ const Speaker = ({ speaker }) => {
         className="flex flex-col items-center"
         href={`/speakers/${speaker.slug}`}
       >
-        <figure className="w-48 h-48 lg:w-64 lg:h-64 ">
+        <figure className="w-48 h-48 lg:w-64 lg:h-64">
           <div className="relative shadow-md top-[-10%] h-full w-full rounded-xl">
             <Image
               className="object-cover rounded-xl"

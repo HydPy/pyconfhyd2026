@@ -1,4 +1,4 @@
-async function fetchSheetData (sheetId, sheetIndex) {
+async function fetchSheetData(sheetId, sheetIndex) {
   try {
     const url = `https://api-sheets-bhansa.netlify.app/.netlify/functions/fetchSheetsData?sheetId=${sheetId}&sheetIndex=${sheetIndex}`;
     const response = await fetch(url, {

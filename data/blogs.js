@@ -9,7 +9,6 @@ import GridlexSilverSponsorMdx from '@/blogs/gridlex-silver-sponsor.mdx';
 import GlueOpsAssociateSponsorMdx from '@/blogs/glueops-associate-sponsor.mdx';
 import SporoHealthAssociateSponsorMdx from '@/blogs/sporo-health-associate-sponsor.mdx';
 
-
 export const BLOGS = [
   {
     slug: 'snowflake-platinum-sponsor',
