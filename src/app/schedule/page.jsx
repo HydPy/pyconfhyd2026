@@ -31,6 +31,18 @@ const LocationBadge = ({ location, className = '' }) => {
   );
 };
 
+const KeynoteBadge = ({ className = '' }) => {
+  return (
+    <div
+      className={`inline-flex justify-center items-center py-2 bg-secondary-600 dark:bg-secondary-700 text-gray-50 ${className}`}
+    >
+      <Span className="font-semibold" level={4}>
+        KEYNOTE
+      </Span>
+    </div>
+  );
+};
+
 const SpeakerCard = ({ speaker }) => {
   return (
     <div className="flex flex-row items-center my-1">
@@ -76,45 +88,49 @@ const ScheduleItem = ({
 }) => {
   const getBGColor = () => {
     if (isKeynote) {
-      return 'bg-primary-200 dark:bg-primary-800';
+      return 'bg-gray-50 dark:bg-gray-900 border-secondary-600 dark:border-secondary-700 border-x-4 border-b-4';
     }
     if (isBreak) {
-      return 'border-secondary-500 dark:border-secondary-500 dark:bg-gray-700';
+      return 'bg-gray-50 dark:bg-gray-900 border-secondary-600 border-l-4';
     }
+    return 'bg-gray-50 dark:bg-gray-900 border-primary-600 dark:border-primary-400 border-l-4';
   };
   return (
     <article
       tabIndex="0"
-      className={`w-full focus:outline-none focus:ring-2 focus:ring-primary-600 flex flex-col md:p-6 p-4 mb-6 border-l-4 border-primary-600 dark:border-primary-400 dark:bg-gray-900 shadow-md rounded-sm transition-transform transform hover:scale-[1.02] ${getBGColor()}`}
+      className={`w-full focus:outline-none focus:ring-2 focus:ring-primary-600 flex flex-col mb-6 shadow-md rounded-sm transition-transform transform hover:scale-[1.02] ${getBGColor()}`}
     >
-      <header className="flex flex-wrap justify-between items-center mb-4 gap-2">
-        <TimeBadge time={time} />
-        <LocationBadge location={location} />
-      </header>
-      <Heading
-        level={4}
-        tagLevel={3}
-        className="text-gray-800 dark:text-gray-200 mb-3 font-semibold"
-      >
-        {title}
-      </Heading>
-      <div className="flex flex-col">
-        {speakers &&
-          speakers.map((speaker, index) =>
-            speaker.activeSpeakerPage ? (
-              <Link
-                href={`/speakers/${speaker.slug}`}
-                target="_self"
-                className="flex flex-col space-y-2 my-1"
-                key={index}
-                title={`Hyperlink to Speaker Details of ${speaker.name}`}
-              >
+      {isKeynote && <KeynoteBadge className="" />}
+      <div className="md:p-6 p-4">
+        <header className="flex flex-wrap justify-between items-center mb-4 gap-2">
+          <TimeBadge time={time} />
+          <LocationBadge location={location} />
+        </header>
+        <Heading
+          level={4}
+          tagLevel={3}
+          className="text-gray-800 dark:text-gray-200 mb-3 font-semibold"
+        >
+          {title}
+        </Heading>
+        <div className="flex flex-col">
+          {speakers &&
+            speakers.map((speaker, index) =>
+              speaker.activeSpeakerPage ? (
+                <Link
+                  href={`/speakers/${speaker.slug}`}
+                  target="_self"
+                  className="flex flex-col space-y-2 my-1"
+                  key={index}
+                  title={`Hyperlink to Speaker Details of ${speaker.name}`}
+                >
+                  <SpeakerCard key={index} speaker={speaker} />
+                </Link>
+              ) : (
                 <SpeakerCard key={index} speaker={speaker} />
-              </Link>
-            ) : (
-              <SpeakerCard key={index} speaker={speaker} />
-            )
-          )}
+              )
+            )}
+        </div>
       </div>
     </article>
   );
@@ -131,10 +147,10 @@ const Schedule = () => {
           <button
             key={day}
             onClick={() => setActiveDay(day)}
-            className={`flex flex-col items-center px-6 md:px-12 py-2 border border-secondary-800 rounded-xl ${
+            className={`flex flex-col items-center px-6 md:px-12 py-2 border border-secondary-800 focus:ring-2 shadow-md rounded-xl ${
               activeDay === day
-                ? 'bg-secondary-600 dark:bg-secondary-700 text-gray-50  dark:text-gray-50'
-                : 'text-gray-950 dark:text-gray-50'
+                ? 'bg-secondary-600 dark:bg-secondary-700 text-gray-50 dark:text-gray-50'
+                : 'bg-gray-50 dark:bg-gray-900 text-gray-950 dark:text-gray-50'
             }`}
           >
             <Heading tagLevel={2} level={5}>

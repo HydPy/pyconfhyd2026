@@ -37,7 +37,7 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Keynote: When will AI take my job and what can I do about it',
+          title: 'When will AI take my job and what can I do about it',
           type: 'Talk',
           keynote: true,
           time: '09:25 - 10:15 AM',
@@ -136,7 +136,7 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Keynote: Open Source: One Idea, Many Journeys',
+          title: 'Open Source: One Idea, Many Journeys',
           keynote: true,
           time: '03:55 - 04:45 PM',
           speakers: [getSpeaker('bowrna-prabhakaran')],
