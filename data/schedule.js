@@ -57,22 +57,23 @@ export const SCHEDULE = {
       ],
       [
         {
-          title:
-            'From Raw to Reliable: Automated Data Validation with Great Expectations',
-          type: 'Talk',
-          time: '10:45 - 11:15 AM',
+          title: 'Break',
+          break: true,
+          time: '10:45 - 11:00 AM',
           location: 'Marvel Hall',
-          speakers: [getSpeaker('vivek-keshore')],
         },
       ],
       [
         {
-          title: 'Break',
-          break: true,
-          time: '11:15 - 11:30 AM',
+          title:
+            'From Raw to Reliable: Automated Data Validation with Great Expectations',
+          type: 'Talk',
+          time: '11:00 - 11:30 AM',
           location: 'Marvel Hall',
+          speakers: [getSpeaker('vivek-keshore')],
         },
       ],
+
       [
         {
           title: 'Spicing Up Automation: A Taste of Python and SaltStack',
