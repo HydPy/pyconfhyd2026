@@ -27,7 +27,7 @@ function PeoplePhotoFrame({ images, className }) {
         level={2}
         tagLevel={2}
       >
-        Volunteers
+        Volunteers & Speakers
       </Heading>
       <div
         className={`relative flex flex-wrap justify-center gap-2 ${className}`}
