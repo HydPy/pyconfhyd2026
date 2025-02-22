@@ -137,7 +137,7 @@ const ScheduleItem = ({
 };
 
 const Schedule = () => {
-  const [activeDay, setActiveDay] = useState('day1');
+  const [activeDay, setActiveDay] = useState('day2');
   const { sessions } = SCHEDULE[activeDay];
 
   return (
