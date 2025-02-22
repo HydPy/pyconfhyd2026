@@ -216,10 +216,6 @@ export const ALL_SPEAKER_VOLUNTEER_IMAGES = [
     imgAlt: "Dr. Sarabjot Singh Anand's picture",
   },
   {
-    imgUrl: 'images/people/zainab.jpg',
-    imgAlt: "Zainab Bawa's picture",
-  },
-  {
     imgUrl: 'images/people/jaidev-deshpande.jpg',
     imgAlt: "Jaidev Deshpande's picture",
   },
@@ -260,6 +256,10 @@ export const ALL_SPEAKER_VOLUNTEER_IMAGES = [
   {
     imgAlt: "Paul Ganssle's picture",
     imgUrl: '/images/people/paul-ganssle.jpg',
+  },
+  {
+    imgAlt: "Snehith Allamrajule's picture",
+    imgUrl: '/images/volunteers/snehith-allamraju.jpeg',
   },
 ];
 

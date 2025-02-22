@@ -1,8 +1,7 @@
-import { Heading } from '@/components/Typography';
+import { Heading, Span } from '@/components/Typography';
 import InfoAlert from '@/components/InfoAlert';
 
 import Tickets from '@/components/Tickets';
-import { CONFERENCE } from '@/conference';
 
 export const metadata = {
   title: 'Tickets',
@@ -16,7 +15,11 @@ export const metadata = {
 export default function Page() {
   return (
     <div>
-      <InfoAlert />
+      <InfoAlert>
+        <Span>
+          We are sold out. There are not on spot tickets.
+        </Span>
+      </InfoAlert>
       <section className="flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto">
         <Heading
           tagLevel={1}
