@@ -17,7 +17,7 @@ export default function Page() {
     <div>
       <InfoAlert>
         <Span>
-          We are sold out. There are not on spot tickets.
+          We are sold out. There are no on-spot tickets.
         </Span>
       </InfoAlert>
       <section className="flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto">
