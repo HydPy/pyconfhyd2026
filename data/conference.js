@@ -15,7 +15,6 @@ export const CONFERENCE = {
   workshopDate: '23 Feb',
   workshopVenue: 'EPAM Systems',
   workshopMapsLink: 'https://maps.app.goo.gl/4Yd1nY3zNJd3kPaw9',
-  infoText: 'Tickets are sold out, and there will be no on-spot sales.',
   creator: 'HydPy',
   dates: '22 Feb - 23 Feb',
   generator: 'Next.js',

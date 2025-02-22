@@ -16,7 +16,7 @@ export const metadata = {
 export default function Page() {
   return (
     <div>
-      <InfoAlert text={CONFERENCE.infoText} />
+      <InfoAlert />
       <section className="flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto">
         <Heading
           tagLevel={1}

@@ -39,7 +39,7 @@ export default function Home() {
 
   return (
     <>
-      <InfoAlert text={CONFERENCE.infoText} />
+      <InfoAlert />
       <Hero />
       <KeynoteSpeakers speakers={getKeynoteSpeakers(SPEAKERS)} />
       <SponsorsSection />
