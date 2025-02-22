@@ -31,6 +31,25 @@ const LocationBadge = ({ location, className = '' }) => {
   );
 };
 
+const DiscordBadge = ({ channelLink, className = '' }) => {
+  return (
+    <div
+      className={`inline-flex items-center px-3 py-1.5 bg-secondary-600 dark:bg-secondary-700 text-gray-50 shadow-sm rounded-full ${className}`}
+    >
+      <Span level={6} className="underline font-medium md:text-md text-xs">
+        <Link
+          href={channelLink}
+          className="underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Discord Channel
+        </Link>
+      </Span>
+    </div>
+  );
+};
+
 const KeynoteBadge = ({ className = '' }) => {
   return (
     <div
@@ -81,6 +100,7 @@ const SpeakerCard = ({ speaker }) => {
 const ScheduleItem = ({
   time,
   title,
+  discordChannelLink,
   location,
   speakers,
   isKeynote,
@@ -98,10 +118,10 @@ const ScheduleItem = ({
   return (
     <article
       tabIndex="0"
-      className={`w-full focus:outline-none focus:ring-2 focus:ring-primary-600 flex flex-col mb-6 shadow-md rounded-sm transition-transform transform hover:scale-[1.02] ${getBGColor()}`}
+      className={`flex flex-col justify-between w-full focus:outline-none focus:ring-2 focus:ring-primary-600 mb-6 shadow-md rounded-sm transition-transform transform hover:scale-[1.02] ${getBGColor()}`}
     >
       {isKeynote && <KeynoteBadge className="" />}
-      <div className="md:p-6 p-4">
+      <div className="md:px-6 md:pt-6 md:pb-4 p-4">
         <header className="flex flex-wrap justify-between items-center mb-4 gap-2">
           <TimeBadge time={time} />
           <LocationBadge location={location} />
@@ -131,6 +151,11 @@ const ScheduleItem = ({
               )
             )}
         </div>
+      </div>
+      <div className="flex justify-end pb-4 pr-4">
+        {discordChannelLink && (
+          <DiscordBadge channelLink={discordChannelLink} />
+        )}
       </div>
     </article>
   );
@@ -173,6 +198,7 @@ const Schedule = () => {
                 key={subIndex}
                 time={parallelSession.time}
                 title={parallelSession.title}
+                discordChannelLink={parallelSession.discordChannelLink}
                 location={parallelSession.location}
                 speakers={parallelSession.speakers}
                 isKeynote={parallelSession.keynote}

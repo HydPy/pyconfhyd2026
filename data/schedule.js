@@ -203,6 +203,7 @@ export const SCHEDULE = {
         {
           time: '10:00 - 11:30 AM',
           type: 'Workshop',
+          discordChannelLink: 'https://discord.com/channels/1301212203336073226/1342141517514539089',
           title:
             'Mastering Test Driven Development in Django: A Comprehensive Guide with factory_boy and faker',
           location: 'Track 1',
@@ -211,6 +212,7 @@ export const SCHEDULE = {
         {
           time: '10:00 - 11:30 AM',
           type: 'Workshop',
+          discordChannelLink: 'https://discord.com/channels/1301212203336073226/1342143026528649309',
           title:
             'Causal Inference & Uplift Modeling in Python: Beyond Correlation',
           speakers: [getSpeaker('sonu-kumar')],
@@ -219,6 +221,7 @@ export const SCHEDULE = {
         {
           time: '10:00 - 11:30 AM',
           type: 'Workshop',
+          discordChannelLink: 'https://discord.com/channels/1301212203336073226/1342142649888542815',
           title: 'Writing bug free python code with functional programming',
           speakers: [getSpeaker('siddharta-govindaraj')],
           location: 'Track 3',
@@ -228,6 +231,7 @@ export const SCHEDULE = {
         {
           time: '11:30 - 1:00 PM',
           type: 'Workshop',
+          discordChannelLink: 'https://discord.com/channels/1301212203336073226/1342141020963606580',
           title:
             'Duckdb: In-Process Analytics Database that saves you millions and makes you look smart',
           speakers: [getSpeaker('ankur-gupta')],
@@ -236,6 +240,7 @@ export const SCHEDULE = {
         {
           time: '11:30 - 01:00 PM',
           type: 'Workshop',
+          discordChannelLink: 'https://discord.com/channels/1301212203336073226/1342143270284820521',
           title: 'Building AI Agents',
           location: 'Track 2',
           speakers: [getSpeaker('anthony-shaw')],
@@ -243,6 +248,7 @@ export const SCHEDULE = {
         {
           time: '11:30 - 1:00 PM',
           type: 'Workshop',
+          discordChannelLink: 'https://discord.com/channels/1301212203336073226/1342141907618500730',
           title:
             'Unveiling the lazy execution benefit of FireDucks - A Multithreaded DataFrame Library with JIT compiler',
           location: 'Track 3',
@@ -253,6 +259,7 @@ export const SCHEDULE = {
         {
           time: '2:00 - 3:30 PM',
           type: 'Workshop',
+          discordChannelLink: 'https://discord.com/channels/1301212203336073226/1342142824757330000',
           title: 'Debugging Python applications like a Pro',
           location: 'Track 1',
           speakers: [getSpeaker('satyam-soni')],
@@ -260,6 +267,7 @@ export const SCHEDULE = {
         {
           time: '2:00 - 3:30 PM',
           type: 'Workshop',
+          discordChannelLink: 'https://discord.com/channels/1301212203336073226/1342143456226578454',
           title: ' Building with Snowflake Cortex AI: A Hands-On Workshop',
           location: 'Track 2',
           speakers: [getSpeaker('kamesh-sampath')],
@@ -267,6 +275,7 @@ export const SCHEDULE = {
         {
           time: '2:00 - 3:30 PM',
           type: 'Workshop',
+          discordChannelLink: 'https://discord.com/channels/1301212203336073226/1342143135483957259',
           title:
             'Distributed Computing with Ray: Transforming Local Python Applications into Scalable Systems',
           location: 'Track 3',
