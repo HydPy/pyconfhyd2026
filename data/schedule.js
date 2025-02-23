@@ -201,7 +201,7 @@ export const SCHEDULE = {
       ],
       [
         {
-          time: '10:00 - 11:30 AM',
+          time: '10:20 - 11:50 AM',
           type: 'Workshop',
           discordChannelLink: 'https://discord.com/channels/1301212203336073226/1342141517514539089',
           title:
@@ -210,7 +210,7 @@ export const SCHEDULE = {
           speakers: [getSpeaker('kuldeep-pisda')],
         },
         {
-          time: '10:00 - 11:30 AM',
+          time: '10:20 - 11:50 AM',
           type: 'Workshop',
           discordChannelLink: 'https://discord.com/channels/1301212203336073226/1342143026528649309',
           title:
@@ -219,7 +219,7 @@ export const SCHEDULE = {
           location: 'Track 2 | 11th Floor',
         },
         {
-          time: '10:00 - 11:30 AM',
+          time: '10:20 - 11:50 AM',
           type: 'Workshop',
           discordChannelLink: 'https://discord.com/channels/1301212203336073226/1342142649888542815',
           title: 'Writing bug free python code with functional programming',
@@ -229,7 +229,14 @@ export const SCHEDULE = {
       ],
       [
         {
-          time: '11:30 - 1:00 PM',
+          title: 'Quick Break',
+          time: '11:50 - 12:00 PM',
+          location: 'Cafeteria',
+        },
+      ],
+      [
+        {
+          time: '12:00 - 01:30 PM',
           type: 'Workshop',
           discordChannelLink: 'https://discord.com/channels/1301212203336073226/1342141020963606580',
           title:
@@ -238,7 +245,7 @@ export const SCHEDULE = {
           location: 'Track 1 | 10th Floor',
         },
         {
-          time: '11:30 - 01:00 PM',
+          time: '12:00 - 01:30 PM',
           type: 'Workshop',
           discordChannelLink: 'https://discord.com/channels/1301212203336073226/1342143270284820521',
           title: 'Building AI Agents',
@@ -246,7 +253,7 @@ export const SCHEDULE = {
           speakers: [getSpeaker('anthony-shaw')],
         },
         {
-          time: '11:30 - 1:00 PM',
+          time: '12:00 - 01:30 PM',
           type: 'Workshop',
           discordChannelLink: 'https://discord.com/channels/1301212203336073226/1342141907618500730',
           title:
@@ -257,7 +264,14 @@ export const SCHEDULE = {
       ],
       [
         {
-          time: '2:00 - 3:30 PM',
+          title: 'Lunch',
+          time: '1:30 - 2:30 PM',
+          location: 'Cafeteria - 11th Floor, Orwell 3',
+        },
+      ],
+      [
+        {
+          time: '2:30 - 4:00 PM',
           type: 'Workshop',
           discordChannelLink: 'https://discord.com/channels/1301212203336073226/1342142824757330000',
           title: 'Debugging Python applications like a Pro',
@@ -265,7 +279,7 @@ export const SCHEDULE = {
           speakers: [getSpeaker('satyam-soni')],
         },
         {
-          time: '2:00 - 3:30 PM',
+          time: '2:30 - 4:00 PM',
           type: 'Workshop',
           discordChannelLink: 'https://discord.com/channels/1301212203336073226/1342143456226578454',
           title: ' Building with Snowflake Cortex AI: A Hands-On Workshop',
@@ -273,7 +287,7 @@ export const SCHEDULE = {
           speakers: [getSpeaker('kamesh-sampath')],
         },
         {
-          time: '2:00 - 3:30 PM',
+          time: '2:30 - 4:00 PM',
           type: 'Workshop',
           discordChannelLink: 'https://discord.com/channels/1301212203336073226/1342143135483957259',
           title:
@@ -287,7 +301,7 @@ export const SCHEDULE = {
       ],
       [
         {
-          time: '3:30 - 5:00 PM',
+          time: '4:00 - 5:00 PM',
           title: 'Networking',
           location: 'Workshop Venue',
         },
