@@ -242,10 +242,6 @@ export const ALL_SPEAKER_VOLUNTEER_IMAGES = [
     imgUrl: '/images/people/purusharth-saxena.jpg',
   },
   {
-    imgAlt: "Sarabjot Singh's picture",
-    imgUrl: '/images/people/sarabjot-singh.png',
-  },
-  {
     imgAlt: "Venkata Pingali's picture",
     imgUrl: '/images/people/venkata-pingali.jpg',
   },
