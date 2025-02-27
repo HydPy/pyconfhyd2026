@@ -16,6 +16,8 @@ import {
   FaGlobe,
   FaYoutube,
   FaVolumeLow,
+  FaTelegram,
+  FaMeetup,
 } from 'react-icons/fa6';
 import { FaExternalLinkAlt, FaArrowCircleRight } from 'react-icons/fa';
 import { MdLightMode, MdDarkMode } from 'react-icons/md';
@@ -47,6 +49,8 @@ const icons = {
   ExternalLink: FaExternalLinkAlt,
   ArrowCircleRight: FaArrowCircleRight,
   Announcement: FaVolumeLow,
+  Telegram: FaTelegram,
+  Meetup: FaMeetup,
 };
 
 export const Icon = ({ name, size = 36, className = '', padding = 0 }) => {
