@@ -398,4 +398,59 @@ export const VOLUNTEERS = [
       },
     ],
   },
+  {
+    name: 'Bhanu K',
+    role: '',
+    imgUrl: '/images/people/bhanu-k.jpg',
+    imgAlt: "Bhanu K's picture",
+  },
+  {
+    name: 'Praneet Mokkapati',
+    role: '',
+    imgUrl: '/images/people/praneet-mokkapati.jpg',
+    imgAlt: "Praneet's picture",
+  },
+  {
+    name: 'Jai Prakash',
+    role: '',
+    imgUrl: '/images/people/jai-prakash.jpg',
+    imgAlt: "Jai Prakash's picture",
+  },
+  {
+    name: 'Sanchit Balchandani',
+    role: '',
+    imgUrl: '/images/people/sanchit-balchandani.jpg',
+    imgAlt: "Sanchit Balchandani's picture",
+  },
+  {
+    name: 'Kalyan Prasad',
+    role: '',
+    imgUrl: '/images/people/kalyan.jpg',
+    imgAlt: "Kalyan's picture",
+  },
+  {
+    name: 'Pradhvan Bhist',
+    role: '',
+    imgUrl: '/images/people/pradhvan-bisht.jpg',
+    imgAlt: "Pradhvan Bhist's picture",
+  },
+  {
+    name: 'Nitesh Yadav',
+    role: '',
+    imgUrl: '/images/volunteers/nitesh-yadav.jpg',
+    imgAlt: "Nitesh Yadav's picture",
+  },
+  {
+    name: 'Pola Harsha Vardhan',
+    role: '',
+    imgUrl: '/images/volunteers/pola-harsha-vardhan.jpg',
+    imgAlt: "Pola Harsha Vardhan's picture",
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/harsha-vardhan-pola-7824b429b',
+        ariaLabel: "Hyperlink to Pola Harsha Vardhan's LinkedIn page.",
+      },
+    ]
+  },
 ];

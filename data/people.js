@@ -160,63 +160,63 @@ export const ALL_SPEAKER_VOLUNTEER_IMAGES = [
     imgAlt: "Jai Prakash's picture",
   },
   {
-    imgUrl: 'images/people/dorai-thodla.jpg',
+    imgUrl: '/images/people/dorai-thodla.jpg',
     imgAlt: "Dorai Thodla's picture",
   },
   {
-    imgUrl: 'images/people/narendran.jpg',
+    imgUrl: '/images/people/narendran.jpg',
     imgAlt: "Narendran's picture",
   },
   {
-    imgUrl: 'images/people/sameer-mahabole.jpg',
+    imgUrl: '/images/people/sameer-mahabole.jpg',
     imgAlt: "Sameer Mahabole's picture",
   },
   {
-    imgUrl: 'images/people/yves-hilpisch.jpg',
+    imgUrl: '/images/people/yves-hilpisch.jpg',
     imgAlt: "Yves Hilpisch's picture",
   },
   {
-    imgUrl: 'images/people/anand-chitipothu.jpg',
+    imgUrl: '/images/people/anand-chitipothu.jpg',
     imgAlt: "Anand Chitipothu's picture",
   },
   {
-    imgUrl: 'images/people/chandan-kumar.jpg',
+    imgUrl: '/images/people/chandan-kumar.jpg',
     imgAlt: "Chandan Kumar's picture",
   },
   {
-    imgUrl: 'images/people/dawid-ostrowski.jpg',
+    imgUrl: '/images/people/dawid-ostrowski.jpg',
     imgAlt: "Dawid Ostrowski's picture",
   },
   {
-    imgUrl: 'images/people/kushal-das.jpg',
+    imgUrl: '/images/people/kushal-das.jpg',
     imgAlt: "Kushal Das's picture",
   },
   {
-    imgUrl: 'images/people/prabhu-ramachandran.jpg',
+    imgUrl: '/images/people/prabhu-ramachandran.jpg',
     imgAlt: "Prabhu Ramachandran's picture",
   },
   {
-    imgUrl: 'images/people/pradhvan-bisht.jpg',
+    imgUrl: '/images/people/pradhvan-bisht.jpg',
     imgAlt: "Pradhvan Bisht's picture",
   },
   {
-    imgUrl: 'images/people/ujjwal-gupta.jpg',
+    imgUrl: '/images/people/ujjwal-gupta.jpg',
     imgAlt: "Ujjwal Gupta's picture",
   },
   {
-    imgUrl: 'images/people/ValentynShybanov.jpg',
+    imgUrl: '/images/people/ValentynShybanov.jpg',
     imgAlt: "Valentyn Shybanov's picture",
   },
   {
-    imgUrl: 'images/people/vijay-kumar.jpg',
+    imgUrl: '/images/people/vijay-kumar.jpg',
     imgAlt: "Vijay Kumar's picture",
   },
   {
-    imgUrl: 'images/people/sarabjot-singh.png',
+    imgUrl: '/images/people/sarabjot-singh.png',
     imgAlt: "Dr. Sarabjot Singh Anand's picture",
   },
   {
-    imgUrl: 'images/people/jaidev-deshpande.jpg',
+    imgUrl: '/images/people/jaidev-deshpande.jpg',
     imgAlt: "Jaidev Deshpande's picture",
   },
   {
@@ -301,56 +301,56 @@ export const ALL_SPONSORS = [
   },
   { imgUrl: '/images/sponsors/epam.svg', imgAlt: 'EPAM Systems logo' },
   {
-    imgUrl: 'images/previous-sponsors/atlassian.png',
+    imgUrl: '/images/previous-sponsors/atlassian.png',
     imgAlt: 'Atlassian logo',
   },
-  { imgUrl: 'images/previous-sponsors/aws.png', imgAlt: 'AWS logo' },
-  { imgUrl: 'images/previous-sponsors/crelio.jpg', imgAlt: 'Crelio logo' },
+  { imgUrl: '/images/previous-sponsors/aws.png', imgAlt: 'AWS logo' },
+  { imgUrl: '/images/previous-sponsors/crelio.jpg', imgAlt: 'Crelio logo' },
   {
-    imgUrl: 'images/previous-sponsors/deepsource.png',
+    imgUrl: '/images/previous-sponsors/deepsource.png',
     imgAlt: 'DeepSource logo',
   },
   {
-    imgUrl: 'images/previous-sponsors/essenta-logo-portrait.png',
+    imgUrl: '/images/previous-sponsors/essenta-logo-portrait.png',
     imgAlt: 'Essenta logo',
   },
-  { imgUrl: 'images/previous-sponsors/fossee.jpg', imgAlt: 'FOSSEE logo' },
+  { imgUrl: '/images/previous-sponsors/fossee.jpg', imgAlt: 'FOSSEE logo' },
   {
-    imgUrl: 'images/previous-sponsors/iiith.png',
+    imgUrl: '/images/previous-sponsors/iiith.png',
     imgAlt: 'IIIT Hyderabad logo',
   },
   {
-    imgUrl: 'images/previous-sponsors/innominds.webp',
+    imgUrl: '/images/previous-sponsors/innominds.webp',
     imgAlt: 'Innominds logo',
   },
   {
-    imgUrl: 'images/previous-sponsors/ISB.png',
+    imgUrl: '/images/previous-sponsors/ISB.png',
     imgAlt: 'Indian School of Business (ISB) logo',
   },
   {
-    imgUrl: 'images/previous-sponsors/jetbrains.svg',
+    imgUrl: '/images/previous-sponsors/jetbrains.svg',
     imgAlt: 'JetBrains logo',
   },
   {
-    imgUrl: 'images/previous-sponsors/manning.png',
+    imgUrl: '/images/previous-sponsors/manning.png',
     imgAlt: 'Manning Publications logo',
   },
-  { imgUrl: 'images/previous-sponsors/MongoDB.png', imgAlt: 'MongoDB logo' },
+  { imgUrl: '/images/previous-sponsors/MongoDB.png', imgAlt: 'MongoDB logo' },
   {
-    imgUrl: 'images/previous-sponsors/pipal.jpg',
+    imgUrl: '/images/previous-sponsors/pipal.jpg',
     imgAlt: 'Pipal Academy logo',
   },
   {
-    imgUrl: 'images/previous-sponsors/pramati.png',
+    imgUrl: '/images/previous-sponsors/pramati.png',
     imgAlt: 'Pramati Technologies logo',
   },
-  { imgUrl: 'images/previous-sponsors/seneca.png', imgAlt: 'Seneca logo' },
+  { imgUrl: '/images/previous-sponsors/seneca.png', imgAlt: 'Seneca logo' },
   {
-    imgUrl: 'images/previous-sponsors/weekly-python-exercise.svg',
+    imgUrl: '/images/previous-sponsors/weekly-python-exercise.svg',
     imgAlt: 'Weekly Python Exercise logo',
   },
   {
-    imgUrl: 'images/previous-sponsors/zentropy.png',
+    imgUrl: '/images/previous-sponsors/zentropy.png',
     imgAlt: 'Zentropy Technologies logo',
   },
 ];
