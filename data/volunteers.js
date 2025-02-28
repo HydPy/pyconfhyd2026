@@ -453,4 +453,10 @@ export const VOLUNTEERS = [
       },
     ]
   },
+  {
+    name: 'Ananya Maiti',
+    role: '',
+    imgUrl: '/images/people/ananya-maiti.jpg',
+    imgAlt: "Ananya Maiti's picture",
+  },
 ];

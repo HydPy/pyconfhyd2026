@@ -152,7 +152,7 @@ export const ALL_SPEAKER_VOLUNTEER_IMAGES = [
     imgAlt: "Kalyan's picture",
   },
   {
-    imgUrl: '/images/people/anaya-maiti.jpg',
+    imgUrl: '/images/people/ananya-maiti.jpg',
     imgAlt: "Ananya Maiti's picture",
   },
   {
