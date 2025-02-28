@@ -260,22 +260,41 @@ export const ALL_SPEAKER_VOLUNTEER_IMAGES = [
 ];
 
 export const ALL_SPONSORS = [
-  { imgUrl: '/images/sponsors/snowflake.svg', imgAlt: 'Snowflake logo' },
-  { imgUrl: '/images/sponsors/langdb.png', imgAlt: 'LangDB.ai logo' },
+  {
+    imgUrl: '/images/sponsors/snowflake.svg',
+    imgAlt: 'Snowflake logo',
+    fifthEdition: true,
+  },
+  {
+    imgUrl: '/images/sponsors/langdb.png',
+    imgAlt: 'LangDB.ai logo',
+    fifthEdition: true,
+  },
   {
     imgUrl: '/images/sponsors/cognidaaai.png',
     imgAlt: 'Cognida.ai logo',
+    fifthEdition: true,
   },
   {
     imgUrl: '/images/sponsors/storable.jpg',
     imgAlt: 'Storable India logo',
+    fifthEdition: true,
   },
   {
     imgUrl: '/images/sponsors/tiger-analytics-black.png',
     imgAlt: 'Tiger Analytics logo',
+    fifthEdition: true,
   },
-  { imgUrl: '/images/sponsors/gridlex.png', imgAlt: 'Gridlex logo' },
-  { imgUrl: '/images/sponsors/glueops.png', imgAlt: 'GlueOps logo' },
+  {
+    imgUrl: '/images/sponsors/gridlex.png',
+    imgAlt: 'Gridlex logo',
+    fifthEdition: true,
+  },
+  {
+    imgUrl: '/images/sponsors/glueops.png',
+    imgAlt: 'GlueOps logo',
+    fifthEdition: true,
+  },
   {
     imgUrl: '/images/sponsors/sporo-health.png',
     imgAlt: 'Sporo Health logo',

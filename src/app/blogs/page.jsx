@@ -16,7 +16,7 @@ const BlogList = () => {
       </Heading>
       <ul className='w-full lg:w-8/12'>
         {BLOGS.map((blog) => (
-          <Link key={blog.id} href={`/blogs/${blog.slug}`}>
+          <Link key={blog.slug} href={`/blogs/${blog.slug}`}>
             <li>
               <BlogPostItem blog={blog} />
             </li>

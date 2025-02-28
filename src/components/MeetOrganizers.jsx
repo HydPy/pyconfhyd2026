@@ -22,7 +22,7 @@ export default function MeetOrganizers() {
           <Image
             className="rounded-lg"
             src={ABOUT_HYDPY.hydPyLogoUrl}
-            alt={ABOUT_HYDPY.hydPyLogoAlt}
+            alt={ABOUT_HYDPY.hydPyimgAlt}
             width={500}
             height={500}
           />

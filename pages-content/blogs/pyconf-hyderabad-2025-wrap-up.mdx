@@ -1,10 +1,19 @@
+import { PeoplePhotoFrame, TextFrame, SponsorPhotoFrame } from '@/components/Frames';
+import {
+  getActiveSpeakers,
+} from '@/speakers';
+import { getSponsors } from '@/sponsors';
+import { VOLUNTEERS } from '@/volunteers';
+
 The 5th edition of PyConf Hyderabad has come to a close, marking yet another successful gathering of Python enthusiasts. A huge thank you to everyone who made this possible!
 
 ## Thank You, Sponsors
-Thanks to Snowflake, LangDB, Cognida.ai, Storable, Tiger Analytics, Gridlex, GlueOps, Sporo Health and EPAM for facilitating this edition! Check out the full list of [sponsors on our website](/#sponsors).
+Thanks to Snowflake, LangDB, Cognida.ai, Storable, Tiger Analytics, Gridlex, GlueOps, Sporo Health and EPAM for facilitating this edition!
+<SponsorPhotoFrame images={getSponsors()} />
 
 ## Thank You, Speakers
-Over two days, we hosted 22 speakers for the conference talks and workshop sessions. Thank you to everyone for sharing their expertise with the attendees. Check out the full list of [speakers](/speakers) and [keynote speakers](/#keynote-speakers) on our website.
+Over two days, we hosted 22 speakers for the conference talks and workshop sessions. Thank you to everyone for sharing their expertise with the attendees.
+<PeoplePhotoFrame images={getActiveSpeakers()} />
 
 ## Participant Demographics
 Participants from various backgrounds and experience levels took part in the conference.
@@ -43,6 +52,7 @@ We are pleased to report that no Code of Conduct violations were reported, ensur
 ## A Big Thanks to Our Volunteers
 Meet the amazing individuals who helped make this event possible on [our team page](/our-team).
 None of this would have been possible without our dedicated volunteers. Your time, effort, and commitment played a crucial role in making this conference a success. Thank you!
+<PeoplePhotoFrame images={VOLUNTEERS} />
 
 ## Celebrating the 5th Edition
 To commemorate this milestone, we created a Wall of Speakers, Sponsors, and Volunteers. Check it out at [PyConf Hyderabad Turns 5](/pyconf-hyderabad-turns-5).

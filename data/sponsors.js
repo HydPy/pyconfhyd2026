@@ -14,13 +14,23 @@ export const getSponsor = (name) => {
   return null;
 };
 
+export const getSponsors = () => {
+  const sponsors = [];
+  for (const category in SPONSORS) {
+    SPONSORS[category].forEach((sponsor) => {
+      sponsors.push(sponsor);
+    });
+  }
+  return sponsors;
+};
+
 export const SPONSORS = {
   Platinum: [
     {
       name: 'Snowflake',
       hyperLink: '/blogs/snowflake-platinum-sponsor/',
-      lightLogoUrl: '/images/sponsors/snowflake.svg',
-      logoAlt: 'Snowflake logo',
+      imgUrl: '/images/sponsors/snowflake.svg',
+      imgAlt: 'Snowflake logo',
       socials: [
         {
           name: 'X',
@@ -54,8 +64,8 @@ export const SPONSORS = {
     {
       name: 'LangDB.ai',
       hyperLink: '/blogs/langdb-ai-gold-sponsor/',
-      lightLogoUrl: '/images/sponsors/langdb.png',
-      logoAlt: 'LangDB.ai logo',
+      imgUrl: '/images/sponsors/langdb.png',
+      imgAlt: 'LangDB.ai logo',
       socials: [
         {
           name: 'X',
@@ -77,8 +87,8 @@ export const SPONSORS = {
     {
       name: 'Cognida.ai',
       hyperLink: '/blogs/cognida-ai-gold-sponsor/',
-      lightLogoUrl: '/images/sponsors/cognidaaai.png',
-      logoAlt: 'Cognida.ai logo',
+      imgUrl: '/images/sponsors/cognidaaai.png',
+      imgAlt: 'Cognida.ai logo',
       socials: [
         {
           name: 'X',
@@ -105,8 +115,8 @@ export const SPONSORS = {
     {
       name: 'Storable India',
       hyperLink: '/blogs/storable-india-gold-sponsor/',
-      lightLogoUrl: '/images/sponsors/storable.jpg',
-      logoAlt: 'Storable India logo',
+      imgUrl: '/images/sponsors/storable.jpg',
+      imgAlt: 'Storable India logo',
       socials: [
         {
           name: 'LinkedIn',
@@ -123,8 +133,8 @@ export const SPONSORS = {
     {
       name: 'Tiger Analytics',
       hyperLink: '/blogs/tiger-analytics-gold-sponsor/',
-      lightLogoUrl: '/images/sponsors/tiger-analytics-black.png',
-      logoAlt: 'Tiger Analytics logo',
+      imgUrl: '/images/sponsors/tiger-analytics-black.png',
+      imgAlt: 'Tiger Analytics logo',
       socials: [
         {
           name: 'X',
@@ -158,8 +168,8 @@ export const SPONSORS = {
     {
       name: 'Gridlex',
       hyperLink: '/blogs/gridlex-silver-sponsor/',
-      lightLogoUrl: '/images/sponsors/gridlex.png',
-      logoAlt: 'Gridlex logo',
+      imgUrl: '/images/sponsors/gridlex.png',
+      imgAlt: 'Gridlex logo',
       socials: [
         {
           name: 'X',
@@ -193,8 +203,8 @@ export const SPONSORS = {
     {
       name: 'GlueOps',
       hyperLink: '/blogs/glueops-associate-sponsor/',
-      lightLogoUrl: '/images/sponsors/glueops.png',
-      logoAlt: 'GlueOps logo',
+      imgUrl: '/images/sponsors/glueops.png',
+      imgAlt: 'GlueOps logo',
       socials: [
         {
           name: 'X',
@@ -221,8 +231,8 @@ export const SPONSORS = {
     {
       name: 'Sporo Health',
       hyperLink: '/blogs/sporo-health-associate-sponsor/',
-      lightLogoUrl: '/images/sponsors/sporo-health.png',
-      logoAlt: 'Sporo Health logo',
+      imgUrl: '/images/sponsors/sporo-health.png',
+      imgAlt: 'Sporo Health logo',
       socials: [
         {
           name: 'X',
@@ -250,8 +260,8 @@ export const SPONSORS = {
   'Workshop Venue': [
     {
       name: 'EPAM Systems',
-      lightLogoUrl: '/images/sponsors/epam.svg',
-      logoAlt: 'EPAM Systems logo',
+      imgUrl: '/images/sponsors/epam.svg',
+      imgAlt: 'EPAM Systems logo',
       hyperLink: 'https://www.epam.com/',
     },
   ],

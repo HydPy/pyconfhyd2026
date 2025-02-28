@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Heading } from '@/components/Typography';
 import { SPONSORS, SPONSORS_INFO } from '@/sponsors';
 
-const SponsorCard = ({ slug, hyperLink, lightLogoUrl, logoAlt }) => {
+const SponsorCard = ({ slug, hyperLink, imgUrl, imgAlt }) => {
   return (
     <Link
       href={`${hyperLink}`}
@@ -18,12 +18,12 @@ const SponsorCard = ({ slug, hyperLink, lightLogoUrl, logoAlt }) => {
           <div className="relative h-full w-full">
             <Image
               className="object-contain"
-              src={lightLogoUrl}
-              alt={logoAlt}
+              src={imgUrl}
+              alt={imgAlt}
               fill
             />
           </div>
-          <figcaption className="sr-only">{logoAlt}</figcaption>
+          <figcaption className="sr-only">{imgAlt}</figcaption>
         </figure>
       </div>
     </Link>

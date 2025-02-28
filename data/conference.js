@@ -35,9 +35,9 @@ export const CONFERENCE = {
 
 export const ASSETS = {
   navbarLogoUrl: '/images/navbarLogo.svg',
-  navbarLogoAlt: 'PyConf Hyderabad 2025 Python Logo',
+  navbarimgAlt: 'PyConf Hyderabad 2025 Python Logo',
   logoUrl: '/images/logo.svg',
-  logoAlt: 'PyConf Hyderabad 2025 Logo',
+  imgAlt: 'PyConf Hyderabad 2025 Logo',
   heroBannerUrl: '/images/hero-banner-bg.svg',
   heroBannerAlt:
     'Background image of colorful kites soaring in the sky on the hero banner',

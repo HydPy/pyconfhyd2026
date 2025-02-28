@@ -119,7 +119,7 @@ const Header = ({ themeToggle }) => {
         >
           <Image
             src={ASSETS.navbarLogoUrl}
-            alt={ASSETS.navbarLogoAlt}
+            alt={ASSETS.navbarimgAlt}
             width={50}
             height={50}
           />

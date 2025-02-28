@@ -25,7 +25,7 @@ const Hero = () => {
         <div className="relative w-full sm:w-3/4 md:w-1/2 aspect-[2/1]">
           <Image
             src={ASSETS.logoUrl}
-            alt={ASSETS.logoAlt}
+            alt={ASSETS.imgAlt}
             priority={true}
             fill
           />
