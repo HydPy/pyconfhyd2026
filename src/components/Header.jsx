@@ -7,6 +7,7 @@ import Icon from '@/components/Icon';
 import { Span } from '@/components/Typography';
 import { ASSETS } from '@/conference';
 import { NAV_ITEMS } from '@/navItems';
+import { filterNavItemsByFeatureFlags } from '@/utils/featureFlags';
 
 const NavItem = ({
   item,
@@ -99,6 +100,9 @@ const Header = ({ themeToggle }) => {
   const fullPath = `${pathname}${searchParams ? `${searchParams.toString()}` : ''}`;
   const [activePath, setActivePath] = useState(fullPath);
 
+  // Filter navigation items based on feature flags
+  const filteredNavItems = filterNavItemsByFeatureFlags(NAV_ITEMS);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -145,7 +149,7 @@ const Header = ({ themeToggle }) => {
           id="navbar-dropdown"
         >
           <ul className="flex flex-col p-4 md:p-0 mt-4 md:mt-0 md:flex-row">
-            {NAV_ITEMS.map((item, index) => (
+            {filteredNavItems.map((item, index) => (
               <li key={index}>
                 <NavItem
                   item={item}

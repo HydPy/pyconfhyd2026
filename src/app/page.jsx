@@ -6,6 +6,7 @@ import KeynoteSpeakers from '@/components/KeynoteSpeakers';
 import MeetOrganizers from '@/components/MeetOrganizers';
 import SponsorsSection from '@/components/Sponsors';
 import CommunityPartners from '@/components/CommunityPartners';
+import { useFeatureFlag } from '@/hooks/useFeatureFlag';
 
 import { SPEAKERS } from '@/speakers';
 
@@ -25,6 +26,11 @@ const getKeynoteSpeakers = (SPEAKERS) => {
 };
 
 export default function Home() {
+  const isKeynoteSpeakersEnabled = useFeatureFlag('KEYNOTE_SPEAKERS');
+  const isSponsorsEnabled = useFeatureFlag('SPONSORS');
+  const isCommunityPartnersEnabled = useFeatureFlag('COMMUNITY_PARTNERS');
+  const isMeetOrganizersEnabled = useFeatureFlag('MEET_ORGANIZERS');
+
   useEffect(() => {
     const hash = window.location.hash;
     if (hash) {
@@ -38,10 +44,12 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <KeynoteSpeakers speakers={getKeynoteSpeakers(SPEAKERS)} />
-      <SponsorsSection />
-      <CommunityPartners />
-      <MeetOrganizers />
+      {isKeynoteSpeakersEnabled && (
+        <KeynoteSpeakers speakers={getKeynoteSpeakers(SPEAKERS)} />
+      )}
+      {isSponsorsEnabled && <SponsorsSection />}
+      {isCommunityPartnersEnabled && <CommunityPartners />}
+      {isMeetOrganizersEnabled && <MeetOrganizers />}
     </>
   );
 }
