@@ -60,15 +60,11 @@ Thank you for your interest in contributing to the PyConf Hyderabad 2025 website
 
 ### Introduction
 
-This project aims to create a **modular conference website** with reusable components. By the end of the conference, we envision a **theme repository** that can be easily forked to build future conference websites with minimal effort—just update the theme and data.
+This project is a fork of [pyconfhyd2025](https://github.com/HydPy/pyconfhyd2025), initially developed as a **modular conference website** featuring reusable components. To learn more, refer to the [introduction section of pyconfhyd2025](https://github.com/HydPy/pyconfhyd2025?tab=readme-ov-file#introduction).
 
-This approach aims to:
+A feature flag configuration has been introduced, enabling a gradual rollout of features. Check out the [PyConf 2026 setup PR](https://github.com/HydPy/pyconfhyd2026/pull/1) to see how changes can be made when setting up the conference website.
 
-- Avoid reinventing the wheel each year.
-- Continuously improve the website's **user experience (UX)**, **accessibility**, **user interface (UI)**, and **performance**.
-- Focus on refining the theme and upgrading underlying packages before each conference.
-
-Your contributions will help us achieve this vision. Let’s build something amazing together!
+This year's focus is on improving the template while seamlessly integrating it with [HydPy's website](https://www.hydpy.org/) by redirecting selected pages to the main site.
 
 ### How to Contribute
 
