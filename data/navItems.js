@@ -78,11 +78,6 @@ export const NAV_ITEMS = [
         target: '_self',
       },
       {
-        name: 'PyConf Hyderabad Turns 5',
-        path: '/pyconf-hyderabad-turns-5',
-        target: '_self',
-      },
-      {
         name: 'Code Of Conduct Policy',
         path: '/code-of-conduct',
         target: '_self',
