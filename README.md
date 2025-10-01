@@ -1,6 +1,6 @@
-# Website for [PyConf Hyderabad 2025](http://2025.pyconfhyd.org/)
+# Website for [PyConf Hyderabad 2026](http://2026.pyconfhyd.org/)
 
-This is the repo for PyConf Hyderabad 2025's website. The 5th edition of the regional Python conference in India, taking place in the vibrant city of Hyderabad.
+This is the repo for PyConf Hyderabad 2026's website. The 6th edition of the regional Python conference in India, taking place in the vibrant city of Hyderabad.
 
 ## Local Development / Setup Instructions
 
@@ -56,7 +56,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Contributing
 
-Thank you for your interest in contributing to the PyConf Hyderabad 2025 website! This document will guide you on how to contribute effectively and collaboratively to ensure a smooth development process.
+Thank you for your interest in contributing to the PyConf Hyderabad 2026 website! This document will guide you on how to contribute effectively and collaboratively to ensure a smooth development process.
 
 ### Introduction
 

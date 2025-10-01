@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: ['/'],
     },
-    sitemap: ['https://2025.pyconfhyd.org/sitemap.xml'],
+    sitemap: ['https://2026.pyconfhyd.org/sitemap.xml'],
   };
 }

@@ -1,28 +1,28 @@
 export const CONFERENCE = {
-  title: 'PyConf Hyderabad 2025',
+  title: 'PyConf Hyderabad 2026',
   description:
-    'PyConf Hyderabad 2025 is the regional gathering of Pythonistas and the largest Python Conference in Hyderabad.',
+    'PyConf Hyderabad 2026 is the regional gathering of Pythonistas and the largest Python Conference in Hyderabad.',
   openGraph: {
-    title: 'PyConf Hyderabad 2025 - Largest Python Conference in Hyderabad',
+    title: 'PyConf Hyderabad 2026 - Largest Python Conference in Hyderabad',
   },
   announcement:
     'Hyderabad’s biggest Python conference is on the way! Get ready for an unforgettable experience and stay tuned for updates!',
-  siteURL: 'http://2025.pyconfhyd.org',
-  copyrightTitle: 'Copyright @ 2025 PyConf Hyderabad',
-  conferenceDate: '22 Feb',
-  conferenceVenue: 'T-Hub',
-  conferenceMapsLink: 'https://maps.app.goo.gl/xDkTnPApM7GsfE1F9',
-  workshopDate: '23 Feb',
-  workshopVenue: 'EPAM Systems',
-  workshopMapsLink: 'https://maps.app.goo.gl/4Yd1nY3zNJd3kPaw9',
+  siteURL: 'http://2026.pyconfhyd.org',
+  copyrightTitle: 'Copyright @ 2026 PyConf Hyderabad',
+  conferenceDate: '',
+  conferenceVenue: '',
+  conferenceMapsLink: '',
+  workshopDate: '',
+  workshopVenue: '',
+  workshopMapsLink: '',
   creator: 'HydPy',
-  dates: '22 Feb - 23 Feb',
+  dates: '',
   generator: 'Next.js',
   keywords: [
     'Python',
     'Conference',
     'Hyderabad',
-    '2025',
+    '2026',
     'PyConf',
     'Pythonistas',
     'Python Programmers',
@@ -35,9 +35,9 @@ export const CONFERENCE = {
 
 export const ASSETS = {
   navbarLogoUrl: '/images/navbarLogo.svg',
-  navbarimgAlt: 'PyConf Hyderabad 2025 Python Logo',
+  navbarimgAlt: 'PyConf Hyderabad 2026 Python Logo',
   logoUrl: '/images/logo.svg',
-  imgAlt: 'PyConf Hyderabad 2025 Logo',
+  imgAlt: 'PyConf Hyderabad 2026 Logo',
   heroBannerUrl: '/images/hero-banner-bg.svg',
   heroBannerAlt:
     'Background image of colorful kites soaring in the sky on the hero banner',
@@ -48,20 +48,19 @@ export const ASSETS = {
 
 export const KEY_LINKS = {
   volunteerFormLabel: 'BECOME A VOLUNTEER',
-  volunteerFormUrl: 'https://forms.gle/aceBohpaYLWef4eU9',
+  volunteerFormUrl: '',
   cfpLabel: 'SUBMIT YOUR PROPOSAL',
-  cfpUrl: 'https://www.papercall.io/pyconfhyd2025',
+  cfpUrl: '',
   interestedInSponsoringLabel: 'INTERESTED IN SPONSORING',
-  interestedInSponsoringUrl: 'https://forms.gle/d5cg5WpayP9mEfAm9',
+  interestedInSponsoringUrl: '',
   sponsorshipProspectusLabel: 'SPONSORSHIP PROSPECTUS',
-  sponsorshipProspectusUrl: '/docs/sponsorship-prospectus.pdf',
+  sponsorshipProspectusUrl: '',
   konfHubEventPageLabel: 'KonfHub event page',
-  konfHubEventPage: 'https://konfhub.com/pyconf-hyderabad-2025',
-  CommunityPartnersProspectusUrl: '/docs/community-partners-prospectus.pdf',
+  konfHubEventPage: '',
   CommunityPartnersProspectusLabel: 'PROSPECTUS',
-  CommunityPartnersProspectusRegisterFormUrl:
-    'https://forms.gle/FzjQa9ufDchpe9Va7',
+  CommunityPartnersProspectusUrl: '',
   CommunityPartnersProspectusRegisterFormLabel: 'REGISTER',
+  CommunityPartnersProspectusRegisterFormUrl: '',
 };
 
 export const SOCIALS = [

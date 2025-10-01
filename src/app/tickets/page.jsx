@@ -5,10 +5,10 @@ import Tickets from '@/components/Tickets';
 
 export const metadata = {
   title: 'Tickets',
-  description: 'Tickets for PyConf Hyderabad 2025',
+  description: 'Tickets for PyConf Hyderabad 2026',
   openGraph: {
     title: 'Tickets',
-    description: 'Tickets for PyConf Hyderabad 2025',
+    description: 'Tickets for PyConf Hyderabad 2026',
   },
 };
 
@@ -16,9 +16,7 @@ export default function Page() {
   return (
     <div>
       <InfoAlert>
-        <Span>
-          We are sold out. There are no on-spot tickets.
-        </Span>
+        <Span>We are sold out. There are no on-spot tickets.</Span>
       </InfoAlert>
       <section className="flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto">
         <Heading

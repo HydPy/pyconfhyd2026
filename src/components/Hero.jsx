@@ -30,7 +30,13 @@ const Hero = () => {
             fill
           />
         </div>
-        <div className="flex items-center">
+        <Span
+          level={1}
+          className="text-center text-gray-600 dark:text-gray-400"
+        >
+          {CONFERENCE.announcement}
+        </Span>
+        {/* <div className="flex items-center">
           <Icon
             name="Calendar"
             size={26}
@@ -42,8 +48,8 @@ const Hero = () => {
           >
             {CONFERENCE.dates}
           </Span>
-        </div>
-        <div className="flex">
+        </div> */}
+        {/* <div className="flex">
           <Span
             level={3}
             className="text-center font-semibold ml-2 mt-2 text-secondary-600 dark:text-secondary-400"
@@ -74,7 +80,7 @@ const Hero = () => {
           >
             <Span level={3}>{CONFERENCE.workshopVenue}</Span>
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

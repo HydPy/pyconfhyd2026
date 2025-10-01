@@ -32,20 +32,6 @@ const Footer = () => (
               </Link>
             ))}
           </div>
-          <Span className="font-medium text-gray-50 mt-4">
-            Emergency Contact
-          </Span>
-          <ul className="list-disc text-gray-300  mt-1 ml-4">
-            <li>
-              <Span>T-Hub: </Span>
-              <Link href="tel:040-66396639">
-                <Span className="hover:text-gray-50">040-66396639, </Span>
-              </Link>
-              <Link href="tel:09581474545">
-                <Span className="hover:text-gray-50">09581474545</Span>
-              </Link>
-            </li>
-          </ul>
         </div>
 
         {/* Past Editions Section */}

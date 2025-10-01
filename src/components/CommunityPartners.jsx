@@ -13,12 +13,7 @@ const PartnerLogo = ({ imgUrl, imgAlt }) => {
     <div className="flex w-100 flex-col p-4 items-center bg-gray-50 dark:bg-gray-200 transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
       <div className="w-32 h-32">
         <div className="relative h-full w-full">
-          <Image
-            className="object-contain"
-            src={imgUrl}
-            alt={imgAlt}
-            fill
-          />
+          <Image className="object-contain" src={imgUrl} alt={imgAlt} fill />
         </div>
       </div>
     </div>
