@@ -4,10 +4,10 @@ import { Heading } from '@/components/Typography';
 
 export const metadata = {
   title: 'Welcome Guide',
-  description: 'Welcome Guide for PyConf Hyderabad 2025',
+  description: 'Welcome Guide for PyConf Hyderabad 2026',
   openGraph: {
     title: 'Welcome Guide',
-    description: 'Welcome Guide for PyConf Hyderabad 2025',
+    description: 'Welcome Guide for PyConf Hyderabad 2026',
   },
 };
 

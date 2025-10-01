@@ -4,10 +4,10 @@ import { Heading } from '@/components/Typography';
 
 export const metadata = {
   title: 'Code Of Conduct',
-  description: 'Code of Conduct for PyConf Hyderabad 2025',
+  description: 'Code of Conduct for PyConf Hyderabad 2026',
   openGraph: {
     title: 'Code Of Conduct',
-    description: 'Code of Conduct for PyConf Hyderabad 2025',
+    description: 'Code of Conduct for PyConf Hyderabad 2026',
   },
 };
 

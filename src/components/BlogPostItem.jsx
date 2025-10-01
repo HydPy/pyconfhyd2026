@@ -17,15 +17,19 @@ const BlogPostItem = ({ blog }) => {
           })}
         </Span>
       </div>
-      <Heading level={4} tagLevel={2} className="text-secondary-600 dark:text-secondary-400">
+      <Heading
+        level={4}
+        tagLevel={2}
+        className="text-secondary-600 dark:text-secondary-400"
+      >
         {blog.title}
       </Heading>
       <Span className="font-medium dark:text-gray-50">
-          Author: {blog.author}
-        </Span>
+        Author: {blog.author}
+      </Span>
       <Span className="font-medium text-primary-600 dark:text-primary-500 hover:underline">
-          Read more
-        </Span>
+        Read more
+      </Span>
     </article>
   );
 };

@@ -250,8 +250,8 @@ const structuredData = {
   subEvent: [
     {
       '@type': 'Event',
-      name: 'PyConf Hyderabad 2025 Conference',
-      startDate: '2025-02-22',
+      name: 'PyConf Hyderabad 2026 Conference',
+      startDate: '2026-02-22',
       eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
       location: {
         '@type': 'Place',
@@ -266,8 +266,8 @@ const structuredData = {
     },
     {
       '@type': 'Event',
-      name: 'PyConf Hyderabad 2025 Workshop',
-      startDate: '2025-02-23',
+      name: 'PyConf Hyderabad 2026 Workshop',
+      startDate: '2026-02-23',
       eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
       location: {
         '@type': 'Place',

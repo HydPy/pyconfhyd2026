@@ -18,6 +18,11 @@ export const PAST_EDITIONS = {
   sectionTitle: 'Past Editions',
   editions: [
     {
+      year: 2025,
+      url: 'https://2025.pyconfhyd.org',
+      ariaLabel: 'PyConf Hyderabad 2025 website',
+    },
+    {
       year: 2022,
       url: 'https://pyconf.hydpy.org/2022',
       ariaLabel: 'PyConf Hyderabad 2022 website',

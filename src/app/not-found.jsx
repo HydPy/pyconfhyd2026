@@ -12,7 +12,7 @@ const NotFound = () => {
         <Image
           className="animate-bounce"
           src={ASSETS.navbarLogoUrl}
-          alt="PyConf Hyderabad 2025 Logo"
+          alt="PyConf Hyderabad 2026 Logo"
           width={100}
           height={100}
         />
