@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { Heading, Span } from '@/components/Typography';
+import { Heading, Paragraph, Span } from '@/components/Typography';
 import Icon from '@/components/Icon';
 import { CONFERENCE, ASSETS, KEY_LINKS } from '@/conference';
 import Link from 'next/link';
@@ -8,7 +8,12 @@ import Link from 'next/link';
 const Hero = () => {
   return (
     <section
-      className="w-full"
+      className="
+      w-screen
+      aspect-[9/16] sm:aspect-[3/4] md:aspect-[4/3] lg:aspect-[21/9]
+      bg-primary-400 dark:bg-primary-600
+      max-h-screen
+      "
       style={{
         backgroundImage: `url(${ASSETS.heroBannerUrl})`,
         backgroundPosition: 'center',
@@ -22,7 +27,7 @@ const Hero = () => {
         <Heading tagLevel={1} level={1} className="hidden">
           {CONFERENCE.title}
         </Heading>
-        <div className="relative w-full md:w-2/3 aspect-video my-4">
+        <div className="relative w-full md:w-1/2 aspect-video mt-4">
           <Image
             src={ASSETS.logoUrl}
             alt={ASSETS.imgAlt}
@@ -30,80 +35,34 @@ const Hero = () => {
             fill
           />
         </div>
-        <Span
+        <Paragraph
           level={1}
-          className="text-center text-gray-600 dark:text-gray-400"
-        >
-          {CONFERENCE.announcement}
-        </Span>
-        {/* <div className="flex items-center">
-          <Icon
-            name="Calendar"
-            size={26}
-            className="text-secondary-600 dark:text-secondary-400"
-          />
-          <Span
-            level={1}
-            className="text-center font-semibold ml-2 text-secondary-600 dark:text-secondary-400"
-          >
-            {CONFERENCE.dates}
-          </Span>
-        </div> */}
-        {/* <div className="flex">
-          <Span
-            level={3}
-            className="text-center font-semibold ml-2 mt-2 text-secondary-600 dark:text-secondary-400"
-          >
-            Conference: {CONFERENCE.conferenceDate} | Venue:{' '}
-          </Span>
-          <Link
-            className="underline font-semibold ml-1 mt-2 text-secondary-600 dark:text-secondary-400"
-            href={CONFERENCE.conferenceMapsLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Span level={3}>{CONFERENCE.conferenceVenue}</Span>
-          </Link>
-        </div>
-        <div className="flex">
-          <Span
-            level={3}
-            className="text-center font-semibold ml-2 mt-2 text-secondary-600 dark:text-secondary-400"
-          >
-            Workshop: {CONFERENCE.workshopDate} | Venue:{' '}
-          </Span>
-          <Link
-            className="underline font-semibold ml-1 mt-2 text-secondary-600 dark:text-secondary-400"
-            href={CONFERENCE.workshopMapsLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Span level={3}>{CONFERENCE.workshopVenue}</Span>
-          </Link>
-        </div> */}
-        <div className="flex flex-col sm:flex-row pt-4">
+          className="text-center text-gray-900 dark:text-gray-50 mt-4"
+          dangerouslySetInnerHTML={{ __html: CONFERENCE.announcement }}
+        />
+        <div className="flex flex-col sm:flex-row mt-8">
           <Link
             href={KEY_LINKS.interestedInSponsoringUrl}
             target="_blank"
             className="flex justify-center"
             rel="noopener noreferrer"
           >
-            <button className="inline-flex mt-2 sm:mr-4 items-center bg-primary-600 px-5 py-3 font-medium hover:bg-primary-700 text-gray-50 border rounded-lg">
-              <Icon name="VolunteerActivism" size={20} />
+            <button className="inline-flex mt-2 sm:mr-4 items-center bg-secondary-500 px-5 py-3 font-bold text-lg hover:bg-secondary-700 text-gray-50 border-4 border-gray-900 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all transform">
+              <Icon name="ExternalLink" size={20} />
               <Span className="ml-2">
                 {KEY_LINKS.interestedInSponsoringLabel}
               </Span>
             </button>
           </Link>
           <Link
-            href={KEY_LINKS.volunteerFormUrl}
+            href={KEY_LINKS.cfpUrl}
             target="_blank"
             className="flex justify-center"
             rel="noopener noreferrer"
           >
-            <button className="inline-flex mt-2 sm:mr-4 items-center bg-secondary-600 px-5 py-3 font-medium hover:bg-secondary-700 text-gray-50 border rounded-lg">
-              <Icon name="VolunteerActivism" size={20} />
-              <Span className="ml-2">{KEY_LINKS.volunteerFormLabel}</Span>
+            <button className="inline-flex mt-2 sm:mr-4 items-center bg-accent-500 px-5 py-3 font-bold text-lg hover:bg-accent-700 text-gray-900 border-4 border-gray-900 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all transform">
+              <Icon name="MdCampaign" size={24} />
+              <Span className="ml-2">{KEY_LINKS.cfpLabel}</Span>
             </button>
           </Link>
         </div>

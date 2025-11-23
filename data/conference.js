@@ -6,7 +6,7 @@ export const CONFERENCE = {
     title: 'PyConf Hyderabad 2026 - Largest Python Conference in Hyderabad',
   },
   announcement:
-    'Hyderabad’s biggest Python conference is on the way! Get ready for an unforgettable experience and stay tuned for updates!',
+    'Hyderabad’s biggest Python conference is on the way! <br> Get ready for an unforgettable experience and stay tuned for updates!',
   siteURL: 'http://2026.pyconfhyd.org',
   copyrightTitle: 'Copyright @ 2026 PyConf Hyderabad',
   conferenceDate: '',
@@ -38,9 +38,12 @@ export const ASSETS = {
   navbarimgAlt: 'PyConf Hyderabad 2026 Python Logo',
   logoUrl: '/images/logo.svg',
   imgAlt: 'PyConf Hyderabad 2026 Logo',
-  heroBannerUrl: '/images/hero-banner-bg.svg',
+  heroBannerUrl: '/images/heroBannerBg.svg',
   heroBannerAlt:
-    'Background image of colorful kites soaring in the sky on the hero banner',
+    'A vibrant comic-style background featuring yellow and red explosive rays and dotted patterns radiating from the center.',
+  footerBgUrl: '/images/footerBg.svg',
+  footerBgAlt:
+    'A comic-style background with yellow dotted patterns and explosion rays on the left, featuring a cartoon snake with wide eyes peeking from the right side.',
   monumentsSketchUrl: '/images/monumentsSketch.svg',
   monumentsSketchAlt:
     'Illustration showcasing various iconic monuments of Hyderabad.',
@@ -50,7 +53,7 @@ export const KEY_LINKS = {
   volunteerFormLabel: 'SIGN UP TO VOLUNTEER',
   volunteerFormUrl: 'https://forms.gle/XKpdqSX12husAXBB6',
   cfpLabel: 'SUBMIT YOUR PROPOSAL',
-  cfpUrl: '',
+  cfpUrl: 'https://www.papercall.io/pyconfhyd2026',
   interestedInSponsoringLabel: 'INTERESTED IN SPONSORING',
   interestedInSponsoringUrl: 'https://forms.gle/rLNiPdrSi3NZ772n9',
   sponsorshipProspectusLabel: 'SPONSORSHIP PROSPECTUS',

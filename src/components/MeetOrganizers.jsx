@@ -13,7 +13,7 @@ export default function MeetOrganizers() {
       <Heading
         tagLevel={2}
         level={1}
-        className="text-center my-8 text-secondary-600 dark:text-secondary-400"
+        className="text-center my-8 text-primary-600 dark:text-primary-400"
       >
         {ABOUT_HYDPY.title}
       </Heading>
@@ -34,7 +34,7 @@ export default function MeetOrganizers() {
             <Span>{ABOUT_HYDPY.hydPyLinkText}</Span>
           </Link>
         </div>
-        <Paragraph className="text-gray-600 dark:text-gray-400 lg:w-11/12">
+        <Paragraph className="text-gray-800 dark:text-gray-300 lg:w-11/12">
           {ABOUT_HYDPY.description}
         </Paragraph>
       </div>

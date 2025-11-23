@@ -34,7 +34,7 @@ const NavItem = ({
           href={item.path}
           className={`${
             activePath === item.path
-              ? 'text-primary-700 dark:text-primary-600'
+              ? 'text-primary-700 dark:text-primary-500'
               : 'text-gray-950 dark:text-gray-50'
           }`}
           aria-current={activePath === item.path ? 'page' : undefined}
@@ -48,7 +48,7 @@ const NavItem = ({
         <div
           className={`${
             activePath === item.path || activePath.split('#')[0] === item.path
-              ? 'text-primary-700 dark:text-primary-600'
+              ? 'text-primary-700 dark:text-primary-500'
               : 'text-gray-950 dark:text-gray-50'
           }`}
         >
@@ -75,7 +75,7 @@ const NavItem = ({
                 href={child.path}
                 className={`block py-2 px-4 rounded hover:bg-gray-200 dark:hover:bg-gray-700 ${
                   activePath === child.path
-                    ? 'text-primary-700 dark:text-primary-600'
+                    ? 'text-primary-700 dark:text-primary-500'
                     : 'text-gray-950 dark:text-gray-50'
                 }`}
                 onClick={() => handleItemClick(child)}
@@ -114,7 +114,7 @@ const Header = ({ themeToggle }) => {
   };
 
   return (
-    <header className="bg-gray-50 dark:bg-gray-900 p-4 shadow-lg sticky top-0 z-10">
+    <header className="bg-gray-50 dark:bg-gray-900 py-4 px-8 shadow-lg sticky top-0 z-10">
       <nav className="flex flex-wrap items-center justify-between mx-auto">
         <Link
           href="/"
@@ -124,8 +124,8 @@ const Header = ({ themeToggle }) => {
           <Image
             src={ASSETS.navbarLogoUrl}
             alt={ASSETS.navbarimgAlt}
-            width={100}
-            height={42}
+            width={150}
+            height={93}
           />
         </Link>
         <div className="flex items-center gap-1">
