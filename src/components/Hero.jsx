@@ -5,6 +5,69 @@ import Icon from '@/components/Icon';
 import { CONFERENCE, ASSETS, KEY_LINKS } from '@/conference';
 import Link from 'next/link';
 
+const Announcement = () => {
+  return (
+    <Paragraph
+      level={1}
+      className="text-center text-gray-900 dark:text-gray-50 mt-4"
+      dangerouslySetInnerHTML={{ __html: CONFERENCE.announcement }}
+    />
+  );
+};
+
+const VenueInfo = ({ type, date, venue, mapsLink }) => (
+  <div className="flex">
+    <Span
+      level={2}
+      className="text-center font-semibold ml-2 mt-2 text-gray-900 dark:text-gray-50"
+    >
+      {type}: {date} | {venue}
+    </Span>
+
+    {mapsLink && (
+      <Link
+        href={mapsLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`${venue} location on map`}
+      >
+        <Icon name="ExternalLink" size={16} className="ml-2 mt-2" />
+      </Link>
+    )}
+  </div>
+);
+
+const ConferenceInfo = () => (
+  <>
+    <div className="flex items-center">
+      <Icon
+        name="Calendar"
+        size={28}
+        className="text-gray-900 dark:text-gray-50"
+      />
+      <Span
+        level={1}
+        className="text-center font-semibold ml-2 text-gray-900 dark:text-gray-50"
+      >
+        {CONFERENCE.dates}
+      </Span>
+    </div>
+
+    <VenueInfo
+      type="Workshop"
+      date={CONFERENCE.workshopDate}
+      venue={CONFERENCE.workshopVenue}
+      mapsLink={CONFERENCE.workshopMapsLink}
+    />
+    <VenueInfo
+      type="Conference"
+      date={CONFERENCE.conferenceDate}
+      venue={CONFERENCE.conferenceVenue}
+      mapsLink={CONFERENCE.conferenceMapsLink}
+    />
+  </>
+);
+
 const Hero = () => {
   return (
     <section
@@ -19,8 +82,8 @@ const Hero = () => {
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        ariaLabel: ASSETS.heroBannerAlt,
       }}
+      aria-label={ASSETS.heroBannerAlt}
     >
       <div className="flex flex-col py-6 items-center w-11/12 lg:w-5/6 mx-auto">
         {/*  For SEO */}
@@ -35,11 +98,8 @@ const Hero = () => {
             fill
           />
         </div>
-        <Paragraph
-          level={1}
-          className="text-center text-gray-900 dark:text-gray-50 mt-4"
-          dangerouslySetInnerHTML={{ __html: CONFERENCE.announcement }}
-        />
+        {/* <Announcement /> */}
+        <ConferenceInfo />
         <div className="flex flex-col sm:flex-row mt-8">
           <Link
             href={KEY_LINKS.interestedInSponsoringUrl}
