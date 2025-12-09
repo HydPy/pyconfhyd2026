@@ -15,14 +15,14 @@ export const metadata = {
 export default function Page() {
   return (
     <div>
-      <InfoAlert>
+      {/* <InfoAlert>
         <Span>We are sold out. There are no on-spot tickets.</Span>
-      </InfoAlert>
+      </InfoAlert> */}
       <section className="flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto">
         <Heading
           tagLevel={1}
           level={1}
-          className="text-center my-8 text-secondary-600 dark:text-secondary-400"
+          className="text-center my-8 text-primary-600 dark:text-primary-400"
         >
           Tickets
         </Heading>

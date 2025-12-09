@@ -13,22 +13,21 @@ export default function Tickets() {
         </MdxLayout>
       </div>
       <iframe
-        className="flex dark:hidden"
-        src="https://konfhub.com/widget/pyconf-hyderabad-2026?desc=false&secondaryBg=fff8f3&ticketBg=fff8f3&borderCl=fff8f3&bg=f9fafb&fontColor=016e6b&ticketCl=016e6b&btnColor=fa8624&fontFamily=Nunito&borderRadius=10"
+        className="flex"
+        src="https://konfhub.com/widget/pyconf-hyderabad-2026?desc=false&secondaryBg=FFF8F3&ticketBg=E68D00&borderCl=E68D00&bg=FFF8F3&fontColor=1e1f24&ticketCl=1e1f24&btnColor=E3453A&fontFamily=Nunito&borderRadius=10&widget_type=standard"
         id="konfhub-widget"
         title="Register for PyConf Hyderabad 2026"
         width="100%"
         height="800"
       ></iframe>
-
-      <iframe
+      {/* <iframe
         className="hidden dark:flex"
-        src="https://konfhub.com/widget/pyconf-hyderabad-2026?desc=false&secondaryBg=016e6b&ticketBg=016e6b&borderCl=016e6b&bg=1a202c&fontColor=f9fafb&ticketCl=f9fafb&btnColor=c56a1c&fontFamily=Nunito&borderRadius=10"
+        src="https://konfhub.com/widget/pyconf-hyderabad-2026?desc=false&secondaryBg=1A202C&ticketBg=CC7E00&borderCl=CC7E00&bg=1A202C&fontColor=DD2621&ticketCl=f9fafb&btnColor=DD2621&fontFamily=Nunito&borderRadius=10&widget_type=standard"
         id="konfhub-widget"
         title="Register for PyConf Hyderabad 2026"
         width="100%"
         height="800"
-      ></iframe>
+      ></iframe> */}
     </section>
   );
 }

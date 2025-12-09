@@ -16,7 +16,7 @@ const Announcement = () => {
 };
 
 const VenueInfo = ({ type, date, venue, mapsLink }) => (
-  <div className="flex">
+  <div className="flex items-center">
     <Span
       level={2}
       className="text-center font-semibold ml-2 mt-2 text-gray-900 dark:text-gray-50"

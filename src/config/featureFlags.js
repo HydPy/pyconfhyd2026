@@ -11,7 +11,7 @@ export const FEATURE_FLAGS = {
   COMMUNITY_PARTNERS: false,
   MEET_ORGANIZERS: true,
   SPEAKERS_PAGE: false,
-  TICKETS: false,
+  TICKETS: true,
   BLOG_POSTS: false,
   JOB_BOARD: false,
   SCHEDULE: false,
@@ -19,7 +19,7 @@ export const FEATURE_FLAGS = {
   OUR_TEAM: false,
   TRAVEL: false,
   COC_REPORTING_GUIDE: true,
-  FAQ: false,
+  FAQ: true,
 };
 
 export const isFeatureEnabled = (flagName) => {
