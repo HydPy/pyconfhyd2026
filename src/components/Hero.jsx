@@ -1,9 +1,10 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { Heading, Paragraph, Span } from '@/components/Typography';
 import Icon from '@/components/Icon';
+import CTAButton from '@/components/CTAButton';
 import { CONFERENCE, ASSETS, KEY_LINKS } from '@/conference';
-import Link from 'next/link';
 
 const Announcement = () => {
   return (
@@ -101,30 +102,21 @@ const Hero = () => {
         {/* <Announcement /> */}
         <ConferenceInfo />
         <div className="flex flex-col sm:flex-row mt-8">
-          <Link
-            href={KEY_LINKS.interestedInSponsoringUrl}
-            target="_blank"
-            className="flex justify-center"
-            rel="noopener noreferrer"
-          >
-            <button className="inline-flex mt-2 sm:mr-4 items-center bg-secondary-500 px-5 py-3 font-bold text-lg hover:bg-secondary-700 text-gray-50 border-4 border-gray-900 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all transform">
-              <Icon name="ExternalLink" size={20} />
-              <Span className="ml-2">
-                {KEY_LINKS.interestedInSponsoringLabel}
-              </Span>
-            </button>
-          </Link>
-          <Link
+          <CTAButton
+            href="/tickets"
+            label="GET YOUR TICKET"
+            icon="Ticket"
+            iconSize={24}
+            target=""
+            variant="secondary"
+          />
+          <CTAButton
             href={KEY_LINKS.cfpUrl}
-            target="_blank"
-            className="flex justify-center"
-            rel="noopener noreferrer"
-          >
-            <button className="inline-flex mt-2 sm:mr-4 items-center bg-accent-500 px-5 py-3 font-bold text-lg hover:bg-accent-700 text-gray-900 border-4 border-gray-900 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all transform">
-              <Icon name="MdCampaign" size={24} />
-              <Span className="ml-2">{KEY_LINKS.cfpLabel}</Span>
-            </button>
-          </Link>
+            label={KEY_LINKS.cfpLabel}
+            icon="MdCampaign"
+            iconSize={24}
+            variant="accent"
+          />
         </div>
       </div>
     </section>

@@ -57,7 +57,7 @@ export const KEY_LINKS = {
   interestedInSponsoringLabel: 'INTERESTED IN SPONSORING',
   interestedInSponsoringUrl: 'https://forms.gle/rLNiPdrSi3NZ772n9',
   sponsorshipProspectusLabel: 'SPONSORSHIP PROSPECTUS',
-  sponsorshipProspectusUrl: '',
+  sponsorshipProspectusUrl: '/docs/sponsorship-prospectus.pdf',
   konfHubEventPageLabel: 'KonfHub event page',
   konfHubEventPage: '',
   CommunityPartnersProspectusLabel: 'PROSPECTUS',

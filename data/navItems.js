@@ -40,12 +40,13 @@ export const NAV_ITEMS = [
     target: '_self',
     featureFlag: 'SPEAKERS_PAGE',
   },
-  {
-    name: 'Tickets',
-    path: '/tickets',
-    target: '_self',
-    featureFlag: 'TICKETS',
-  },
+  // Added as CTA in Hero Banner
+  // {
+  //   name: 'Tickets',
+  //   path: '/tickets',
+  //   target: '_self',
+  //   featureFlag: 'TICKETS',
+  // },
   {
     name: 'Blog',
     path: '/blogs',
