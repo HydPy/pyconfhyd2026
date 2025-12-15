@@ -10,7 +10,7 @@ export default function KeynoteSpeakers({ speakers }) {
       <Heading
         tagLevel={2}
         level={1}
-        className="text-center my-8 text-secondary-600 dark:text-secondary-400"
+        className="text-center my-8 text-primary-600 dark:text-primary-400"
       >
         Keynote Speakers
       </Heading>

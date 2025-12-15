@@ -9,11 +9,13 @@ This is the repo for PyConf Hyderabad 2026's website. The 6th edition of the reg
 Before you start, ensure you have Node.js and a package manager installed on your machine. Follow these steps:
 
 1. **Download Node.js**:
+
    - Visit the [Node.js official website](https://nodejs.org/).
    - Download the v20.18.0 version. This was the latest LTS version when the project was created.
    - Follow the installation instructions provided on the website.
 
 2. **Verify Installation**:
+
    - Open your terminal or command prompt.
    - Run the following command to check if Node.js is installed:
      ```bash
@@ -22,6 +24,7 @@ Before you start, ensure you have Node.js and a package manager installed on you
    - You should see the version number of Node.js.
 
 3. **Install a Package Manager**:
+
    - Node.js comes with npm (Node Package Manager) by default. To check if npm is installed, run:
      ```bash
      npm -v
@@ -29,6 +32,7 @@ Before you start, ensure you have Node.js and a package manager installed on you
    - Alternatively, you can use other package managers like Yarn or pnpm.
 
 4. **Run the Development Server**:
+
    - Once Node.js and a package manager are installed, you can start the development server:
 
      ```bash

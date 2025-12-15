@@ -6,7 +6,7 @@
  */
 
 export const FEATURE_FLAGS = {
-  KEYNOTE_SPEAKERS: false,
+  KEYNOTE_SPEAKERS: true,
   SPONSORS: true,
   COMMUNITY_PARTNERS: false,
   MEET_ORGANIZERS: true,
