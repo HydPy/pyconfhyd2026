@@ -23,6 +23,7 @@ import { FaExternalLinkAlt, FaArrowCircleRight } from 'react-icons/fa';
 import { MdLightMode, MdDarkMode } from 'react-icons/md';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdVolunteerActivism, MdCampaign } from 'react-icons/md';
+import { IoTicketSharp } from 'react-icons/io5';
 
 const icons = {
   Envelope: FaEnvelope,
@@ -51,6 +52,7 @@ const icons = {
   Announcement: FaVolumeLow,
   Telegram: FaTelegram,
   Meetup: FaMeetup,
+  Ticket: IoTicketSharp,
 };
 
 export const Icon = ({ name, size = 36, className = '', padding = 0 }) => {

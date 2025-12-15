@@ -7,7 +7,7 @@
 
 export const FEATURE_FLAGS = {
   KEYNOTE_SPEAKERS: false,
-  SPONSORS: false,
+  SPONSORS: true,
   COMMUNITY_PARTNERS: false,
   MEET_ORGANIZERS: true,
   SPEAKERS_PAGE: false,
