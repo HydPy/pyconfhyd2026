@@ -26,15 +26,15 @@ export default function MeetOrganizers() {
             width={500}
             height={500}
           />
+        </div>
+        <Paragraph className="text-gray-800 dark:text-gray-300 lg:w-11/12">
           <Link
-            className="text-gray-950 dark:text-gray-50 underline"
+            className="text-gray-950 dark:text-gray-50 underline pr-1"
             href={ABOUT_HYDPY.hydPyUrl}
             target="_blank"
           >
             <Span>{ABOUT_HYDPY.hydPyLinkText}</Span>
           </Link>
-        </div>
-        <Paragraph className="text-gray-800 dark:text-gray-300 lg:w-11/12">
           {ABOUT_HYDPY.description}
         </Paragraph>
       </div>
