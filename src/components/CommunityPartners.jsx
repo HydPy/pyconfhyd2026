@@ -76,7 +76,7 @@ const CommunityPartners = () => {
       <Heading
         tagLevel={2}
         level={1}
-        className="text-center mt-8 mb-10 text-secondary-600 dark:text-secondary-400"
+        className="text-center mt-8 mb-10 text-primary-600 dark:text-primary-400"
       >
         {COMMUNITY_PARTNERS_INFO.title}
       </Heading>

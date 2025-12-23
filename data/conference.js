@@ -63,7 +63,7 @@ export const KEY_LINKS = {
   konfHubEventPage: '',
   CommunityPartnersProspectusLabel: 'PROSPECTUS',
   CommunityPartnersProspectusUrl: '/docs/community-partners-prospectus.pdf',
-  CommunityPartnersProspectusRegisterFormLabel: 'REGISTER',
+  CommunityPartnersProspectusRegisterFormLabel: 'APPLY AS A COMMUNITY PARTNER',
   CommunityPartnersProspectusRegisterFormUrl: 'https://forms.gle/a6YuXQG6t7kkywNo8',
 };
 
