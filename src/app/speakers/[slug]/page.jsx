@@ -111,24 +111,28 @@ export default async function SpeakerPage({ params }) {
               Session Details
             </Paragraph>
           )}
-          {talks.map((talk, index) => (
-            <div key={index} className="mb-2 text-gray-600 dark:text-gray-400">
-              <Paragraph>
-                {talk.type} - {talk.sessionTitle}
-              </Paragraph>
-              <ul className="list-disc ml-4">
-                <li>
-                  <Paragraph>Date: {talk.date}</Paragraph>
-                </li>
-                <li>
-                  <Paragraph>Time: {talk.time}</Paragraph>
-                </li>
-                <li>
-                  <Paragraph>Location: {talk.location}</Paragraph>
-                </li>
-              </ul>
-            </div>
-          ))}
+          {talks &&
+            talks.map((talk, index) => (
+              <div
+                key={index}
+                className="mb-2 text-gray-600 dark:text-gray-400"
+              >
+                <Paragraph>
+                  {talk.type} - {talk.sessionTitle}
+                </Paragraph>
+                <ul className="list-disc ml-4">
+                  <li>
+                    <Paragraph>Date: {talk.date}</Paragraph>
+                  </li>
+                  <li>
+                    <Paragraph>Time: {talk.time}</Paragraph>
+                  </li>
+                  <li>
+                    <Paragraph>Location: {talk.location}</Paragraph>
+                  </li>
+                </ul>
+              </div>
+            ))}
           {speaker.socials && (
             <div className="flex my-4 gap-4">
               {speaker.socials.map((social, index) => (
