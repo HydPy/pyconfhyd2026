@@ -14,7 +14,7 @@ export default function Tickets() {
       </div>
       <iframe
         className="flex"
-        src="https://konfhub.com/widget/pyconf-hyderabad-2026?desc=false&secondaryBg=FFF8F3&ticketBg=E68D00&borderCl=E68D00&bg=FFF8F3&fontColor=1e1f24&ticketCl=1e1f24&btnColor=E3453A&fontFamily=Nunito&borderRadius=10&widget_type=standard"
+        src="https://konfhub.com/widget/pyconf-hyderabad-2026?desc=false&secondaryBg=FFF8F3&ticketBg=FDD100&borderCl=E2242B&bg=FFF8F3&fontColor=1e1f24&ticketCl=1e1f24&btnColor=E3453A&fontFamily=Nunito&borderRadius=10&widget_type=standard"
         id="konfhub-widget"
         title="Register for PyConf Hyderabad 2026"
         width="100%"
