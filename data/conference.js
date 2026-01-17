@@ -54,7 +54,7 @@ export const KEY_LINKS = {
   volunteerFormLabel: 'SIGN UP TO VOLUNTEER',
   volunteerFormUrl: 'https://forms.gle/XKpdqSX12husAXBB6',
   cfpLabel: 'SUBMIT YOUR PROPOSAL',
-  cfpUrl: 'https://www.papercall.io/pyconfhyd2026',
+  cfpUrl: 'https://forms.gle/F3TJL7qdwNUFudhCA',
   interestedInSponsoringLabel: 'INTERESTED IN SPONSORING',
   interestedInSponsoringUrl: 'https://forms.gle/rLNiPdrSi3NZ772n9',
   sponsorshipProspectusLabel: 'SPONSORSHIP PROSPECTUS',
