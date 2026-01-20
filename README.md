@@ -31,7 +31,18 @@ Before you start, ensure you have Node.js and a package manager installed on you
      ```
    - Alternatively, you can use other package managers like Yarn or pnpm.
 
-4. **Run the Development Server**:
+4. **Install Dependencies**:
+
+   - Install the project dependencies using your preferred package manager:
+     ```bash
+     npm install
+     # or
+     yarn install
+     # or
+     pnpm install
+     ```
+
+5. **Run the Development Server**:
 
    - Once Node.js and a package manager are installed, you can start the development server:
 

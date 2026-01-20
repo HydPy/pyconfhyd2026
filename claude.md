@@ -95,7 +95,6 @@ npm run dev  # Start development server on localhost:3000
 
 ```bash
 npm run build     # Build static site
-npm run export    # Export for deployment
 ```
 
 ### Code Quality
