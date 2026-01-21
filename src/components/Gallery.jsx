@@ -1,0 +1,109 @@
+'use client';
+import { useEffect, useRef } from 'react';
+import Image from 'next/image';
+
+import { Heading, Paragraph } from '@/components/Typography';
+import { GALLERY_INFO, GALLERY_IMAGES } from '@/gallery';
+
+const SCROLL_SPEED_PX_PER_MS = 0.08; // 100 pixels per second
+
+const Gallery = () => {
+  const carouselRef = useRef(null);
+  const animationFrameRef = useRef(null);
+  const positionRef = useRef(0);
+  const lastTimeRef = useRef(performance.now());
+  const totalWidthRef = useRef(0);
+
+  // Duplicate images for seamless infinite loop
+  const duplicatedImages = [...GALLERY_IMAGES, ...GALLERY_IMAGES];
+
+  useEffect(() => {
+    const carousel = carouselRef.current;
+    if (!carousel || GALLERY_IMAGES.length === 0) return;
+
+    // Calculate total width once (will recalculate on resize if needed)
+    const calculateTotalWidth = () => {
+      const firstItem = carousel.firstElementChild;
+      if (!firstItem) return 0;
+      return firstItem.offsetWidth * GALLERY_IMAGES.length;
+    };
+
+    totalWidthRef.current = calculateTotalWidth();
+
+    const animate = (currentTime) => {
+      const deltaTime = currentTime - lastTimeRef.current;
+      lastTimeRef.current = currentTime;
+
+      // Recalculate width on resize (handles responsive changes)
+      const currentTotalWidth = calculateTotalWidth();
+      if (currentTotalWidth !== totalWidthRef.current) {
+        totalWidthRef.current = currentTotalWidth;
+      }
+
+      positionRef.current += SCROLL_SPEED_PX_PER_MS * deltaTime;
+
+      // Reset position when scrolled through one complete set for seamless loop
+      if (positionRef.current >= totalWidthRef.current) {
+        positionRef.current = 0;
+      }
+
+      carousel.style.transform = `translateX(-${positionRef.current}px)`;
+      animationFrameRef.current = requestAnimationFrame(animate);
+    };
+
+    animationFrameRef.current = requestAnimationFrame(animate);
+
+    return () => {
+      if (animationFrameRef.current) {
+        cancelAnimationFrame(animationFrameRef.current);
+      }
+    };
+  }, []);
+
+  if (GALLERY_IMAGES.length === 0) {
+    return null;
+  }
+
+  return (
+    <section
+      id="gallery"
+      className="scroll-mt-20 flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto"
+    >
+      <div className="text-center mb-12">
+        <Heading
+          tagLevel={2}
+          level={1}
+          className="mb-4 text-primary-600 dark:text-primary-400"
+        >
+          {GALLERY_INFO.title}
+        </Heading>
+        <Paragraph level={2} className="text-gray-600 dark:text-gray-300">
+          {GALLERY_INFO.description}
+        </Paragraph>
+      </div>
+
+      <div className="w-full overflow-hidden">
+        <div ref={carouselRef} className="flex will-change-transform">
+          {duplicatedImages.map((image, index) => (
+            <div
+              key={`${image.src}-${index}`}
+              className="flex-shrink-0 w-[90%] sm:w-[50%] lg:w-[33%] mr-4"
+            >
+              <div className="relative w-full aspect-[16/9] rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 90vw, (max-width: 1024px) 50vw, 33vw"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Gallery;

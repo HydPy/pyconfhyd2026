@@ -11,6 +11,7 @@ export const FEATURE_FLAGS = {
   COMMUNITY_PARTNERS: true,
   MEET_ORGANIZERS: true,
   WHY_ATTEND: true,
+  GALLERY: true,
   SPEAKERS_PAGE: false,
   TICKETS: true,
   BLOG_POSTS: false,
