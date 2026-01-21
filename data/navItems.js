@@ -9,6 +9,12 @@ export const NAV_ITEMS = [
         featureFlag: 'KEYNOTE_SPEAKERS',
       },
       {
+        name: 'Why Attend',
+        path: '/#why-attend',
+        target: '_self',
+        featureFlag: 'WHY_ATTEND',
+      },
+      {
         name: 'Sponsors',
         path: '/#sponsors',
         target: '_self',

@@ -18,6 +18,12 @@ import {
   FaVolumeLow,
   FaTelegram,
   FaMeetup,
+  FaGraduationCap,
+  FaUsers,
+  FaBriefcase,
+  FaCode,
+  FaHeart,
+  FaBowlFood,
 } from 'react-icons/fa6';
 import { FaExternalLinkAlt, FaArrowCircleRight } from 'react-icons/fa';
 import { MdLightMode, MdDarkMode } from 'react-icons/md';
@@ -53,6 +59,12 @@ const icons = {
   Telegram: FaTelegram,
   Meetup: FaMeetup,
   Ticket: IoTicketSharp,
+  GraduationCap: FaGraduationCap,
+  Users: FaUsers,
+  Briefcase: FaBriefcase,
+  Code: FaCode,
+  Heart: FaHeart,
+  BowlFood: FaBowlFood,
 };
 
 export const Icon = ({ name, size = 36, className = '', padding = 0 }) => {

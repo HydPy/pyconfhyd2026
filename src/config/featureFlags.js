@@ -10,6 +10,7 @@ export const FEATURE_FLAGS = {
   SPONSORS: true,
   COMMUNITY_PARTNERS: true,
   MEET_ORGANIZERS: true,
+  WHY_ATTEND: true,
   SPEAKERS_PAGE: false,
   TICKETS: true,
   BLOG_POSTS: false,
