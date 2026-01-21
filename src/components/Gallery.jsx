@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Heading, Paragraph } from '@/components/Typography';
 import { GALLERY_INFO, GALLERY_IMAGES } from '@/gallery';
 
-const SCROLL_SPEED_PX_PER_MS = 0.08; // 100 pixels per second
+const SCROLL_SPEED_PX_PER_MS = 0.08; // 80 pixels per second (80/1000 = 0.08)
 
 const Gallery = () => {
   const carouselRef = useRef(null);
