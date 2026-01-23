@@ -6,51 +6,46 @@ import { Heading, Paragraph } from '@/components/Typography';
 
 const Speaker = ({ speaker }) => {
   return (
-    <div className="flex flex-col px-6 sm:px-10 md:px-20 items-center border rounded-3xl shadow-xl transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
+    <div className="flex flex-col items-center px-6 py-8 transition-transform duration-300 hover:-translate-y-2 scale-[0.98] -translate-x-[5%]">
+
+
       <Link
         className="flex flex-col items-center"
         href={`/speakers/${speaker.slug}`}
       >
-        <figure className="w-48 h-48 lg:w-64 lg:h-64">
-          <div className="relative shadow-md top-[-10%] h-full w-full rounded-xl">
-            <Image
-              className="object-cover rounded-xl"
-              src={speaker.imgUrl}
-              alt={speaker.imgAlt}
-              fill
-            />
-          </div>
-          <figcaption className="sr-only">{speaker.imgAlt}</figcaption>
-        </figure>
-        <div>
-          <Heading
+        <figure className="relative w-48 lg:w-56">
+  <Image
+    src="/images/speakers/pyconfhyd26-keynote-speaker.png"
+    alt={speaker.imgAlt}
+    width={400}
+    height={600}
+    className="object-contain"
+    priority
+  />
+</figure>
+
+        <div className="relative -mt-7">
+          <div className="relative z-10 bg-white border-4 border-black px-3 py-3 pb-6 text-right">
+            <Heading
             tagLevel={2}
             level={5}
-            className="my-2 text-center text-secondary-600 dark:text-secondary-400"
-          >
-            {speaker.name}
-          </Heading>
-          <Paragraph className="my-2 text-center text-gray-950 dark:text-gray-50">
-            {speaker.title}
-          </Paragraph>
-        </div>
-      </Link>
-      {speaker.socials && (
-        <div className="py-4 flex gap-5 items-center justify-center">
-          {speaker.socials.map((social, index) => (
-            <Link
-              key={index}
-              className="text-secondary-600 hover:text-secondary-950 dark:text-secondary-400 dark:hover:text-gray-50 mr-1"
-              href={social.url}
-              target="_blank"
-              aria-label={social.ariaLabel}
-              rel="noopener noreferrer"
+            className="mt-2.5 text-right font-normal text-black"
             >
-              <Icon name={social.name} size={30} />
-            </Link>
-          ))}
-        </div>
-      )}
+              {speaker.name}
+            </Heading>
+            <Paragraph
+  level={2}
+  className="text-right font-semibold text-black"
+>
+  {speaker.title}
+</Paragraph>
+
+          </div>
+        <div className="absolute left-0 right-0 bottom-0 top-0 translate-x-4 translate-y-5 bg-black -z-0"></div>
+
+</div>
+
+      </Link>
     </div>
   );
 };
