@@ -52,10 +52,10 @@ export default function Home() {
         <KeynoteSpeakers speakers={getKeynoteSpeakers(SPEAKERS)} />
       )}
       {isWhyAttendEnabled && <WhyAttend />}
-      {isGalleryEnabled && <Gallery />}
       {isSponsorsEnabled && <SponsorsSection />}
       {isCommunityPartnersEnabled && <CommunityPartners />}
       {isMeetOrganizersEnabled && <MeetOrganizers />}
+      {isGalleryEnabled && <Gallery />}
     </>
   );
 }
