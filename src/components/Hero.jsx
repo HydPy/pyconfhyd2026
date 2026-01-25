@@ -110,13 +110,13 @@ const Hero = () => {
             target=""
             variant="secondary"
           />
-          <CTAButton
+          {/* <CTAButton
             href={KEY_LINKS.cfpUrl}
             label={KEY_LINKS.cfpLabel}
             icon="MdCampaign"
             iconSize={24}
             variant="accent"
-          />
+          /> */}
         </div>
       </div>
     </section>
