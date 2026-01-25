@@ -49,7 +49,7 @@ const CommunityDescription = () => {
       <Paragraph className="text-center text-gray-800 dark:text-gray-300 lg:w-11/12">
         {COMMUNITY_PARTNERS_INFO.description}
       </Paragraph>
-      <div className="flex flex-col sm:flex-row items-center mt-4">
+      {/* <div className="flex flex-col sm:flex-row items-center mt-4">
         <CTAButton
           href={KEY_LINKS.CommunityPartnersProspectusUrl}
           label={KEY_LINKS.CommunityPartnersProspectusLabel}
@@ -62,7 +62,7 @@ const CommunityDescription = () => {
           iconSize={20}
           variant="accent"
         />
-      </div>
+      </div> */}
     </>
   );
 };
