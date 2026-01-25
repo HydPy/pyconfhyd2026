@@ -92,6 +92,7 @@ const Hero = () => {
         <Heading tagLevel={1} level={1} className="hidden">
           {CONFERENCE.title}
         </Heading>
+        <EditionBadge />
         <div className="relative w-full md:w-1/2 aspect-video mt-4">
           <Image
             src={ASSETS.logoUrl}
@@ -100,7 +101,7 @@ const Hero = () => {
             fill
           />
         </div>
-        <EditionBadge />
+        
         {/* <Announcement /> */}
         <ConferenceInfo />
         <div className="flex flex-col sm:flex-row mt-8">
