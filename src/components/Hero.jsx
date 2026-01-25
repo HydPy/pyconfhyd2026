@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Heading, Paragraph, Span } from '@/components/Typography';
 import Icon from '@/components/Icon';
 import CTAButton from '@/components/CTAButton';
+import EditionBadge from '@/components/EditionBadge';
 import { CONFERENCE, ASSETS, KEY_LINKS } from '@/conference';
 
 const Announcement = () => {
@@ -91,6 +92,7 @@ const Hero = () => {
         <Heading tagLevel={1} level={1} className="hidden">
           {CONFERENCE.title}
         </Heading>
+        <EditionBadge />
         <div className="relative w-full md:w-1/2 aspect-video mt-4">
           <Image
             src={ASSETS.logoUrl}
@@ -99,6 +101,7 @@ const Hero = () => {
             fill
           />
         </div>
+        
         {/* <Announcement /> */}
         <ConferenceInfo />
         <div className="flex flex-col sm:flex-row mt-8">
@@ -110,13 +113,13 @@ const Hero = () => {
             target=""
             variant="secondary"
           />
-          <CTAButton
+          {/* <CTAButton
             href={KEY_LINKS.cfpUrl}
             label={KEY_LINKS.cfpLabel}
             icon="MdCampaign"
             iconSize={24}
             variant="accent"
-          />
+          /> */}
         </div>
       </div>
     </section>
