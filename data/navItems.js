@@ -32,6 +32,12 @@ export const NAV_ITEMS = [
         target: '_self',
         featureFlag: 'MEET_ORGANIZERS',
       },
+      {
+        name: 'Gallery',
+        path: '/#gallery',
+        target: '_self',
+        featureFlag: 'GALLERY',
+      },
     ],
   },
   {
