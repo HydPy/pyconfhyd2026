@@ -33,10 +33,10 @@ export const NAV_ITEMS = [
         featureFlag: 'MEET_ORGANIZERS',
       },
       {
-        name: 'Gallery',
-        path: '/#gallery',
+        name: 'Epic Frames',
+        path: '/#epic-frames',
         target: '_self',
-        featureFlag: 'GALLERY',
+        featureFlag: 'EPIC_FRAMES',
       },
     ],
   },

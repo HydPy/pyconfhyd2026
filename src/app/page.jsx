@@ -7,7 +7,7 @@ import MeetOrganizers from '@/components/MeetOrganizers';
 import SponsorsSection from '@/components/Sponsors';
 import CommunityPartners from '@/components/CommunityPartners';
 import WhyAttend from '@/components/WhyAttend';
-import Gallery from '@/components/Gallery';
+import EpicFrames from '@/components/EpicFrames';
 import { useFeatureFlag } from '@/hooks/useFeatureFlag';
 
 import { SPEAKERS } from '@/speakers';
@@ -33,7 +33,7 @@ export default function Home() {
   const isCommunityPartnersEnabled = useFeatureFlag('COMMUNITY_PARTNERS');
   const isMeetOrganizersEnabled = useFeatureFlag('MEET_ORGANIZERS');
   const isWhyAttendEnabled = useFeatureFlag('WHY_ATTEND');
-  const isGalleryEnabled = useFeatureFlag('GALLERY');
+  const isEpicFramesEnabled = useFeatureFlag('EPIC_FRAMES');
 
   useEffect(() => {
     const hash = window.location.hash;
@@ -55,7 +55,7 @@ export default function Home() {
       {isSponsorsEnabled && <SponsorsSection />}
       {isCommunityPartnersEnabled && <CommunityPartners />}
       {isMeetOrganizersEnabled && <MeetOrganizers />}
-      {isGalleryEnabled && <Gallery />}
+      {isEpicFramesEnabled && <EpicFrames />}
     </>
   );
 }

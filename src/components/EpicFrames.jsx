@@ -3,11 +3,11 @@ import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 
 import { Heading, Paragraph } from '@/components/Typography';
-import { GALLERY_INFO, GALLERY_IMAGES } from '@/gallery';
+import { EPIC_FRAMES_INFO, EPIC_FRAMES_IMAGES } from '@/epicFrames';
 
 const SCROLL_SPEED_PX_PER_MS = 0.08; // 80 pixels per second (80/1000 = 0.08)
 
-const Gallery = () => {
+const EpicFrames = () => {
   const carouselRef = useRef(null);
   const animationFrameRef = useRef(null);
   const positionRef = useRef(0);
@@ -15,17 +15,17 @@ const Gallery = () => {
   const totalWidthRef = useRef(0);
 
   // Duplicate images for seamless infinite loop
-  const duplicatedImages = [...GALLERY_IMAGES, ...GALLERY_IMAGES];
+  const duplicatedImages = [...EPIC_FRAMES_IMAGES, ...EPIC_FRAMES_IMAGES];
 
   useEffect(() => {
     const carousel = carouselRef.current;
-    if (!carousel || GALLERY_IMAGES.length === 0) return;
+    if (!carousel || EPIC_FRAMES_IMAGES.length === 0) return;
 
     // Calculate total width once (will recalculate on resize if needed)
     const calculateTotalWidth = () => {
       const firstItem = carousel.firstElementChild;
       if (!firstItem) return 0;
-      return firstItem.offsetWidth * GALLERY_IMAGES.length;
+      return firstItem.offsetWidth * EPIC_FRAMES_IMAGES.length;
     };
 
     totalWidthRef.current = calculateTotalWidth();
@@ -60,13 +60,13 @@ const Gallery = () => {
     };
   }, []);
 
-  if (GALLERY_IMAGES.length === 0) {
+  if (EPIC_FRAMES_IMAGES.length === 0) {
     return null;
   }
 
   return (
     <section
-      id="gallery"
+      id="epic-frames"
       className="scroll-mt-20 flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto"
     >
       <div className="text-center mb-12">
@@ -75,10 +75,10 @@ const Gallery = () => {
           level={1}
           className="mb-4 text-primary-600 dark:text-primary-400"
         >
-          {GALLERY_INFO.title}
+          {EPIC_FRAMES_INFO.title}
         </Heading>
         <Paragraph level={2} className="text-gray-600 dark:text-gray-300">
-          {GALLERY_INFO.description}
+          {EPIC_FRAMES_INFO.description}
         </Paragraph>
       </div>
 
@@ -106,4 +106,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default EpicFrames;
