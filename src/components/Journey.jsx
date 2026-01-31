@@ -13,7 +13,8 @@ const journeyData = [
   {
     year: '2018',
     title: 'PyCon India 10th edition',
-    description: 'Hosted & conducted PyCon India\'s 10th edition in Hyderabad, achieving record attendance.',
+    description:
+      "Hosted & conducted PyCon India's 10th edition in Hyderabad, achieving record attendance.",
     position: 'bottom',
   },
   {
@@ -37,7 +38,8 @@ const journeyData = [
   {
     year: '2023',
     title: 'PyCon India',
-    description: 'Hosted & conducted the 1st in-person PyCon India after pandemic',
+    description:
+      'Hosted & conducted the 1st in-person PyCon India after pandemic',
     position: 'bottom',
   },
   {
@@ -73,24 +75,27 @@ const TimelineItem = ({ item, index, isVisible }) => {
       {/* Content for top items */}
       {isTop && (
         <div className="text-center mb-4 px-2">
-          <Heading
-            tagLevel={3}
-            level={4}
-            className="text-accent-500 mb-1"
-          >
+          <Heading tagLevel={3} level={4} className="text-accent-500 mb-1">
             {item.year}
           </Heading>
-          <Span level={3} className="font-bold text-gray-900 dark:text-gray-50 block">
+          <Span
+            level={3}
+            className="font-bold text-gray-900 dark:text-gray-50 block"
+          >
             {item.title}
           </Span>
-          <Paragraph level={4} className="text-gray-600 dark:text-gray-300 text-sm max-w-[150px] mx-auto">
+          <Paragraph
+            level={4}
+            className="text-gray-600 dark:text-gray-300 text-sm max-w-[150px] mx-auto"
+          >
             {item.description}
           </Paragraph>
         </div>
       )}
 
       {/* Star marker */}
-      <div className={`
+      <div
+        className={`
         relative z-10
         transition-transform duration-500
         ${isVisible ? 'scale-100 rotate-0' : 'scale-0 rotate-180'}
@@ -103,17 +108,19 @@ const TimelineItem = ({ item, index, isVisible }) => {
       {/* Content for bottom items */}
       {!isTop && (
         <div className="text-center mt-4 px-2">
-          <Heading
-            tagLevel={3}
-            level={4}
-            className="text-accent-500 mb-1"
-          >
+          <Heading tagLevel={3} level={4} className="text-accent-500 mb-1">
             {item.year}
           </Heading>
-          <Span level={3} className="font-bold text-gray-900 dark:text-gray-50 block">
+          <Span
+            level={3}
+            className="font-bold text-gray-900 dark:text-gray-50 block"
+          >
             {item.title}
           </Span>
-          <Paragraph level={4} className="text-gray-600 dark:text-gray-300 text-sm max-w-[150px] mx-auto">
+          <Paragraph
+            level={4}
+            className="text-gray-600 dark:text-gray-300 text-sm max-w-[150px] mx-auto"
+          >
             {item.description}
           </Paragraph>
         </div>
@@ -134,7 +141,8 @@ const MobileTimelineItem = ({ item, index, isVisible }) => {
     >
       {/* Star and line */}
       <div className="flex flex-col items-center">
-        <div className={`
+        <div
+          className={`
           transition-transform duration-500
           ${isVisible ? 'scale-100 rotate-0' : 'scale-0 rotate-180'}
         `}
@@ -149,17 +157,19 @@ const MobileTimelineItem = ({ item, index, isVisible }) => {
 
       {/* Content */}
       <div className="pb-6">
-        <Heading
-          tagLevel={3}
-          level={5}
-          className="text-accent-500 mb-1"
-        >
+        <Heading tagLevel={3} level={5} className="text-accent-500 mb-1">
           {item.year}
         </Heading>
-        <Span level={3} className="font-bold text-gray-900 dark:text-gray-50 block">
+        <Span
+          level={3}
+          className="font-bold text-gray-900 dark:text-gray-50 block"
+        >
           {item.title}
         </Span>
-        <Paragraph level={4} className="text-gray-600 dark:text-gray-300 text-sm">
+        <Paragraph
+          level={4}
+          className="text-gray-600 dark:text-gray-300 text-sm"
+        >
           {item.description}
         </Paragraph>
       </div>
@@ -224,9 +234,12 @@ const Journey = () => {
             <div className="relative">
               {/* Top row items */}
               <div className="grid grid-cols-7 gap-2 mb-4">
-                {journeyData.map((item, index) => (
+                {journeyData.map((item, index) =>
                   item.position === 'top' ? (
-                    <div key={item.year} className="flex flex-col items-center justify-end min-h-[140px]">
+                    <div
+                      key={item.year}
+                      className="flex flex-col items-center justify-end min-h-[140px]"
+                    >
                       <div className="text-center px-1">
                         <Heading
                           tagLevel={3}
@@ -267,7 +280,7 @@ const Journey = () => {
                   ) : (
                     <div key={item.year} className="min-h-[140px]" />
                   )
-                ))}
+                )}
               </div>
 
               {/* Timeline bar with stars */}
@@ -284,7 +297,10 @@ const Journey = () => {
                 {/* Stars positioned on the bar */}
                 <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 grid grid-cols-7 gap-2">
                   {journeyData.map((item, index) => (
-                    <div key={`star-${item.year}`} className="flex justify-center">
+                    <div
+                      key={`star-${item.year}`}
+                      className="flex justify-center"
+                    >
                       <div
                         className={`
                           transition-all duration-500
@@ -301,9 +317,12 @@ const Journey = () => {
 
               {/* Bottom row items */}
               <div className="grid grid-cols-7 gap-2 mt-4">
-                {journeyData.map((item, index) => (
+                {journeyData.map((item, index) =>
                   item.position === 'bottom' ? (
-                    <div key={item.year} className="flex flex-col items-center justify-start min-h-[140px]">
+                    <div
+                      key={item.year}
+                      className="flex flex-col items-center justify-start min-h-[140px]"
+                    >
                       <div className="text-center px-1">
                         <Heading
                           tagLevel={3}
@@ -344,7 +363,7 @@ const Journey = () => {
                   ) : (
                     <div key={item.year} className="min-h-[140px]" />
                   )
-                ))}
+                )}
               </div>
             </div>
           </div>
