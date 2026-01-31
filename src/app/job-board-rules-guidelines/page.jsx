@@ -1,0 +1,32 @@
+import JobBoardRulesGuidelinesMdx from '@/job-board-rules-guidelines.mdx';
+import MdxLayout from '@/components/MdxLayout';
+import { Heading } from '@/components/Typography';
+
+export const metadata = {
+  title: 'Job Board Rules and Guidelines',
+  description: 'Job Board Rules and Guidelines for PyConf Hyderabad 2026',
+  openGraph: {
+    title: 'Job Board Rules and Guidelines',
+    description: 'Job Board Rules and Guidelines for PyConf Hyderabad 2026',
+  },
+};
+
+export default function Page() {
+  return (
+    <section className="flex flex-col items-center py-16 w-11/12 lg:w-5/6 mx-auto">
+      <Heading
+        tagLevel={1}
+        level={1}
+        className="mb-8 text-primary-600 dark:text-primary-400"
+      >
+        Job Board Rules and Guidelines
+      </Heading>
+
+      <div className="w-full max-w-4xl">
+        <MdxLayout>
+          <JobBoardRulesGuidelinesMdx />
+        </MdxLayout>
+      </div>
+    </section>
+  );
+}
