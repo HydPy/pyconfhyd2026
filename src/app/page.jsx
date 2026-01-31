@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 
 import Hero from '@/components/Hero';
+import Journey from '@/components/Journey';
 import KeynoteSpeakers from '@/components/KeynoteSpeakers';
 import MeetOrganizers from '@/components/MeetOrganizers';
 import SponsorsSection from '@/components/Sponsors';
@@ -34,6 +35,7 @@ export default function Home() {
   const isMeetOrganizersEnabled = useFeatureFlag('MEET_ORGANIZERS');
   const isWhyAttendEnabled = useFeatureFlag('WHY_ATTEND');
   const isEpicFramesEnabled = useFeatureFlag('EPIC_FRAMES');
+  const isJourneyEnabled = useFeatureFlag('JOURNEY');
 
   useEffect(() => {
     const hash = window.location.hash;
@@ -48,6 +50,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      {isJourneyEnabled && <Journey />}
       {isKeynoteSpeakersEnabled && (
         <KeynoteSpeakers speakers={getKeynoteSpeakers(SPEAKERS)} />
       )}

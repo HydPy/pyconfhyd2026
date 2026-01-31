@@ -12,6 +12,7 @@ export const FEATURE_FLAGS = {
   MEET_ORGANIZERS: true,
   WHY_ATTEND: true,
   EPIC_FRAMES: true,
+  JOURNEY: true,
   SPEAKERS_PAGE: false,
   TICKETS: true,
   BLOG_POSTS: false,
