@@ -67,7 +67,8 @@ export const KEY_LINKS = {
   CommunityPartnersProspectusRegisterFormUrl:
     'https://forms.gle/a6YuXQG6t7kkywNo8',
   jobBoardFormLabel: 'POST A JOB',
-  jobBoardFormUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSfQ6T4nChgXuzQc_yNKM1AktQJEzMK8NQkZaRRmvoONgmhAVQ/viewform?usp=header',
+  jobBoardFormUrl:
+    'https://docs.google.com/forms/d/e/1FAIpQLSfQ6T4nChgXuzQc_yNKM1AktQJEzMK8NQkZaRRmvoONgmhAVQ/viewform?usp=header',
 };
 
 export const SOCIALS = [
