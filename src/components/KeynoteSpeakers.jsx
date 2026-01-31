@@ -10,11 +10,11 @@ export default function KeynoteSpeakers({ speakers }) {
       <Heading
         tagLevel={2}
         level={1}
-        className="text-center mt-2 mb-2 text-primary-600 dark:text-primary-400"
+        className="text-center my-2 text-primary-600 dark:text-primary-400"
       >
         Keynote Speakers
       </Heading>
-      <div className="flex flex-wrap justify-center mt-0 gap-20">
+      <div className="flex flex-wrap justify-center gap-20">
         {speakers.map((speaker, index) => (
           <Speaker key={index} speaker={speaker} />
         ))}
