@@ -12,7 +12,7 @@ const Speaker = ({ speaker }) => {
       >
         <figure className="relative w-48 lg:w-56">
           <Image
-          src="/images/speakers/pyconfhyd26-keynote-speaker.png"
+          src="/images/speakers/manivannanElangovan.png"
           alt={speaker.imgAlt}
           width={400}
           height={600}
