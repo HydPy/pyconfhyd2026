@@ -1,5 +1,7 @@
 import TicketDescriptionMdx from '@/ticketsDescription.mdx';
 import MdxLayout from '@/components/MdxLayout';
+import { Paragraph, Span } from './Typography';
+import Link from 'next/link';
 
 export default function Tickets() {
   return (
@@ -28,6 +30,18 @@ export default function Tickets() {
         width="100%"
         height="800"
       ></iframe>
+      <div>
+        <Paragraph>
+          Want to come for the conference, but not sure how to pitch the same to
+          your boss. Leave it to us, check out
+          <Link
+            className="text-gray-950 dark:text-gray-50 underline pr-1"
+            href={"/convince-my-boss"}
+          >
+            <Span> Convince My Boss</Span>.
+          </Link>
+        </Paragraph>
+      </div>
     </section>
   );
 }

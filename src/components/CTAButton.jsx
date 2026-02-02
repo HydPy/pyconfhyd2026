@@ -11,6 +11,7 @@ const CTAButton = ({
   className = '',
   target = '_blank',
   rel = 'noopener noreferrer',
+  download = false,
 }) => {
   const variantStyles = {
     primary: 'bg-primary-500 hover:bg-primary-700 text-gray-50',
@@ -19,7 +20,7 @@ const CTAButton = ({
   };
 
   return (
-    <Link href={href} target={target} className="flex justify-center" rel={rel}>
+    <Link href={href} target={target} className="flex justify-center" rel={rel} download={download}>
       <button
         className={`inline-flex mt-2 sm:mr-4 items-center px-5 py-3 font-bold text-lg border-4 border-gray-900 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all transform ${variantStyles[variant]} ${className}`}
       >
