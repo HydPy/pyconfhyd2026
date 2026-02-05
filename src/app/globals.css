@@ -64,8 +64,3 @@ h6 {
   opacity: 0.8;
   animation: fall linear infinite;
 }
-
-/* Decorative speaker icon: align to viewport right edge */
-.sponsors-deco-right {
-  right: calc((100% - 100vw) / 2);
-}

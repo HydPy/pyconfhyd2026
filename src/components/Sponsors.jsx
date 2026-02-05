@@ -7,6 +7,21 @@ import { SPONSORS, SPONSORS_INFO } from '@/sponsors';
 import CTAButton from '@/components/CTAButton';
 import { KEY_LINKS } from '@/conference';
 
+const SpeakerCreative = () => {
+  return (
+    <Image
+      src="/images/speakerCreative.svg"
+      alt="Decorative speaker creative"
+      width={240}
+      height={240}
+      className="pointer-events-none hidden xl:block absolute bottom-[-120px] w-60 h-60"
+      style={{
+        right: 'calc((100% - 100vw) / 2)', // Align to the viewport's right edge
+      }}
+    />
+  );
+};
+
 const SponsorLogoCard = ({ slug, hyperLink, imgUrl, imgAlt }) => {
   return (
     <Link
@@ -90,14 +105,7 @@ const SponsorsSection = () => {
       </Heading>
       <SponsorDescription />
       {SPONSORS && <SponsorCategoryGrid />}
-      {/* bottom-right decorative speaker icon (from public folder) */}
-      <Image
-        src="/images/speakerIcon.svg"
-        alt="speaker icon"
-        width={240}
-        height={240}
-        className="pointer-events-none hidden xl:block absolute bottom-[-120px] w-60 h-60 sponsors-deco-right"
-      />
+      <SpeakerCreative />
     </section>
   );
 };
