@@ -13,6 +13,7 @@ const EpicFrames = () => {
   const positionRef = useRef(0);
   const lastTimeRef = useRef(performance.now());
   const totalWidthRef = useRef(0);
+  const isPausedRef = useRef(false);
 
   // Duplicate images for seamless infinite loop
   const duplicatedImages = [...EPIC_FRAMES_IMAGES, ...EPIC_FRAMES_IMAGES];
@@ -34,20 +35,22 @@ const EpicFrames = () => {
       const deltaTime = currentTime - lastTimeRef.current;
       lastTimeRef.current = currentTime;
 
-      // Recalculate width on resize (handles responsive changes)
-      const currentTotalWidth = calculateTotalWidth();
-      if (currentTotalWidth !== totalWidthRef.current) {
-        totalWidthRef.current = currentTotalWidth;
+      if (!isPausedRef.current) {
+        // Recalculate width on resize (handles responsive changes)
+        const currentTotalWidth = calculateTotalWidth();
+        if (currentTotalWidth !== totalWidthRef.current) {
+          totalWidthRef.current = currentTotalWidth;
+        }
+
+        positionRef.current += SCROLL_SPEED_PX_PER_MS * deltaTime;
+
+        // Reset position when scrolled through one complete set for seamless loop
+        if (positionRef.current >= totalWidthRef.current) {
+          positionRef.current = 0;
+        }
+
+        carousel.style.transform = `translateX(-${positionRef.current}px)`;
       }
-
-      positionRef.current += SCROLL_SPEED_PX_PER_MS * deltaTime;
-
-      // Reset position when scrolled through one complete set for seamless loop
-      if (positionRef.current >= totalWidthRef.current) {
-        positionRef.current = 0;
-      }
-
-      carousel.style.transform = `translateX(-${positionRef.current}px)`;
       animationFrameRef.current = requestAnimationFrame(animate);
     };
 
@@ -82,7 +85,11 @@ const EpicFrames = () => {
         </Paragraph>
       </div>
 
-      <div className="w-full overflow-hidden">
+      <div
+        className="w-full overflow-hidden"
+        onMouseEnter={() => (isPausedRef.current = true)}
+        onMouseLeave={() => (isPausedRef.current = false)}
+      >
         <div ref={carouselRef} className="flex will-change-transform">
           {duplicatedImages.map((image, index) => (
             <div
