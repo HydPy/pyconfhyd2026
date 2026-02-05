@@ -79,7 +79,7 @@ const SponsorsSection = () => {
   return (
     <section
       id="sponsors"
-      className="scroll-mt-20 flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto"
+      className="scroll-mt-20 relative flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto"
     >
       <Heading
         tagLevel={2}
@@ -90,6 +90,14 @@ const SponsorsSection = () => {
       </Heading>
       <SponsorDescription />
       {SPONSORS && <SponsorCategoryGrid />}
+      {/* bottom-right decorative speaker icon (from public folder) */}
+      <Image
+        src="/images/speakerIcon.svg"
+        alt="speaker icon"
+        width={240}
+        height={240}
+        className="pointer-events-none hidden xl:block absolute bottom-[-120px] w-60 h-60 sponsors-deco-right"
+      />
     </section>
   );
 };
