@@ -30,12 +30,13 @@ const Speaker = ({ speaker }) => {
             >
               {speaker.name}
             </Heading>
-            <Paragraph
-              level={2}
+            <Heading
+              tagLevel={4}
+              level={6}
               className="text-right font-semibold text-gray-950"
             >
               {speaker.title}
-            </Paragraph>
+            </Heading>
           </div>
           <div className="absolute left-0 right-0 bottom-0 top-0 translate-x-4 translate-y-5 bg-gray-950 -z-0"></div>
         </div>
