@@ -2,6 +2,7 @@ import TicketDescriptionMdx from '@/ticketsDescription.mdx';
 import MdxLayout from '@/components/MdxLayout';
 import { Paragraph, Span } from './Typography';
 import Link from 'next/link';
+import CTAButton from './CTAButton';
 
 export default function Tickets() {
   return (
@@ -14,6 +15,21 @@ export default function Tickets() {
           <TicketDescriptionMdx />
         </MdxLayout>
       </div>
+      <div className="mb-5 flex flex-col sm:flex-row gap-4">
+        <CTAButton
+          href="/faq#:~:text=I%27m%20a%20student.%20How%20do%20I%20get%20a%20student%20ticket%3F"
+          label={'For Students'}
+          icon='Student'
+          variant="primary"
+        />
+        <CTAButton
+          href="/convince-my-boss"
+          label={'Convince My Boss'}
+          icon='Boss'
+          variant="secondary"
+        />
+      </div>
+
       <iframe
         className="flex dark:hidden"
         src="https://konfhub.com/widget/pyconf-hyderabad-2026?desc=false&secondaryBg=FDD100&ticketBg=FFF9DC&borderCl=FDD100&bg=FFFFFF&fontColor=1e1f24&ticketCl=1e1f24&btnColor=FB5850&fontFamily=Nunito&borderRadius=10&widget_type=standard"
@@ -30,18 +46,6 @@ export default function Tickets() {
         width="100%"
         height="800"
       ></iframe>
-      <div>
-        <Paragraph>
-          Want to come for the conference, but not sure how to pitch the same to
-          your boss. Leave it to us, check out
-          <Link
-            className="text-gray-950 dark:text-gray-50 underline pr-1"
-            href={"/convince-my-boss"}
-          >
-            <Span> Convince My Boss</Span>.
-          </Link>
-        </Paragraph>
-      </div>
     </section>
   );
 }

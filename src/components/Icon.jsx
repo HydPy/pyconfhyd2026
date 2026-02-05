@@ -25,7 +25,7 @@ import {
   FaHeart,
   FaBowlFood,
 } from 'react-icons/fa6';
-import { FaExternalLinkAlt, FaArrowCircleRight } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaArrowCircleRight, FaUserGraduate, FaSuitcase } from 'react-icons/fa';
 import { MdLightMode, MdDarkMode } from 'react-icons/md';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdVolunteerActivism, MdCampaign } from 'react-icons/md';
@@ -65,6 +65,8 @@ const icons = {
   Code: FaCode,
   Heart: FaHeart,
   BowlFood: FaBowlFood,
+  Student: FaUserGraduate,
+  Boss: FaSuitcase,
 };
 
 export const Icon = ({ name, size = 36, className = '', padding = 0 }) => {
