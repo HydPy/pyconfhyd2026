@@ -24,4 +24,85 @@ export const getSponsors = () => {
   return sponsors;
 };
 
-export const SPONSORS = {};
+export const SPONSORS_CATEGORIES = ['platinum', 'gold', 'silver'];
+
+export const SPONSORS = {
+  platinum: [
+    {
+      name: 'Hyderabad DAO',
+      imgUrl: '/images/community-partners/hyderabadDao.png',
+      imgAlt: 'Hyderabad DAO logo',
+      hyperLink: 'https://linktr.ee/hyddao',
+    },
+    {
+      name: 'Cloud Native Hyderabad',
+      imgUrl: '/images/community-partners/cloudNativeHyderabad.png',
+      imgAlt: 'Cloud Native Hyderabad logo',
+      hyperLink: 'https://community.cncf.io/cloud-native-hyderabad/',
+    },
+    {
+      name: 'NEXTGEN NEXUS',
+      imgUrl: '/images/community-partners/nextgenNexus.png',
+      imgAlt: 'NEXTGEN NEXUS logo',
+      hyperLink: 'https://bento.me/nextgen-nexus',
+    },
+  ],
+  gold: [
+    {
+      name: 'SciPy India',
+      imgUrl: '/images/community-partners/scipyIndia.svg',
+      imgAlt: 'SciPy India logo',
+      hyperLink: 'https://scipy-india.github.io/',
+    },
+    {
+      name: 'PyDelhi',
+      imgUrl: '/images/community-partners/pyDelhi.png',
+      imgAlt: 'PyDelhi logo',
+      hyperLink: 'https://pydelhi.org/',
+    },
+    {
+      name: 'Django India',
+      imgUrl: '/images/community-partners/djangoIndia.png',
+      imgAlt: 'Django India logo',
+      hyperLink: 'https://www.djangoindia.org',
+    },
+    {
+      name: 'GDG Hyderabad',
+      imgUrl: '/images/community-partners/gdgHyderabad.png',
+      imgAlt: 'GDG Hyderabad logo',
+      hyperLink: 'https://gdg.community.dev/gdg-hyderabad/',
+    },
+  ],
+  silver: [
+    {
+      name: 'Microsoft AI Innovators Hub',
+      imgUrl: '/images/community-partners/microsoftAiInnovatorsHub.png',
+      imgAlt: 'Microsoft AI Innovators Hub logo',
+      hyperLink: 'https://meetup.com/microsoft-ai?member_id=428247001',
+    },
+    {
+      name: 'The Hackers Meetup',
+      imgUrl: '/images/community-partners/theHackersMeetup.png',
+      imgAlt: 'The Hackers Meetup logo',
+      hyperLink: 'https://thehackersmeetup.org/',
+    },
+    {
+      name: 'NEXUS Swarm',
+      imgUrl: '/images/community-partners/nexusSwarm.png',
+      imgAlt: 'NEXUS Swarm logo',
+      hyperLink: 'https://linktr.ee/nexus_swarm',
+    },
+    {
+      name: 'Kubernetes Over Koffee',
+      imgUrl: '/images/community-partners/kubernetesOverKoffee.png',
+      imgAlt: 'Kubernetes Over Koffee logo',
+      hyperLink: 'https://www.meetup.com/kubernetes-over-koffee/',
+    },
+    {
+      name: 'Open Source Weekend',
+      imgUrl: '/images/community-partners/openSourceWeekend.png',
+      imgAlt: 'Open Source Weekend logo',
+      hyperLink: 'https://osd.opensourceweekend.org/',
+    },
+  ],
+};
