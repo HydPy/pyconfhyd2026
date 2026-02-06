@@ -27,10 +27,10 @@ export const NAV_ITEMS = [
         featureFlag: 'COMMUNITY_PARTNERS',
       },
       {
-        name: 'Meet our Organizers',
-        path: '/#organizers',
+        name: 'Meet our Organizer',
+        path: '/#organizer',
         target: '_self',
-        featureFlag: 'MEET_ORGANIZERS',
+        featureFlag: 'MEET_ORGANIZER',
       },
       {
         name: 'Epic Frames',

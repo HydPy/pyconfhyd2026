@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 
 import Hero from '@/components/Hero';
 import KeynoteSpeakers from '@/components/KeynoteSpeakers';
-import MeetOrganizers from '@/components/MeetOrganizers';
+import MeetOrganizer from '@/components/MeetOrganizers';
 import SponsorsSection from '@/components/Sponsors';
 import CommunityPartners from '@/components/CommunityPartners';
 import WhyAttend from '@/components/WhyAttend';
@@ -31,7 +31,7 @@ export default function Home() {
   const isKeynoteSpeakersEnabled = useFeatureFlag('KEYNOTE_SPEAKERS');
   const isSponsorsEnabled = useFeatureFlag('SPONSORS');
   const isCommunityPartnersEnabled = useFeatureFlag('COMMUNITY_PARTNERS');
-  const isMeetOrganizersEnabled = useFeatureFlag('MEET_ORGANIZERS');
+  const isMeetOrganizersEnabled = useFeatureFlag('MEET_ORGANIZER');
   const isWhyAttendEnabled = useFeatureFlag('WHY_ATTEND');
   const isEpicFramesEnabled = useFeatureFlag('EPIC_FRAMES');
 
@@ -54,7 +54,7 @@ export default function Home() {
       {isWhyAttendEnabled && <WhyAttend />}
       {isSponsorsEnabled && <SponsorsSection />}
       {isCommunityPartnersEnabled && <CommunityPartners />}
-      {isMeetOrganizersEnabled && <MeetOrganizers />}
+      {isMeetOrganizersEnabled && <MeetOrganizer />}
       {isEpicFramesEnabled && <EpicFrames />}
     </>
   );
