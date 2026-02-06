@@ -12,7 +12,7 @@ import { KEY_LINKS } from '@/conference';
 
 const PartnerLogo = ({ imgUrl, imgAlt }) => {
   return (
-    <div className="flex w-100 flex-col p-4 items-center bg-gray-50 dark:bg-gray-200 transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
+    <div className="flex w-100 flex-col p-4 items-center bg-gray-50 dark:bg-gray-200 transition-all duration-300 transform border-2 border-gray-900 rounded-lg sm:hover:-translate-y-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px]">
       <div className="w-32 h-32">
         <div className="relative h-full w-full">
           <Image className="object-contain" src={imgUrl} alt={imgAlt} fill />
@@ -30,12 +30,12 @@ const PartnerCard = (details) => {
           href={details.hyperLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg shadow-md"
+          className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg"
         >
           <PartnerLogo {...details} />
         </Link>
       ) : (
-        <div className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg shadow-md">
+        <div className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg">
           <PartnerLogo {...details} />
         </div>
       )}
@@ -80,7 +80,7 @@ const CommunityPartners = () => {
       >
         {COMMUNITY_PARTNERS_INFO.title}
       </Heading>
-      <CommunityDescription />
+      {/* <CommunityDescription /> */}
       <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-10">
         {COMMUNITY_PARTNERS &&
           COMMUNITY_PARTNERS.map((partner, index) => (
