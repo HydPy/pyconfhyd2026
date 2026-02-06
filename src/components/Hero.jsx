@@ -101,7 +101,7 @@ const Hero = () => {
             fill
           />
         </div>
-        
+
         {/* <Announcement /> */}
         <ConferenceInfo />
         <div className="flex flex-col sm:flex-row mt-8">
