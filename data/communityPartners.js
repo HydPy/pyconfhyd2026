@@ -55,7 +55,7 @@ export const COMMUNITY_PARTNERS = [
   },
   {
     name: 'The Hackers Meetup',
-    imgUrl: '/images/community-partners/thehackersMeetup.png',
+    imgUrl: '/images/community-partners/theHackersMeetup.png',
     imgAlt: 'The Hackers Meetup logo',
     hyperLink: 'https://thehackersmeetup.org/',
   },
