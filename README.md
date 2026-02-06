@@ -75,7 +75,6 @@ This project is a fork of [pyconfhyd2025](https://github.com/HydPy/pyconfhyd2025
 
 A feature flag configuration has been introduced, enabling a gradual rollout of features. Check out the [PyConf 2026 setup PR](https://github.com/HydPy/pyconfhyd2026/pull/1) to see how changes can be made when setting up the conference website.
 
-This year's focus is on improving the template while seamlessly integrating it with [HydPy's website](https://www.hydpy.org/) by redirecting selected pages to the main site.
 
 ### How to Contribute
 
@@ -85,5 +84,5 @@ We welcome all contributions—bug fixes, feature implementations, or documentat
 
 1. **Fork the Repository**: Create a personal copy of the repository.
 2. **Clone and Branch**: Clone your fork locally and create a new branch for your changes.
-3. **Make Changes**: Ensure your updates are clear, consistent, and align with the goals of the project.
-4. **Submit a Pull Request (PR)**: Push your branch and open a PR. Complete all checks in the provided [PR Template](.github/pull_request_template.md).
+3. **Make Changes**: Ensure your updates are clear, consistent, align with the goals of the project, and meet all PR checks.
+4. **Raise a Pull Request (PR)**: Push your branch and raise a PR. Complete all checks in the provided [PR Template](.github/pull_request_template.md).

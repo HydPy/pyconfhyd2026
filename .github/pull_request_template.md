@@ -16,3 +16,6 @@
 - [ ] Performance is maintained (Lighthouse report reviewed).
 - [ ] User experience (UX) considerations are met.
 - [ ] Accessibility is supported (validated with accessibility tools).
+- [ ] For new features, a feature flag has been added.
+- [ ] All assets are optimized for minimal file size.
+- [ ] File names, asset names, and component names follow consistent naming conventions.
