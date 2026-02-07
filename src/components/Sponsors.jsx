@@ -23,12 +23,6 @@ const SpeakerCreative = () => {
 };
 
 const SponsorCategoryGrid = () => {
-  const SPONSOR_CATEGORY_STYLES = {
-    platinum: 'text-primary-600 dark:text-primary-400',
-    gold: 'text-yellow-500 dark:text-yellow-500',
-    silver: 'text-gray-400 dark:text-gray-400',
-  };
-
   return (
     <div className="flex flex-col items-center mt-8">
       {SPONSORS_CATEGORIES.map((sponsorType) => {
@@ -40,7 +34,7 @@ const SponsorCategoryGrid = () => {
             <Heading
               tagLevel={3}
               level={3}
-              className={`text-center mb-8 ${SPONSOR_CATEGORY_STYLES[sponsorType]} relative after:content-[''] after:absolute after:bottom-[-8px] after:left-1/2 after:w-16 after:h-1 after:bg-primary-500 after:transform after:-translate-x-1/2`}
+              className={`text-center mb-8 text-primary-600 dark:text-primary-400 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-1/2 after:w-16 after:h-1 after:bg-primary-500 after:transform after:-translate-x-1/2`}
             >
               {sponsorType}
             </Heading>

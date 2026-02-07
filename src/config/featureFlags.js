@@ -14,7 +14,7 @@ export const FEATURE_FLAGS = {
   EPIC_FRAMES: true,
   SPEAKERS_PAGE: false,
   TICKETS: true,
-  BLOG_POSTS: false,
+  BLOG_POSTS: true,
   JOB_BOARD: false,
   SCHEDULE: false,
   WELCOME_GUIDE: false,
