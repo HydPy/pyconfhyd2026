@@ -94,7 +94,7 @@ const SponsorsSection = () => {
   return (
     <section
       id="sponsors"
-      className="scroll-mt-20 relative flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto"
+      className="scroll-mt-32 relative flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto"
     >
       <Heading
         tagLevel={2}
