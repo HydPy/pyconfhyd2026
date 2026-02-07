@@ -24,7 +24,7 @@ export default function Volunteer({ volunteer }) {
         <Heading
           tagLevel={2}
           level={5}
-          className="font-semibold text-secondary-600 dark:text-secondary-400"
+          className="font-semibold text-primary-600 dark:text-primary-400"
         >
           {name}
         </Heading>

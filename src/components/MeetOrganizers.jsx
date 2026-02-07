@@ -4,10 +4,10 @@ import Link from 'next/link';
 import { Heading, Paragraph, Span } from '@/components/Typography';
 import { ABOUT_HYDPY } from '@/hydPy';
 
-export default function MeetOrganizers() {
+export default function MeetOrganizer() {
   return (
     <section
-      id="organizers"
+      id="organizer"
       className="scroll-mt-20 flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto"
     >
       <Heading

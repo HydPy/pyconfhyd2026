@@ -20,7 +20,7 @@ const BlogPostItem = ({ blog }) => {
       <Heading
         level={4}
         tagLevel={2}
-        className="text-secondary-600 dark:text-secondary-400"
+        className="text-primary-600 dark:text-primary-400"
       >
         {blog.title}
       </Heading>

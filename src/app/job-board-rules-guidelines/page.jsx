@@ -1,13 +1,13 @@
-import WelcomeGuideMdx from '@/welcomeGuide.mdx';
+import JobBoardRulesGuidelinesMdx from '@/job-board-rules-guidelines.mdx';
 import MdxLayout from '@/components/MdxLayout';
 import { Heading } from '@/components/Typography';
 
 export const metadata = {
-  title: 'Welcome Guide',
-  description: 'Welcome Guide for PyConf Hyderabad 2026',
+  title: 'Job Board Rules and Guidelines',
+  description: 'Job Board Rules and Guidelines for PyConf Hyderabad 2026',
   openGraph: {
-    title: 'Welcome Guide',
-    description: 'Welcome Guide for PyConf Hyderabad 2026',
+    title: 'Job Board Rules and Guidelines',
+    description: 'Job Board Rules and Guidelines for PyConf Hyderabad 2026',
   },
 };
 
@@ -19,10 +19,10 @@ export default function Page() {
         level={1}
         className="text-center my-8 text-primary-600 dark:text-primary-400"
       >
-        Welcome Guide
+        Job Board Rules and Guidelines
       </Heading>
       <MdxLayout>
-        <WelcomeGuideMdx />
+        <JobBoardRulesGuidelinesMdx />
       </MdxLayout>
     </section>
   );
