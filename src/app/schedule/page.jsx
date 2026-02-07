@@ -224,7 +224,7 @@ export default function Page() {
         <Heading
           tagLevel={1}
           level={1}
-          className="text-center md:my-6 my-0 text-secondary-600 dark:text-secondary-400"
+          className="text-center md:my-6 my-0 text-primary-600 dark:text-primary-400"
         >
           Schedule
         </Heading>

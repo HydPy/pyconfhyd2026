@@ -51,7 +51,7 @@ const SponsorCategoryGrid = () => {
             <Heading
               tagLevel={3}
               level={3}
-              className="text-center mb-8 text-secondary-600 dark:text-secondary-400 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-1/2 after:w-16 after:h-1 after:bg-primary-500 after:transform after:-translate-x-1/2"
+              className="text-center mb-8 text-primary-600 dark:text-primary-400 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-1/2 after:w-16 after:h-1 after:bg-primary-500 after:transform after:-translate-x-1/2"
             >
               {type}
             </Heading>

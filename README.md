@@ -75,7 +75,6 @@ This project is a fork of [pyconfhyd2025](https://github.com/HydPy/pyconfhyd2025
 
 A feature flag configuration has been introduced, enabling a gradual rollout of features. Check out the [PyConf 2026 setup PR](https://github.com/HydPy/pyconfhyd2026/pull/1) to see how changes can be made when setting up the conference website.
 
-
 ### How to Contribute
 
 We welcome all contributions—bug fixes, feature implementations, or documentation updates.
