@@ -1,21 +1,49 @@
-"use client"
-import ConviceMyBoss from '@/conviceMyBoss.mdx';
+'use client';
+import { useState } from 'react';
+
+import ConvinceMyBoss from '@/convinceMyBoss.mdx';
 import MdxLayout from '@/components/MdxLayout';
 import { Heading } from '@/components/Typography';
-import { useState } from 'react';
+import CTAButton from '@/components/CTAButton';
+
+// TODO: Remove this duplicate later. Use a single source for the template.
+const convinceMyBossTemplate = `
+Dear {bossName},
+
+I would like to request approval to attend PyConf Hyderabad 2026, one of the premier Python conferences in India.
+
+Event Details
+- Conference: PyConf Hyderabad 2026
+- Dates: 14 - 15 March 2026
+- Location: Hyderabad, India
+- Website: https://2026.pyconfhyd.org/
+- Tickets: https://2026.pyconfhyd.org/tickets
+
+Why this is valuable
+- Exposure to latest trends in Python, AI/ML, Data Engineering, DevOps, Cloud, Security, and Web Development.
+- Learn from industry experts, core contributors, and community leaders.
+- Opportunity to network with developers, architects, startups, and open-source maintainers.
+- Helps bring modern best practices and tooling back to our team.
+
+Value to the organization
+- Knowledge transfer through a post-conference summary or internal session.
+- Insights that can improve engineering quality, productivity, and decision-making.
+- Community engagement and potential talent and collaboration opportunities.
+
+I believe attending PyConf Hyderabad 2026 aligns well with our technical goals and long-term growth. I’m happy to share learnings with the team after the event.
+Please let me know if you need any additional details.
+Thank you for your time and consideration.
+
+Sincerely,
+{yourName}
+`;
 
 export default function Page() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
-    const element = document.getElementById("request-template");
-    if (!element) return;
-
-    const text = element.innerText;
-
-    await navigator.clipboard.writeText(text);
+    await navigator.clipboard.writeText(convinceMyBossTemplate);
     setCopied(true);
-
     setTimeout(() => setCopied(false), 2000);
   };
 
@@ -30,17 +58,18 @@ export default function Page() {
       </Heading>
       <div id="request-template">
         <MdxLayout>
-          <ConviceMyBoss />
+          <ConvinceMyBoss />
         </MdxLayout>
       </div>
       <div className="flex gap-5 mt-5">
-        <button
-          onClick={handleCopy}
-          label="Copy Request Template"
-          className={`inline-flex mt-2 sm:mr-4 items-center px-5 py-3 font-bold text-lg border-4 border-gray-900 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all transform bg-primary-500 hover:bg-primary-700 text-gray-50`}
-        >
-          {copied ? 'Copied ✅' : 'Copy Request Template'}
-        </button>
+        <div onClick={handleCopy}>
+          <CTAButton
+            label={copied ? 'Copied ✅' : 'Copy Request Template'}
+            className="mt-2 sm:mr-4"
+            type="button"
+            variant="secondary"
+          />
+        </div>
       </div>
     </section>
   );
