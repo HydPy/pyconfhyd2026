@@ -49,9 +49,11 @@ const CommunityPartners = () => {
       {/* <CommunityDescription /> */}
       <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-10">
         {COMMUNITY_PARTNERS &&
-          COMMUNITY_PARTNERS.map((partner, index) => (
-            <LogoCard key={index} {...partner} />
-          ))}
+          COMMUNITY_PARTNERS.map((partner) => {
+            // size is for the image size in the LogoCard component,
+            const prop = { ...partner, size: 90 };
+            return <LogoCard key={partner.name} {...prop} />;
+          })}
       </div>
     </section>
   );

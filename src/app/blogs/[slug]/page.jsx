@@ -22,7 +22,7 @@ export default async function Page({ params }) {
       <Heading
         tagLevel={1}
         level={1}
-        className="text-center my-8 text-secondary-600 dark:text-secondary-400"
+        className="text-center my-8 text-primary-600 dark:text-primary-400"
       >
         {blog.title}
       </Heading>

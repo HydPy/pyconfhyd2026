@@ -24,10 +24,8 @@ export const getSponsors = () => {
   return sponsors;
 };
 
-export const SPONSORS_CATEGORIES = ['platinum', 'gold', 'silver'];
-
 export const SPONSORS = {
-  platinum: [
+  Platinum: [
     {
       name: 'ASBL',
       imgUrl: '/images/sponsors/asbl.png',
@@ -52,6 +50,6 @@ export const SPONSORS = {
       ],
     },
   ],
-  gold: [],
-  silver: [],
+  Gold: [],
+  Silver: [],
 };

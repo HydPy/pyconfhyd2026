@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import { Heading, Paragraph } from '@/components/Typography';
-import { SPONSORS, SPONSORS_INFO, SPONSORS_CATEGORIES } from '@/sponsors';
+import { SPONSORS, SPONSORS_INFO } from '@/sponsors';
 import CTAButton from '@/components/CTAButton';
 import { KEY_LINKS } from '@/conference';
 import LogoCard from './LogoCard';
@@ -25,7 +25,7 @@ const SpeakerCreative = () => {
 const SponsorCategoryGrid = () => {
   return (
     <div className="flex flex-col items-center mt-8">
-      {SPONSORS_CATEGORIES.map((sponsorType) => {
+      {Object.keys(SPONSORS).map((sponsorType) => {
         const list = SPONSORS[sponsorType] || [];
         if (list.length === 0) return null;
 

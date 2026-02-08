@@ -8,7 +8,7 @@ export const BLOGS = [
     title: 'Announcing ASBL as our Platinum Sponsor',
     markdownComponent: <AsblPlatinumSponsorMdx />,
     author: 'PyConf Hyderabad Team',
-    publishedAt: 'February 8, 2025',
+    publishedAt: 'February 8, 2026',
     socials: getSponsor('ASBL').socials,
   },
 ];
