@@ -66,6 +66,8 @@ export const KEY_LINKS = {
   CommunityPartnersProspectusRegisterFormLabel: 'APPLY AS A COMMUNITY PARTNER',
   CommunityPartnersProspectusRegisterFormUrl:
     'https://forms.gle/a6YuXQG6t7kkywNo8',
+  jobBoardFormLabel: 'Submit A Job',
+  jobBoardFormUrl: 'https://forms.gle/f4f2ha19iviPnSH17',
 };
 
 export const SOCIALS = [

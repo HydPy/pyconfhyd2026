@@ -77,7 +77,7 @@ export default async function SpeakerPage({ params }) {
           <Heading
             level={2}
             tagLevel={1}
-            className="mt-6 mb-2 text-center text-secondary-600 dark:text-secondary-400"
+            className="mt-6 mb-2 text-center text-primary-600 dark:text-primary-400"
           >
             {speaker.name}
           </Heading>

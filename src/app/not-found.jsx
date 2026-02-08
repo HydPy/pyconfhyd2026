@@ -20,7 +20,7 @@ const NotFound = () => {
       <Heading
         tagLevel={1}
         level={1}
-        className="text-center my-3 text-secondary-600 dark:text-secondary-400"
+        className="text-center my-3 text-primary-600 dark:text-primary-400"
       >
         404 - Page Not Found
       </Heading>

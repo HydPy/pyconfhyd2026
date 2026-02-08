@@ -34,7 +34,7 @@ const SponsorCategoryGrid = () => {
             <Heading
               tagLevel={3}
               level={3}
-              className={`text-center mb-8 text-primary-600 dark:text-primary-400 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-1/2 after:w-16 after:h-1 after:bg-primary-500 after:transform after:-translate-x-1/2`}
+              className="text-center mb-8 text-primary-600 dark:text-primary-400 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-1/2 after:w-16 after:h-1 after:bg-primary-500 after:transform after:-translate-x-1/2"
             >
               {sponsorType}
             </Heading>
@@ -78,7 +78,7 @@ const SponsorsSection = () => {
   return (
     <section
       id="sponsors"
-      className="scroll-mt-20 relative flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto"
+      className="scroll-mt-32 relative flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto"
     >
       <Heading
         tagLevel={2}

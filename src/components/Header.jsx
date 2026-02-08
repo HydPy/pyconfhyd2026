@@ -8,6 +8,8 @@ import { Span } from '@/components/Typography';
 import { ASSETS } from '@/conference';
 import { NAV_ITEMS } from '@/navItems';
 import { filterNavItemsByFeatureFlags } from '@/utils/featureFlags';
+import InfoAlert from '@/components/InfoAlert';
+import MESSAGES from '@/messages';
 
 const NavItem = ({
   item,
@@ -114,8 +116,11 @@ const Header = ({ themeToggle }) => {
   };
 
   return (
-    <header className="bg-gray-50 dark:bg-gray-900 py-4 px-8 shadow-lg sticky top-0 z-10">
-      <nav className="flex flex-wrap items-center justify-between mx-auto">
+    <header className="bg-gray-50 dark:bg-gray-900 shadow-lg sticky top-0 z-10">
+      <InfoAlert>
+        <Span>{MESSAGES.TICKETS_DISCOUNT_MSG}</Span>
+      </InfoAlert>
+      <nav className="flex flex-wrap items-center justify-between py-4 px-8 mx-auto">
         <Link
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"

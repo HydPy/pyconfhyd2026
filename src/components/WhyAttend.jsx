@@ -48,7 +48,7 @@ const WhyAttend = () => {
   return (
     <section
       id="why-attend"
-      className="scroll-mt-20 flex flex-col items-center py-16 w-11/12 lg:w-5/6 mx-auto"
+      className="scroll-mt-32 flex flex-col items-center py-16 w-11/12 lg:w-5/6 mx-auto"
     >
       {/* Section Header */}
       <div className="text-center mb-12">

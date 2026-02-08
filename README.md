@@ -9,13 +9,11 @@ This is the repo for PyConf Hyderabad 2026's website. The 6th edition of the reg
 Before you start, ensure you have Node.js and a package manager installed on your machine. Follow these steps:
 
 1. **Download Node.js**:
-
    - Visit the [Node.js official website](https://nodejs.org/).
    - Download the v20.18.0 version. This was the latest LTS version when the project was created.
    - Follow the installation instructions provided on the website.
 
 2. **Verify Installation**:
-
    - Open your terminal or command prompt.
    - Run the following command to check if Node.js is installed:
      ```bash
@@ -24,7 +22,6 @@ Before you start, ensure you have Node.js and a package manager installed on you
    - You should see the version number of Node.js.
 
 3. **Install a Package Manager**:
-
    - Node.js comes with npm (Node Package Manager) by default. To check if npm is installed, run:
      ```bash
      npm -v
@@ -32,7 +29,6 @@ Before you start, ensure you have Node.js and a package manager installed on you
    - Alternatively, you can use other package managers like Yarn or pnpm.
 
 4. **Install Dependencies**:
-
    - Install the project dependencies using your preferred package manager:
      ```bash
      npm install
@@ -43,7 +39,6 @@ Before you start, ensure you have Node.js and a package manager installed on you
      ```
 
 5. **Run the Development Server**:
-
    - Once Node.js and a package manager are installed, you can start the development server:
 
      ```bash
@@ -74,7 +69,6 @@ Thank you for your interest in contributing to the PyConf Hyderabad 2026 website
 This project is a fork of [pyconfhyd2025](https://github.com/HydPy/pyconfhyd2025), initially developed as a **modular conference website** featuring reusable components. To learn more, refer to the [introduction section of pyconfhyd2025](https://github.com/HydPy/pyconfhyd2025?tab=readme-ov-file#introduction).
 
 A feature flag configuration has been introduced, enabling a gradual rollout of features. Check out the [PyConf 2026 setup PR](https://github.com/HydPy/pyconfhyd2026/pull/1) to see how changes can be made when setting up the conference website.
-
 
 ### How to Contribute
 

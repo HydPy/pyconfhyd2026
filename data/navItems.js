@@ -41,6 +41,30 @@ export const NAV_ITEMS = [
     ],
   },
   {
+    name: 'Tickets',
+    featureFlag: 'TICKETS',
+    children: [
+      {
+        name: 'Get Your Ticket',
+        path: '/tickets',
+        target: '_self',
+        featureFlag: 'TICKETS',
+      },
+      {
+        name: 'Convince My Boss',
+        path: '/convince-my-boss',
+        target: '_self',
+        featureFlag: 'TICKETS',
+      },
+      {
+        name: 'Tickets FAQ',
+        path: '/faq#tickets',
+        target: '_self',
+        featureFlag: 'TICKETS',
+      },
+    ],
+  },
+  {
     name: 'Schedule',
     path: '/schedule',
     target: '_self',
@@ -52,13 +76,6 @@ export const NAV_ITEMS = [
     target: '_self',
     featureFlag: 'SPEAKERS_PAGE',
   },
-  // Added as CTA in Hero Banner
-  // {
-  //   name: 'Tickets',
-  //   path: '/tickets',
-  //   target: '_self',
-  //   featureFlag: 'TICKETS',
-  // },
   {
     name: 'Blog',
     path: '/blogs',
