@@ -105,7 +105,8 @@ export const COMMUNITY_PARTNERS = [
     name: 'Hyderabad Data and AI Community',
     imgUrl: '/images/community-partners/hyderabadDataAndAiCommunity.png',
     imgAlt: 'Hyderabad Data and AI Community logo',
-    hyperLink: 'https://www.linkedin.com/company/hyderabad-data-analytics-community',
+    hyperLink:
+      'https://www.linkedin.com/company/hyderabad-data-analytics-community',
   },
   // {
   //   name: 'Azure Developer Community',

@@ -57,6 +57,12 @@ export const NAV_ITEMS = [
         featureFlag: 'TICKETS',
       },
       {
+        name: 'Referral Contest',
+        path: 'https://referral.konfhub.com/pyconf-hyderabad-2026/referral_contest_url_1',
+        target: '_blank',
+        featureFlag: 'TICKETS',
+      },
+      {
         name: 'Tickets FAQ',
         path: '/faq#tickets',
         target: '_self',

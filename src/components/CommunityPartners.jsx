@@ -51,7 +51,7 @@ const CommunityPartners = () => {
         {COMMUNITY_PARTNERS &&
           COMMUNITY_PARTNERS.map((partner) => {
             // size is for the image size in the LogoCard component,
-            const prop = { ...partner, size: 90 };
+            const prop = { ...partner, size: 110 };
             return <LogoCard key={partner.name} {...prop} />;
           })}
       </div>
