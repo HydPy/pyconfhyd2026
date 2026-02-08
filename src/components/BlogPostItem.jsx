@@ -5,8 +5,7 @@ const BlogPostItem = ({ blog }) => {
   return (
     <article className="flex flex-col gap-2 p-6 my-6 bg-gray-50 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
       <div className="flex flex-wrap gap-2 justify-between items-center mb-2 text-gray-500">
-        {/* TODO: fix contrast issue */}
-        <Span className="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+        <Span className="bg-accent-200 text-gray-900 dark:bg-accent-900 dark:text-gray-50 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded ">
           <Icon name="Announcement" size={16} className="mr-2" />
           {blog.category || 'Announcement'}
         </Span>
@@ -25,10 +24,10 @@ const BlogPostItem = ({ blog }) => {
       >
         {blog.title}
       </Heading>
-      <Span className="font-medium dark:text-gray-50">
+      <Span className="font-medium text-gray-950 dark:text-gray-50">
         Author: {blog.author}
       </Span>
-      <Span className="font-medium text-primary-600 dark:text-primary-500 hover:underline">
+      <Span className="font-semibold text-gray-950 dark:text-gray-50 hover:underline">
         Read more
       </Span>
     </article>
