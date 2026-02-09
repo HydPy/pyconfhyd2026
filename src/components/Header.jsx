@@ -117,9 +117,9 @@ const Header = ({ themeToggle }) => {
 
   return (
     <header className="bg-gray-50 dark:bg-gray-900 shadow-lg sticky top-0 z-10">
-      <InfoAlert>
+      {/* <InfoAlert>
         <Span>{MESSAGES.TICKETS_DISCOUNT_MSG}</Span>
-      </InfoAlert>
+      </InfoAlert> */}
       <nav className="flex flex-wrap items-center justify-between py-4 px-8 mx-auto">
         <Link
           href="/"

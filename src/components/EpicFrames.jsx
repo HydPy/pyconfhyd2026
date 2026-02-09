@@ -70,7 +70,7 @@ const EpicFrames = () => {
   return (
     <section
       id="epic-frames"
-      className="scroll-mt-32 flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto"
+      className="scroll-mt-20 flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto"
     >
       <div className="text-center mb-12">
         <Heading

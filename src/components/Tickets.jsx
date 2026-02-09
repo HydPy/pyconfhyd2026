@@ -26,7 +26,7 @@ export default function Tickets() {
   return (
     <section
       id="tickets"
-      className="scroll-mt-32 flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto"
+      className="scroll-mt-20 flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto"
     >
       <div className="flex flex-row text-center my-2">
         <MdxLayout>
