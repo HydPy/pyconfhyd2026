@@ -16,7 +16,7 @@ export const FEATURE_FLAGS = {
   TICKETS: true,
   BLOG_POSTS: true,
   JOB_BOARD: true,
-  SCHEDULE: false,
+  SCHEDULE: true,
   WELCOME_GUIDE: false,
   OUR_TEAM: false,
   TRAVEL: false,

@@ -69,27 +69,27 @@ const SpeakerCard = ({ speaker }) => {
         <div className="relative shadow-md h-full w-full rounded-full overflow-hidden border-1">
           <Image
             className="object-cover rounded-sm"
-            src={speaker.imgUrl}
-            alt={`Placeholder image of ${speaker.name}`}
-            title={`Image of ${speaker.name}`}
+            src={speaker?.imgUrl}
+            alt={`Placeholder image of ${speaker?.name}`}
+            title={`Image of ${speaker?.name}`}
             loading="lazy"
             fill
           />
         </div>
       </div>
       <div className="flex flex-col ml-2">
-        {speaker.name && (
+        {speaker?.name && (
           <Heading
             className="text-gray-950 dark:text-gray-50"
             level={6}
             tagLevel={4}
           >
-            {speaker.name}
+            {speaker?.name}
           </Heading>
         )}
-        {speaker.title && (
+        {speaker?.title && (
           <Span className="text-gray-700 dark:text-gray-200" level={5}>
-            {speaker.title}
+            {speaker?.title}
           </Span>
         )}
       </div>
@@ -108,12 +108,12 @@ const ScheduleItem = ({
 }) => {
   const getBGColor = () => {
     if (isKeynote) {
-      return 'bg-gray-50 dark:bg-gray-900 border-secondary-600 dark:border-secondary-700 border-x-4 border-b-4';
+      return 'bg-white dark:bg-gray-800 shadow-md border-secondary-600 dark:border-secondary-700 border-x-4 border-b-4';
     }
     if (isBreak) {
-      return 'bg-gray-50 dark:bg-gray-900 border-secondary-600 border-l-4';
+      return 'bg-white dark:bg-gray-800 shadow-md border-secondary-600 border-l-4';
     }
-    return 'bg-gray-50 dark:bg-gray-900 border-primary-600 dark:border-primary-400 border-l-4';
+    return 'bg-white dark:bg-gray-800 shadow-md border-primary-600 dark:border-primary-400 border-l-4';
   };
   return (
     <article
@@ -136,7 +136,7 @@ const ScheduleItem = ({
         <div className="flex flex-col">
           {speakers &&
             speakers.map((speaker, index) =>
-              speaker.activeSpeakerPage ? (
+              speaker?.activeSpeakerPage ? (
                 <Link
                   href={`/speakers/${speaker.slug}`}
                   target="_self"
@@ -162,7 +162,7 @@ const ScheduleItem = ({
 };
 
 const Schedule = () => {
-  const [activeDay, setActiveDay] = useState('day2');
+  const [activeDay, setActiveDay] = useState('day1');
   const { sessions } = SCHEDULE[activeDay];
 
   return (
