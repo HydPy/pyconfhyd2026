@@ -67,9 +67,11 @@ const SpeakerCard = ({ speaker }) => {
     <div className="flex flex-row items-center my-1">
       <div className="w-12 h-12 md:w-16 md:h-16">
         <div className="relative shadow-md h-full w-full rounded-full overflow-hidden border-1">
+          {/* TODO: replace with actual speaker image when available */}
           <Image
             className="object-cover rounded-sm"
-            src={speaker?.imgUrl}
+            // src={speaker?.imgUrl}
+            src={'/images/speakers/placeholder-1.svg'}
             alt={`Placeholder image of ${speaker?.name}`}
             title={`Image of ${speaker?.name}`}
             loading="lazy"
@@ -102,6 +104,7 @@ const ScheduleItem = ({
   title,
   discordChannelLink,
   location,
+  timeline = [],
   speakers,
   isKeynote,
   isBreak,
@@ -127,13 +130,53 @@ const ScheduleItem = ({
           <LocationBadge location={location} />
         </header>
         <Heading
-          level={4}
-          tagLevel={3}
-          className="text-gray-800 dark:text-gray-200 mb-3 font-semibold"
+          level={5}
+          tagLevel={4}
+          className="text-gray-800 dark:text-gray-200 mb-3 font-semibold text-lg md:text-xl"
         >
           {title}
         </Heading>
-        <div className="flex flex-col">
+
+        {/* Timeline */}
+        <div className="relative pl-6">
+          {/* Vertical Line */}
+          <div className="absolute left-2 top-0 bottom-0 w-[2px] bg-amber-500" />
+
+          {timeline.map((item, index) => (
+            <div key={index} className="relative mt-12 mb-6">
+              {/* Dot */}
+              <div
+                className={`absolute -left-[7px] top-1 w-4 h-4 rounded-full border-2 ${
+                  item.type === 'break'
+                    ? 'bg-white border-amber-400'
+                    : 'bg-amber-600 border-amber-600'
+                }`}
+              />
+
+              {/* Content */}
+              {item.type === 'break' ? (
+                <div className="bg-amber-50 border border-dashed border-amber-300 rounded-xl p-4 ml-4">
+                  <p className="text-sm text-gray-600">{item.time}</p>
+                  <p className="font-semibold text-gray-700 flex items-center gap-2">
+                    ☕ {item.label}
+                  </p>
+                </div>
+              ) : (
+                <div className="ml-4">
+                  <p className="text-sm text-gray-600">{item.time}</p>
+                  <p className="font-semibold text-gray-800">{item.label}</p>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+
+        {/* Spacer */}
+        <div className="flex-grow" />
+      </div>
+
+      <div className="flex justify-between items-center pb-4 px-4 pt-2">
+        <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
           {speakers &&
             speakers.map((speaker, index) =>
               speaker?.activeSpeakerPage ? (
@@ -151,8 +194,6 @@ const ScheduleItem = ({
               )
             )}
         </div>
-      </div>
-      <div className="flex justify-end pb-4 pr-4">
         {discordChannelLink && (
           <DiscordBadge channelLink={discordChannelLink} />
         )}
@@ -188,6 +229,17 @@ const Schedule = () => {
         ))}
       </div>
       <div className="flex flex-col items-center space-y-4">
+        {/* TODO: remove to be announced when schedule is announced */}
+        {sessions.length === 0 && (
+          <Heading
+            tagLevel={3}
+            level={3}
+            className="text-center my-8 text-gray-700 dark:text-gray-400"
+          >
+            To be announced
+          </Heading>
+        )}
+
         {sessions.map((session, index) => (
           <div
             key={index}
@@ -201,6 +253,7 @@ const Schedule = () => {
                 discordChannelLink={parallelSession.discordChannelLink}
                 location={parallelSession.location}
                 speakers={parallelSession.speakers}
+                timeline={parallelSession.timeline}
                 isKeynote={parallelSession.keynote}
                 isBreak={parallelSession.break}
               />
