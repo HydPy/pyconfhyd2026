@@ -1,118 +1,122 @@
 import type { MetadataRoute } from 'next';
 import { SPEAKERS } from '@/speakers';
+import { BLOGS } from '@/blogs';
+import { NAV_ITEMS } from '@/navItems';
 import { isFeatureEnabled } from '@/config/featureFlags';
 
 export const dynamic = 'force-static';
 export const revalidate = 60; // Revalidate every 60 seconds
 
+const SITE_URL = 'https://2026.pyconfhyd.org';
+type ChangeFrequency =
+  | 'always'
+  | 'hourly'
+  | 'daily'
+  | 'weekly'
+  | 'monthly'
+  | 'yearly'
+  | 'never';
+const CHANGE_FREQUENCIES = new Set<ChangeFrequency>([
+  'always',
+  'hourly',
+  'daily',
+  'weekly',
+  'monthly',
+  'yearly',
+  'never',
+]);
+
+const normalizePath = (path: string) => {
+  if (path === '/') {
+    return path;
+  }
+
+  return path.replace(/\/+$/, '');
+};
+
+const isStandalonePath = (path?: string) => {
+  return Boolean(path && path.startsWith('/') && !path.includes('#'));
+};
+
+const getChangeFrequency = (value?: unknown): ChangeFrequency => {
+  if (
+    typeof value === 'string' &&
+    CHANGE_FREQUENCIES.has(value as ChangeFrequency)
+  ) {
+    return value as ChangeFrequency;
+  }
+
+  return 'weekly';
+};
+
 // Define all static pages with their optional feature flag
 export default function sitemap(): MetadataRoute.Sitemap {
-  const allStaticPages = [
+  const extraPages = [
     {
-      url: 'https://2026.pyconfhyd.org/',
-      lastModified: new Date(),
-      changeFrequency: 'daily' as const,
+      path: '/',
+      changeFrequency: 'daily' as ChangeFrequency,
       priority: 1.0,
     },
     {
-      url: 'https://2026.pyconfhyd.org/code-of-conduct',
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.7,
-      featureFlag: 'COC_REPORTING_GUIDE',
-    },
-    {
-      url: 'https://2026.pyconfhyd.org/schedule',
-      lastModified: new Date(),
-      changeFrequency: 'daily' as const,
-      priority: 0.9,
-      featureFlag: 'SCHEDULE',
-    },
-    {
-      url: 'https://2026.pyconfhyd.org/travel',
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
+      path: '/cfp-guidelines',
+      changeFrequency: 'weekly' as ChangeFrequency,
       priority: 0.8,
-      featureFlag: 'TRAVEL',
-    },
-    {
-      url: 'https://2026.pyconfhyd.org/faq',
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-      featureFlag: 'FAQ',
-    },
-    {
-      url: 'https://2026.pyconfhyd.org/reporting-guide',
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-      featureFlag: 'COC_REPORTING_GUIDE',
-    },
-    {
-      url: 'https://2026.pyconfhyd.org/cfp-guidelines',
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    {
-      url: 'https://2026.pyconfhyd.org/convince-my-boss',
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.6,
-    },
-    {
-      url: 'https://2026.pyconfhyd.org/job-board',
-      lastModified: new Date(),
-      changeFrequency: 'daily' as const,
-      priority: 0.9,
-      featureFlag: 'JOB_BOARD',
-    },
-    {
-      url: 'https://2026.pyconfhyd.org/job-board-rules-guidelines',
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.5,
-      featureFlag: 'JOB_BOARD',
-    },
-    {
-      url: 'https://2026.pyconfhyd.org/our-team',
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.7,
-      featureFlag: 'OUR_TEAM',
-    },
-    {
-      url: 'https://2026.pyconfhyd.org/tickets',
-      lastModified: new Date(),
-      changeFrequency: 'daily' as const,
-      priority: 1.0,
-      featureFlag: 'TICKETS',
-    },
-    {
-      url: 'https://2026.pyconfhyd.org/welcome-guide',
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-      featureFlag: 'WELCOME_GUIDE',
     },
   ];
 
-  const staticPages = allStaticPages
+  const navItemsSource = Array.isArray(NAV_ITEMS) ? NAV_ITEMS : [];
+  const navItems = (navItemsSource as Array<Record<string, unknown>>).flatMap(
+    (item) =>
+      item && Array.isArray(item.children)
+        ? (item.children as Array<Record<string, unknown>>)
+        : [item]
+  );
+
+  const navPages = navItems
+    .filter((item) => Boolean(item))
+    .filter((item) => isStandalonePath(item.path as string | undefined))
     .filter(
-      (page) => !page.featureFlag || isFeatureEnabled(page.featureFlag)
+      (item) =>
+        !item.featureFlag || isFeatureEnabled(item.featureFlag as string)
     )
-    .map(({ featureFlag, ...page }) => page);
+    .map((item) => ({
+      url: `${SITE_URL}${normalizePath((item.path as string) || '/')}`,
+      lastModified: new Date(),
+      changeFrequency: getChangeFrequency(item.changeFrequency),
+      priority: (item.priority as number | undefined) ?? 0.7,
+    }));
+
+  const extraPagesSitemap = extraPages.map((page) => ({
+    url: `${SITE_URL}${normalizePath(page.path)}`,
+    lastModified: new Date(),
+    changeFrequency: getChangeFrequency(page.changeFrequency),
+    priority: page.priority,
+  }));
+
+  const staticPages = [...extraPagesSitemap, ...navPages].filter(
+    (page, index, pages) =>
+      pages.findIndex((candidate) => candidate.url === page.url) === index
+  );
 
   // sitemap for speaker pages
   const speakerPages = isFeatureEnabled('SPEAKERS_PAGE')
     ? SPEAKERS.map((speaker) => ({
-      url: `https://2026.pyconfhyd.org/speakers/${speaker.slug}`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.7,
-    }))
+        url: `https://2026.pyconfhyd.org/speakers/${speaker.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 0.7,
+      }))
     : [];
 
-  return [...staticPages, ...speakerPages];
+  // sitemap for blog pages
+  const blogPages = isFeatureEnabled('BLOG_POSTS')
+    ? BLOGS.map((blog) => ({
+        url: `https://2026.pyconfhyd.org/blogs/${blog.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 0.7,
+      }))
+    : [];
+
+  return [...staticPages, ...speakerPages, ...blogPages];
 }
