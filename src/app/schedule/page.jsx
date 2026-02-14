@@ -10,7 +10,7 @@ import { CONFERENCE } from '@/conference';
 import Script from 'next/script';
 
 const TimeBadge = ({ time }) => (
-  <div className="inline-flex items-center px-3 py-1.5 bg-secondary-100 dark:bg-secondary-800 text-secondary-700 dark:text-secondary-200 rounded-full md:text-md text-xs">
+  <div className="inline-flex items-center px-3 py-1.5 bg-accent-900 dark:bg-accent-500 text-gray-50 dark:text-gray-950 rounded-full md:text-md text-xs">
     <Icon name="Clock" size={16} className="mr-2" />
     <Span level={6} className="font-medium md:text-md text-xs">
       {time}
@@ -21,7 +21,7 @@ const TimeBadge = ({ time }) => (
 const LocationBadge = ({ location, className = '' }) => {
   return (
     <div
-      className={`inline-flex items-center px-3 py-1.5 bg-primary-700 dark:bg-primary-700 text-gray-50 shadow-sm rounded-full ${className}`}
+      className={`inline-flex items-center px-3 py-1.5 bg-accent-900 dark:bg-accent-500 text-gray-50 dark:text-gray-950 shadow-sm rounded-full ${className}`}
     >
       {/* <Icon name="LocationDot" className="w-4 h-4 mr-2" /> */}
       <Span level={6} className="font-medium md:text-md text-xs">
@@ -34,7 +34,7 @@ const LocationBadge = ({ location, className = '' }) => {
 const DiscordBadge = ({ channelLink, className = '' }) => {
   return (
     <div
-      className={`inline-flex items-center px-3 py-1.5 bg-secondary-600 dark:bg-secondary-700 text-gray-50 shadow-sm rounded-full ${className}`}
+      className={`inline-flex items-center px-3 py-1.5 bg-accent-900 dark:bg-accent-500 text-gray-50 dark:text-gray-950 shadow-sm rounded-full ${className}`}
     >
       <Span level={6} className="underline font-medium md:text-md text-xs">
         <Link
@@ -53,7 +53,7 @@ const DiscordBadge = ({ channelLink, className = '' }) => {
 const KeynoteBadge = ({ className = '' }) => {
   return (
     <div
-      className={`inline-flex justify-center items-center py-2 bg-secondary-600 dark:bg-secondary-700 text-gray-50 ${className}`}
+      className={`inline-flex justify-center items-center py-2 bg-primary-600 dark:bg-primary-700 text-gray-50 ${className}`}
     >
       <Span className="font-semibold" level={4}>
         KEYNOTE
@@ -67,31 +67,25 @@ const SpeakerCard = ({ speaker }) => {
     <div className="flex flex-row items-center my-1">
       <div className="w-12 h-12 md:w-16 md:h-16">
         <div className="relative shadow-md h-full w-full rounded-full overflow-hidden border-1">
-          {/* TODO: replace with actual speaker image when available */}
           <Image
             className="object-cover rounded-sm"
-            // src={speaker?.imgUrl}
-            src={'/images/speakers/placeholder-1.svg'}
-            alt={`Placeholder image of ${speaker?.name}`}
-            title={`Image of ${speaker?.name}`}
+            src={speaker.imgUrl}
+            alt={`Placeholder image of ${speaker.name}`}
+            title={`Image of ${speaker.name}`}
             loading="lazy"
             fill
           />
         </div>
       </div>
       <div className="flex flex-col ml-2">
-        {speaker?.name && (
-          <Heading
-            className="text-gray-950 dark:text-gray-50"
-            level={6}
-            tagLevel={4}
-          >
-            {speaker?.name}
-          </Heading>
+        {speaker.name && (
+          <Span className="text-gray-950 dark:text-gray-50" level={4}>
+            {speaker.name}
+          </Span>
         )}
-        {speaker?.title && (
+        {speaker.title && (
           <Span className="text-gray-700 dark:text-gray-200" level={5}>
-            {speaker?.title}
+            {speaker.title}
           </Span>
         )}
       </div>
@@ -99,24 +93,38 @@ const SpeakerCard = ({ speaker }) => {
   );
 };
 
+const TbaPanel = () => (
+  <div className="w-full md:w-3/4 bg-gray-50 dark:bg-gray-900 border rounded-md p-6 text-center shadow-sm">
+    <Heading
+      tagLevel={3}
+      level={4}
+      className="text-primary-700 dark:text-primary-300"
+    >
+      To Be Announced
+    </Heading>
+    <Span level={4} className="text-gray-700 dark:text-gray-300">
+      Sessions for this day will be published soon.
+    </Span>
+  </div>
+);
+
 const ScheduleItem = ({
   time,
   title,
   discordChannelLink,
   location,
-  timeline = [],
   speakers,
   isKeynote,
   isBreak,
 }) => {
   const getBGColor = () => {
     if (isKeynote) {
-      return 'bg-white dark:bg-gray-800 shadow-md border-secondary-600 dark:border-secondary-700 border-x-4 border-b-4';
+      return 'bg-gray-50 dark:bg-gray-900 border-primary-600 dark:border-primary-700 border-x-4 border-b-4';
     }
     if (isBreak) {
-      return 'bg-white dark:bg-gray-800 shadow-md border-secondary-600 border-l-4';
+      return 'bg-gray-50 dark:bg-gray-900 border-primary-600 border-l-4';
     }
-    return 'bg-white dark:bg-gray-800 shadow-md border-primary-600 dark:border-primary-400 border-l-4';
+    return 'bg-gray-50 dark:bg-gray-900 border-primary-600 dark:border-primary-400 border-l-4';
   };
   return (
     <article
@@ -125,61 +133,20 @@ const ScheduleItem = ({
     >
       {isKeynote && <KeynoteBadge className="" />}
       <div className="md:px-6 md:pt-6 md:pb-4 p-4">
-        <header className="flex flex-wrap justify-between items-center mb-4 gap-2">
+        <header className="flex flex-wrap justify-between items-center mb-3 gap-2">
           <TimeBadge time={time} />
           <LocationBadge location={location} />
         </header>
-        <Heading
-          level={5}
-          tagLevel={4}
-          className="text-gray-800 dark:text-gray-200 mb-3 font-semibold text-lg md:text-xl"
+        <Span
+          level={2}
+          className="text-gray-800 dark:text-gray-200 font-semibold"
         >
           {title}
-        </Heading>
-
-        {/* Timeline */}
-        <div className="relative pl-6">
-          {/* Vertical Line */}
-          <div className="absolute left-2 top-0 bottom-0 w-[2px] bg-amber-500" />
-
-          {timeline.map((item, index) => (
-            <div key={index} className="relative mt-12 mb-6">
-              {/* Dot */}
-              <div
-                className={`absolute -left-[7px] top-1 w-4 h-4 rounded-full border-2 ${
-                  item.type === 'break'
-                    ? 'bg-white border-amber-400'
-                    : 'bg-amber-600 border-amber-600'
-                }`}
-              />
-
-              {/* Content */}
-              {item.type === 'break' ? (
-                <div className="bg-amber-50 border border-dashed border-amber-300 rounded-xl p-4 ml-4">
-                  <p className="text-sm text-gray-600">{item.time}</p>
-                  <p className="font-semibold text-gray-700 flex items-center gap-2">
-                    ☕ {item.label}
-                  </p>
-                </div>
-              ) : (
-                <div className="ml-4">
-                  <p className="text-sm text-gray-600">{item.time}</p>
-                  <p className="font-semibold text-gray-800">{item.label}</p>
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-
-        {/* Spacer */}
-        <div className="flex-grow" />
-      </div>
-
-      <div className="flex justify-between items-center pb-4 px-4 pt-2">
-        <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+        </Span>
+        <div className="flex flex-col my-1">
           {speakers &&
             speakers.map((speaker, index) =>
-              speaker?.activeSpeakerPage ? (
+              speaker.activeSpeakerPage ? (
                 <Link
                   href={`/speakers/${speaker.slug}`}
                   target="_self"
@@ -194,6 +161,8 @@ const ScheduleItem = ({
               )
             )}
         </div>
+      </div>
+      <div className="flex justify-end mb-4 pr-4">
         {discordChannelLink && (
           <DiscordBadge channelLink={discordChannelLink} />
         )}
@@ -203,8 +172,9 @@ const ScheduleItem = ({
 };
 
 const Schedule = () => {
-  const [activeDay, setActiveDay] = useState('day1');
+  const [activeDay, setActiveDay] = useState('day2');
   const { sessions } = SCHEDULE[activeDay];
+  const isScheduleEmpty = !sessions || sessions.length === 0;
 
   return (
     <div className="my-8 w-full">
@@ -213,53 +183,45 @@ const Schedule = () => {
           <button
             key={day}
             onClick={() => setActiveDay(day)}
-            className={`flex flex-col items-center px-6 md:px-12 py-2 border border-secondary-800 focus:ring-2 shadow-md rounded-xl ${
+            className={`flex flex-col items-center px-6 md:px-12 py-2 border border-primary-800 focus:ring-2 shadow-md rounded-xl ${
               activeDay === day
-                ? 'bg-secondary-600 dark:bg-secondary-700 text-gray-50 dark:text-gray-50'
+                ? 'bg-primary-700 dark:bg-primary-700 text-white dark:text-gray-50'
                 : 'bg-gray-50 dark:bg-gray-900 text-gray-950 dark:text-gray-50'
             }`}
           >
             <Heading tagLevel={2} level={5}>
               {SCHEDULE[day].title}
             </Heading>
-            <Span level={4}>
+            <Span level={3}>
               {SCHEDULE[day].date} &#x2022; {SCHEDULE[day].day}
             </Span>
           </button>
         ))}
       </div>
       <div className="flex flex-col items-center space-y-4">
-        {/* TODO: remove to be announced when schedule is announced */}
-        {sessions.length === 0 && (
-          <Heading
-            tagLevel={3}
-            level={3}
-            className="text-center my-8 text-gray-700 dark:text-gray-400"
-          >
-            To be announced
-          </Heading>
+        {isScheduleEmpty ? (
+          <TbaPanel />
+        ) : (
+          sessions.map((session, index) => (
+            <div
+              key={index}
+              className={`flex flex-col md:flex-row gap-4 w-full ${session.length == 1 ? 'md:w-3/4' : ''}`}
+            >
+              {session.map((parallelSession, subIndex) => (
+                <ScheduleItem
+                  key={subIndex}
+                  time={parallelSession.time}
+                  title={parallelSession.title}
+                  discordChannelLink={parallelSession.discordChannelLink}
+                  location={parallelSession.location}
+                  speakers={parallelSession.speakers}
+                  isKeynote={parallelSession.keynote}
+                  isBreak={parallelSession.break}
+                />
+              ))}
+            </div>
+          ))
         )}
-
-        {sessions.map((session, index) => (
-          <div
-            key={index}
-            className={`flex flex-col md:flex-row gap-4 w-full ${session.length == 1 ? 'md:w-3/4' : ''}`}
-          >
-            {session.map((parallelSession, subIndex) => (
-              <ScheduleItem
-                key={subIndex}
-                time={parallelSession.time}
-                title={parallelSession.title}
-                discordChannelLink={parallelSession.discordChannelLink}
-                location={parallelSession.location}
-                speakers={parallelSession.speakers}
-                timeline={parallelSession.timeline}
-                isKeynote={parallelSession.keynote}
-                isBreak={parallelSession.break}
-              />
-            ))}
-          </div>
-        ))}
       </div>
     </div>
   );
@@ -293,7 +255,7 @@ const structuredData = {
   '@type': 'Event',
   name: CONFERENCE.title,
   eventStatus: 'https://schema.org/EventScheduled',
-  image: ['https://pyconf.hydpy.org/images/logo.svg'],
+  image: ['https://2026.pyconfhyd.org/images/navbarLogo.svg'],
   description: CONFERENCE.description,
   organizer: {
     '@type': 'Organization',
@@ -304,7 +266,7 @@ const structuredData = {
     {
       '@type': 'Event',
       name: 'PyConf Hyderabad 2026 Conference',
-      startDate: '2026-02-22',
+      startDate: '2026-03-15',
       eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
       location: {
         '@type': 'Place',
@@ -320,7 +282,7 @@ const structuredData = {
     {
       '@type': 'Event',
       name: 'PyConf Hyderabad 2026 Workshop',
-      startDate: '2026-02-23',
+      startDate: '2026-03-14',
       eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
       location: {
         '@type': 'Place',
