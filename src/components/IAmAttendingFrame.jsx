@@ -26,7 +26,7 @@ const TEXT_CONFIG = {
   designationFontSize: 0.025,
 };
 
-export default function PhotoBooth() {
+export default function IAmAttendingFrame() {
   const canvasRef = useRef(null);
   const fileInputRef = useRef(null);
   const frameImgRef = useRef(null);

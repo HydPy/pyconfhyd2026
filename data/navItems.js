@@ -148,6 +148,14 @@ export const NAV_ITEMS = [
     ],
   },
   {
+    name: "I'm Attending",
+    path: '/im-attending',
+    target: '_self',
+    featureFlag: 'IM_ATTENDING',
+    changeFrequency: 'weekly',
+    priority: 0.9,
+  },
+  {
     name: 'Blog',
     path: '/blogs',
     target: '_self',
