@@ -5,7 +5,7 @@ export default function KeynoteSpeakers({ speakers }) {
   return (
     <section
       id="keynote-speakers"
-      className="relative z-0 scroll-mt-20 flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto"
+      className="relative z-0 scroll-mt-20 flex flex-col items-center pt-10 lg:pt-16 pb-6 lg:pb-10 w-11/12 lg:w-5/6 mx-auto"
     >
       <Heading
         tagLevel={2}

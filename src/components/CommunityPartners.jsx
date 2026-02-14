@@ -37,12 +37,12 @@ const CommunityPartners = () => {
   return (
     <section
       id="community-partners"
-      className="scroll-mt-20 flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto"
+      className="scroll-mt-20 flex flex-col items-center pt-10 lg:pt-16 pb-6 lg:pb-10 w-11/12 lg:w-5/6 mx-auto"
     >
       <Heading
         tagLevel={2}
         level={1}
-        className="text-center mt-8 mb-10 text-primary-600 dark:text-primary-400"
+        className="text-center mb-8 lg:mb-12 text-primary-600 dark:text-primary-400"
       >
         {COMMUNITY_PARTNERS_INFO.title}
       </Heading>

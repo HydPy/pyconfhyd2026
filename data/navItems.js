@@ -1,48 +1,77 @@
 export const NAV_ITEMS = [
   {
-    name: 'Home',
+    name: 'About',
     children: [
       {
-        name: 'Keynote Speakers',
-        path: '/#keynote-speakers',
+        name: 'Welcome Guide',
+        path: '/welcome-guide',
         target: '_self',
-        featureFlag: 'KEYNOTE_SPEAKERS',
+        featureFlag: 'WELCOME_GUIDE',
       },
       {
-        name: 'Why Attend',
+        name: 'Why Attend PyConf Hyderabad',
         path: '/#why-attend',
         target: '_self',
         featureFlag: 'WHY_ATTEND',
       },
       {
-        name: 'Sponsors',
-        path: '/#sponsors',
+        name: 'Venue',
+        path: '/#venue',
         target: '_self',
-        featureFlag: 'SPONSORS',
+        featureFlag: 'VENUE',
       },
       {
-        name: 'Community Partners',
-        path: '/#community-partners',
+        name: 'Travel',
+        path: '/travel',
         target: '_self',
-        featureFlag: 'COMMUNITY_PARTNERS',
+        featureFlag: 'TRAVEL',
       },
       {
-        name: 'Meet our Organizer',
-        path: '/#organizer',
+        name: 'Our Team',
+        path: '/our-team',
         target: '_self',
-        featureFlag: 'MEET_ORGANIZER',
+        featureFlag: 'OUR_TEAM',
       },
       {
-        name: 'Epic Frames',
-        path: '/#epic-frames',
+        name: 'Code of Conduct',
+        path: '/code-of-conduct',
         target: '_self',
-        featureFlag: 'EPIC_FRAMES',
+        featureFlag: 'COC_REPORTING_GUIDE',
+      },
+      {
+        name: 'Reporting Guide',
+        path: '/reporting-guide',
+        target: '_self',
+        featureFlag: 'COC_REPORTING_GUIDE',
+      },
+      {
+        name: 'FAQ',
+        path: '/faq',
+        target: '_self',
+        featureFlag: 'FAQ',
       },
     ],
   },
   {
+    name: 'Sponsors',
+    path: '/#sponsors',
+    target: '_self',
+    featureFlag: 'SPONSORS',
+  },
+  {
+    name: 'Schedule',
+    path: '/schedule',
+    target: '_self',
+    featureFlag: 'SCHEDULE',
+  },
+  {
+    name: 'Speakers',
+    path: '/speakers',
+    target: '_self',
+    featureFlag: 'SPEAKERS_PAGE',
+  },
+  {
     name: 'Tickets',
-    featureFlag: 'TICKETS',
     children: [
       {
         name: 'Get Your Ticket',
@@ -71,26 +100,7 @@ export const NAV_ITEMS = [
     ],
   },
   {
-    name: 'Schedule',
-    path: '/schedule',
-    target: '_self',
-    featureFlag: 'SCHEDULE',
-  },
-  {
-    name: 'Speakers',
-    path: '/speakers',
-    target: '_self',
-    featureFlag: 'SPEAKERS_PAGE',
-  },
-  {
-    name: 'Blog',
-    path: '/blogs',
-    target: '_self',
-    featureFlag: 'BLOG_POSTS',
-  },
-  {
     name: 'Jobs',
-    featureFlag: 'JOB_BOARD',
     children: [
       {
         name: 'Job Board',
@@ -107,44 +117,9 @@ export const NAV_ITEMS = [
     ],
   },
   {
-    name: 'About',
-    children: [
-      {
-        name: 'Welcome Guide',
-        path: '/welcome-guide',
-        target: '_self',
-        featureFlag: 'WELCOME_GUIDE',
-      },
-      {
-        name: 'Our Team',
-        path: '/our-team',
-        target: '_self',
-        featureFlag: 'OUR_TEAM',
-      },
-      {
-        name: 'Travel',
-        path: '/travel',
-        target: '_self',
-        featureFlag: 'TRAVEL',
-      },
-      {
-        name: 'Code Of Conduct Policy',
-        path: '/code-of-conduct',
-        target: '_self',
-        featureFlag: 'COC_REPORTING_GUIDE',
-      },
-      {
-        name: 'Reporting Guide',
-        path: '/reporting-guide',
-        target: '_self',
-        featureFlag: 'COC_REPORTING_GUIDE',
-      },
-      {
-        name: 'FAQ',
-        path: '/faq',
-        target: '_self',
-        featureFlag: 'FAQ',
-      },
-    ],
+    name: 'Blog',
+    path: '/blogs',
+    target: '_self',
+    featureFlag: 'BLOG_POSTS',
   },
 ];

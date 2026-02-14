@@ -53,7 +53,10 @@ const SponsorCategoryGrid = () => {
 const SponsorDescription = () => {
   return (
     <>
-      <Paragraph className="text-center text-gray-800 dark:text-gray-300 lg:w-11/12">
+      <Paragraph
+        className="text-center text-gray-600 dark:text-gray-300 lg:w-11/12"
+        level={2}
+      >
         {SPONSORS_INFO.description}
       </Paragraph>
       <div className="flex flex-col sm:flex-row items-center mt-4">
@@ -78,12 +81,12 @@ const SponsorsSection = () => {
   return (
     <section
       id="sponsors"
-      className="scroll-mt-20 relative flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto"
+      className="scroll-mt-20 relative flex flex-col items-center pt-10 lg:pt-16 pb-6 lg:pb-10 w-11/12 lg:w-5/6 mx-auto"
     >
       <Heading
         tagLevel={2}
         level={1}
-        className="text-center my-8 text-primary-600 dark:text-primary-400"
+        className="text-center mb-4 lg:mb-6 text-primary-600 dark:text-primary-400"
       >
         {SPONSORS_INFO.title}
       </Heading>

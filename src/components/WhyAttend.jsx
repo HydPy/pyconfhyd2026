@@ -48,18 +48,18 @@ const WhyAttend = () => {
   return (
     <section
       id="why-attend"
-      className="scroll-mt-20 flex flex-col items-center py-16 w-11/12 lg:w-5/6 mx-auto"
+      className="scroll-mt-20 flex flex-col items-center pt-10 lg:pt-16 pb-6 lg:pb-10 w-11/12 lg:w-5/6 mx-auto"
     >
       {/* Section Header */}
-      <div className="text-center mb-12">
+      <div className="text-center mb-6 lg:mb-10">
         <Heading
           tagLevel={2}
           level={1}
-          className="mb-4 text-primary-600 dark:text-primary-400"
+          className="text-primary-600 dark:text-primary-400 mb-4 lg:mb-6"
         >
           {WHY_ATTEND_INFO.title}
         </Heading>
-        <Paragraph level={2} className="text-gray-600 dark:text-gray-300">
+        <Paragraph level={2} className="text-gray-600 dark:text-gray-300 ">
           {WHY_ATTEND_INFO.description}
         </Paragraph>
       </div>

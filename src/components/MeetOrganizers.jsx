@@ -8,7 +8,7 @@ export default function MeetOrganizer() {
   return (
     <section
       id="organizer"
-      className="scroll-mt-20 flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto"
+      className="scroll-mt-20 flex flex-col items-center pt-10 lg:pt-16 pb-6 lg:pb-10 w-11/12 lg:w-5/6 mx-auto"
     >
       <Heading
         tagLevel={2}
@@ -27,13 +27,16 @@ export default function MeetOrganizer() {
             height={500}
           />
         </div>
-        <Paragraph className="text-gray-800 dark:text-gray-300 lg:w-11/12">
+        <Paragraph
+          className="text-gray-600 dark:text-gray-300 lg:w-11/12"
+          level={2}
+        >
           <Link
-            className="text-gray-950 dark:text-gray-50 underline pr-1"
+            className="text-gray-600 dark:text-gray-300 underline pr-1"
             href={ABOUT_HYDPY.hydPyUrl}
             target="_blank"
           >
-            <Span>{ABOUT_HYDPY.hydPyLinkText}</Span>
+            <Span level={2}>{ABOUT_HYDPY.hydPyLinkText}</Span>
           </Link>
           {ABOUT_HYDPY.description}
         </Paragraph>
