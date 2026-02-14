@@ -10,7 +10,7 @@ import { CONFERENCE } from '@/conference';
 import Script from 'next/script';
 
 const TimeBadge = ({ time }) => (
-  <div className="inline-flex items-center px-3 py-1.5 bg-secondary-100 dark:bg-secondary-800 text-secondary-700 dark:text-secondary-200 rounded-full md:text-md text-xs">
+  <div className="inline-flex items-center px-3 py-1.5 bg-accent-900 dark:bg-accent-500 text-gray-50 dark:text-gray-950 rounded-full md:text-md text-xs">
     <Icon name="Clock" size={16} className="mr-2" />
     <Span level={6} className="font-medium md:text-md text-xs">
       {time}
@@ -21,7 +21,7 @@ const TimeBadge = ({ time }) => (
 const LocationBadge = ({ location, className = '' }) => {
   return (
     <div
-      className={`inline-flex items-center px-3 py-1.5 bg-primary-700 dark:bg-primary-700 text-gray-50 shadow-sm rounded-full ${className}`}
+      className={`inline-flex items-center px-3 py-1.5 bg-accent-900 dark:bg-accent-500 text-gray-50 dark:text-gray-950 shadow-sm rounded-full ${className}`}
     >
       {/* <Icon name="LocationDot" className="w-4 h-4 mr-2" /> */}
       <Span level={6} className="font-medium md:text-md text-xs">
@@ -34,7 +34,7 @@ const LocationBadge = ({ location, className = '' }) => {
 const DiscordBadge = ({ channelLink, className = '' }) => {
   return (
     <div
-      className={`inline-flex items-center px-3 py-1.5 bg-secondary-600 dark:bg-secondary-700 text-gray-50 shadow-sm rounded-full ${className}`}
+      className={`inline-flex items-center px-3 py-1.5 bg-accent-900 dark:bg-accent-500 text-gray-50 dark:text-gray-950 shadow-sm rounded-full ${className}`}
     >
       <Span level={6} className="underline font-medium md:text-md text-xs">
         <Link
@@ -53,7 +53,7 @@ const DiscordBadge = ({ channelLink, className = '' }) => {
 const KeynoteBadge = ({ className = '' }) => {
   return (
     <div
-      className={`inline-flex justify-center items-center py-2 bg-secondary-600 dark:bg-secondary-700 text-gray-50 ${className}`}
+      className={`inline-flex justify-center items-center py-2 bg-primary-600 dark:bg-primary-700 text-gray-50 ${className}`}
     >
       <Span className="font-semibold" level={4}>
         KEYNOTE
@@ -79,13 +79,9 @@ const SpeakerCard = ({ speaker }) => {
       </div>
       <div className="flex flex-col ml-2">
         {speaker.name && (
-          <Heading
-            className="text-gray-950 dark:text-gray-50"
-            level={6}
-            tagLevel={4}
-          >
+          <Span className="text-gray-950 dark:text-gray-50" level={4}>
             {speaker.name}
-          </Heading>
+          </Span>
         )}
         {speaker.title && (
           <Span className="text-gray-700 dark:text-gray-200" level={5}>
@@ -96,6 +92,21 @@ const SpeakerCard = ({ speaker }) => {
     </div>
   );
 };
+
+const TbaPanel = () => (
+  <div className="w-full md:w-3/4 bg-gray-50 dark:bg-gray-900 border rounded-md p-6 text-center shadow-sm">
+    <Heading
+      tagLevel={3}
+      level={4}
+      className="text-primary-700 dark:text-primary-300"
+    >
+      To Be Announced
+    </Heading>
+    <Span level={4} className="text-gray-700 dark:text-gray-300">
+      Sessions for this day will be published soon.
+    </Span>
+  </div>
+);
 
 const ScheduleItem = ({
   time,
@@ -108,10 +119,10 @@ const ScheduleItem = ({
 }) => {
   const getBGColor = () => {
     if (isKeynote) {
-      return 'bg-gray-50 dark:bg-gray-900 border-secondary-600 dark:border-secondary-700 border-x-4 border-b-4';
+      return 'bg-gray-50 dark:bg-gray-900 border-primary-600 dark:border-primary-700 border-x-4 border-b-4';
     }
     if (isBreak) {
-      return 'bg-gray-50 dark:bg-gray-900 border-secondary-600 border-l-4';
+      return 'bg-gray-50 dark:bg-gray-900 border-primary-600 border-l-4';
     }
     return 'bg-gray-50 dark:bg-gray-900 border-primary-600 dark:border-primary-400 border-l-4';
   };
@@ -122,18 +133,17 @@ const ScheduleItem = ({
     >
       {isKeynote && <KeynoteBadge className="" />}
       <div className="md:px-6 md:pt-6 md:pb-4 p-4">
-        <header className="flex flex-wrap justify-between items-center mb-4 gap-2">
+        <header className="flex flex-wrap justify-between items-center mb-3 gap-2">
           <TimeBadge time={time} />
           <LocationBadge location={location} />
         </header>
-        <Heading
-          level={4}
-          tagLevel={3}
-          className="text-gray-800 dark:text-gray-200 mb-3 font-semibold"
+        <Span
+          level={2}
+          className="text-gray-800 dark:text-gray-200 font-semibold"
         >
           {title}
-        </Heading>
-        <div className="flex flex-col">
+        </Span>
+        <div className="flex flex-col my-1">
           {speakers &&
             speakers.map((speaker, index) =>
               speaker.activeSpeakerPage ? (
@@ -152,7 +162,7 @@ const ScheduleItem = ({
             )}
         </div>
       </div>
-      <div className="flex justify-end pb-4 pr-4">
+      <div className="flex justify-end mb-4 pr-4">
         {discordChannelLink && (
           <DiscordBadge channelLink={discordChannelLink} />
         )}
@@ -164,6 +174,7 @@ const ScheduleItem = ({
 const Schedule = () => {
   const [activeDay, setActiveDay] = useState('day2');
   const { sessions } = SCHEDULE[activeDay];
+  const isScheduleEmpty = !sessions || sessions.length === 0;
 
   return (
     <div className="my-8 w-full">
@@ -172,41 +183,45 @@ const Schedule = () => {
           <button
             key={day}
             onClick={() => setActiveDay(day)}
-            className={`flex flex-col items-center px-6 md:px-12 py-2 border border-secondary-800 focus:ring-2 shadow-md rounded-xl ${
+            className={`flex flex-col items-center px-6 md:px-12 py-2 border border-primary-800 focus:ring-2 shadow-md rounded-xl ${
               activeDay === day
-                ? 'bg-secondary-600 dark:bg-secondary-700 text-gray-50 dark:text-gray-50'
+                ? 'bg-primary-700 dark:bg-primary-700 text-white dark:text-gray-50'
                 : 'bg-gray-50 dark:bg-gray-900 text-gray-950 dark:text-gray-50'
             }`}
           >
             <Heading tagLevel={2} level={5}>
               {SCHEDULE[day].title}
             </Heading>
-            <Span level={4}>
+            <Span level={3}>
               {SCHEDULE[day].date} &#x2022; {SCHEDULE[day].day}
             </Span>
           </button>
         ))}
       </div>
       <div className="flex flex-col items-center space-y-4">
-        {sessions.map((session, index) => (
-          <div
-            key={index}
-            className={`flex flex-col md:flex-row gap-4 w-full ${session.length == 1 ? 'md:w-3/4' : ''}`}
-          >
-            {session.map((parallelSession, subIndex) => (
-              <ScheduleItem
-                key={subIndex}
-                time={parallelSession.time}
-                title={parallelSession.title}
-                discordChannelLink={parallelSession.discordChannelLink}
-                location={parallelSession.location}
-                speakers={parallelSession.speakers}
-                isKeynote={parallelSession.keynote}
-                isBreak={parallelSession.break}
-              />
-            ))}
-          </div>
-        ))}
+        {isScheduleEmpty ? (
+          <TbaPanel />
+        ) : (
+          sessions.map((session, index) => (
+            <div
+              key={index}
+              className={`flex flex-col md:flex-row gap-4 w-full ${session.length == 1 ? 'md:w-3/4' : ''}`}
+            >
+              {session.map((parallelSession, subIndex) => (
+                <ScheduleItem
+                  key={subIndex}
+                  time={parallelSession.time}
+                  title={parallelSession.title}
+                  discordChannelLink={parallelSession.discordChannelLink}
+                  location={parallelSession.location}
+                  speakers={parallelSession.speakers}
+                  isKeynote={parallelSession.keynote}
+                  isBreak={parallelSession.break}
+                />
+              ))}
+            </div>
+          ))
+        )}
       </div>
     </div>
   );
@@ -240,7 +255,7 @@ const structuredData = {
   '@type': 'Event',
   name: CONFERENCE.title,
   eventStatus: 'https://schema.org/EventScheduled',
-  image: ['https://pyconf.hydpy.org/images/logo.svg'],
+  image: ['https://2026.pyconfhyd.org/images/navbarLogo.svg'],
   description: CONFERENCE.description,
   organizer: {
     '@type': 'Organization',
@@ -251,7 +266,7 @@ const structuredData = {
     {
       '@type': 'Event',
       name: 'PyConf Hyderabad 2026 Conference',
-      startDate: '2026-02-22',
+      startDate: '2026-03-15',
       eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
       location: {
         '@type': 'Place',
@@ -267,7 +282,7 @@ const structuredData = {
     {
       '@type': 'Event',
       name: 'PyConf Hyderabad 2026 Workshop',
-      startDate: '2026-02-23',
+      startDate: '2026-03-14',
       eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
       location: {
         '@type': 'Place',
