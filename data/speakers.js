@@ -2,6 +2,15 @@ export const getActiveSpeakers = () => {
   return SPEAKERS.filter((speaker) => speaker.activeSpeakerPage);
 };
 
+// Social media icons sequence
+// ----------------------------
+// X
+// LinkedIn
+// Youtube
+// Github
+// Medium
+// NewsLetter
+// Web
 export const SPEAKERS = [
   {
     name: 'Manivannan Elangovan',
@@ -111,14 +120,14 @@ export const SPEAKERS = [
         ariaLabel: "Hyperlink to Jaidev Deshpande's GitHub page.",
       },
       {
+        name: 'EnvelopeOpenText',
+        url: 'https://beingbayesian.in',
+        ariaLabel: "Hyperlink to Jaidev Deshpande's newsletter.",
+      },
+      {
         name: 'Globe',
         url: 'https://jaidevd.com',
         ariaLabel: "Hyperlink to Jaidev Deshpande's website.",
-      },
-      {
-        name: 'Newsletter',
-        url: 'https://beingbayesian.in',
-        ariaLabel: "Hyperlink to Jaidev Deshpande's newsletter.",
       },
     ],
   },
@@ -129,7 +138,7 @@ export const SPEAKERS = [
     activeSpeakerPage: true,
     title: 'Founder at AI Anytime & Kodryx AI',
     bio: 'Sonu is the Founder of AI Anytime, an AI education and community platform, and Kodryx AI, a deeptech startup building applied AI systems. He previously built and exited a healthtech startup in the USA.',
-    imgUrl: '',
+    imgUrl: '/images/speakers/sonu-kumar.jpg',
     imgAlt: 'Picture of Sonu Kumar.',
     socials: [
       {

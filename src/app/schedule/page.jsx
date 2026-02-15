@@ -184,7 +184,7 @@ const ScheduleItem = ({
 };
 
 const Schedule = () => {
-  const [activeDay, setActiveDay] = useState('day2');
+  const [activeDay, setActiveDay] = useState('day1');
   const { sessions } = SCHEDULE[activeDay];
   const isScheduleEmpty = !sessions || sessions.length === 0;
 
