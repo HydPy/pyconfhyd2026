@@ -67,14 +67,26 @@ const SpeakerCard = ({ speaker }) => {
     <div className="flex flex-row items-center my-1">
       <div className="w-12 h-12 md:w-16 md:h-16">
         <div className="relative shadow-md h-full w-full rounded-full overflow-hidden border-1">
-          <Image
-            className="object-cover rounded-sm"
-            src={speaker.imgUrl}
-            alt={`Placeholder image of ${speaker.name}`}
-            title={`Image of ${speaker.name}`}
-            loading="lazy"
-            fill
-          />
+          {speaker.imgUrl ? (
+            <Image
+              className="object-cover rounded-sm"
+              src={speaker.imgUrl}
+              alt={`Image of ${speaker.name}`}
+              title={`Image of ${speaker.name}`}
+              loading="lazy"
+              fill
+            />
+          ) : (
+            <div className="h-full w-full flex items-center justify-center bg-primary-600 dark:bg-primary-700 text-white font-semibold text-2xl">
+              {(() => {
+                if (!speaker.name) return null;
+                const parts = speaker.name.trim().split(/\s+/);
+                const first = parts[0] ? parts[0][0] : '';
+                const last = parts.length > 1 ? parts[parts.length - 1][0] : '';
+                return `${(first + last).toUpperCase()}`;
+              })()}
+            </div>
+          )}
         </div>
       </div>
       <div className="flex flex-col ml-2">
