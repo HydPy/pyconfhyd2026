@@ -2,47 +2,112 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { Heading, Paragraph } from '@/components/Typography';
+import { Icon } from '@/components/Icon';
 
-const Speaker = ({ speaker }) => {
+export const KeynoteSpeaker = ({ speaker }) => {
   return (
-    <div className="flex flex-col items-center px-6 py-8 transition-transform duration-300 hover:-translate-y-2 scale-[0.98] -translate-x-[5%]">
+    <div className="flex flex-col px-6 sm:px-10 md:px-20 items-center transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
       <Link
         className="flex flex-col items-center"
         href={`/speakers/${speaker.slug}`}
       >
-        <figure className="relative w-48 lg:w-56">
-          <Image
-            src="/images/speakers/manivannanElangovan.png"
-            alt={speaker.imgAlt}
-            width={400}
-            height={600}
-            className="object-contain"
-            priority
-          />
-        </figure>
-
-        <div className="relative -mt-7">
-          <div className="relative z-10 bg-gray-50 border-4 border-black px-3 py-3 pb-6 text-right">
-            <Heading
-              tagLevel={3}
-              level={5}
-              className="mt-2.5 text-right font-normal text-gray-950"
-            >
-              {speaker.name}
-            </Heading>
-            <Heading
-              tagLevel={4}
-              level={6}
-              className="text-right font-semibold text-gray-950"
-            >
-              {speaker.title}
-            </Heading>
+        <figure className="w-64 h-64 lg:w-80 lg:h-80">
+          <div className="relative shadow-md h-full w-full rounded-xl">
+            <Image
+              className="object-cover rounded-xl"
+              src={speaker.imgUrl}
+              alt={speaker.imgAlt}
+              fill
+            />
           </div>
-          <div className="absolute left-0 right-0 bottom-0 top-0 translate-x-4 translate-y-5 bg-gray-950 -z-0"></div>
+          <figcaption className="sr-only">{speaker.imgAlt}</figcaption>
+        </figure>
+        <div>
+          <Heading
+            tagLevel={2}
+            level={4}
+            className="mt-4 text-center text-gray-950 dark:text-gray-50"
+          >
+            {speaker.name}
+          </Heading>
+          <Paragraph
+            className="mt-2 text-center text-gray-950 dark:text-gray-50"
+            level={2}
+          >
+            {speaker.title}
+          </Paragraph>
         </div>
       </Link>
+      {speaker.socials && (
+        <div className="mt-3 flex gap-5 items-center justify-center">
+          {speaker.socials.map((social, index) => (
+            <Link
+              key={index}
+              className="text-secondary-600 dark:text-secondary-400 mr-1"
+              href={social.url}
+              target="_blank"
+              aria-label={social.ariaLabel}
+              rel="noopener noreferrer"
+            >
+              <Icon name={social.name} size={30} />
+            </Link>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
 
-export default Speaker;
+export const Speaker = ({ speaker }) => {
+  return (
+    <div className="flex flex-col px-6 sm:px-10 md:px-20 items-center transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
+      <Link
+        className="flex flex-col items-center"
+        href={`/speakers/${speaker.slug}`}
+      >
+        <figure className="w-48 h-48 lg:w-64 lg:h-64">
+          <div className="relative shadow-md h-full w-full rounded-xl">
+            <Image
+              className="object-cover rounded-xl"
+              src={speaker.imgUrl}
+              alt={speaker.imgAlt}
+              fill
+            />
+          </div>
+          <figcaption className="sr-only">{speaker.imgAlt}</figcaption>
+        </figure>
+        <div>
+          <Heading
+            tagLevel={2}
+            level={4}
+            className="mt-4 text-center text-gray-950 dark:text-gray-50"
+          >
+            {speaker.name}
+          </Heading>
+          <Paragraph
+            className="mt-2 text-center text-gray-950 dark:text-gray-50"
+            level={2}
+          >
+            {speaker.title}
+          </Paragraph>
+        </div>
+      </Link>
+      {speaker.socials && (
+        <div className="mt-3 flex gap-5 items-center justify-center">
+          {speaker.socials.map((social, index) => (
+            <Link
+              key={index}
+              className="text-secondary-600 dark:text-secondary-400 mr-1"
+              href={social.url}
+              target="_blank"
+              aria-label={social.ariaLabel}
+              rel="noopener noreferrer"
+            >
+              <Icon name={social.name} size={30} />
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};

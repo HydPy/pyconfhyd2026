@@ -24,6 +24,7 @@ import {
   FaCode,
   FaHeart,
   FaBowlFood,
+  FaMedium,
 } from 'react-icons/fa6';
 import { FaExternalLinkAlt, FaArrowCircleRight } from 'react-icons/fa';
 import { MdLightMode, MdDarkMode } from 'react-icons/md';
@@ -65,6 +66,7 @@ const icons = {
   Code: FaCode,
   Heart: FaHeart,
   BowlFood: FaBowlFood,
+  Medium: FaMedium,
 };
 
 export const Icon = ({ name, size = 36, className = '', padding = 0 }) => {

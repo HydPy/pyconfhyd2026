@@ -1,5 +1,5 @@
 import { Heading } from '@/components/Typography';
-import Speaker from '@/components/Speaker';
+import { KeynoteSpeaker } from '@/components/Speaker';
 
 export default function KeynoteSpeakers({ speakers }) {
   return (
@@ -14,9 +14,9 @@ export default function KeynoteSpeakers({ speakers }) {
       >
         Keynote Speakers
       </Heading>
-      <div className="flex flex-wrap justify-center gap-20">
+      <div className="mt-10 flex flex-wrap justify-center gap-20">
         {speakers.map((speaker, index) => (
-          <Speaker key={index} speaker={speaker} />
+          <KeynoteSpeaker key={index} speaker={speaker} />
         ))}
       </div>
     </section>
