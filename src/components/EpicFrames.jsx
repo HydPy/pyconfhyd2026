@@ -75,7 +75,7 @@ const EpicFrames = () => {
       <div className="text-center mb-12">
         <Heading
           tagLevel={2}
-          level={1}
+          level={2}
           className="mb-4 text-primary-600 dark:text-primary-400"
         >
           {EPIC_FRAMES_INFO.title}

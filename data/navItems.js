@@ -3,6 +3,14 @@ export const NAV_ITEMS = [
     name: 'About',
     children: [
       {
+        name: 'PyConf Hyderabad',
+        path: '/pyconf-hyderabad',
+        target: '_self',
+        featureFlag: 'WHAT_IS_PYCONF',
+        changeFrequency: 'weekly',
+        priority: 0.9,
+      },
+      {
         name: 'Welcome Guide',
         path: '/welcome-guide',
         target: '_self',
@@ -65,10 +73,10 @@ export const NAV_ITEMS = [
     name: 'Attend',
     children: [
       {
-        name: 'Why Attend PyConf Hyderabad',
-        path: '/#why-attend',
+        name: 'Why You Should Attend?',
+        path: '/pyconf-hyderabad#why-you-should-attend',
         target: '_self',
-        featureFlag: 'WHY_ATTEND',
+        featureFlag: 'WHY_YOU_SHOULD_ATTEND',
         changeFrequency: 'weekly',
         priority: 0.8,
       },
