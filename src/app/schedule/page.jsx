@@ -197,7 +197,7 @@ const Schedule = () => {
             onClick={() => setActiveDay(day)}
             className={`flex flex-col items-center px-6 md:px-12 py-2 border border-primary-800 focus:ring-2 shadow-md rounded-xl ${
               activeDay === day
-                ? 'bg-primary-700 dark:bg-primary-700 text-white dark:text-gray-50'
+                ? 'bg-primary-800 dark:bg-primary-800 text-white dark:text-gray-50'
                 : 'bg-gray-50 dark:bg-gray-900 text-gray-950 dark:text-gray-50'
             }`}
           >
