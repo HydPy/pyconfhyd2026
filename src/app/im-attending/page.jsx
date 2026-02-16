@@ -1,5 +1,5 @@
 import IAmAttendingFrame from '@/components/IAmAttendingFrame';
-import { Heading } from '@/components/Typography';
+import { Heading, Paragraph } from '@/components/Typography';
 import { CONFERENCE } from '@/conference';
 
 export const metadata = {
@@ -21,8 +21,11 @@ export default function IAmAttendingPage() {
         level={1}
         className="text-center my-8 text-primary-600 dark:text-primary-400"
       >
-        I&apos;m Attending {CONFERENCE.title}
+        I&apos;m Attending!
       </Heading>
+      <Paragraph>
+        Generate your personalized PyConf Hyderabad 2026 photo frame to share your excitement on social media!
+      </Paragraph>
       <IAmAttendingFrame />
     </section>
   );

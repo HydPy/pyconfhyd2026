@@ -81,7 +81,7 @@ export const NAV_ITEMS = [
         priority: 0.8,
       },
       {
-        name: "I'm Attending",
+        name: "I'm Attending!",
         path: '/im-attending',
         target: '_self',
         featureFlag: 'IM_ATTENDING',
