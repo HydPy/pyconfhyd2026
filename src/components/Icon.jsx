@@ -33,6 +33,7 @@ import {
   FaPlus,
   FaCircleHalfStroke,
   FaCircle,
+  FaMedium,
 } from 'react-icons/fa6';
 import { FaExternalLinkAlt, FaArrowCircleRight } from 'react-icons/fa';
 import { MdLightMode, MdDarkMode } from 'react-icons/md';
@@ -83,6 +84,7 @@ const icons = {
   Plus: FaPlus,
   CircleHalfStroke: FaCircleHalfStroke,
   Circle: FaCircle,
+  Medium: FaMedium,
 };
 
 export const Icon = ({ name, size = 36, className = '', padding = 0 }) => {

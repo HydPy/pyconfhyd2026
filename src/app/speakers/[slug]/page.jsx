@@ -75,15 +75,15 @@ export default async function SpeakerPage({ params }) {
             </div>
           </div>
           <Heading
-            level={2}
+            level={3}
             tagLevel={1}
-            className="mt-6 mb-2 text-center text-primary-600 dark:text-primary-400"
+            className="mt-6 mb-2 text-center text-gray-950 dark:text-gray-50"
           >
             {speaker.name}
           </Heading>
           {speaker.title && (
             <Span
-              level={3}
+              level={2}
               className="text-center text-gray-950 dark:text-gray-50"
             >
               {speaker.title}
