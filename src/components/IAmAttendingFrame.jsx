@@ -2,10 +2,9 @@
 
 import { useRef, useState, useEffect, useCallback } from 'react';
 
-import { Heading, Paragraph } from '@/components/Typography';
 import Icon from '@/components/Icon';
 import { Confetti } from '@/components/Confetti';
-import { CONFERENCE } from '../../data/conference';
+import CTAButton from '@/components/CTAButton';
 
 const FRAME_PATH = '/images/attendingWithPhoto.png';
 
@@ -301,51 +300,8 @@ export default function IAmAttendingFrame() {
     }
   };
 
-  const share = (platform) => {
-    const url = encodeURIComponent(
-      typeof window !== 'undefined' ? window.location.href : ''
-    );
-    const text = encodeURIComponent(
-      `Generate your "I'm Attending" frame for ${CONFERENCE.title}:`
-    );
-    let shareUrl = '';
-    switch (platform) {
-      case 'wa':
-        shareUrl = `https://wa.me/?text=${text}%20${url}`;
-        break;
-      case 'fb':
-        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
-        break;
-      case 'tw':
-        shareUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
-        break;
-      case 'li':
-        shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
-        break;
-      default:
-        return;
-    }
-    if (shareUrl) window.open(shareUrl, '_blank');
-  };
-
   return (
     <section className="flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto">
-      <div className="text-center mb-8">
-        <Heading
-          tagLevel={1}
-          level={1}
-          className="text-primary-600 dark:text-primary-400"
-        >
-          I&apos;m Attending {CONFERENCE.title}
-        </Heading>
-        <Paragraph
-          level={3}
-          className="text-gray-600 dark:text-gray-300 mt-2"
-        >
-          Upload your photo, add your name, and share on social media!
-        </Paragraph>
-      </div>
-
       <div className="w-full max-w-lg bg-gray-50 dark:bg-gray-900 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 p-4 sm:p-6">
         {/* Canvas container - preserve frame aspect ratio (no stretch) */}
         <div
@@ -383,10 +339,11 @@ export default function IAmAttendingFrame() {
             className="hidden"
             onChange={handleUpload}
           />
-          <span className="inline-flex items-center gap-2 px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white font-bold rounded-xl cursor-pointer transition-colors shadow-md hover:shadow-lg">
-            <Icon name="Upload" size={20} />
-            Choose Photo
-          </span>
+          <div
+            onClick={() => fileInputRef.current && fileInputRef.current.click()}
+          >
+            <CTAButton label="Choose Photo" icon="Upload" variant="accent" />
+          </div>
         </label>
 
         {/* Editor controls */}
@@ -394,11 +351,17 @@ export default function IAmAttendingFrame() {
           <div className="mt-6 space-y-5 animate-in fade-in duration-300">
             {/* Optional text fields */}
             <div className="space-y-3">
-              <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300">
+              <label
+                htmlFor="name"
+                className="block text-sm font-semibold text-gray-700 dark:text-gray-300"
+              >
                 Your Name
-                <span className="text-gray-400 font-normal ml-1">(optional)</span>
+                <span className="text-gray-400 font-normal ml-1">
+                  (optional)
+                </span>
               </label>
               <input
+                id="name"
                 type="text"
                 placeholder="Enter your name"
                 value={fields.name}
@@ -407,11 +370,17 @@ export default function IAmAttendingFrame() {
                 }
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-500 focus:ring-2 focus:ring-primary-500 focus:border-transparent"
               />
-              <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300">
+              <label
+                htmlFor="role"
+                className="block text-sm font-semibold text-gray-700 dark:text-gray-300"
+              >
                 Designation / Role
-                <span className="text-gray-400 font-normal ml-1">(optional)</span>
+                <span className="text-gray-400 font-normal ml-1">
+                  (optional)
+                </span>
               </label>
               <input
+                id="role"
                 type="text"
                 placeholder="e.g. Software Engineer, Student"
                 value={fields.designation}
@@ -428,11 +397,15 @@ export default function IAmAttendingFrame() {
             {/* Adjustment sliders */}
             <div className="bg-gray-100 dark:bg-gray-800 rounded-xl p-4 border border-gray-200 dark:border-gray-700 space-y-4">
               <div className="flex items-center gap-2">
-                <span className="text-sm text-gray-600 dark:text-gray-400 w-16">
+                <label
+                  htmlFor="zoom"
+                  className="text-sm text-gray-600 dark:text-gray-400 w-16"
+                >
                   Zoom
-                </span>
+                </label>
                 <Icon name="Minus" size={12} className="text-gray-500" />
                 <input
+                  id="zoom"
                   type="range"
                   min="0.1"
                   max="3"
@@ -444,11 +417,15 @@ export default function IAmAttendingFrame() {
                 <Icon name="Plus" size={12} className="text-gray-500" />
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-sm text-gray-600 dark:text-gray-400 w-16">
+                <label
+                  htmlFor="rotate"
+                  className="text-sm text-gray-600 dark:text-gray-400 w-16"
+                >
                   Rotate
-                </span>
+                </label>
                 <Icon name="RotateLeft" size={12} className="text-gray-500" />
                 <input
+                  id="rotate"
                   type="range"
                   min="-180"
                   max="180"
@@ -459,11 +436,19 @@ export default function IAmAttendingFrame() {
                 />
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-sm text-gray-600 dark:text-gray-400 w-16">
+                <label
+                  htmlFor="opacity"
+                  className="text-sm text-gray-600 dark:text-gray-400 w-16"
+                >
                   Opacity
-                </span>
-                <Icon name="CircleHalfStroke" size={12} className="text-gray-500" />
+                </label>
+                <Icon
+                  name="CircleHalfStroke"
+                  size={12}
+                  className="text-gray-500"
+                />
                 <input
+                  id="opacity"
                   type="range"
                   min="0.3"
                   max="1"
@@ -478,79 +463,33 @@ export default function IAmAttendingFrame() {
 
             {/* Action buttons */}
             <div className="grid grid-cols-2 gap-3">
-              <button
-                type="button"
-                onClick={handleReset}
-                className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-semibold hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
-              >
-                <Icon name="RotateLeft" size={18} />
-                Reset
-              </button>
-              <button
-                type="button"
-                onClick={() => downloadImage('image/jpeg')}
-                className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-semibold hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
-              >
-                <Icon name="Download" size={18} />
-                Download JPG
-              </button>
-              <button
-                type="button"
+              <div className="w-full" onClick={handleReset}>
+                <CTAButton
+                  label="Reset"
+                  icon="RotateLeft"
+                  variant="secondary"
+                  className="w-full justify-center py-3 text-base"
+                />
+              </div>
+              <div className="w-full" onClick={() => downloadImage('image/jpeg')}>
+                <CTAButton
+                  label="Download JPG"
+                  icon="Download"
+                  variant="secondary"
+                  className="w-full justify-center py-3 text-base"
+                />
+              </div>
+              <div
+                className="col-span-2 w-full"
                 onClick={() => downloadImage('image/png')}
-                className="col-span-2 flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-primary-500 hover:bg-primary-600 text-white font-bold transition-colors shadow-md"
               >
-                <Icon name="Download" size={20} />
-                Download High-Res PNG
-              </button>
-            </div>
-
-            {/* Social share */}
-            <div className="flex justify-center gap-3 pt-4 border-t border-gray-200 dark:border-gray-700">
-              <button
-                type="button"
-                onClick={copyLink}
-                className="w-11 h-11 rounded-full bg-gray-500 hover:bg-gray-600 text-white flex items-center justify-center transition-colors"
-                title="Copy Link"
-                aria-label="Copy link"
-              >
-                <Icon name="Link" size={20} />
-              </button>
-              <button
-                type="button"
-                onClick={() => share('wa')}
-                className="w-11 h-11 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center transition-colors"
-                title="WhatsApp"
-                aria-label="Share on WhatsApp"
-              >
-                <Icon name="WhatsApp" size={22} />
-              </button>
-              <button
-                type="button"
-                onClick={() => share('li')}
-                className="w-11 h-11 rounded-full bg-[#0A66C2] hover:bg-[#095196] text-white flex items-center justify-center transition-colors"
-                title="LinkedIn"
-                aria-label="Share on LinkedIn"
-              >
-                <Icon name="LinkedIn" size={20} />
-              </button>
-              <button
-                type="button"
-                onClick={() => share('tw')}
-                className="w-11 h-11 rounded-full bg-[#1DA1F2] hover:bg-[#1a8cd8] text-white flex items-center justify-center transition-colors"
-                title="Twitter/X"
-                aria-label="Share on Twitter"
-              >
-                <Icon name="X" size={18} />
-              </button>
-              <button
-                type="button"
-                onClick={() => share('fb')}
-                className="w-11 h-11 rounded-full bg-[#1877F2] hover:bg-[#166fe5] text-white flex items-center justify-center transition-colors"
-                title="Facebook"
-                aria-label="Share on Facebook"
-              >
-                <Icon name="Facebook" size={20} />
-              </button>
+                <CTAButton
+                  label="Download High-Res PNG"
+                  icon="Download"
+                  variant="accent"
+                  className="w-full justify-center py-3 text-base"
+                />
+              </div>
             </div>
           </div>
         )}
