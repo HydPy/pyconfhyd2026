@@ -28,12 +28,12 @@ export const SCHEDULE = {
           speakers: [getSpeaker('jaidev-deshpande')],
         },
         {
-          time: '10:20 - 12:50 PM',
+          time: '02:00 - 04:50 PM',
           type: 'Workshop',
           // TODO: Update the Discord channel link
           discordChannelLink: '',
-          title: 'Build Your First Key-Value Database in Python',
-          speakers: [getSpeaker('pradhvan-bisht')],
+          title: 'PEP 684 + 554 + 669 True Parallelism in Python',
+          speakers: [getSpeaker('ramachandra-vikas-chamarthi')],
           location: 'Track 2',
         },
         {
@@ -66,12 +66,12 @@ export const SCHEDULE = {
           speakers: [getSpeaker('sonu-kumar')],
         },
         {
-          time: '02:00 - 04:50 PM',
+          time: '10:20 - 12:50 PM',
           type: 'Workshop',
           // TODO: Update the Discord channel link
           discordChannelLink: '',
-          title: 'PEP 684 + 554 + 669 True Parallelism in Python',
-          speakers: [getSpeaker('ramachandra-vikas-chamarthi')],
+          title: 'Build Your First Key-Value Database in Python',
+          speakers: [getSpeaker('pradhvan-bisht')],
           location: 'Track 2',
         },
         {
