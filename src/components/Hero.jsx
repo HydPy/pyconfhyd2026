@@ -114,8 +114,8 @@ const Hero = () => {
             variant="secondary"
           />
           <CTAButton
-            href='/schedule'
-            label='CHECKOUT THE SCHEDULE'
+            href="/schedule"
+            label="CHECKOUT THE SCHEDULE"
             icon="Calendar"
             iconSize={24}
             target=""
