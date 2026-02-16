@@ -12,14 +12,6 @@ export const NAV_ITEMS = [
         priority: 0.9,
       },
       {
-        name: 'Why Attend PyConf Hyderabad',
-        path: '/#why-attend',
-        target: '_self',
-        featureFlag: 'WHY_ATTEND',
-        changeFrequency: 'weekly',
-        priority: 0.8,
-      },
-      {
         name: 'Venue',
         path: '/#venue',
         target: '_self',
@@ -66,6 +58,27 @@ export const NAV_ITEMS = [
         featureFlag: 'FAQ',
         changeFrequency: 'weekly',
         priority: 0.9,
+      },
+    ],
+  },
+  {
+    name: 'Attend',
+    children: [
+      {
+        name: 'Why Attend PyConf Hyderabad',
+        path: '/#why-attend',
+        target: '_self',
+        featureFlag: 'WHY_ATTEND',
+        changeFrequency: 'weekly',
+        priority: 0.8,
+      },
+      {
+        name: "I'm Attending",
+        path: '/im-attending',
+        target: '_self',
+        featureFlag: 'IM_ATTENDING',
+        changeFrequency: 'weekly',
+        priority: 0.5,
       },
     ],
   },
@@ -146,14 +159,6 @@ export const NAV_ITEMS = [
         priority: 0.5,
       },
     ],
-  },
-  {
-    name: "I'm Attending",
-    path: '/im-attending',
-    target: '_self',
-    featureFlag: 'IM_ATTENDING',
-    changeFrequency: 'weekly',
-    priority: 0.9,
   },
   {
     name: 'Blog',

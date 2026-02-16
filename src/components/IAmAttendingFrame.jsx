@@ -13,13 +13,13 @@ const FRAME_ROTATION = -5.9;
 const PHOTO_REGION = {
   x: 0.13,
   y: 0.25,
-  width: 0.40,
+  width: 0.4,
   height: 0.35,
 };
 
 const TEXT_CONFIG = {
   nameY: 0.66,
-  designationY: 0.70,
+  designationY: 0.7,
   centerX: 0.37,
   nameFontSize: 0.04,
   designationFontSize: 0.025,
@@ -342,7 +342,7 @@ export default function IAmAttendingFrame() {
           <div
             onClick={() => fileInputRef.current && fileInputRef.current.click()}
           >
-            <CTAButton label="Choose Photo" icon="Upload" variant="accent" />
+            <CTAButton label="Choose Photo" icon="Upload" variant="secondary" />
           </div>
         </label>
 
@@ -463,28 +463,28 @@ export default function IAmAttendingFrame() {
 
             {/* Action buttons */}
             <div className="grid grid-cols-2 gap-3">
-              <div className="w-full" onClick={handleReset}>
+              {/* <div className="w-full" onClick={handleReset}>
                 <CTAButton
                   label="Reset"
                   icon="RotateLeft"
                   variant="secondary"
                   className="w-full justify-center py-3 text-base"
                 />
-              </div>
-              <div className="w-full" onClick={() => downloadImage('image/jpeg')}>
+              </div> */}
+              {/* <div className="w-full" onClick={() => downloadImage('image/jpeg')}>
                 <CTAButton
-                  label="Download JPG"
+                  label="Download"
                   icon="Download"
-                  variant="secondary"
+                  variant="accent"
                   className="w-full justify-center py-3 text-base"
                 />
-              </div>
+              </div> */}
               <div
                 className="col-span-2 w-full"
                 onClick={() => downloadImage('image/png')}
               >
                 <CTAButton
-                  label="Download High-Res PNG"
+                  label="Download"
                   icon="Download"
                   variant="accent"
                   className="w-full justify-center py-3 text-base"
