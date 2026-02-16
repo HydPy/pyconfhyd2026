@@ -113,13 +113,14 @@ const Hero = () => {
             target=""
             variant="secondary"
           />
-          {/* <CTAButton
-            href={KEY_LINKS.cfpUrl}
-            label={KEY_LINKS.cfpLabel}
-            icon="MdCampaign"
+          <CTAButton
+            href='/schedule'
+            label='CHECKOUT THE SCHEDULE'
+            icon="Calendar"
             iconSize={24}
+            target=""
             variant="accent"
-          /> */}
+          />
         </div>
       </div>
     </section>
