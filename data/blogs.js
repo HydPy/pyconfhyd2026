@@ -1,6 +1,7 @@
 import { getSponsor } from '@/sponsors';
 
 import AsblPlatinumSponsorMdx from '@/blogs/asbl-platinum-sponsor.mdx';
+import StraiveGoldSponsorMdx from '@/blogs/straive-gold-sponsor.mdx';
 
 export const BLOGS = [
   {
@@ -10,5 +11,13 @@ export const BLOGS = [
     author: 'PyConf Hyderabad Team',
     publishedAt: 'February 8, 2026',
     socials: getSponsor('ASBL').socials,
+  },
+  {
+    slug: 'straive-gold-sponsor',
+    title: 'Announcing Straive as our Gold Sponsor',
+    markdownComponent: <StraiveGoldSponsorMdx />,
+    author: 'PyConf Hyderabad Team',
+    publishedAt: 'February 17, 2026',
+    socials: getSponsor('Straive').socials,
   },
 ];

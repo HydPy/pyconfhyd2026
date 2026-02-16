@@ -50,6 +50,35 @@ export const SPONSORS = {
       ],
     },
   ],
-  Gold: [],
+  Gold: [
+    {
+      name: 'Straive',
+      imgUrl: '/images/sponsors/straive.png',
+      imgAlt: 'Straive logo',
+      hyperLink: '/blogs/straive-gold-sponsor/',
+      socials: [
+        {
+          name: 'X',
+          url: 'https://x.com/Straive_',
+          ariaLabel: 'Hyperlink to Straive X page.',
+        },
+        {
+          name: 'LinkedIn',
+          url: 'https://www.linkedin.com/company/straive_/',
+          ariaLabel: 'Hyperlink to Straive LinkedIn page.',
+        },
+        {
+          name: 'Instagram',
+          url: 'https://www.instagram.com/straive__/?hl=en',
+          ariaLabel: 'Hyperlink to Straive Instagram page.',
+        },
+        {
+          name: 'Globe',
+          url: 'https://www.straive.com/',
+          ariaLabel: 'Hyperlink to Straive website.',
+        },
+      ],
+    },
+  ],
   Silver: [],
 };
