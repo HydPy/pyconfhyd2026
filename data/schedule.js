@@ -28,7 +28,7 @@ export const SCHEDULE = {
           speakers: [getSpeaker('jaidev-deshpande')],
         },
         {
-          time: '10:20 - 12:50 PM',
+          time: '10:00 - 12:50 PM',
           type: 'Workshop',
           // TODO: Update the Discord channel link
           discordChannelLink: '',
@@ -37,7 +37,7 @@ export const SCHEDULE = {
           location: 'Track 2',
         },
         {
-          time: '10:20 - 12:50 PM',
+          time: '10:00 - 12:50 PM',
           type: 'Workshop',
           // TODO: Update the Discord channel link
           discordChannelLink: '',
