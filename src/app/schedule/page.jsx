@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Heading, Span } from '@/components/Typography';
 import Icon from '@/components/Icon';
 import Image from 'next/image';
+import SpeakerInitials from '@/components/SpeakerInitials';
 
 import { SCHEDULE } from '@/schedule';
 import Link from 'next/link';
@@ -78,13 +79,7 @@ const SpeakerCard = ({ speaker }) => {
             />
           ) : (
             <div className="h-full w-full flex items-center justify-center bg-primary-600 dark:bg-primary-700 text-white font-semibold text-2xl">
-              {(() => {
-                if (!speaker.name) return null;
-                const parts = speaker.name.trim().split(/\s+/);
-                const first = parts[0] ? parts[0][0] : '';
-                const last = parts.length > 1 ? parts[parts.length - 1][0] : '';
-                return `${(first + last).toUpperCase()}`;
-              })()}
+              <SpeakerInitials speaker={speaker} />
             </div>
           )}
         </div>
