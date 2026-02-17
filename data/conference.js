@@ -7,7 +7,7 @@ export const CONFERENCE = {
   },
   announcement:
     'Hyderabad’s biggest Python conference is on the way! <br> Get ready for an unforgettable experience and stay tuned for updates!',
-  siteURL: 'http://2026.pyconfhyd.org',
+  siteURL: 'https://2026.pyconfhyd.org',
   copyrightTitle: 'Copyright @ 2026 PyConf Hyderabad',
   conferenceDate: '15 Mar',
   conferenceVenue: 'Engineering Staff College of India',
