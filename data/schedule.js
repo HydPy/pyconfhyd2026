@@ -70,8 +70,9 @@ export const SCHEDULE = {
           type: 'Workshop',
           // TODO: Update the Discord channel link
           discordChannelLink: '',
-          title: 'TBA',
-          // speakers: [getSpeaker('manivannan-elangovan')],
+          title:
+            'Mastering the Multi-Stack: Orchestrated Debugging with Python and Beyond',
+          speakers: [getSpeaker('satyam-soni')],
           location: 'Track 2',
         },
         {

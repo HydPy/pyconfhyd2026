@@ -159,6 +159,38 @@ export const SPEAKERS = [
     ],
   },
   {
+    name: 'Satyam Soni',
+    slug: 'satyam-soni',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'Software Architect at EPAM',
+    bio: '8+ yrs in AI, data & integrations. Open-source lover (dev-accelerator creator). Passionate about teaching practical hacks & "aha!" moments. Let\'s code, share & level up! 🚀👨‍💻',
+    imgUrl: '/images/speakers/satyam-soni.jpg',
+    imgAlt: 'Picture of Satyam Soni.',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/-satyamsoni',
+        ariaLabel: "Hyperlink to Satyam Soni's LinkedIn page.",
+      },
+      {
+        name: 'X',
+        url: 'https://x.com/_satyamsoni_',
+        ariaLabel: "Hyperlink to Satyam Soni's X page.",
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/satyamsoni2211',
+        ariaLabel: "Hyperlink to Satyam Soni's GitHub page.",
+      },
+      {
+        name: 'Globe',
+        url: 'https://www.satyamsoni.in',
+        ariaLabel: "Hyperlink to Satyam Soni's website.",
+      },
+    ],
+  },
+  {
     name: 'Sourav Roy',
     slug: 'sourav-roy',
     type: 'Session',
