@@ -70,8 +70,8 @@ export const SCHEDULE = {
           type: 'Workshop',
           // TODO: Update the Discord channel link
           discordChannelLink: '',
-          title: 'Build Your First Key-Value Database in Python',
-          speakers: [getSpeaker('pradhvan-bisht')],
+          title: 'TBA',
+          // speakers: [getSpeaker('manivannan-elangovan')],
           location: 'Track 2',
         },
         {

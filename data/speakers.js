@@ -176,33 +176,6 @@ export const SPEAKERS = [
     ],
   },
   {
-    name: 'Pradhvan Bisht',
-    slug: 'pradhvan-bisht',
-    type: 'Session',
-    activeSpeakerPage: true,
-    title: 'Product Engineer',
-    bio: 'Pradhvan is a software enthusiast who primarily uses Python to communicate with computers.',
-    imgUrl: '/images/speakers/pradhvan-bisht.jpg',
-    imgAlt: 'Picture of Pradhvan Bisht.',
-    socials: [
-      {
-        name: 'X',
-        url: 'https://x.com/BishtPradhvan',
-        ariaLabel: "Hyperlink to Pradhvan Bisht's X page.",
-      },
-      {
-        name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/pradhvanbisht/',
-        ariaLabel: "Hyperlink to Pradhvan Bisht's LinkedIn page.",
-      },
-      {
-        name: 'Globe',
-        url: 'https://pradhvanbisht.in/',
-        ariaLabel: "Hyperlink to Pradhvan Bisht's website.",
-      },
-    ],
-  },
-  {
     name: 'PyConf Hyderabad Team',
     slug: 'pyconf-hyderabad-team',
     activeSpeakerPage: false,
