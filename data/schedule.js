@@ -61,7 +61,7 @@ export const SCHEDULE = {
           // TODO: Update the Discord channel link
           discordChannelLink: '',
           title:
-            'Context Engineering in Python: Building Production-Grade Agentic AI System',
+            'Designing Reliable Agentic AI for Real-World Systems',
           location: 'Track 1',
           speakers: [getSpeaker('sonu-kumar')],
         },
