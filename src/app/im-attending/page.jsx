@@ -24,7 +24,8 @@ export default function IAmAttendingPage() {
         I&apos;m Attending!
       </Heading>
       <Paragraph>
-        Generate your personalized PyConf Hyderabad 2026 photo frame to share your excitement on social media!
+        Generate your personalized PyConf Hyderabad 2026 photo frame to share
+        your excitement on social media!
       </Paragraph>
       <IAmAttendingFrame />
     </section>

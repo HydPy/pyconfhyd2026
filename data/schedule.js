@@ -42,8 +42,6 @@ export const SCHEDULE = {
           // TODO: Update the Discord channel link
           discordChannelLink: '',
           title: 'TBA',
-          // TODO: Update the speakers once the session title is finalized.
-          // speakers: [getSpeaker('manivannan-elangovan')],
           location: 'Track 3',
         },
       ],
@@ -60,8 +58,7 @@ export const SCHEDULE = {
           type: 'Workshop',
           // TODO: Update the Discord channel link
           discordChannelLink: '',
-          title:
-            'Designing Reliable Agentic AI for Real-World Systems',
+          title: 'Designing Reliable Agentic AI for Real-World Systems',
           location: 'Track 1',
           speakers: [getSpeaker('sonu-kumar')],
         },
@@ -97,14 +94,14 @@ export const SCHEDULE = {
         {
           title: 'Registrations',
           time: '08:00 - 09:00 AM',
-          location: 'Registration Desk - TBA',
+          location: 'Registration Desk',
         },
       ],
       [
         {
           title: 'Opening Note',
           time: '09:00 - 09:15 AM',
-          location: 'TBA',
+          location: 'Auditorium | Main Stage',
           speakers: [getSpeaker('pyconf-hyderabad-team')],
         },
       ],
@@ -114,66 +111,53 @@ export const SCHEDULE = {
           type: 'Talk',
           keynote: true,
           time: '09:15 - 10:15 AM',
-          location: 'Auditorium',
+          location: 'Auditorium | Main Stage',
           speakers: [getSpeaker('parul-pandey')],
         },
       ],
       [
         {
-          title:'Platinum sponsor talk 1: TBA',
+          title: 'Making Agents Behave: Building Deterministic LLM Workflows',
           type: 'Talk',
           time: '10:20 - 10:50 AM',
-          location: 'Auditorium',
-          // TODO: Update the speaker and their details once the session title is finalized.
-          speakers: [getSpeaker('pyconf-hyderabad-team')],
+          location: 'Auditorium | Main Stage',
+          speakers: [getSpeaker('asha-holla')],
         },
-      ],
-      [
         {
-          title: 'T1 - TBA',
-          type: 'Talk',
-          time: '10:20 - 10:50 AM',
-          location: 'Hall 1',
-          // TODO: Update the speaker and their details once the session title is finalized.
-          speakers: [getSpeaker('pyconf-hyderabad-team')],
-        },
-      ],
-      [
-        {
-          title: 'Debugging in Production: What Unit Tests Did Not Save You From',
+          title: 'TBA',
           type: 'Talk',
           time: '10:20 - 10:50 AM',
           location: 'Hall 2',
+        },
+        {
+          title:
+            'Debugging in Production: What Unit Tests Did Not Save You From',
+          type: 'Talk',
+          time: '10:20 - 10:50 AM',
+          location: 'Hall 3',
           speakers: [getSpeaker('syed-fahad')],
         },
       ],
       [
         {
-          title:'Platinum sponsor talk 2: TBA',
+          title: 'Platinium Sponsored Talk',
           type: 'Talk',
           time: '10:55 - 11:25 AM',
-          location: 'Auditorium',
-          // TODO: Update the speaker and their details once the session title is finalized.
-          speakers: [getSpeaker('pyconf-hyderabad-team')],
+          location: 'Auditorium | Main Stage',
         },
-      ],
-      [
         {
-          title: 'Good Systems, Good Sleep: Teaching Your Systems to Fix Themselves (Using Python, Not Magic)',
-          type: 'Talk',
-          time: '10:55 - 11:25 AM',
-          location: 'Hall 1',
-          speakers: [getSpeaker('ria-bhatia')],
-        },
-      ],
-      [
-        {
-          title: 'T3 - TBA',
+          title:
+            'Good Systems, Good Sleep: Teaching Your Systems to Fix Themselves (Using Python, Not Magic)',
           type: 'Talk',
           time: '10:55 - 11:25 AM',
           location: 'Hall 2',
-          // TODO: Update the speaker and their details once the session title is finalized.
-          speakers: [getSpeaker('pyconf-hyderabad-team')],
+          speakers: [getSpeaker('ria-bhatia')],
+        },
+        {
+          title: 'TBA',
+          type: 'Talk',
+          time: '10:55 - 11:25 AM',
+          location: 'Hall 3',
         },
       ],
       [
@@ -186,124 +170,149 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Making Agents Behave: Building Deterministic LLM Workflows',
+          title: 'How AI Agents Go Rogue: A Security First Python Walkthrough',
           type: 'Talk',
           time: '11:45 - 12:15 PM',
-          location: 'Auditorium',
-          speakers: [getSpeaker('asha-holla')],
+          location: 'Auditorium | Main Stage',
+        },
+        {
+          title:
+            'Context Engineering: The Make-or-Break Skill for Production AI',
+          type: 'Talk',
+          time: '11:45 - 12:15 PM',
+          location: 'Hall 2',
+        },
+        {
+          title: 'Beyond Texts: Pouring Life into Multilingual Chatbots',
+          type: 'Talk',
+          time: '11:45 - 12:15 PM',
+          location: 'Hall 3',
         },
       ],
-      // [
-      //   {
-      //     title: 'Spicing Up Automation: A Taste of Python and SaltStack',
-      //     type: 'Talk',
-      //     time: '11:30 - 12:00 PM',
-      //     location: 'Marvel Hall',
-      //     speakers: [getSpeaker('ria-bhatia')],
-      //   },
-      // ],
-      // [
-      //   {
-      //     title: "Let's enhance our technical writing by reading PEPs",
-      //     type: 'Talk',
-      //     time: '12:00 - 12:30 PM',
-      //     location: 'Marvel Hall',
-      //     speakers: [getSpeaker('sai-rahul-poruri')],
-      //   },
-      // ],
-      // [
-      //   {
-      //     title: '🍱 Lunch Break',
-      //     break: true,
-      //     time: '12:30 - 01:30 PM',
-      //     location: 'Cafeteria',
-      //   },
-      // ],
-      // [
-      //   {
-      //     title: '⚡️ Lightning Talks',
-      //     time: '01:30 - 02:25 PM',
-      //     location: 'Marvel Hall',
-      //   },
-      // ],
-      // [
-      //   {
-      //     title:
-      //       'Organized Chaos: Demystifying Memory Management & Garbage Collection in Python',
-      //     type: 'Talk',
-      //     time: '02:25 - 02:55 PM',
-      //     location: 'Marvel Hall',
-      //     speakers: [getSpeaker('sejal-gupta'), getSpeaker('sidhant-gupta')],
-      //   },
-      // ],
-      // [
-      //   {
-      //     title: 'uv - MEGA: Make Environments Great Again',
-      //     type: 'Talk',
-      //     time: '02:55 - 03:25 PM',
-      //     location: 'Marvel Hall',
-      //     speakers: [getSpeaker('s-anand')],
-      //   },
-      // ],
-      // [
-      //   {
-      //     title: 'Understanding API dispatching',
-      //     type: 'Talk',
-      //     time: '03:25 - 03:55 PM',
-      //     location: 'Marvel Hall',
-      //     speakers: [getSpeaker('aditi-juneja')],
-      //   },
-      // ],
-      // [
-      //   {
-      //     title: 'Open Source: One Idea, Many Journeys',
-      //     keynote: true,
-      //     time: '03:55 - 04:45 PM',
-      //     speakers: [getSpeaker('bowrna-prabhakaran')],
-      //     location: 'Marvel Hall',
-      //   },
-      // ],
-      // [
-      //   {
-      //     title: '☕️ Tea/Coffee Break',
-      //     break: true,
-      //     time: '04:45 - 05:00 PM',
-      //     location: 'Marvel Hall',
-      //   },
-      // ],
-      // [
-      //   {
-      //     title: 'Multimodal Agents RAG Workflow',
-      //     type: 'Talk',
-      //     time: '05:00 - 05:30 PM',
-      //     location: 'Marvel Hall',
-      //     speakers: [getSpeaker('tarun-jain')],
-      //   },
-      // ],
-      // [
-      //   {
-      //     title: 'Turn your old laptop to a home server',
-      //     type: 'Talk',
-      //     time: '05:30 - 06:00 PM',
-      //     location: 'Marvel Hall',
-      //     speakers: [getSpeaker('g-r-akhil-teja')],
-      //   },
-      // ],
-      // [
-      //   {
-      //     title: '🎉 PyConf Hyderabad 5th Edition Celebration',
-      //     time: '06:00 - 06:15 PM',
-      //     location: 'Marvel Hall',
-      //     speakers: [getSpeaker('pyconf-hyderabad-team')],
-      //   },
-      // ],
-      // [
-      //   {
-      //     title: 'Closing Note',
-      //     time: '06:15 - 06:25 PM',
-      //     location: 'Marvel Hall',
-      //   },
-      // ],
+      [
+        {
+          title: 'Platinium Sponsored Talk',
+          type: 'Talk',
+          time: '12:20 - 12:50 PM',
+          location: 'Auditorium | Main Stage',
+        },
+        {
+          title: 'Apache Ray: Scaling and Distributing ML Applications',
+          type: 'Talk',
+          time: '12:20 - 12:50 PM',
+          location: 'Hall 2',
+        },
+        {
+          title:
+            'From Python to Pocket: Fine-Tuning Gemma with LoRA for On-Device AI',
+          type: 'Talk',
+          time: '12:20 - 12:50 PM',
+          location: 'Hall 3',
+        },
+      ],
+      [
+        {
+          title: 'Lunch Break',
+          break: true,
+          time: '12:50 - 02:10 PM',
+          location: 'Cafeteria',
+        },
+      ],
+      [
+        {
+          title: 'Panel Discussion - TBA',
+          type: 'Panel',
+          time: '02:10 - 02:40 PM',
+          location: 'Auditorium | Main Stage',
+        },
+        {
+          title:
+            'Distributed Computing for big data for batch and realtime data with PySpark',
+          type: 'Talk',
+          time: '02:10 - 02:40 PM',
+          location: 'Hall 2',
+        },
+        {
+          title: 'Streaming Protocols for Conversational AI',
+          type: 'Talk',
+          time: '02:10 - 02:40 PM',
+          location: 'Hall 3',
+        },
+      ],
+      [
+        {
+          title: 'Lightning Talks - Sponsors',
+          type: 'Talk',
+          time: '02:45 - 03:15 PM',
+          location: 'Auditorium | Main Stage',
+        },
+        {
+          title:
+            'DeepSwingr - A Differentiable Framework for Cricket Ball Swing Optimization',
+          type: 'Talk',
+          time: '02:45 - 03:15 PM',
+          location: 'Hall 2',
+        },
+        {
+          title: 'Learn Async programming by playing Soccer',
+          type: 'Talk',
+          time: '02:45 - 03:15 PM',
+          location: 'Hall 3',
+        },
+      ],
+      [
+        {
+          title: 'Tea Break',
+          break: true,
+          time: '03:20 - 03:40 PM',
+          location: 'Cafeteria',
+        },
+      ],
+      [
+        {
+          title: 'How students learn Python',
+          type: 'Talk',
+          time: '03:40 - 04:10 PM',
+          location: 'Auditorium | Main Stage',
+        },
+        {
+          title: 'Asyncio Upgrade Playbook: 3.10–3.14 Changes You Can’t Ignore',
+          type: 'Talk',
+          time: '03:40 - 04:10 PM',
+          location: 'Hall 2',
+        },
+        {
+          title: 'Python + Rust for High-Performance Systems',
+          type: 'Talk',
+          time: '03:40 - 04:10 PM',
+          location: 'Hall 3',
+        },
+      ],
+      [
+        {
+          title: 'Lightning Talks',
+          type: 'Talk',
+          time: '04:15 - 04:45 PM',
+          location: 'Auditorium | Main Stage',
+        },
+      ],
+      [
+        {
+          title: '',
+          type: 'Talk',
+          keynote: true,
+          time: '04:45 - 05:45 PM',
+          location: 'Auditorium | Main Stage',
+          speakers: [getSpeaker('manivannan-elangovan')],
+        },
+      ],
+      [
+        {
+          title: 'Closing Note + HydPy 10 years Celebrations',
+          time: '05:45 - 06:00 PM',
+          location: 'Auditorium | Main Stage',
+        },
+      ],
     ],
   },
 };

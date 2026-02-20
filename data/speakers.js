@@ -273,7 +273,7 @@ export const SPEAKERS = [
       },
       {
         name: 'Globe',
-        url: 'https://open.substack.com/pub/ashaholla?utm_source=share&utm_medium=android&r=3gwdcv',
+        url: 'https://open.substack.com/pub/ashaholla',
         ariaLabel: "Hyperlink to Asha Holla's website.",
       },
     ],
