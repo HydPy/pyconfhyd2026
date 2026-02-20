@@ -174,19 +174,21 @@ export const SCHEDULE = {
           type: 'Talk',
           time: '11:45 - 12:15 PM',
           location: 'Auditorium | Main Stage',
+          speakers: [getSpeaker('nitin-sharma')],
         },
         {
-          title:
-            'Context Engineering: The Make-or-Break Skill for Production AI',
+          title: 'Context Engineering: The Make-or-Break Skill for Production AI',
           type: 'Talk',
           time: '11:45 - 12:15 PM',
           location: 'Hall 2',
+          speakers: [getSpeaker('tezan-sahu')],
         },
         {
           title: 'Beyond Texts: Pouring Life into Multilingual Chatbots',
           type: 'Talk',
           time: '11:45 - 12:15 PM',
           location: 'Hall 3',
+          speakers: [getSpeaker('ritesh-chintakindi')],
         },
       ],
       [
@@ -201,13 +203,14 @@ export const SCHEDULE = {
           type: 'Talk',
           time: '12:20 - 12:50 PM',
           location: 'Hall 2',
+          speakers: [getSpeaker('karthikeyan-vk')],
         },
         {
-          title:
-            'From Python to Pocket: Fine-Tuning Gemma with LoRA for On-Device AI',
+          title: 'From Python to Pocket: Fine-Tuning Gemma with LoRA for On-Device AI',
           type: 'Talk',
           time: '12:20 - 12:50 PM',
           location: 'Hall 3',
+          speakers: [getSpeaker('dinoy-raj-k')],
         },
       ],
       [
@@ -226,17 +229,18 @@ export const SCHEDULE = {
           location: 'Auditorium | Main Stage',
         },
         {
-          title:
-            'Distributed Computing for big data for batch and realtime data with PySpark',
+          title: 'Distributed Computing for big data for batch and realtime data with PySpark',
           type: 'Talk',
           time: '02:10 - 02:40 PM',
           location: 'Hall 2',
+          speakers: [getSpeaker('kuldeep-pal')],
         },
         {
           title: 'Streaming Protocols for Conversational AI',
           type: 'Talk',
           time: '02:10 - 02:40 PM',
           location: 'Hall 3',
+          speakers: [getSpeaker('muhammed-mizaj')],
         },
       ],
       [
@@ -247,17 +251,18 @@ export const SCHEDULE = {
           location: 'Auditorium | Main Stage',
         },
         {
-          title:
-            'DeepSwingr - A Differentiable Framework for Cricket Ball Swing Optimization',
+          title: 'DeepSwingr - A Differentiable Framework for Cricket Ball Swing Optimization',
           type: 'Talk',
           time: '02:45 - 03:15 PM',
           location: 'Hall 2',
+          speakers: [getSpeaker('pavan-b-govindaraju')],
         },
         {
           title: 'Learn Async programming by playing Soccer',
           type: 'Talk',
           time: '02:45 - 03:15 PM',
           location: 'Hall 3',
+          speakers: [getSpeaker('akhil-teja')],
         },
       ],
       [
@@ -274,18 +279,21 @@ export const SCHEDULE = {
           type: 'Talk',
           time: '03:40 - 04:10 PM',
           location: 'Auditorium | Main Stage',
+          speakers: [getSpeaker('anand-s')],
         },
         {
           title: 'Asyncio Upgrade Playbook: 3.10–3.14 Changes You Can’t Ignore',
           type: 'Talk',
           time: '03:40 - 04:10 PM',
           location: 'Hall 2',
+          speakers: [getSpeaker('atul-bhosale')],
         },
         {
           title: 'Python + Rust for High-Performance Systems',
           type: 'Talk',
           time: '03:40 - 04:10 PM',
           location: 'Hall 3',
+          speakers: [getSpeaker('ponnam-karthik')],
         },
       ],
       [
@@ -311,6 +319,7 @@ export const SCHEDULE = {
           title: 'Closing Note + HydPy 10 years Celebrations',
           time: '05:45 - 06:00 PM',
           location: 'Auditorium | Main Stage',
+          speakers: [getSpeaker('pyconf-hyderabad-team')],
         },
       ],
     ],
