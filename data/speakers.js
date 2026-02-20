@@ -208,6 +208,77 @@ export const SPEAKERS = [
     ],
   },
   {
+    name: 'Syed Fahad',
+    slug: 'syed-fahad',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'DevRel Engineer at BetterBugs',
+    bio: 'Syed Fahad is a Developer Relations Engineer at BetterBugs working at the intersection of engineering and community. He drives developer adoption, supports engineering culture, and helps grow developer ecosystems through education and collaboration.',
+    imgUrl: '/images/speakers/syed-fahad.jpg',
+    imgAlt: 'Picture of Syed Fahad.',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/syedfahads/',
+        ariaLabel: "Hyperlink to Syed Fahad's LinkedIn page.",
+      },
+      {
+        name: 'X',
+        url: 'https://x.com/fahad_developer',
+        ariaLabel: "Hyperlink to Syed Fahad's X page.",
+      },
+      {
+        name: 'Globe',
+        url: 'https://fahads.dev',
+        ariaLabel: "Hyperlink to Syed Fahad's website.",
+      },
+    ],
+  },
+  {
+    name: 'Ria Bhatia',
+    slug: 'ria-bhatia',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'Software Engineer at Goldman Sachs',
+    bio: 'Ria Bhatia is a software engineer passionate about databases, automation, and system efficiency. An enthusiastic speaker, she enjoys sharing her learnings at tech conferences and mentors aspiring engineers while advocating for diversity in tech.',
+    imgUrl: '/images/speakers/ria-bhatia.jpg',
+    imgAlt: 'Picture of Ria Bhatia.',
+    socials: [
+      {
+        name: 'X',
+        url: 'https://x.com/RiaBhatia24',
+        ariaLabel: "Hyperlink to Ria Bhatia's X page.",
+      },
+    ],
+  },
+  {
+    name: 'Asha Holla',
+    slug: 'asha-holla',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'Data Engineer at Bloom Value',
+    bio: 'Asha Holla is a data engineer, leading AI innovation at Bloom Value. She works at the intersection of data platforms, analytics, and applied AI, with a strong focus on building scalable, governed solutions in the US healthcare space.',
+    imgUrl: '/images/speakers/asha-holla.jpg',
+    imgAlt: 'Picture of Asha Holla.',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/asha-holla/',
+        ariaLabel: "Hyperlink to Asha Holla's LinkedIn page.",
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/AshaHolla',
+        ariaLabel: "Hyperlink to Asha Holla's GitHub page.",
+      },
+      {
+        name: 'Globe',
+        url: 'https://open.substack.com/pub/ashaholla?utm_source=share&utm_medium=android&r=3gwdcv',
+        ariaLabel: "Hyperlink to Asha Holla's website.",
+      },
+    ],
+  },
+  {
     name: 'PyConf Hyderabad Team',
     slug: 'pyconf-hyderabad-team',
     activeSpeakerPage: false,

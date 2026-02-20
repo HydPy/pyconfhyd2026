@@ -92,6 +92,218 @@ export const SCHEDULE = {
     title: 'Conference',
     date: '15 Mar',
     day: 'Sunday',
-    sessions: [],
+    sessions: [
+      [
+        {
+          title: 'Registrations',
+          time: '08:00 - 09:00 AM',
+          location: 'Registration Desk - TBA',
+        },
+      ],
+      [
+        {
+          title: 'Opening Note',
+          time: '09:00 - 09:15 AM',
+          location: 'TBA',
+          speakers: [getSpeaker('pyconf-hyderabad-team')],
+        },
+      ],
+      [
+        {
+          title: '',
+          type: 'Talk',
+          keynote: true,
+          time: '09:15 - 10:15 AM',
+          location: 'Auditorium',
+          speakers: [getSpeaker('parul-pandey')],
+        },
+      ],
+      [
+        {
+          title:'Platinum sponsor talk 1: TBA',
+          type: 'Talk',
+          time: '10:20 - 10:50 AM',
+          location: 'Auditorium',
+          // TODO: Update the speaker and their details once the session title is finalized.
+          speakers: [getSpeaker('pyconf-hyderabad-team')],
+        },
+      ],
+      [
+        {
+          title: 'T1 - TBA',
+          type: 'Talk',
+          time: '10:20 - 10:50 AM',
+          location: 'Hall 1',
+          // TODO: Update the speaker and their details once the session title is finalized.
+          speakers: [getSpeaker('pyconf-hyderabad-team')],
+        },
+      ],
+      [
+        {
+          title: 'Debugging in Production: What Unit Tests Did Not Save You From',
+          type: 'Talk',
+          time: '10:20 - 10:50 AM',
+          location: 'Hall 2',
+          speakers: [getSpeaker('syed-fahad')],
+        },
+      ],
+      [
+        {
+          title:'Platinum sponsor talk 2: TBA',
+          type: 'Talk',
+          time: '10:55 - 11:25 AM',
+          location: 'Auditorium',
+          // TODO: Update the speaker and their details once the session title is finalized.
+          speakers: [getSpeaker('pyconf-hyderabad-team')],
+        },
+      ],
+      [
+        {
+          title: 'Good Systems, Good Sleep: Teaching Your Systems to Fix Themselves (Using Python, Not Magic)',
+          type: 'Talk',
+          time: '10:55 - 11:25 AM',
+          location: 'Hall 1',
+          speakers: [getSpeaker('ria-bhatia')],
+        },
+      ],
+      [
+        {
+          title: 'T3 - TBA',
+          type: 'Talk',
+          time: '10:55 - 11:25 AM',
+          location: 'Hall 2',
+          // TODO: Update the speaker and their details once the session title is finalized.
+          speakers: [getSpeaker('pyconf-hyderabad-team')],
+        },
+      ],
+      [
+        {
+          title: 'Tea Break',
+          break: true,
+          time: '11:25 - 11:45 AM',
+          location: 'Cafeteria',
+        },
+      ],
+      [
+        {
+          title: 'Making Agents Behave: Building Deterministic LLM Workflows',
+          type: 'Talk',
+          time: '11:45 - 12:15 PM',
+          location: 'Auditorium',
+          speakers: [getSpeaker('asha-holla')],
+        },
+      ],
+      // [
+      //   {
+      //     title: 'Spicing Up Automation: A Taste of Python and SaltStack',
+      //     type: 'Talk',
+      //     time: '11:30 - 12:00 PM',
+      //     location: 'Marvel Hall',
+      //     speakers: [getSpeaker('ria-bhatia')],
+      //   },
+      // ],
+      // [
+      //   {
+      //     title: "Let's enhance our technical writing by reading PEPs",
+      //     type: 'Talk',
+      //     time: '12:00 - 12:30 PM',
+      //     location: 'Marvel Hall',
+      //     speakers: [getSpeaker('sai-rahul-poruri')],
+      //   },
+      // ],
+      // [
+      //   {
+      //     title: '🍱 Lunch Break',
+      //     break: true,
+      //     time: '12:30 - 01:30 PM',
+      //     location: 'Cafeteria',
+      //   },
+      // ],
+      // [
+      //   {
+      //     title: '⚡️ Lightning Talks',
+      //     time: '01:30 - 02:25 PM',
+      //     location: 'Marvel Hall',
+      //   },
+      // ],
+      // [
+      //   {
+      //     title:
+      //       'Organized Chaos: Demystifying Memory Management & Garbage Collection in Python',
+      //     type: 'Talk',
+      //     time: '02:25 - 02:55 PM',
+      //     location: 'Marvel Hall',
+      //     speakers: [getSpeaker('sejal-gupta'), getSpeaker('sidhant-gupta')],
+      //   },
+      // ],
+      // [
+      //   {
+      //     title: 'uv - MEGA: Make Environments Great Again',
+      //     type: 'Talk',
+      //     time: '02:55 - 03:25 PM',
+      //     location: 'Marvel Hall',
+      //     speakers: [getSpeaker('s-anand')],
+      //   },
+      // ],
+      // [
+      //   {
+      //     title: 'Understanding API dispatching',
+      //     type: 'Talk',
+      //     time: '03:25 - 03:55 PM',
+      //     location: 'Marvel Hall',
+      //     speakers: [getSpeaker('aditi-juneja')],
+      //   },
+      // ],
+      // [
+      //   {
+      //     title: 'Open Source: One Idea, Many Journeys',
+      //     keynote: true,
+      //     time: '03:55 - 04:45 PM',
+      //     speakers: [getSpeaker('bowrna-prabhakaran')],
+      //     location: 'Marvel Hall',
+      //   },
+      // ],
+      // [
+      //   {
+      //     title: '☕️ Tea/Coffee Break',
+      //     break: true,
+      //     time: '04:45 - 05:00 PM',
+      //     location: 'Marvel Hall',
+      //   },
+      // ],
+      // [
+      //   {
+      //     title: 'Multimodal Agents RAG Workflow',
+      //     type: 'Talk',
+      //     time: '05:00 - 05:30 PM',
+      //     location: 'Marvel Hall',
+      //     speakers: [getSpeaker('tarun-jain')],
+      //   },
+      // ],
+      // [
+      //   {
+      //     title: 'Turn your old laptop to a home server',
+      //     type: 'Talk',
+      //     time: '05:30 - 06:00 PM',
+      //     location: 'Marvel Hall',
+      //     speakers: [getSpeaker('g-r-akhil-teja')],
+      //   },
+      // ],
+      // [
+      //   {
+      //     title: '🎉 PyConf Hyderabad 5th Edition Celebration',
+      //     time: '06:00 - 06:15 PM',
+      //     location: 'Marvel Hall',
+      //     speakers: [getSpeaker('pyconf-hyderabad-team')],
+      //   },
+      // ],
+      // [
+      //   {
+      //     title: 'Closing Note',
+      //     time: '06:15 - 06:25 PM',
+      //     location: 'Marvel Hall',
+      //   },
+      // ],
+    ],
   },
 };
