@@ -52,16 +52,14 @@ export default function Tickets() {
       <GroupDiscountCTA />
       <Paragraph
         level={3}
-        className="text-gray-700 dark:text-gray-300 text-center mt-2 max-w-3xl"
+        className="text-gray-700 dark:text-gray-300 text-center mt-1"
       >
-        <span className="whitespace-nowrap">
           To learn about the referral contest or for any other questions, please
           check the{' '}
           <Link href="/faq#tickets" className="underline">
             Tickets FAQ
           </Link>{' '}
-          section.
-        </span>
+          section. 
       </Paragraph>
     </section>
   );

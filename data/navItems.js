@@ -4,7 +4,7 @@ export const NAV_ITEMS = [
     children: [
       {
         name: 'PyConf Hyderabad',
-        path: '/pyconf-hyderabad',
+        path: '/about/pyconf-hyderabad',
         target: '_self',
         featureFlag: 'WHAT_IS_PYCONF',
         changeFrequency: 'weekly',
@@ -12,7 +12,7 @@ export const NAV_ITEMS = [
       },
       {
         name: 'Welcome Guide',
-        path: '/welcome-guide',
+        path: '/attend/welcome-guide',
         target: '_self',
         featureFlag: 'WELCOME_GUIDE',
         // Site map related properties for SEO
@@ -28,16 +28,8 @@ export const NAV_ITEMS = [
         priority: 0.8,
       },
       {
-        name: 'Travel',
-        path: '/travel',
-        target: '_self',
-        featureFlag: 'TRAVEL',
-        changeFrequency: 'weekly',
-        priority: 0.8,
-      },
-      {
         name: 'Our Team',
-        path: '/our-team',
+        path: '/about/our-team',
         target: '_self',
         featureFlag: 'OUR_TEAM',
         changeFrequency: 'weekly',
@@ -73,16 +65,16 @@ export const NAV_ITEMS = [
     name: 'Attend',
     children: [
       {
-        name: 'Why You Should Attend?',
-        path: '/pyconf-hyderabad#why-you-should-attend',
+        name: 'Travel',
+        path: '/attend/travel',
         target: '_self',
-        featureFlag: 'WHY_YOU_SHOULD_ATTEND',
+        featureFlag: 'TRAVEL',
         changeFrequency: 'weekly',
         priority: 0.8,
       },
       {
         name: "I'm Attending!",
-        path: '/im-attending',
+        path: '/attend/im-attending',
         target: '_self',
         featureFlag: 'IM_ATTENDING',
         changeFrequency: 'weekly',
@@ -125,7 +117,7 @@ export const NAV_ITEMS = [
       },
       {
         name: 'Convince My Boss',
-        path: '/convince-my-boss',
+        path: '/tickets/convince-my-boss',
         target: '_self',
         featureFlag: 'TICKETS',
         changeFrequency: 'weekly',
