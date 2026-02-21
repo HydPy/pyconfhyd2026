@@ -321,7 +321,7 @@ export const SPEAKERS = [
         ariaLabel: "Hyperlink to Tezan Sahu's GitHub page.",
       },
       {
-        name: 'NewsLetter',
+        name: 'EnvelopeOpenText',
         url: 'https://lowpassfilter.substack.com/',
         ariaLabel: "Hyperlink to Tezan Sahu's newsletter.",
       },
