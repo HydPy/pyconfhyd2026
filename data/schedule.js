@@ -60,8 +60,7 @@ export const SCHEDULE = {
           type: 'Workshop',
           // TODO: Update the Discord channel link
           discordChannelLink: '',
-          title:
-            'Designing Reliable Agentic AI for Real-World Systems',
+          title: 'Designing Reliable Agentic AI for Real-World Systems',
           location: 'Track 1',
           speakers: [getSpeaker('sonu-kumar')],
         },
