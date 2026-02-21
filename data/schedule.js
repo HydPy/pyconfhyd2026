@@ -124,10 +124,11 @@ export const SCHEDULE = {
           speakers: [getSpeaker('asha-holla')],
         },
         {
-          title: 'TBA',
+          title: 'Developing a Python SDK for AI Agent\'s Observability',
           type: 'Talk',
           time: '10:20 - 10:50 AM',
           location: 'Hall 2',
+          speakers: [getSpeaker('soumendra-kumar-sahoo')],
         },
         {
           title:
@@ -177,11 +178,11 @@ export const SCHEDULE = {
           speakers: [getSpeaker('nitin-sharma')],
         },
         {
-          title: 'Context Engineering: The Make-or-Break Skill for Production AI',
+          title: 'Asyncio Upgrade Playbook: 3.10–3.14 Changes You Can’t Ignore',
           type: 'Talk',
           time: '11:45 - 12:15 PM',
           location: 'Hall 2',
-          speakers: [getSpeaker('tezan-sahu')],
+          speakers: [getSpeaker('atul-bhosale')],
         },
         {
           title: 'Beyond Texts: Pouring Life into Multilingual Chatbots',
@@ -251,11 +252,11 @@ export const SCHEDULE = {
           location: 'Auditorium | Main Stage',
         },
         {
-          title: 'DeepSwingr - A Differentiable Framework for Cricket Ball Swing Optimization',
+          title: 'Python + Rust for High-Performance Systems',
           type: 'Talk',
           time: '02:45 - 03:15 PM',
           location: 'Hall 2',
-          speakers: [getSpeaker('pavan-b-govindaraju')],
+          speakers: [getSpeaker('ponnam-karthik')],
         },
         {
           title: 'Learn Async programming by playing Soccer',
@@ -282,19 +283,20 @@ export const SCHEDULE = {
           speakers: [getSpeaker('anand-s')],
         },
         {
-          title: 'Asyncio Upgrade Playbook: 3.10–3.14 Changes You Can’t Ignore',
+          title: 'Context Engineering: The Make-or-Break Skill for Production AI',
           type: 'Talk',
           time: '03:40 - 04:10 PM',
           location: 'Hall 2',
-          speakers: [getSpeaker('atul-bhosale')],
+          speakers: [getSpeaker('tezan-sahu')],
         },
         {
-          title: 'Python + Rust for High-Performance Systems',
+          title: 'DeepSwingr - A Differentiable Framework for Cricket Ball Swing Optimization',
           type: 'Talk',
-          time: '03:40 - 04:10 PM',
+          time: '02:45 - 03:15 PM',
           location: 'Hall 3',
-          speakers: [getSpeaker('ponnam-karthik')],
+          speakers: [getSpeaker('pavan-b-govindaraju')],
         },
+        
       ],
       [
         {

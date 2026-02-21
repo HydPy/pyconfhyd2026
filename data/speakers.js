@@ -593,6 +593,39 @@ export const SPEAKERS = [
     ],
   },
   {
+    name: 'Soumendra Kumar Sahoo',
+    slug: 'soumendra-kumar-sahoo',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'AI Observability Architect at PepsiCo',
+    bio: 'Soumendra is the AI Observability Architect at PepsiCo, where he scales global AI systems & leads sustainability initiatives for AI solutions. He joins us to share insights on building an AI Observability SDK at scale.',
+    imgUrl: '/images/speakers/soumendra-kumar-sahoo.jpg',
+    imgAlt: 'Picture of Soumendra Kumar Sahoo.',
+    socials: [
+      {
+        name: 'X',
+        url: 'https://x.com/soumendrak_',
+        ariaLabel: "Hyperlink to Soumendra Kumar Sahoo's X page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/soumendrak/',
+        ariaLabel: "Hyperlink to Soumendra Kumar Sahoo's LinkedIn page.",
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/soumendrak/',
+        ariaLabel: "Hyperlink to Soumendra Kumar Sahoo's GitHub page.",
+      },
+      {
+        name: 'Globe',
+        url: 'https://links.soumendrak.com/',
+        ariaLabel: "Hyperlink to Soumendra Kumar Sahoo's website.",
+      },
+    ],
+  },
+  
+  {
     name: 'PyConf Hyderabad Team',
     slug: 'pyconf-hyderabad-team',
     activeSpeakerPage: false,
