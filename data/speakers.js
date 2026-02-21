@@ -624,7 +624,7 @@ export const SPEAKERS = [
       },
     ],
   },
-  
+
   {
     name: 'PyConf Hyderabad Team',
     slug: 'pyconf-hyderabad-team',

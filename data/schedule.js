@@ -124,7 +124,7 @@ export const SCHEDULE = {
           speakers: [getSpeaker('asha-holla')],
         },
         {
-          title: 'Developing a Python SDK for AI Agent\'s Observability',
+          title: "Developing a Python SDK for AI Agent's Observability",
           type: 'Talk',
           time: '10:20 - 10:50 AM',
           location: 'Hall 2',
@@ -141,7 +141,7 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Platinium Sponsored Talk',
+          title: 'Platinum Sponsor Talk',
           type: 'Talk',
           time: '10:55 - 11:25 AM',
           location: 'Auditorium | Main Stage',
@@ -194,7 +194,7 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Platinium Sponsored Talk',
+          title: 'Platinum Sponsor Talk',
           type: 'Talk',
           time: '12:20 - 12:50 PM',
           location: 'Auditorium | Main Stage',
@@ -207,7 +207,8 @@ export const SCHEDULE = {
           speakers: [getSpeaker('karthikeyan-vk')],
         },
         {
-          title: 'From Python to Pocket: Fine-Tuning Gemma with LoRA for On-Device AI',
+          title:
+            'From Python to Pocket: Fine-Tuning Gemma with LoRA for On-Device AI',
           type: 'Talk',
           time: '12:20 - 12:50 PM',
           location: 'Hall 3',
@@ -230,7 +231,8 @@ export const SCHEDULE = {
           location: 'Auditorium | Main Stage',
         },
         {
-          title: 'Distributed Computing for big data for batch and realtime data with PySpark',
+          title:
+            'Distributed Computing for big data for batch and realtime data with PySpark',
           type: 'Talk',
           time: '02:10 - 02:40 PM',
           location: 'Hall 2',
@@ -283,20 +285,21 @@ export const SCHEDULE = {
           speakers: [getSpeaker('anand-s')],
         },
         {
-          title: 'Context Engineering: The Make-or-Break Skill for Production AI',
+          title:
+            'Context Engineering: The Make-or-Break Skill for Production AI',
           type: 'Talk',
           time: '03:40 - 04:10 PM',
           location: 'Hall 2',
           speakers: [getSpeaker('tezan-sahu')],
         },
         {
-          title: 'DeepSwingr - A Differentiable Framework for Cricket Ball Swing Optimization',
+          title:
+            'DeepSwingr - A Differentiable Framework for Cricket Ball Swing Optimization',
           type: 'Talk',
           time: '02:45 - 03:15 PM',
           location: 'Hall 3',
           speakers: [getSpeaker('pavan-b-govindaraju')],
         },
-        
       ],
       [
         {
