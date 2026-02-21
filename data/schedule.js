@@ -141,7 +141,7 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Platinum Sponsor Talk',
+          title: 'TBA',
           type: 'Talk',
           time: '10:55 - 11:25 AM',
           location: 'Auditorium | Main Stage',
@@ -194,7 +194,7 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Platinum Sponsor Talk',
+          title: 'TBA',
           type: 'Talk',
           time: '12:20 - 12:50 PM',
           location: 'Auditorium | Main Stage',
@@ -248,7 +248,7 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Lightning Talks - Sponsors',
+          title: 'Lightning Talks - TBA',
           type: 'Talk',
           time: '02:45 - 03:15 PM',
           location: 'Auditorium | Main Stage',
@@ -303,7 +303,7 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Lightning Talks',
+          title: 'Lightning Talks - TBA',
           type: 'Talk',
           time: '04:15 - 04:45 PM',
           location: 'Auditorium | Main Stage',
