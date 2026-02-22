@@ -21,6 +21,7 @@ export const FEATURE_FLAGS = {
   SCHEDULE: true,
   WELCOME_GUIDE: false,
   OUR_TEAM: false,
+  VENUE: true,
   TRAVEL: true,
   COC_REPORTING_GUIDE: true,
   FAQ: true,

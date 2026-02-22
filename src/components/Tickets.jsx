@@ -54,12 +54,12 @@ export default function Tickets() {
         level={3}
         className="text-gray-700 dark:text-gray-300 text-center mt-1"
       >
-          To learn about the referral contest or for any other questions, please
-          check the{' '}
-          <Link href="/faq#tickets" className="underline">
-            Tickets FAQ
-          </Link>{' '}
-          section. 
+        To learn about the referral contest or for any other questions, please
+        check the{' '}
+        <Link href="/faq#tickets" className="underline">
+          Tickets FAQ
+        </Link>{' '}
+        section.
       </Paragraph>
     </section>
   );

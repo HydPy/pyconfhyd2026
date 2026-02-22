@@ -7,25 +7,9 @@ export const NAV_ITEMS = [
         path: '/about/pyconf-hyderabad',
         target: '_self',
         featureFlag: 'WHAT_IS_PYCONF',
-        changeFrequency: 'weekly',
-        priority: 0.9,
-      },
-      {
-        name: 'Welcome Guide',
-        path: '/attend/welcome-guide',
-        target: '_self',
-        featureFlag: 'WELCOME_GUIDE',
         // Site map related properties for SEO
         changeFrequency: 'weekly',
         priority: 0.9,
-      },
-      {
-        name: 'Venue',
-        path: '/#venue',
-        target: '_self',
-        featureFlag: 'VENUE',
-        changeFrequency: 'weekly',
-        priority: 0.8,
       },
       {
         name: 'Our Team',
@@ -65,10 +49,26 @@ export const NAV_ITEMS = [
     name: 'Attend',
     children: [
       {
+        name: 'Welcome Guide',
+        path: '/attend/welcome-guide',
+        target: '_self',
+        featureFlag: 'WELCOME_GUIDE',
+        changeFrequency: 'weekly',
+        priority: 0.9,
+      },
+      {
         name: 'Travel',
         path: '/attend/travel',
         target: '_self',
         featureFlag: 'TRAVEL',
+        changeFrequency: 'weekly',
+        priority: 0.8,
+      },
+      {
+        name: 'Venue',
+        path: '/attend/venue',
+        target: '_self',
+        featureFlag: 'VENUE',
         changeFrequency: 'weekly',
         priority: 0.8,
       },
