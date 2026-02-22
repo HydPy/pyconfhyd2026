@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Heading, Span } from '@/components/Typography';
 import Icon from '@/components/Icon';
 import Image from 'next/image';
@@ -126,12 +126,12 @@ const ScheduleItem = ({
 }) => {
   const getBGColor = () => {
     if (isKeynote) {
-      return 'bg-gray-50 dark:bg-gray-900 border-primary-600 dark:border-primary-700 border-x-4 border-b-4';
+      return 'bg-gray-50 dark:bg-gray-900 border-primary-800 border-x-4 border-b-4';
     }
     if (isBreak) {
-      return 'bg-gray-50 dark:bg-gray-900 border-primary-600 border-l-4';
+      return 'bg-gray-50 dark:bg-gray-900 border-primary-800 border-l-4';
     }
-    return 'bg-gray-50 dark:bg-gray-900 border-primary-600 dark:border-primary-400 border-l-4';
+    return 'bg-gray-50 dark:bg-gray-900 border-primary-800 border-l-4';
   };
   return (
     <article
@@ -179,7 +179,25 @@ const ScheduleItem = ({
 };
 
 const Schedule = () => {
-  const [activeDay, setActiveDay] = useState('day1');
+  const [activeDay, setActiveDay] = useState(() => {
+    if (typeof window === 'undefined') return 'day1';
+
+    try {
+      const savedDay = window.localStorage.getItem('schedule-active-day');
+      return savedDay && SCHEDULE[savedDay] ? savedDay : 'day1';
+    } catch {
+      return 'day1';
+    }
+  });
+
+  useEffect(() => {
+    try {
+      window.localStorage.setItem('schedule-active-day', activeDay);
+    } catch {
+      // Ignore storage errors in restricted environments.
+    }
+  }, [activeDay]);
+
   const { sessions } = SCHEDULE[activeDay];
   const isScheduleEmpty = !sessions || sessions.length === 0;
 
