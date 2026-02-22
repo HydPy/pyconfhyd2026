@@ -37,7 +37,7 @@ const DiscordBadge = ({ channelLink, className = '' }) => {
     <div
       className={`inline-flex items-center px-3 py-1.5 bg-accent-900 dark:bg-accent-500 text-gray-50 dark:text-gray-950 shadow-sm rounded-full ${className}`}
     >
-      <Span level={6} className="underline font-medium md:text-md text-xs">
+      <Span level={6} className="font-medium md:text-md text-xs">
         <Link
           href={channelLink}
           className="underline"
@@ -54,7 +54,7 @@ const DiscordBadge = ({ channelLink, className = '' }) => {
 const KeynoteBadge = ({ className = '' }) => {
   return (
     <div
-      className={`inline-flex justify-center items-center py-2 bg-primary-600 dark:bg-primary-700 text-gray-50 ${className}`}
+      className={`inline-flex justify-center items-center py-2 bg-primary-800 dark:bg-primary-800 text-gray-50 ${className}`}
     >
       <Span className="font-semibold" level={4}>
         KEYNOTE
@@ -190,10 +190,10 @@ const Schedule = () => {
           <button
             key={day}
             onClick={() => setActiveDay(day)}
-            className={`flex flex-col items-center px-6 md:px-12 py-2 border border-primary-800 focus:ring-2 shadow-md rounded-xl ${
+            className={`flex flex-col items-center px-6 md:px-12 py-3 border-2 border-gray-900 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all ${
               activeDay === day
-                ? 'bg-primary-800 dark:bg-primary-800 text-white dark:text-gray-50'
-                : 'bg-gray-50 dark:bg-gray-900 text-gray-950 dark:text-gray-50'
+                ? 'bg-primary-800 dark:bg-primary-800 text-white dark:text-gray-50 border-4 -translate-y-1 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]'
+                : 'bg-background-light dark:bg-gray-900 text-gray-950 dark:text-gray-50 opacity-85 hover:opacity-100 hover:bg-accent-50 dark:hover:bg-gray-700'
             }`}
           >
             <Heading tagLevel={2} level={5}>
