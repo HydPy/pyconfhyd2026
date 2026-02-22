@@ -26,7 +26,7 @@ export const BLOGS = [
     title: 'Announcing M37Labs as our Silver Sponsor',
     markdownComponent: <M37LabsSilverSponsorMdx />,
     author: 'PyConf Hyderabad Team',
-    publishedAt: 'February 23, 2026',
+    publishedAt: 'February 22, 2026',
     socials: getSponsor('M37Labs').socials,
   },
 ];
