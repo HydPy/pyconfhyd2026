@@ -2,6 +2,15 @@ import { Speaker } from '@/components/Speaker';
 import { Heading } from '@/components/Typography';
 import { SPEAKERS } from '@/speakers';
 
+export const metadata = {
+  title: 'Speakers',
+  description: 'Speakers at PyConf Hyderabad 2026',
+  openGraph: {
+    title: 'Speakers',
+    description: 'Speakers at PyConf Hyderabad 2026',
+  },
+};
+
 const getSessionSpeakers = (SPEAKERS) => {
   const speakers = new Map();
   Object.values(SPEAKERS).forEach((speaker) => {

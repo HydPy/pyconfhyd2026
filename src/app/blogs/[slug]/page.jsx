@@ -8,6 +8,27 @@ export function generateStaticParams() {
   return BLOGS.map((blog) => ({ slug: blog.slug }));
 }
 
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const blog = BLOGS.find((item) => item.slug === slug);
+
+  if (!blog) {
+    return {
+      title: 'Blog',
+      description: 'Blog post from PyConf Hyderabad 2026',
+    };
+  }
+
+  return {
+    title: blog.title,
+    description: `Blog post by ${blog.author} on PyConf Hyderabad 2026`,
+    openGraph: {
+      title: blog.title,
+      description: `Blog post by ${blog.author} on PyConf Hyderabad 2026`,
+    },
+  };
+}
+
 export default async function Page({ params }) {
   const { slug } = await params;
   const blog = BLOGS.find((s) => s.slug === slug);

@@ -11,6 +11,29 @@ export function generateStaticParams() {
   return SPEAKERS.map((speaker) => ({ slug: speaker.slug }));
 }
 
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const speaker = SPEAKERS.find(
+    (s) => s.slug === slug && s.activeSpeakerPage === true
+  );
+
+  if (!speaker) {
+    return {
+      title: 'Speaker',
+      description: 'Speaker details for PyConf Hyderabad 2026',
+    };
+  }
+
+  return {
+    title: `${speaker.name}`,
+    description: `Speaker profile of ${speaker.name} at PyConf Hyderabad 2026`,
+    openGraph: {
+      title: `${speaker.name}`,
+      description: `Speaker profile of ${speaker.name} at PyConf Hyderabad 2026`,
+    },
+  };
+}
+
 const getTalkDetailsBySlug = (slug) => {
   // Find the speaker by slug
   const speaker = SPEAKERS.find(

@@ -11,6 +11,15 @@ import fetchSheetData from '@/utils/googleSheets';
 
 import MESSAGES from '@/messages';
 
+export const metadata = {
+  title: 'Job Board',
+  description: 'Job opportunities at PyConf Hyderabad 2026',
+  openGraph: {
+    title: 'Job Board',
+    description: 'Job opportunities at PyConf Hyderabad 2026',
+  },
+};
+
 const JobBoardEmpty = () => {
   return (
     <Paragraph className="my-2 text-center">
