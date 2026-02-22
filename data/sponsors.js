@@ -80,5 +80,34 @@ export const SPONSORS = {
       ],
     },
   ],
-  Silver: [],
+  Silver: [
+    {
+      name: 'M37Labs',
+      imgUrl: '/images/sponsors/m37labs.png',
+      imgAlt: 'M37Labs logo',
+      hyperLink: '/blogs/m37labs-silver-sponsor/',
+      socials: [
+        {
+          name: 'X',
+          url: 'https://x.com/m37labs',
+          ariaLabel: 'Hyperlink to M37Labs X page.',
+        },
+        {
+          name: 'LinkedIn',
+          url: 'https://www.linkedin.com/company/m37labs/',
+          ariaLabel: 'Hyperlink to M37Labs LinkedIn page.',
+        },
+        {
+          name: 'Instagram',
+          url: 'https://www.instagram.com/m37labs',
+          ariaLabel: 'Hyperlink to M37Labs Instagram page.',
+        },
+        {
+          name: 'Globe',
+          url: 'https://www.m37labs.com/',
+          ariaLabel: 'Hyperlink to M37Labs website.',
+        },
+      ],
+    },
+  ],
 };
