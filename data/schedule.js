@@ -21,8 +21,8 @@ export const SCHEDULE = {
         {
           time: '10:00 - 12:50 PM',
           type: 'Workshop',
-          // TODO: Update the Discord channel link
-          discordChannelLink: '',
+          discordChannelLink:
+            'https://discord.com/channels/1301212203336073226/1475140722394136768',
           title: 'Optimizing Pytorch Models',
           location: 'Track 1',
           speakers: [getSpeaker('jaidev-deshpande')],
@@ -30,8 +30,8 @@ export const SCHEDULE = {
         {
           time: '10:00 - 12:50 PM',
           type: 'Workshop',
-          // TODO: Update the Discord channel link
-          discordChannelLink: '',
+          discordChannelLink:
+            'https://discord.com/channels/1301212203336073226/1475140876203331645',
           title: 'PEP 684 + 554 + 669 True Parallelism in Python',
           speakers: [getSpeaker('ramachandra-vikas-chamarthi')],
           location: 'Track 2',
@@ -39,7 +39,6 @@ export const SCHEDULE = {
         {
           time: '10:00 - 12:50 PM',
           type: 'Workshop',
-          // TODO: Update the Discord channel link
           discordChannelLink: '',
           title: 'TBA',
           location: 'Track 3',
@@ -56,8 +55,8 @@ export const SCHEDULE = {
         {
           time: '02:00 - 04:50 PM',
           type: 'Workshop',
-          // TODO: Update the Discord channel link
-          discordChannelLink: '',
+          discordChannelLink:
+            'https://discord.com/channels/1301212203336073226/1475141021699539205',
           title: 'Designing Reliable Agentic AI for Real-World Systems',
           location: 'Track 1',
           speakers: [getSpeaker('sonu-kumar')],
@@ -65,8 +64,8 @@ export const SCHEDULE = {
         {
           time: '02:00 - 04:50 PM',
           type: 'Workshop',
-          // TODO: Update the Discord channel link
-          discordChannelLink: '',
+          discordChannelLink:
+            'https://discord.com/channels/1301212203336073226/1475141172174262416',
           title:
             'Mastering the Multi-Stack: Orchestrated Debugging with Python and Beyond',
           speakers: [getSpeaker('satyam-soni')],
@@ -75,8 +74,8 @@ export const SCHEDULE = {
         {
           time: '02:00 - 04:50 PM',
           type: 'Workshop',
-          // TODO: Update the Discord channel link
-          discordChannelLink: '',
+          discordChannelLink:
+            'https://discord.com/channels/1301212203336073226/1475141262482083964',
           title:
             'Zero to Lakehouse Hero: Your Entire Data Lakehouse in Docker — Powered by Python & Apache',
           speakers: [getSpeaker('sourav-roy')],
