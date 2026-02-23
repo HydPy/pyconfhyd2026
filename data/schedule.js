@@ -188,7 +188,10 @@ export const SCHEDULE = {
           type: 'Talk',
           time: '11:45 - 12:15 PM',
           location: 'Hall 3',
-          speakers: [getSpeaker('ritesh-chintakindi')],
+          speakers: [
+            getSpeaker('ritesh-chintakindi'),
+            getSpeaker('benjamin-alladi'),
+          ],
         },
       ],
       [

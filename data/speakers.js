@@ -624,6 +624,28 @@ export const SPEAKERS = [
       },
     ],
   },
+  {
+    name: 'Benjamin Alladi',
+    slug: 'benjamin-alladi',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'Associate Software Engineer at OSI Digital',
+    bio: 'Benjamin is a Full-Stack Developer specializing in Python and JavaScript, building scalable APIs with FastAPI, interactive apps with React and Node.js, and cloud-ready backends, focusing on clean, efficient, production-ready solutions.',
+    imgUrl: '/images/speakers/placeholder-1.svg',
+    imgAlt: 'Picture of Benjamin Alladi.',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'http://www.linkedin.com/in/benjamin-alladi-383511223',
+        ariaLabel: "Hyperlink to Benjamin Alladi's LinkedIn page.",
+      },
+      {
+        name: 'Medium',
+        url: 'https://medium.com/@benjaminalladi10',
+        ariaLabel: "Hyperlink to Benjamin Alladi's Medium page.",
+      },
+    ],
+  },
 
   {
     name: 'PyConf Hyderabad Team',
