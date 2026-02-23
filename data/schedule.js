@@ -295,7 +295,7 @@ export const SCHEDULE = {
           title:
             'DeepSwingr - A Differentiable Framework for Cricket Ball Swing Optimization',
           type: 'Talk',
-          time: '02:45 - 03:15 PM',
+          time: '03:40 - 04:10 PM',
           location: 'Hall 3',
           speakers: [getSpeaker('pavan-b-govindaraju')],
         },
