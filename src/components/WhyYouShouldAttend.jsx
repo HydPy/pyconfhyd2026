@@ -1,5 +1,8 @@
 import { Heading, Paragraph } from '@/components/Typography';
-import { WHY_ATTEND_INFO, WHY_ATTEND } from '@/whyAttend';
+import {
+  WHY_YOU_SHOULD_ATTEND_INFO,
+  WHY_YOU_SHOULD_ATTEND,
+} from '@/whyYouShouldAttend';
 import Icon from '@/components/Icon';
 
 const ReasonCard = ({ reason }) => {
@@ -11,13 +14,12 @@ const ReasonCard = ({ reason }) => {
         shadow-md
         hover:shadow-xl
         transition-shadow duration-300
-		    hover:-translate-y-1
+        hover:-translate-y-1
         p-6
         border-b-2 border-transparent
         hover:border-primary-600 dark:hover:border-primary-400
       "
     >
-      {/* Icon Section */}
       <div className="mb-3 p-3 bg-gray-100 dark:bg-gray-700 rounded-xl w-fit">
         <Icon
           name={reason.icon}
@@ -26,7 +28,6 @@ const ReasonCard = ({ reason }) => {
         />
       </div>
 
-      {/* Content Section */}
       <div>
         <Heading
           tagLevel={3}
@@ -44,29 +45,27 @@ const ReasonCard = ({ reason }) => {
   );
 };
 
-const WhyAttend = () => {
+const WhyYouShouldAttend = () => {
   return (
     <section
-      id="why-attend"
+      id="why-you-should-attend"
       className="scroll-mt-20 flex flex-col items-center pt-10 lg:pt-16 pb-6 lg:pb-10 w-11/12 lg:w-5/6 mx-auto"
     >
-      {/* Section Header */}
       <div className="text-center mb-6 lg:mb-10">
         <Heading
           tagLevel={2}
-          level={1}
+          level={2}
           className="text-primary-600 dark:text-primary-400 mb-4 lg:mb-6"
         >
-          {WHY_ATTEND_INFO.title}
+          {WHY_YOU_SHOULD_ATTEND_INFO.title}
         </Heading>
         <Paragraph level={2} className="text-gray-600 dark:text-gray-300 ">
-          {WHY_ATTEND_INFO.description}
+          {WHY_YOU_SHOULD_ATTEND_INFO.description}
         </Paragraph>
       </div>
 
-      {/* Cards Grid - 3 columns on large screens, 2 on medium, 1 on small */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-11/12 xl:w-3/4">
-        {WHY_ATTEND.map((reason) => (
+        {WHY_YOU_SHOULD_ATTEND.map((reason) => (
           <ReasonCard key={reason.id} reason={reason} />
         ))}
       </div>
@@ -74,4 +73,4 @@ const WhyAttend = () => {
   );
 };
 
-export default WhyAttend;
+export default WhyYouShouldAttend;

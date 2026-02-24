@@ -11,10 +11,16 @@ export const CONFERENCE = {
   copyrightTitle: 'Copyright @ 2026 PyConf Hyderabad',
   conferenceDate: '15 Mar',
   conferenceVenue: 'Engineering Staff College of India',
+  conferenceVenueAddress:
+    'ESCI Road, Lake, beside Khajaguda, Gachibowli, Hyderabad, Telangana 500032',
   conferenceMapsLink: 'https://maps.app.goo.gl/tMbBxW1wD7RUUyJR8',
+  conferenceImageLink: '/images/conferenceVenueImage.jpg',
   workshopDate: '14 Mar',
-  workshopVenue: 'TBD',
+  workshopVenue: 'EPAM Systems',
+  workshopVenueAddress:
+    '11th Floor, Gowra Palladium, Silpa Gram Craft Village, Madhapur, Hyderabad, Telangana',
   workshopMapsLink: '',
+  workshopImageLink: '/images/monumentsSketch.svg',
   creator: 'HydPy',
   dates: '14 - 15 March',
   generator: 'Next.js',

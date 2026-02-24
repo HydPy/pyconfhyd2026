@@ -1,4 +1,5 @@
 'use client';
+
 import { useState } from 'react';
 
 import ConvinceMyBoss from '@/convinceMyBoss.mdx';
@@ -6,7 +7,6 @@ import MdxLayout from '@/components/MdxLayout';
 import { Heading } from '@/components/Typography';
 import CTAButton from '@/components/CTAButton';
 
-// TODO: Remove this duplicate later. Use a single source for the template.
 const convinceMyBossTemplate = `
 Dear {bossName},
 
@@ -38,7 +38,7 @@ Sincerely,
 {yourName}
 `;
 
-export default function Page() {
+export default function ConvinceMyBossContent() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {

@@ -4,6 +4,15 @@ import BlogPostItem from '@/components/BlogPostItem';
 import Link from 'next/link';
 import { Heading } from '@/components/Typography';
 
+export const metadata = {
+  title: 'Blogs',
+  description: 'Blog posts from PyConf Hyderabad 2026',
+  openGraph: {
+    title: 'Blogs',
+    description: 'Blog posts from PyConf Hyderabad 2026',
+  },
+};
+
 const BlogList = () => {
   return (
     <section className="flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto">

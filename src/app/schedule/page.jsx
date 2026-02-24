@@ -1,237 +1,15 @@
-'use client';
-import { useState } from 'react';
-import { Heading, Span } from '@/components/Typography';
-import Icon from '@/components/Icon';
-import Image from 'next/image';
-import SpeakerInitials from '@/components/SpeakerInitials';
-
-import { SCHEDULE } from '@/schedule';
-import Link from 'next/link';
+import { Heading } from '@/components/Typography';
 import { CONFERENCE } from '@/conference';
 import Script from 'next/script';
+import ScheduleContent from './ScheduleContent';
 
-const TimeBadge = ({ time }) => (
-  <div className="inline-flex items-center px-3 py-1.5 bg-accent-900 dark:bg-accent-500 text-gray-50 dark:text-gray-950 rounded-full md:text-md text-xs">
-    <Icon name="Clock" size={16} className="mr-2" />
-    <Span level={6} className="font-medium md:text-md text-xs">
-      {time}
-    </Span>
-  </div>
-);
-
-const LocationBadge = ({ location, className = '' }) => {
-  return (
-    <div
-      className={`inline-flex items-center px-3 py-1.5 bg-accent-900 dark:bg-accent-500 text-gray-50 dark:text-gray-950 shadow-sm rounded-full ${className}`}
-    >
-      {/* <Icon name="LocationDot" className="w-4 h-4 mr-2" /> */}
-      <Span level={6} className="font-medium md:text-md text-xs">
-        {location}
-      </Span>
-    </div>
-  );
-};
-
-const DiscordBadge = ({ channelLink, className = '' }) => {
-  return (
-    <div
-      className={`inline-flex items-center px-3 py-1.5 bg-accent-900 dark:bg-accent-500 text-gray-50 dark:text-gray-950 shadow-sm rounded-full ${className}`}
-    >
-      <Span level={6} className="underline font-medium md:text-md text-xs">
-        <Link
-          href={channelLink}
-          className="underline"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Discord Channel
-        </Link>
-      </Span>
-    </div>
-  );
-};
-
-const KeynoteBadge = ({ className = '' }) => {
-  return (
-    <div
-      className={`inline-flex justify-center items-center py-2 bg-primary-600 dark:bg-primary-700 text-gray-50 ${className}`}
-    >
-      <Span className="font-semibold" level={4}>
-        KEYNOTE
-      </Span>
-    </div>
-  );
-};
-
-const SpeakerCard = ({ speaker }) => {
-  return (
-    <div className="flex flex-row items-center my-1">
-      <div className="w-12 h-12 md:w-16 md:h-16">
-        <div className="relative shadow-md h-full w-full rounded-full overflow-hidden border-1">
-          {speaker.imgUrl ? (
-            <Image
-              className="object-cover rounded-sm"
-              src={speaker.imgUrl}
-              alt={`Image of ${speaker.name}`}
-              title={`Image of ${speaker.name}`}
-              loading="lazy"
-              fill
-            />
-          ) : (
-            <div className="h-full w-full flex items-center justify-center bg-primary-600 dark:bg-primary-700 text-white font-semibold text-2xl">
-              <SpeakerInitials speaker={speaker} />
-            </div>
-          )}
-        </div>
-      </div>
-      <div className="flex flex-col ml-2">
-        {speaker.name && (
-          <Span className="text-gray-950 dark:text-gray-50" level={4}>
-            {speaker.name}
-          </Span>
-        )}
-        {speaker.title && (
-          <Span className="text-gray-700 dark:text-gray-200" level={5}>
-            {speaker.title}
-          </Span>
-        )}
-      </div>
-    </div>
-  );
-};
-
-const TbaPanel = () => (
-  <div className="w-full md:w-3/4 bg-gray-50 dark:bg-gray-900 border rounded-md p-6 text-center shadow-sm">
-    <Heading
-      tagLevel={3}
-      level={4}
-      className="text-primary-700 dark:text-primary-300"
-    >
-      To Be Announced
-    </Heading>
-    <Span level={4} className="text-gray-700 dark:text-gray-300">
-      Sessions for this day will be published soon.
-    </Span>
-  </div>
-);
-
-const ScheduleItem = ({
-  time,
-  title,
-  discordChannelLink,
-  location,
-  speakers,
-  isKeynote,
-  isBreak,
-}) => {
-  const getBGColor = () => {
-    if (isKeynote) {
-      return 'bg-gray-50 dark:bg-gray-900 border-primary-600 dark:border-primary-700 border-x-4 border-b-4';
-    }
-    if (isBreak) {
-      return 'bg-gray-50 dark:bg-gray-900 border-primary-600 border-l-4';
-    }
-    return 'bg-gray-50 dark:bg-gray-900 border-primary-600 dark:border-primary-400 border-l-4';
-  };
-  return (
-    <article
-      tabIndex="0"
-      className={`flex flex-col justify-between w-full focus:outline-none focus:ring-2 focus:ring-primary-600 mb-6 shadow-md rounded-sm transition-transform transform hover:scale-[1.02] ${getBGColor()}`}
-    >
-      {isKeynote && <KeynoteBadge className="" />}
-      <div className="md:px-6 md:pt-6 md:pb-4 p-4">
-        <header className="flex flex-wrap justify-between items-center mb-3 gap-2">
-          <TimeBadge time={time} />
-          <LocationBadge location={location} />
-        </header>
-        <Span
-          level={2}
-          className="text-gray-800 dark:text-gray-200 font-semibold"
-        >
-          {title}
-        </Span>
-        <div className="flex flex-col my-1">
-          {speakers &&
-            speakers.map((speaker, index) =>
-              speaker.activeSpeakerPage ? (
-                <Link
-                  href={`/speakers/${speaker.slug}`}
-                  target="_self"
-                  className="flex flex-col space-y-2 my-1"
-                  key={index}
-                  title={`Hyperlink to Speaker Details of ${speaker.name}`}
-                >
-                  <SpeakerCard key={index} speaker={speaker} />
-                </Link>
-              ) : (
-                <SpeakerCard key={index} speaker={speaker} />
-              )
-            )}
-        </div>
-      </div>
-      <div className="flex justify-end mb-4 pr-4">
-        {discordChannelLink && (
-          <DiscordBadge channelLink={discordChannelLink} />
-        )}
-      </div>
-    </article>
-  );
-};
-
-const Schedule = () => {
-  const [activeDay, setActiveDay] = useState('day1');
-  const { sessions } = SCHEDULE[activeDay];
-  const isScheduleEmpty = !sessions || sessions.length === 0;
-
-  return (
-    <div className="my-8 w-full">
-      <div className="flex justify-center gap-4 mb-8">
-        {Object.keys(SCHEDULE).map((day) => (
-          <button
-            key={day}
-            onClick={() => setActiveDay(day)}
-            className={`flex flex-col items-center px-6 md:px-12 py-2 border border-primary-800 focus:ring-2 shadow-md rounded-xl ${
-              activeDay === day
-                ? 'bg-primary-800 dark:bg-primary-800 text-white dark:text-gray-50'
-                : 'bg-gray-50 dark:bg-gray-900 text-gray-950 dark:text-gray-50'
-            }`}
-          >
-            <Heading tagLevel={2} level={5}>
-              {SCHEDULE[day].title}
-            </Heading>
-            <Span level={3}>
-              {SCHEDULE[day].date} &#x2022; {SCHEDULE[day].day}
-            </Span>
-          </button>
-        ))}
-      </div>
-      <div className="flex flex-col items-center space-y-4">
-        {isScheduleEmpty ? (
-          <TbaPanel />
-        ) : (
-          sessions.map((session, index) => (
-            <div
-              key={index}
-              className={`flex flex-col md:flex-row gap-4 w-full ${session.length == 1 ? 'md:w-3/4' : ''}`}
-            >
-              {session.map((parallelSession, subIndex) => (
-                <ScheduleItem
-                  key={subIndex}
-                  time={parallelSession.time}
-                  title={parallelSession.title}
-                  discordChannelLink={parallelSession.discordChannelLink}
-                  location={parallelSession.location}
-                  speakers={parallelSession.speakers}
-                  isKeynote={parallelSession.keynote}
-                  isBreak={parallelSession.break}
-                />
-              ))}
-            </div>
-          ))
-        )}
-      </div>
-    </div>
-  );
+export const metadata = {
+  title: 'Schedule',
+  description: 'Conference schedule for PyConf Hyderabad 2026',
+  openGraph: {
+    title: 'Schedule',
+    description: 'Conference schedule for PyConf Hyderabad 2026',
+  },
 };
 
 export default function Page() {
@@ -250,20 +28,44 @@ export default function Page() {
         >
           Schedule
         </Heading>
-        <Schedule />
+        <ScheduleContent />
       </section>
     </>
   );
 }
 
-// structuredData
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Event',
   name: CONFERENCE.title,
+  startDate: '2026-03-14',
+  endDate: '2026-03-15',
   eventStatus: 'https://schema.org/EventScheduled',
+  eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
   image: ['https://2026.pyconfhyd.org/images/navbarLogo.svg'],
   description: CONFERENCE.description,
+  location: {
+    '@type': 'Place',
+    name: `${CONFERENCE.conferenceVenue} and ${CONFERENCE.workshopVenue}`,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: `${CONFERENCE.conferenceVenueAddress} and ${CONFERENCE.workshopVenueAddress}`,
+      addressLocality: 'Hyderabad',
+      addressCountry: 'IN',
+    },
+  },
+  performer: {
+    '@type': 'Organization',
+    name: CONFERENCE.creator,
+    url: 'https://hydpy.org',
+  },
+  offers: {
+    '@type': 'Offer',
+    url: `${CONFERENCE.siteURL}/tickets`,
+    availability: 'https://schema.org/InStock',
+    priceCurrency: 'INR',
+    price: '2800',
+  },
   organizer: {
     '@type': 'Organization',
     name: CONFERENCE.creator,
@@ -274,13 +76,29 @@ const structuredData = {
       '@type': 'Event',
       name: 'PyConf Hyderabad 2026 Conference',
       startDate: '2026-03-15',
+      endDate: '2026-03-15',
       eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+      eventStatus: 'https://schema.org/EventScheduled',
+      description:
+        'Conference day schedule and talks for PyConf Hyderabad 2026.',
+      performer: {
+        '@type': 'Organization',
+        name: CONFERENCE.creator,
+        url: 'https://hydpy.org',
+      },
+      offers: {
+        '@type': 'Offer',
+        url: `${CONFERENCE.siteURL}/tickets`,
+        availability: 'https://schema.org/InStock',
+        priceCurrency: 'INR',
+        price: '2000',
+      },
       location: {
         '@type': 'Place',
         name: CONFERENCE.conferenceVenue,
         address: {
           '@type': 'PostalAddress',
-          postalCode: '500032',
+          streetAddress: CONFERENCE.conferenceVenueAddress,
           addressLocality: 'Hyderabad',
           addressCountry: 'IN',
         },
@@ -290,13 +108,28 @@ const structuredData = {
       '@type': 'Event',
       name: 'PyConf Hyderabad 2026 Workshop',
       startDate: '2026-03-14',
+      endDate: '2026-03-14',
       eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+      eventStatus: 'https://schema.org/EventScheduled',
+      description: 'Workshop day schedule for PyConf Hyderabad 2026.',
+      performer: {
+        '@type': 'Organization',
+        name: CONFERENCE.creator,
+        url: 'https://hydpy.org',
+      },
+      offers: {
+        '@type': 'Offer',
+        url: `${CONFERENCE.siteURL}/tickets`,
+        availability: 'https://schema.org/InStock',
+        priceCurrency: 'INR',
+        price: '1350',
+      },
       location: {
         '@type': 'Place',
         name: CONFERENCE.workshopVenue,
         address: {
           '@type': 'PostalAddress',
-          postalCode: '500032',
+          streetAddress: CONFERENCE.workshopVenueAddress,
           addressLocality: 'Hyderabad',
           addressCountry: 'IN',
         },

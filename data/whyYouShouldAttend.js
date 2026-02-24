@@ -1,10 +1,10 @@
-export const WHY_ATTEND_INFO = {
-  title: 'Why Attend PyConf Hyderabad?',
+export const WHY_YOU_SHOULD_ATTEND_INFO = {
+  title: 'Why You Should Attend?',
   description:
     'Join hundreds of Python enthusiasts, developers, and industry leaders for an unforgettable experience.',
 };
 
-export const WHY_ATTEND = [
+export const WHY_YOU_SHOULD_ATTEND = [
   {
     id: 1,
     icon: 'GraduationCap',

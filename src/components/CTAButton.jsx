@@ -9,6 +9,7 @@ const CTAButton = ({
   iconSize = 20,
   variant = 'primary',
   className = '',
+  containerClassName = 'flex justify-center',
   target = '_blank',
   rel = 'noopener noreferrer',
 }) => {
@@ -23,7 +24,7 @@ const CTAButton = ({
       <Link
         href={href}
         target={target}
-        className="flex justify-center"
+        className={containerClassName}
         rel={rel}
       >
         <button
