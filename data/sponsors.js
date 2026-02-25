@@ -79,6 +79,34 @@ export const SPONSORS = {
         },
       ],
     },
+    {
+      name: 'EPAM Systems',
+      imgUrl: '/images/sponsors/epam.png',
+      imgAlt: 'EPAM Systems logo',
+      hyperLink: '/blogs/epam-gold-sponsor/',
+      socials: [
+        {
+          name: 'X',
+          url: 'https://x.com/EPAMSystems/',
+          ariaLabel: 'Hyperlink to EPAM Systems X page.',
+        },
+        {
+          name: 'LinkedIn',
+          url: 'https://www.linkedin.com/company/epam-systems',
+          ariaLabel: 'Hyperlink to EPAM Systems LinkedIn page.',
+        },
+        {
+          name: 'Instagram',
+          url: 'https://www.instagram.com/EPAMSystems/',
+          ariaLabel: 'Hyperlink to EPAM Systems Instagram page.',
+        },
+        {
+          name: 'Globe',
+          url: 'https://welcome.epam.in/',
+          ariaLabel: 'Hyperlink to EPAM Systems website.',
+        },
+      ],
+    },
   ],
   Silver: [
     {
