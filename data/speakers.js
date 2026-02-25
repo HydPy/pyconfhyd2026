@@ -409,38 +409,6 @@ export const SPEAKERS = [
     ],
   },
   {
-    name: 'Kuldeep Pal',
-    slug: 'kuldeep-pal',
-    type: 'Session',
-    activeSpeakerPage: true,
-    title: 'Senior Software Engineer (Data and AI)',
-    bio: 'Kuldeep is working as a Senior Engineer, I work at the intersection on Data Engineerng , AI and Backend / Distributed systems.',
-    imgUrl: '/images/speakers/kuldeep-pal.jpg',
-    imgAlt: 'Picture of Kuldeep Pal.',
-    socials: [
-      {
-        name: 'X',
-        url: 'https://x.com/kuldeep27396',
-        ariaLabel: "Hyperlink to Kuldeep Pal's X page.",
-      },
-      {
-        name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/kuldeep27396/',
-        ariaLabel: "Hyperlink to Kuldeep Pal's LinkedIn page.",
-      },
-      {
-        name: 'GitHub',
-        url: 'https://github.com/kuldeep27396',
-        ariaLabel: "Hyperlink to Kuldeep Pal's GitHub page.",
-      },
-      {
-        name: 'Globe',
-        url: 'https://sites.google.com/view/kuldeepallblogs/home',
-        ariaLabel: "Hyperlink to Kuldeep Pal's website.",
-      },
-    ],
-  },
-  {
     name: 'Muhammed Mizaj',
     slug: 'muhammed-mizaj',
     type: 'Session',
