@@ -23,7 +23,7 @@ const SpeakerAvatar = ({ speaker }) => {
 
   return (
     <div
-      className="relative w-20 h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden border-2 border-primary-600 dark:border-primary-400 flex-shrink-0 cursor-pointer"
+      className="relative w-20 h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden border-4 border-primary-600 dark:border-primary-400 flex-shrink-0 cursor-pointer"
       onClick={handleNavigate}
       role="button"
       tabIndex={0}
@@ -60,9 +60,7 @@ const SpeakersDescription = () => {
         className="text-center text-gray-600 dark:text-gray-300 lg:w-11/12"
         level={2}
       >
-        Hear from {speakerCount}+ industry and community speakers driving Python
-        innovation. Practical talks, fresh tools, and real-world stories to
-        inspire and equip you.
+        Hear from {speakerCount}+ industry and community speakers sharing practical talks, fresh tools, and real-world stories about Python.
       </Paragraph>
     </div>
   );
