@@ -49,6 +49,39 @@ export const SPONSORS = {
         },
       ],
     },
+    {
+      name: 'DP World',
+      imgUrl: '/images/sponsors/dp-world.png',
+      imgAlt: 'DP World logo',
+      hyperLink: '/blogs/dp-world-platinum-sponsor/',
+      socials: [
+        {
+          name: 'X',
+          url: 'https://x.com/dp_world?s=21',
+          ariaLabel: 'Hyperlink to DP World X page.',
+        },
+        {
+          name: 'LinkedIn',
+          url: 'https://www.linkedin.com/company/dp-world/',
+          ariaLabel: 'Hyperlink to DP World LinkedIn page.',
+        },
+        {
+          name: 'LinkedIn',
+          url: 'https://www.linkedin.com/showcase/dp-world-technology/?viewAsMember=true',
+          ariaLabel: 'Hyperlink to DP World Technology LinkedIn page.',
+        },
+        {
+          name: 'Instagram',
+          url: 'https://www.instagram.com/dpworld?igsh=MTgxdWlubnh3MGg4dw==',
+          ariaLabel: 'Hyperlink to DP World Instagram page.',
+        },
+        {
+          name: 'Globe',
+          url: 'https://www.dpworld.com/en',
+          ariaLabel: 'Hyperlink to DP World website.',
+        },
+      ],
+    },
   ],
   Gold: [
     {
