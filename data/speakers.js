@@ -599,7 +599,7 @@ export const SPEAKERS = [
     activeSpeakerPage: true,
     title: 'Associate Software Engineer at OSI Digital',
     bio: 'Benjamin is a Full-Stack Developer specializing in Python and JavaScript, building scalable APIs with FastAPI, interactive apps with React and Node.js, and cloud-ready backends, focusing on clean, efficient, production-ready solutions.',
-    imgUrl: '/images/speakers/placeholder-1.svg',
+    imgUrl: '/images/speakers/benjamin-alladi.jpg',
     imgAlt: 'Picture of Benjamin Alladi.',
     socials: [
       {
