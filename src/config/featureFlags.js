@@ -20,7 +20,7 @@ export const FEATURE_FLAGS = {
   IM_ATTENDING: true,
   JOB_BOARD: true,
   SCHEDULE: true,
-  WELCOME_GUIDE: false,
+  WELCOME_GUIDE: true,
   OUR_TEAM: false,
   VENUE: true,
   TRAVEL: true,
