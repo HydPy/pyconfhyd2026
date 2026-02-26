@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname, useSearchParams } from 'next/navigation';
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Icon from '@/components/Icon';
 import { Span } from '@/components/Typography';
 import { ASSETS } from '@/conference';
@@ -96,6 +96,7 @@ const NavItem = ({
 const Header = ({ themeToggle }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [dropDownPath, setDropDownPath] = useState(null);
+  const navbarRef = useRef(null);
 
   const pathname = usePathname(); // Extracts the current path
   const searchParams = useSearchParams(); // Extracts the query parameters
@@ -104,6 +105,20 @@ const Header = ({ themeToggle }) => {
 
   // Filter navigation items based on feature flags
   const filteredNavItems = filterNavItemsByFeatureFlags(NAV_ITEMS);
+
+  // Handle click outside to close dropdown
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setDropDownPath(null);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -152,6 +167,7 @@ const Header = ({ themeToggle }) => {
             isMenuOpen ? 'block' : 'hidden'
           } w-full md:block md:w-auto`}
           id="navbar-dropdown"
+          ref={navbarRef}
         >
           <ul className="flex flex-col p-4 md:p-0 mt-4 md:mt-0 md:flex-row">
             {filteredNavItems.map((item, index) => (
