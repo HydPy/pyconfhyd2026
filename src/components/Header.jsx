@@ -116,7 +116,7 @@ const Header = ({ themeToggle }) => {
   };
 
   return (
-    <header className="bg-gray-50 dark:bg-gray-900 shadow-lg sticky top-0 z-10">
+    <header className="bg-gray-50 dark:bg-gray-900 shadow-lg fixed top-0 left-0 right-0 z-10">
       {/* <InfoAlert>
         <Span>{MESSAGES.TICKETS_DISCOUNT_MSG}</Span>
       </InfoAlert> */}
