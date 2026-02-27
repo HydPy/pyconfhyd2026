@@ -41,7 +41,7 @@ export default function Tickets() {
         md:w-[150px] md:h-[150px]
         md:-right-16 md:top-12
         lg:w-[290px] lg:h-[290px]
-        lg:-right-56 lg:-top-20"
+        lg:-right-[230px] lg:-top-20"
       />
       <div className="flex flex-row text-center my-2">
         <MdxLayout>
