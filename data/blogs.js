@@ -36,7 +36,7 @@ export const BLOGS = [
     title: 'Announcing DP World as our Platinum Sponsor',
     markdownComponent: <DPWorldPlatinumSponsorMdx />,
     author: 'PyConf Hyderabad Team',
-    publishedAt: 'February 25, 2026',
+    publishedAt: 'February 27, 2026',
     socials: getSponsor('DP World').socials,
   },
   {
