@@ -2,6 +2,7 @@ import Link from 'next/link';
 import TicketDescriptionMdx from '@/ticketsDescription.mdx';
 import MdxLayout from '@/components/MdxLayout';
 import { Heading, Paragraph } from '@/components/Typography';
+import Image from 'next/image';
 
 function GroupDiscountCTA() {
   return (
@@ -26,8 +27,15 @@ export default function Tickets() {
   return (
     <section
       id="tickets"
-      className="scroll-mt-20 flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto"
+      className="scroll-mt-20 flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto relative"
     >
+      <Image
+      src="/images/ticket-illustration.svg"
+      alt="Tickets Illustration"
+      width={270}
+      height={270}
+      className="hidden md:block absolute -right-56 -top-20"
+      />
       <div className="flex flex-row text-center my-2">
         <MdxLayout>
           <TicketDescriptionMdx />

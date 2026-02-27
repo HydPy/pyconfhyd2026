@@ -409,38 +409,6 @@ export const SPEAKERS = [
     ],
   },
   {
-    name: 'Kuldeep Pal',
-    slug: 'kuldeep-pal',
-    type: 'Session',
-    activeSpeakerPage: true,
-    title: 'Senior Software Engineer (Data and AI)',
-    bio: 'Kuldeep is working as a Senior Engineer, I work at the intersection on Data Engineerng , AI and Backend / Distributed systems.',
-    imgUrl: '/images/speakers/kuldeep-pal.jpg',
-    imgAlt: 'Picture of Kuldeep Pal.',
-    socials: [
-      {
-        name: 'X',
-        url: 'https://x.com/kuldeep27396',
-        ariaLabel: "Hyperlink to Kuldeep Pal's X page.",
-      },
-      {
-        name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/kuldeep27396/',
-        ariaLabel: "Hyperlink to Kuldeep Pal's LinkedIn page.",
-      },
-      {
-        name: 'GitHub',
-        url: 'https://github.com/kuldeep27396',
-        ariaLabel: "Hyperlink to Kuldeep Pal's GitHub page.",
-      },
-      {
-        name: 'Globe',
-        url: 'https://sites.google.com/view/kuldeepallblogs/home',
-        ariaLabel: "Hyperlink to Kuldeep Pal's website.",
-      },
-    ],
-  },
-  {
     name: 'Muhammed Mizaj',
     slug: 'muhammed-mizaj',
     type: 'Session',
@@ -621,6 +589,28 @@ export const SPEAKERS = [
         name: 'Globe',
         url: 'https://links.soumendrak.com/',
         ariaLabel: "Hyperlink to Soumendra Kumar Sahoo's website.",
+      },
+    ],
+  },
+  {
+    name: 'Benjamin Alladi',
+    slug: 'benjamin-alladi',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'Associate Software Engineer at OSI Digital',
+    bio: 'Benjamin is a Full-Stack Developer specializing in Python and JavaScript, building scalable APIs with FastAPI, interactive apps with React and Node.js, and cloud-ready backends, focusing on clean, efficient, production-ready solutions.',
+    imgUrl: '/images/speakers/benjamin-alladi.jpg',
+    imgAlt: 'Picture of Benjamin Alladi.',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'http://www.linkedin.com/in/benjamin-alladi-383511223',
+        ariaLabel: "Hyperlink to Benjamin Alladi's LinkedIn page.",
+      },
+      {
+        name: 'Medium',
+        url: 'https://medium.com/@benjaminalladi10',
+        ariaLabel: "Hyperlink to Benjamin Alladi's Medium page.",
       },
     ],
   },

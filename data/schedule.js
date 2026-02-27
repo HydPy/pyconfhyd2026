@@ -188,7 +188,10 @@ export const SCHEDULE = {
           type: 'Talk',
           time: '11:45 - 12:15 PM',
           location: 'Hall 3',
-          speakers: [getSpeaker('ritesh-chintakindi')],
+          speakers: [
+            getSpeaker('ritesh-chintakindi'),
+            getSpeaker('benjamin-alladi'),
+          ],
         },
       ],
       [
@@ -230,12 +233,11 @@ export const SCHEDULE = {
           location: 'Auditorium | Main Stage',
         },
         {
-          title:
-            'Distributed Computing for big data for batch and realtime data with PySpark',
+          title: 'TBA',
           type: 'Talk',
           time: '02:10 - 02:40 PM',
           location: 'Hall 2',
-          speakers: [getSpeaker('kuldeep-pal')],
+          // speakers: [getSpeaker('kuldeep-pal')],
         },
         {
           title: 'Streaming Protocols for Conversational AI',
