@@ -614,6 +614,28 @@ export const SPEAKERS = [
       },
     ],
   },
+  {
+    name: 'Manoj Ampolu',
+    slug: 'manoj-ampolu',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'Director, AI at Tiger Analytics',
+    bio: 'Savvy Solution Architect versed in new and advanced IT systems. Logical, organised, and decisive in building hardware and software plans. Manage all facets of projects from feasibility assessments through deployment and performance testing.',
+    imgUrl: '/images/speakers/manoj-ampolu.jpg',
+    imgAlt: 'Picture of Manoj Ampolu.',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://in.linkedin.com/in/manoj-ampolu-454b411b',
+        ariaLabel: "Hyperlink to Manoj Ampolu's LinkedIn page.",
+      },
+      {
+        name: 'Globe',
+        url: 'http://www.tigeranalytics.com',
+        ariaLabel: "Hyperlink to Manoj Ampolu's website.",
+      },
+    ],
+  },
 
   {
     name: 'PyConf Hyderabad Team',

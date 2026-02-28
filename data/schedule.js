@@ -233,11 +233,11 @@ export const SCHEDULE = {
           location: 'Auditorium | Main Stage',
         },
         {
-          title: 'TBA',
+          title: 'Designing production grade data pipelines With Dagster',
           type: 'Talk',
           time: '02:10 - 02:40 PM',
           location: 'Hall 2',
-          // speakers: [getSpeaker('kuldeep-pal')],
+          speakers: [getSpeaker('manoj-ampolu')],
         },
         {
           title: 'Streaming Protocols for Conversational AI',
