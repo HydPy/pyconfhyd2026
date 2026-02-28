@@ -64,10 +64,10 @@ export default function Tickets() {
         width="100%"
         height="800"
       ></iframe>
-      <GroupDiscountCTA />
+      {/* <GroupDiscountCTA /> */}
       <Paragraph
         level={3}
-        className="text-gray-700 dark:text-gray-300 text-center mt-1"
+        className="text-gray-700 dark:text-gray-300 text-center mt-8"
       >
         To learn about the referral contest or for any other questions, please
         check the{' '}
