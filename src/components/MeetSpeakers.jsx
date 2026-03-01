@@ -75,6 +75,7 @@ const ScheduleCTA = () => {
         label={'EXPLORE THE FULL AGENDA'}
         iconSize={20}
         variant="secondary"
+        target="_self"
       />
     </div>
   );
