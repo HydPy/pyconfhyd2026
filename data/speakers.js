@@ -599,7 +599,7 @@ export const SPEAKERS = [
     activeSpeakerPage: true,
     title: 'Associate Software Engineer at OSI Digital',
     bio: 'Benjamin is a Full-Stack Developer specializing in Python and JavaScript, building scalable APIs with FastAPI, interactive apps with React and Node.js, and cloud-ready backends, focusing on clean, efficient, production-ready solutions.',
-    imgUrl: '/images/speakers/placeholder-1.svg',
+    imgUrl: '/images/speakers/benjamin-alladi.jpg',
     imgAlt: 'Picture of Benjamin Alladi.',
     socials: [
       {
@@ -611,6 +611,28 @@ export const SPEAKERS = [
         name: 'Medium',
         url: 'https://medium.com/@benjaminalladi10',
         ariaLabel: "Hyperlink to Benjamin Alladi's Medium page.",
+      },
+    ],
+  },
+  {
+    name: 'Manoj Ampolu',
+    slug: 'manoj-ampolu',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'Director, AI at Tiger Analytics',
+    bio: 'Savvy Solution Architect versed in new and advanced IT systems. Logical, organised, and decisive in building hardware and software plans. Manage all facets of projects from feasibility assessments through deployment and performance testing.',
+    imgUrl: '/images/speakers/manoj-ampolu.jpg',
+    imgAlt: 'Picture of Manoj Ampolu.',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://in.linkedin.com/in/manoj-ampolu-454b411b',
+        ariaLabel: "Hyperlink to Manoj Ampolu's LinkedIn page.",
+      },
+      {
+        name: 'Globe',
+        url: 'http://www.tigeranalytics.com',
+        ariaLabel: "Hyperlink to Manoj Ampolu's website.",
       },
     ],
   },

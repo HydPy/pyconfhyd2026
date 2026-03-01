@@ -72,7 +72,7 @@ const ScheduleCTA = () => {
     <div className="flex flex-col sm:flex-row items-center mt-4">
       <CTAButton
         href={'/schedule'}
-        label={'CHECK OUT THE SCHEDULE'}
+        label={'EXPLORE THE FULL AGENDA'}
         iconSize={20}
         variant="secondary"
       />

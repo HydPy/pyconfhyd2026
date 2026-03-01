@@ -1,4 +1,5 @@
 import { SPEAKERS } from '@/speakers';
+import { CONFERENCE } from '@/conference';
 
 export const getSpeaker = (slug) => {
   return SPEAKERS.find((speaker) => speaker.slug === slug);
@@ -7,8 +8,8 @@ export const getSpeaker = (slug) => {
 export const SCHEDULE = {
   day1: {
     title: 'Workshop',
-    date: '14 Mar',
-    day: 'Saturday',
+    date: CONFERENCE.workshopDate,
+    day: CONFERENCE.workshopDay,
     sessions: [
       [
         {
@@ -86,8 +87,8 @@ export const SCHEDULE = {
   },
   day2: {
     title: 'Conference',
-    date: '15 Mar',
-    day: 'Sunday',
+    date: CONFERENCE.conferenceDate,
+    day: CONFERENCE.conferenceDay,
     sessions: [
       [
         {
@@ -233,11 +234,11 @@ export const SCHEDULE = {
           location: 'Auditorium | Main Stage',
         },
         {
-          title: 'TBA',
+          title: 'Designing production grade data pipelines With Dagster',
           type: 'Talk',
           time: '02:10 - 02:40 PM',
           location: 'Hall 2',
-          // speakers: [getSpeaker('kuldeep-pal')],
+          speakers: [getSpeaker('manoj-ampolu')],
         },
         {
           title: 'Streaming Protocols for Conversational AI',
