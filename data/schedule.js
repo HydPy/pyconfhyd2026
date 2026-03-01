@@ -1,4 +1,5 @@
 import { SPEAKERS } from '@/speakers';
+import { CONFERENCE } from '@/conference';
 
 export const getSpeaker = (slug) => {
   return SPEAKERS.find((speaker) => speaker.slug === slug);
@@ -7,8 +8,8 @@ export const getSpeaker = (slug) => {
 export const SCHEDULE = {
   day1: {
     title: 'Workshop',
-    date: '14 Mar',
-    day: 'Saturday',
+    date: CONFERENCE.workshopDate,
+    day: CONFERENCE.workshopDay,
     sessions: [
       [
         {
@@ -86,8 +87,8 @@ export const SCHEDULE = {
   },
   day2: {
     title: 'Conference',
-    date: '15 Mar',
-    day: 'Sunday',
+    date: CONFERENCE.conferenceDate,
+    day: CONFERENCE.conferenceDay,
     sessions: [
       [
         {
