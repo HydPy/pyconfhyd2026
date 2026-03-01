@@ -27,6 +27,14 @@ export const SCHEDULE = {
           title: 'Optimizing Pytorch Models',
           location: 'Track 1',
           speakers: [getSpeaker('jaidev-deshpande')],
+          abstract:
+            'Most AI models never leave a Jupyter notebook. This workshop shows how to turn real-world PyTorch codebases into deployable, efficient binaries—covering practical techniques for optimizing and exporting complex models to production at low cost.',
+          highlights: [
+            'Beyond the Notebook: Move from research scripts to production-grade binaries.',
+            'SoTA Portability: Learn to adapt unoptimized research code for real-world consumption.',
+            'Edge Optimization: Master exports for CoreML, TensorRT, and ONNX Runtime.',
+            'Practical Recipes: Interactive walkthroughs of computer vision model optimization.',
+          ],
         },
         {
           time: '10:00 - 12:50 PM',
