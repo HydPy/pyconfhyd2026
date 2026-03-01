@@ -6,8 +6,6 @@ export const TABS = [
 
 export const TAB_CONFIG = {
   attractions: {
-    description:
-      "While you're in Hyderabad for PyConf, consider visiting some of these nearby attractions:",
     columns: [
       { header: 'Attraction', key: 'name', noWrap: true },
       { header: 'Description', key: 'description' },
@@ -106,7 +104,6 @@ export const TAB_CONFIG = {
     ],
   },
   accommodation: {
-    description: 'Here are some accommodation options near the ESCI and EPAM:',
     columns: [
       { header: 'Name', key: 'name', noWrap: true },
       { header: 'Type', key: 'type', noWrap: true },
@@ -151,7 +148,6 @@ export const TAB_CONFIG = {
     ],
   },
   'places-to-eat': {
-    description: 'Explore these dining options near ESCI and EPAM:',
     columns: [
       { header: 'Name', key: 'name', noWrap: true },
       { header: 'Type', key: 'type', noWrap: true },
