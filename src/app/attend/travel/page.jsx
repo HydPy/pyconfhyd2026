@@ -1,7 +1,6 @@
 import TravelMdx from '@/travel.mdx';
 import MdxLayout from '@/components/MdxLayout';
 import { Heading } from '@/components/Typography';
-import TravelContent from './TravelContent';
 
 export const metadata = {
   title: 'Travel',
@@ -25,9 +24,6 @@ export default function Page() {
       <MdxLayout>
         <TravelMdx />
       </MdxLayout>
-      <div className="w-full mt-12">
-        <TravelContent />
-      </div>
     </section>
   );
 }
