@@ -60,7 +60,8 @@ const SpeakersDescription = () => {
         className="text-center text-gray-600 dark:text-gray-300 lg:w-11/12"
         level={2}
       >
-        Hear from {speakerCount}+ industry and community speakers sharing practical talks, fresh tools, and real-world stories about Python.
+        Hear from {speakerCount}+ industry and community speakers sharing
+        practical talks, fresh tools, and real-world stories about Python.
       </Paragraph>
     </div>
   );
