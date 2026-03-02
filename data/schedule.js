@@ -107,7 +107,7 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: '',
+          title: 'Data Science in the age of LLMs',
           type: 'Talk',
           keynote: true,
           time: '09:15 - 10:15 AM',
