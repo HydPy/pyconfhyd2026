@@ -5,8 +5,17 @@ import StraiveGoldSponsorMdx from '@/blogs/straive-gold-sponsor.mdx';
 import M37LabsSilverSponsorMdx from '@/blogs/m37labs-silver-sponsor.mdx';
 import DPWorldPlatinumSponsorMdx from '@/blogs/dp-world-platinum-sponsor.mdx';
 import EpamGoldSponsorMdx from '@/blogs/epam-gold-sponsor.mdx';
+import ZentropyTechnologiesSilverSponsorMdx from '@/blogs/zentropy-technologies-silver-sponsor.mdx';
 
 export const BLOGS = [
+  {
+    slug: 'zentropy-technologies-silver-sponsor',
+    title: 'Announcing Zentropy Technologies as our Silver Sponsor',
+    markdownComponent: <ZentropyTechnologiesSilverSponsorMdx />,
+    author: 'PyConf Hyderabad Team',
+    publishedAt: 'March 3, 2026',
+    socials: getSponsor('Zentropy Technologies').socials,
+  },
   {
     slug: 'dp-world-platinum-sponsor',
     title: 'Announcing DP World as our Platinum Sponsor',
