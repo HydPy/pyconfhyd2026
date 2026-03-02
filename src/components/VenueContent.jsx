@@ -13,6 +13,7 @@ const venues = {
     key: 'workshop',
     title: 'Workshop',
     date: CONFERENCE.workshopDate,
+    day: CONFERENCE.workshopDay,
     venue: CONFERENCE.workshopVenue,
     address: CONFERENCE.workshopVenueAddress,
     mapsLink: CONFERENCE.workshopMapsLink,
@@ -23,6 +24,7 @@ const venues = {
     key: 'conference',
     title: 'Conference',
     date: CONFERENCE.conferenceDate,
+    day: CONFERENCE.conferenceDay,
     venue: CONFERENCE.conferenceVenue,
     address: CONFERENCE.conferenceVenueAddress,
     mapsLink: CONFERENCE.conferenceMapsLink,
@@ -42,19 +44,13 @@ const VenueTabCard = ({ venueData, isActive, onSelect }) => {
       type="button"
       onClick={onSelect}
       aria-pressed={isActive}
-      className={`w-full text-left border-2 border-gray-900 px-6 py-8 h-full shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all ${isActive ? activeStateClass : inactiveStateClass}`}
+      className={`w-full text-left border-2 border-gray-900 px-4 py-4 h-full shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all ${isActive ? activeStateClass : inactiveStateClass}`}
     >
-      <Heading tagLevel={2} level={3} className="text-center sm:text-left">
+      <Heading tagLevel={2} level={3} className="text-center">
         {venueData.title}
       </Heading>
-      <Paragraph level={2} className="mt-2 text-center sm:text-left">
-        {venueData.date}
-      </Paragraph>
-      <Paragraph
-        level={2}
-        className="mt-2 font-semibold text-center sm:text-left"
-      >
-        {venueData.venue}
+      <Paragraph level={2} className="mt-2 text-center">
+        {venueData.date} &#x2022; {venueData.day}
       </Paragraph>
     </button>
   );
@@ -109,7 +105,7 @@ const VenueDetailCard = ({ venueData }) => {
               src={venueData.imageLink}
               alt={venueData.imageAlt}
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </div>
         </div>
@@ -124,16 +120,15 @@ export default function VenueContent() {
   return (
     <>
       <div
-        className="w-10/12 md:w-8/12 grid gap-6 mt-2"
-        // className="w-10/12 md:w-8/12 grid md:grid-cols-2 gap-6 mt-2"
+        className="w-10/12 md:w-8/12 grid md:grid-cols-2 gap-6 mt-2"
         role="tablist"
         aria-label="Venue selection"
       >
-        {/* <VenueTabCard
+        <VenueTabCard
           venueData={venues.workshop}
           isActive={selectedVenueKey === 'workshop'}
           onSelect={() => setSelectedVenueKey('workshop')}
-        /> */}
+        />
         <VenueTabCard
           venueData={venues.conference}
           isActive={selectedVenueKey === 'conference'}
