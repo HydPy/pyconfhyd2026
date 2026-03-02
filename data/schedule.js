@@ -44,6 +44,13 @@ export const SCHEDULE = {
           title: 'PEP 684 + 554 + 669 True Parallelism in Python',
           speakers: [getSpeaker('ramachandra-vikas-chamarthi')],
           location: 'Track 2',
+          abstract:
+            'Although Python is widely used, real parallelism still hurts. HPC and AI systems are limited by GIL, intensive multiprocessing, and blind execution. This workshop demonstrates how genuine parallelism, isolation, and observability in PEP 684, 554, and 669 ultimately resolve this issue.',
+          highlights: [
+            'Breaking the GIL: Leveraging sub-interpreters for multi-core scaling without the overhead of multiprocessing. Agent-Style Execution: Building isolated, safe execution environments for AI-focused tasks.',
+            'Modern Observability: Using PEP 669 hooks to detect infinite loops and unsafe behavior with minimal performance impact.',
+            'Performance Engineering: Measuring trade-offs and design patterns for modern HPC systems.',
+          ],
         },
         {
           time: '10:00 - 12:50 PM',
@@ -69,6 +76,14 @@ export const SCHEDULE = {
           title: 'Designing Reliable Agentic AI for Real-World Systems',
           location: 'Track 1',
           speakers: [getSpeaker('sonu-kumar')],
+          abstract:
+            'While many AI projects rely on "vibe coding" and prompt-heavy hacks, this workshop demonstrates why disciplined system design is the only way to move agentic AI from a prototype to a reliable production environment.',
+          highlights: [
+            'Memory Architecture: Designing tiered memory systems that balance performance and cost.',
+            'Agentic RAG: Beyond simple retrieval—implementing context management for smarter agent reasoning.',
+            'Orchestration & Governance: Moving from single-script agents to complex, observable multi-agent workflows.',
+            'Software Fundamentals: Ensuring your AI agents remain deterministic, testable, and production-safe.',
+          ],
         },
         {
           time: '02:00 - 04:50 PM',
@@ -79,6 +94,14 @@ export const SCHEDULE = {
             'Mastering the Multi-Stack: Orchestrated Debugging with Python and Beyond',
           speakers: [getSpeaker('satyam-soni')],
           location: 'Track 2',
+          abstract:
+            'In the era of microservices and full-stack applications, debugging a Python backend in isolation is rarely enough. Developers often find themselves juggling multiple terminal tabs to start a FastAPI server, a Vite frontend, and a debugger, leading to "context-switch fatigue." This workshop teaches you how to turn VS Code into a powerful orchestration engine.',
+          highlights: [
+            'Unified Orchestration: Automate complex environment startups using tasks.json and compounds.',
+            'Advanced debugpy: Master the "Remote Attach" pattern to debug processes managed by modern tools like uv.',
+            'Smart Automation: Use Problem Matchers to ensure the debugger waits for "Server Ready" signals before attaching.',
+            'Synchronized Workflows: Learn to trigger and terminate backend and frontend sessions simultaneously for a clean development cycle',
+          ],
         },
         {
           time: '02:00 - 04:50 PM',
@@ -89,6 +112,14 @@ export const SCHEDULE = {
             'Zero to Lakehouse Hero: Your Entire Data Lakehouse in Docker — Powered by Python & Apache',
           speakers: [getSpeaker('sourav-roy')],
           location: 'Track 3',
+          abstract:
+            'Break free from vendor lock-in by building a fully functional, real-time data lakehouse using nothing but Python, Docker, and the Apache open-source ecosystem. This intensive, hands-on workshop guides you through spinning up a production-grade stack—including Kafka, Flink, Iceberg, and Paimon—to orchestrate seamless data flow from raw streams to interactive BI dashboards in Apache Superset.',
+          highlights: [
+            'Orchestration: Python-driven workflows and Docker Compose.',
+            'Storage & Format: Apache Iceberg vs. Apache Paimon (The "Side-by-Side" deep dive).',
+            'Processing: Real-time streaming with Apache Kafka and PyFlink.',
+            'Analysis: Interactive SQL with Trino/Spark and visual analytics via Apache Superset.',
+          ],
         },
       ],
     ],
