@@ -8,30 +8,6 @@ import EpamGoldSponsorMdx from '@/blogs/epam-gold-sponsor.mdx';
 
 export const BLOGS = [
   {
-    slug: 'asbl-platinum-sponsor',
-    title: 'Announcing ASBL as our Platinum Sponsor',
-    markdownComponent: <AsblPlatinumSponsorMdx />,
-    author: 'PyConf Hyderabad Team',
-    publishedAt: 'February 8, 2026',
-    socials: getSponsor('ASBL').socials,
-  },
-  {
-    slug: 'straive-gold-sponsor',
-    title: 'Announcing Straive as our Gold Sponsor',
-    markdownComponent: <StraiveGoldSponsorMdx />,
-    author: 'PyConf Hyderabad Team',
-    publishedAt: 'February 17, 2026',
-    socials: getSponsor('Straive').socials,
-  },
-  {
-    slug: 'm37labs-silver-sponsor',
-    title: 'Announcing M37Labs as our Silver Sponsor',
-    markdownComponent: <M37LabsSilverSponsorMdx />,
-    author: 'PyConf Hyderabad Team',
-    publishedAt: 'February 22, 2026',
-    socials: getSponsor('M37Labs').socials,
-  },
-  {
     slug: 'dp-world-platinum-sponsor',
     title: 'Announcing DP World as our Platinum Sponsor',
     markdownComponent: <DPWorldPlatinumSponsorMdx />,
@@ -46,5 +22,29 @@ export const BLOGS = [
     author: 'PyConf Hyderabad Team',
     publishedAt: 'February 25, 2026',
     socials: getSponsor('EPAM Systems').socials,
+  },
+  {
+    slug: 'm37labs-silver-sponsor',
+    title: 'Announcing M37Labs as our Silver Sponsor',
+    markdownComponent: <M37LabsSilverSponsorMdx />,
+    author: 'PyConf Hyderabad Team',
+    publishedAt: 'February 22, 2026',
+    socials: getSponsor('M37Labs').socials,
+  },
+  {
+    slug: 'straive-gold-sponsor',
+    title: 'Announcing Straive as our Gold Sponsor',
+    markdownComponent: <StraiveGoldSponsorMdx />,
+    author: 'PyConf Hyderabad Team',
+    publishedAt: 'February 17, 2026',
+    socials: getSponsor('Straive').socials,
+  },
+  {
+    slug: 'asbl-platinum-sponsor',
+    title: 'Announcing ASBL as our Platinum Sponsor',
+    markdownComponent: <AsblPlatinumSponsorMdx />,
+    author: 'PyConf Hyderabad Team',
+    publishedAt: 'February 8, 2026',
+    socials: getSponsor('ASBL').socials,
   },
 ];
