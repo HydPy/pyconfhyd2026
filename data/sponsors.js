@@ -170,5 +170,23 @@ export const SPONSORS = {
         },
       ],
     },
+    {
+      name: 'Zentropy Technologies',
+      imgUrl: '/images/sponsors/zentropy.png',
+      imgAlt: 'Zentropy Technologies logo',
+      hyperLink: '/blogs/zentropy-technologies-silver-sponsor/',
+      socials: [
+        {
+          name: 'LinkedIn',
+          url: 'https://www.linkedin.com/company/zentropytech/',
+          ariaLabel: 'Hyperlink to Zentropy Technologies LinkedIn page.',
+        },
+        {
+          name: 'Globe',
+          url: 'http://www.zentropytech.com',
+          ariaLabel: 'Hyperlink to Zentropy Technologies website.',
+        },
+      ],
+    },
   ],
 };

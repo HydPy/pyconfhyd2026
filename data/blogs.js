@@ -5,31 +5,16 @@ import StraiveGoldSponsorMdx from '@/blogs/straive-gold-sponsor.mdx';
 import M37LabsSilverSponsorMdx from '@/blogs/m37labs-silver-sponsor.mdx';
 import DPWorldPlatinumSponsorMdx from '@/blogs/dp-world-platinum-sponsor.mdx';
 import EpamGoldSponsorMdx from '@/blogs/epam-gold-sponsor.mdx';
+import ZentropyTechnologiesSilverSponsorMdx from '@/blogs/zentropy-technologies-silver-sponsor.mdx';
 
 export const BLOGS = [
   {
-    slug: 'asbl-platinum-sponsor',
-    title: 'Announcing ASBL as our Platinum Sponsor',
-    markdownComponent: <AsblPlatinumSponsorMdx />,
+    slug: 'zentropy-technologies-silver-sponsor',
+    title: 'Announcing Zentropy Technologies as our Silver Sponsor',
+    markdownComponent: <ZentropyTechnologiesSilverSponsorMdx />,
     author: 'PyConf Hyderabad Team',
-    publishedAt: 'February 8, 2026',
-    socials: getSponsor('ASBL').socials,
-  },
-  {
-    slug: 'straive-gold-sponsor',
-    title: 'Announcing Straive as our Gold Sponsor',
-    markdownComponent: <StraiveGoldSponsorMdx />,
-    author: 'PyConf Hyderabad Team',
-    publishedAt: 'February 17, 2026',
-    socials: getSponsor('Straive').socials,
-  },
-  {
-    slug: 'm37labs-silver-sponsor',
-    title: 'Announcing M37Labs as our Silver Sponsor',
-    markdownComponent: <M37LabsSilverSponsorMdx />,
-    author: 'PyConf Hyderabad Team',
-    publishedAt: 'February 22, 2026',
-    socials: getSponsor('M37Labs').socials,
+    publishedAt: 'March 3, 2026',
+    socials: getSponsor('Zentropy Technologies').socials,
   },
   {
     slug: 'dp-world-platinum-sponsor',
@@ -46,5 +31,29 @@ export const BLOGS = [
     author: 'PyConf Hyderabad Team',
     publishedAt: 'February 25, 2026',
     socials: getSponsor('EPAM Systems').socials,
+  },
+  {
+    slug: 'm37labs-silver-sponsor',
+    title: 'Announcing M37Labs as our Silver Sponsor',
+    markdownComponent: <M37LabsSilverSponsorMdx />,
+    author: 'PyConf Hyderabad Team',
+    publishedAt: 'February 22, 2026',
+    socials: getSponsor('M37Labs').socials,
+  },
+  {
+    slug: 'straive-gold-sponsor',
+    title: 'Announcing Straive as our Gold Sponsor',
+    markdownComponent: <StraiveGoldSponsorMdx />,
+    author: 'PyConf Hyderabad Team',
+    publishedAt: 'February 17, 2026',
+    socials: getSponsor('Straive').socials,
+  },
+  {
+    slug: 'asbl-platinum-sponsor',
+    title: 'Announcing ASBL as our Platinum Sponsor',
+    markdownComponent: <AsblPlatinumSponsorMdx />,
+    author: 'PyConf Hyderabad Team',
+    publishedAt: 'February 8, 2026',
+    socials: getSponsor('ASBL').socials,
   },
 ];

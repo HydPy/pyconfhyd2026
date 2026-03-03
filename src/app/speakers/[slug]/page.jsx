@@ -58,10 +58,7 @@ const getTalkDetailsBySlug = (slug) => {
               talkDetails.push({
                 day: day.title,
                 date: day.date,
-                type: session.type,
-                sessionTitle: session.title,
-                time: session.time,
-                location: session.location,
+                ...session,
               });
             }
           });
@@ -140,10 +137,29 @@ export default async function SpeakerPage({ params }) {
                 key={index}
                 className="mb-2 text-gray-600 dark:text-gray-400"
               >
-                <Paragraph>
-                  {talk.type} - {talk.sessionTitle}
-                </Paragraph>
                 <ul className="list-disc ml-4">
+                  <li>
+                    <Paragraph>
+                      Title: {talk.title} ({talk.type})
+                    </Paragraph>
+                  </li>
+                  {talk.abstract && (
+                    <li>
+                      <Paragraph>Abstract: {talk.abstract}</Paragraph>
+                    </li>
+                  )}
+                  {talk.highlights && talk.highlights.length > 0 && (
+                    <li>
+                      <Paragraph>Highlights:</Paragraph>
+                      <ul className="list-disc ml-4">
+                        {talk.highlights.map((highlight, highlightIndex) => (
+                          <li key={highlightIndex}>
+                            <Paragraph>{highlight}</Paragraph>
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  )}
                   <li>
                     <Paragraph>Date: {talk.date}</Paragraph>
                   </li>
