@@ -643,7 +643,7 @@ export const SPEAKERS = [
     activeSpeakerPage: true,
     title: 'CTO at ASBL',
     bio: 'Abhijith Reddy is the CTO of ASBL, where he leverages 15 years of U.S. startup experience and two IPOs to build an "Operating System for Real Estate." A programmer with a focus on high-level engineering, championing an agile culture that prioritizes speed and iteration.',
-    imgUrl: '/images/speakers/placeholder-1.svg',
+    imgUrl: '/images/speakers/abhijith-reddy.jpg',
     imgAlt: 'Picture of Abhijith Reddy.',
     socials: [
       {
