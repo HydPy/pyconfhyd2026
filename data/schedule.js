@@ -180,10 +180,11 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'TBA',
+          title: 'Building the Real World: How Code & AI Disrupt Real Estate',
           type: 'Talk',
           time: '10:55 - 11:25 AM',
           location: 'Auditorium | Main Stage',
+          speakers: [getSpeaker('abhijith-reddy')],
         },
         {
           title:
