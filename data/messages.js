@@ -6,7 +6,7 @@ const MESSAGES = {
     'With the conference now behind us, all job postings have been removed.',
   TICKETS_SOLD_OUT_MSG: 'We are sold out. There are no on-spot tickets.',
   TICKETS_DISCOUNT_MSG:
-    'Fork the Price! 10% Off on Tickets – Use code OSHYD10.',
+    'Grab your pass with perks: OSHYD10 for 10% off Combo, MEETUP15 for 15% off Conference Regular',
 };
 
 export default MESSAGES;

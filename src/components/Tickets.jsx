@@ -27,7 +27,7 @@ export default function Tickets() {
   return (
     <section
       id="tickets"
-      className="scroll-mt-20 flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto relative"
+      className="scroll-mt-36 sm:scroll-mt-28 flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto relative"
     >
       <Image
         src="/images/ticket-illustration.svg"
