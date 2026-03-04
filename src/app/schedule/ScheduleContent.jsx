@@ -1,12 +1,40 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Heading, Span } from '@/components/Typography';
 import Icon from '@/components/Icon';
 import Image from 'next/image';
 import SpeakerInitials from '@/components/SpeakerInitials';
 import { SCHEDULE } from '@/schedule';
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
+
+const extractTrackKey = (location = '') => {
+  if (!location) return null;
+
+  const trackMatch = location.match(/track\s*(\d+)/i);
+  if (trackMatch) return `track${trackMatch[1]}`;
+
+  return null;
+};
+
+const parseTrackParam = (rawTrack) => {
+  if (!rawTrack) return null;
+
+  const normalizedTrack = rawTrack.toString().trim().toLowerCase();
+
+  return /^track\d+$/.test(normalizedTrack) ? normalizedTrack : null;
+};
+
+const parseDayParam = (rawDay) => {
+  if (!rawDay) return null;
+
+  const normalizedDay = rawDay.toString().trim().toLowerCase();
+
+  return Object.prototype.hasOwnProperty.call(SCHEDULE, normalizedDay)
+    ? normalizedDay
+    : null;
+};
 
 const TimeBadge = ({ time }) => (
   <div className="inline-flex items-center px-3 py-1.5 bg-accent-900 dark:bg-accent-500 text-gray-50 dark:text-gray-950 rounded-full md:text-md text-xs">
@@ -17,11 +45,21 @@ const TimeBadge = ({ time }) => (
   </div>
 );
 
-const LocationBadge = ({ location, className = '' }) => {
+const LocationBadge = ({ location, className = '', href = null }) => {
+  const badgeClasses = `inline-flex items-center px-3 py-1.5 bg-accent-900 dark:bg-accent-500 text-gray-50 dark:text-gray-950 shadow-sm rounded-full ${className}`;
+
+  if (href) {
+    return (
+      <Link href={href} className={`${badgeClasses} underline`}>
+        <Span level={6} className="font-medium md:text-md text-xs">
+          {location}
+        </Span>
+      </Link>
+    );
+  }
+
   return (
-    <div
-      className={`inline-flex items-center px-3 py-1.5 bg-accent-900 dark:bg-accent-500 text-gray-50 dark:text-gray-950 shadow-sm rounded-full ${className}`}
-    >
+    <div className={badgeClasses}>
       <Span level={6} className="font-medium md:text-md text-xs">
         {location}
       </Span>
@@ -117,6 +155,7 @@ const ScheduleItem = ({
   title,
   discordChannelLink,
   location,
+  locationHref,
   speakers,
   isKeynote,
   isBreak,
@@ -139,7 +178,7 @@ const ScheduleItem = ({
       <div className="md:px-6 md:pt-6 md:pb-4 p-4">
         <header className="flex flex-wrap justify-between items-center mb-3 gap-2">
           <TimeBadge time={time} />
-          <LocationBadge location={location} />
+          <LocationBadge location={location} href={locationHref} />
         </header>
         <Span
           level={2}
@@ -176,6 +215,7 @@ const ScheduleItem = ({
 };
 
 export default function ScheduleContent() {
+  const searchParams = useSearchParams();
   const [activeDay, setActiveDay] = useState(() => {
     if (typeof window === 'undefined') return 'day1';
 
@@ -195,18 +235,79 @@ export default function ScheduleContent() {
     }
   }, [activeDay]);
 
-  const { sessions } = SCHEDULE[activeDay];
-  const isScheduleEmpty = !sessions || sessions.length === 0;
+  const selectedDay = parseDayParam(searchParams.get('day'));
+  const currentDay = selectedDay || activeDay;
+  const visibleDays = selectedDay ? [selectedDay] : Object.keys(SCHEDULE);
+
+  useEffect(() => {
+    if (selectedDay && selectedDay !== activeDay) {
+      setActiveDay(selectedDay);
+    }
+  }, [selectedDay, activeDay]);
+
+  const { sessions } = SCHEDULE[currentDay];
+  const selectedTrack = parseTrackParam(searchParams.get('track'));
+
+  const buildTrackHref = (location) => {
+    const trackKey = extractTrackKey(location);
+    if (!trackKey) return null;
+
+    const nextParams = new URLSearchParams(searchParams.toString());
+    nextParams.set('day', currentDay);
+    nextParams.set('track', trackKey);
+
+    return `/schedule?${nextParams.toString()}`;
+  };
+
+  const clearFiltersHref = useMemo(() => {
+    const hasFilter = selectedTrack || selectedDay;
+    if (!hasFilter) return null;
+
+    const nextParams = new URLSearchParams(searchParams.toString());
+    nextParams.delete('day');
+    nextParams.delete('track');
+
+    return `/schedule?${nextParams.toString()}`;
+  }, [searchParams, selectedDay, selectedTrack]);
+
+  const filteredSessions = useMemo(() => {
+    if (!sessions || sessions.length === 0 || !selectedTrack) {
+      return sessions;
+    }
+
+    return sessions
+      .map((sessionGroup) => {
+        return sessionGroup.filter((session) => {
+          const sessionTrack = extractTrackKey(session.location);
+          // For locations like “Cafeteria”, extractTrackKey returns null
+          // (it only matches Track <number>), so !sessionTrack is true.
+          return sessionTrack === selectedTrack || !sessionTrack;
+        });
+      })
+      .filter((sessionGroup) => sessionGroup.length > 0);
+  }, [sessions, selectedTrack]);
+
+  const isScheduleEmpty = !filteredSessions || filteredSessions.length === 0;
 
   return (
     <div className="my-8 w-full">
+      {clearFiltersHref && (
+        <div className="flex justify-end mb-4">
+          <Link
+            href={clearFiltersHref}
+            className="text-base md:text-lg underline text-primary-800 dark:text-primary-300 font-semibold"
+          >
+            Reset Filters
+          </Link>
+        </div>
+      )}
       <div className="flex justify-center gap-4 mb-8">
-        {Object.keys(SCHEDULE).map((day) => (
+        {visibleDays.map((day) => (
           <button
             key={day}
             onClick={() => setActiveDay(day)}
             className={`flex flex-col items-center px-6 md:px-12 py-3 border-2 border-gray-900 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all ${
-              activeDay === day
+              currentDay === day
                 ? 'bg-primary-800 dark:bg-primary-800 text-white dark:text-gray-50 border-4 -translate-y-1 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]'
                 : 'bg-background-light dark:bg-gray-900 text-gray-950 dark:text-gray-50 opacity-85 hover:opacity-100 hover:bg-accent-50 dark:hover:bg-gray-700'
             }`}
@@ -224,7 +325,7 @@ export default function ScheduleContent() {
         {isScheduleEmpty ? (
           <TbaPanel />
         ) : (
-          sessions.map((session, index) => (
+          filteredSessions.map((session, index) => (
             <div
               key={index}
               className={`flex flex-col md:flex-row gap-4 w-full ${session.length == 1 ? 'md:w-3/4' : ''}`}
@@ -236,6 +337,7 @@ export default function ScheduleContent() {
                   title={parallelSession.title}
                   discordChannelLink={parallelSession.discordChannelLink}
                   location={parallelSession.location}
+                  locationHref={buildTrackHref(parallelSession.location)}
                   speakers={parallelSession.speakers}
                   isKeynote={parallelSession.keynote}
                   isBreak={parallelSession.break}

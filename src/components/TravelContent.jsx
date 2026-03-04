@@ -44,7 +44,9 @@ export const TravelContent = () => {
   return (
     <div className="w-full">
       <p className="mb-3">
-        Find attractions, stays, and food options near both PyConf Hyderabad 2026 venues. Listings are for convenience only; we do not have any partnership with these places.
+        Find attractions, stays, and food options near both PyConf Hyderabad
+        2026 venues. Listings are for convenience only; we do not have any
+        partnership with these places.
       </p>
       <div className="border-b border-gray-200 dark:border-gray-700">
         <nav className="flex space-x-8" aria-label="Tabs">
