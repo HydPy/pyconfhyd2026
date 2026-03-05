@@ -49,7 +49,7 @@ const WhyYouShouldAttend = () => {
   return (
     <section
       id="why-you-should-attend"
-      className="scroll-mt-20 flex flex-col items-center pt-10 lg:pt-16 pb-6 lg:pb-10 w-11/12 lg:w-5/6 mx-auto"
+      className="scroll-mt-36 sm:scroll-mt-28 flex flex-col items-center pt-10 lg:pt-16 pb-6 lg:pb-10 w-11/12 lg:w-5/6 mx-auto"
     >
       <div className="text-center mb-6 lg:mb-10">
         <Heading
