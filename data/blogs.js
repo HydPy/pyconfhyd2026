@@ -6,8 +6,17 @@ import M37LabsSilverSponsorMdx from '@/blogs/m37labs-silver-sponsor.mdx';
 import DPWorldPlatinumSponsorMdx from '@/blogs/dp-world-platinum-sponsor.mdx';
 import EpamGoldSponsorMdx from '@/blogs/epam-gold-sponsor.mdx';
 import ZentropyTechnologiesSilverSponsorMdx from '@/blogs/zentropy-technologies-silver-sponsor.mdx';
+import TigerAnalyticsGoldSponsorMdx from '@/blogs/tiger-analytics-gold-sponsor.mdx';
 
 export const BLOGS = [
+  {
+    slug: 'tiger-analytics-gold-sponsor',
+    title: 'Announcing Tiger Analytics as our Gold Sponsor',
+    markdownComponent: <TigerAnalyticsGoldSponsorMdx />,
+    author: 'PyConf Hyderabad Team',
+    publishedAt: 'March 6, 2026',
+    socials: getSponsor('Tiger Analytics').socials,
+  },
   {
     slug: 'zentropy-technologies-silver-sponsor',
     title: 'Announcing Zentropy Technologies as our Silver Sponsor',
