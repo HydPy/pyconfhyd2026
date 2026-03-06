@@ -106,7 +106,7 @@ export const VOLUNTEERS = [
   },
   {
     name: 'Abinash Panda',
-    role: 'Technology WG Volunteer',
+    role: 'Technology WG Co-Lead',
     bio: 'A software professional with over 5 years of experience in developing and managing web applications. Hands-on experience and proficiency in JavaScript, React.js, Vue.js, Python, FastAPI, Node.js & Express.js. A technology enthusiast looking for challenging problems to solve.',
     imgUrl: '/images/volunteers/abinash-panda.jpg',
     imgAlt: "Abinash Panda's picture",
