@@ -144,7 +144,7 @@ export const SPONSORS = {
   Silver: [
     {
       name: 'M37Labs',
-      imgUrl: '/images/sponsors/m37-labs-1.png',
+      imgUrl: '/images/sponsors/m37-labs.png',
       imgAlt: 'M37Labs logo',
       hyperLink: '/blogs/m37labs-silver-sponsor/',
       socials: [
