@@ -56,8 +56,20 @@ export const SCHEDULE = {
           time: '10:00 - 12:50 PM',
           type: 'Workshop',
           discordChannelLink: '',
-          title: 'TBA',
+          title:
+            'Engineering Trustworthy LLM Agents: Observability, Evals, and Security Guardrails',
+          speakers: [
+            getSpeaker('sanchit-balchandani'),
+            getSpeaker('dineshsuriya-d'),
+          ],
           location: 'Track 3',
+          abstract:
+            'Although Python is widely used, real parallelism still hurts. HPC and AI systems are limited by GIL, intensive multiprocessing, and blind execution. This workshop demonstrates how genuine parallelism, isolation, and observability in PEP 684, 554, and 669 ultimately resolve this issue.',
+          highlights: [
+            'Breaking the GIL: Leveraging sub-interpreters for multi-core scaling without the overhead of multiprocessing. Agent-Style Execution: Building isolated, safe execution environments for AI-focused tasks.',
+            'Modern Observability: Using PEP 669 hooks to detect infinite loops and unsafe behavior with minimal performance impact.',
+            'Performance Engineering: Measuring trade-offs and design patterns for modern HPC systems.',
+          ],
         },
       ],
       [

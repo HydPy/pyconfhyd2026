@@ -658,6 +658,45 @@ export const SPEAKERS = [
       },
     ],
   },
+  {
+    name: 'Sanchit Balchandani',
+    slug: 'sanchit-balchandani',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'Engineering Manager at EPAM',
+    bio: 'Sanchit Balchandani is an Engineering Manager at EPAM Systems with 14+ years of experience in software development and leadership. He has a strong background in building scalable systems and leading high-performing teams, with a passion for mentoring and fostering a collaborative engineering culture.',
+    imgUrl: '/images/speakers/placeholder-1.svg',
+    imgAlt: 'Picture of Sanchit Balchandani.',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/inovizz/',
+        ariaLabel: "Hyperlink to Sanchit Balchandani's LinkedIn page.",
+      },
+    ],
+  },
+  {
+    name: 'Dineshsuriya D',
+    slug: 'dineshsuriya-d',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'Software Engineer at EPAM Systems',
+    bio: 'Dineshsuriya D is a Software Engineer at EPAM Systems working on enterprise Generative AI systems.He builds agentic workflows,RAG pipelines, and scalable AI backends, and contributes to open source projects like Microsoft Agent Framework and GraphRAG.',
+    imgUrl: '/images/speakers/dineshsuriya-d.png',
+    imgAlt: 'Picture of Dineshsuriya D.',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/dinesh106/',
+        ariaLabel: "Hyperlink to Dineshsuriya D's LinkedIn page.",
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/droideronline',
+        ariaLabel: "Hyperlink to Dineshsuriya D's GitHub page.",
+      },
+    ],
+  },
 
   {
     name: 'PyConf Hyderabad Team',
