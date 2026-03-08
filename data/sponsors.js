@@ -140,11 +140,39 @@ export const SPONSORS = {
         },
       ],
     },
+    {
+      name: 'Tiger Analytics',
+      imgUrl: '/images/sponsors/tiger-analytics.png',
+      imgAlt: 'Tiger Analytics logo',
+      hyperLink: '/blogs/tiger-analytics-gold-sponsor/',
+      socials: [
+        {
+          name: 'X',
+          url: 'https://x.com/tigeranalytics',
+          ariaLabel: 'Hyperlink to Tiger Analytics X page.',
+        },
+        {
+          name: 'LinkedIn',
+          url: 'https://www.linkedin.com/company/tiger-analytics/',
+          ariaLabel: 'Hyperlink to Tiger Analytics LinkedIn page.',
+        },
+        {
+          name: 'Instagram',
+          url: 'https://www.instagram.com/tigeranalytics/',
+          ariaLabel: 'Hyperlink to Tiger Analytics Instagram page.',
+        },
+        {
+          name: 'Globe',
+          url: 'https://www.tigeranalytics.com/',
+          ariaLabel: 'Hyperlink to Tiger Analytics website.',
+        },
+      ],
+    },
   ],
   Silver: [
     {
       name: 'M37Labs',
-      imgUrl: '/images/sponsors/m37labs.png',
+      imgUrl: '/images/sponsors/m37-labs.png',
       imgAlt: 'M37Labs logo',
       hyperLink: '/blogs/m37labs-silver-sponsor/',
       socials: [
