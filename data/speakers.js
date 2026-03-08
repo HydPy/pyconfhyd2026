@@ -409,28 +409,6 @@ export const SPEAKERS = [
     ],
   },
   {
-    name: 'Muhammed Mizaj',
-    slug: 'muhammed-mizaj',
-    type: 'Session',
-    activeSpeakerPage: true,
-    title: 'Product Engineer at UST, Strollby',
-    bio: 'I’m a Product Engineer specializing in Python and distributed systems, focused on architecting scalable streaming protocols and real-time data pipelines, with an emphasis on performance, reliability, and clean system design.',
-    imgUrl: '/images/speakers/muhammed-mizaj.jpg',
-    imgAlt: 'Picture of Muhammed Mizaj.',
-    socials: [
-      {
-        name: 'LinkedIn',
-        url: 'https://linkedin.com/in/muhammedmizaj',
-        ariaLabel: "Hyperlink to Muhammed Mizaj's LinkedIn page.",
-      },
-      {
-        name: 'GitHub',
-        url: 'https://github.com/muhammed-mizaj',
-        ariaLabel: "Hyperlink to Muhammed Mizaj's GitHub page.",
-      },
-    ],
-  },
-  {
     name: 'Pavan B. Govindaraju',
     slug: 'pavan-b-govindaraju',
     type: 'Session',

@@ -281,11 +281,11 @@ export const SCHEDULE = {
           speakers: [getSpeaker('manoj-ampolu')],
         },
         {
-          title: 'Streaming Protocols for Conversational AI',
+          title: 'TBA',
           type: 'Talk',
           time: '02:10 - 02:40 PM',
           location: 'Track 3',
-          speakers: [getSpeaker('muhammed-mizaj')],
+          // speakers: [getSpeaker('muhammed-mizaj')],
         },
       ],
       [
