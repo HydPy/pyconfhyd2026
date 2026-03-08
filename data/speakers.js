@@ -664,14 +664,29 @@ export const SPEAKERS = [
     type: 'Session',
     activeSpeakerPage: true,
     title: 'Engineering Manager at EPAM',
-    bio: 'Sanchit Balchandani is an Engineering Manager at EPAM Systems with 14+ years of experience in software development and leadership. He has a strong background in building scalable systems and leading high-performing teams, with a passion for mentoring and fostering a collaborative engineering culture.',
-    imgUrl: '/images/speakers/placeholder-1.svg',
+    bio: 'Sanchit Balchandani is an Engineering Manager at EPAM India, where he leads the Python Practice in India. He has over 16 years of experience in software engineering, with a focus on Python backend systems, distributed architectures, developer platforms, and applied Generative AI.He has been actively involved in the Python and open-source community, contributing as both a volunteer and community lead across various initiatives and conferences. His interests include agent-based systems, retrieval-augmented generation, developer productivity with GenAI, and applying AI responsibly in real-world engineering systems.',
+    imgUrl: '/images/speakers/sanchit-balchandani.jpg',
     imgAlt: 'Picture of Sanchit Balchandani.',
     socials: [
+      {
+        name: 'X',
+        url: 'http://x.com/inovizz',
+        ariaLabel: "Hyperlink to Sanchit Balchandani's X page.",
+      },
       {
         name: 'LinkedIn',
         url: 'https://www.linkedin.com/in/inovizz/',
         ariaLabel: "Hyperlink to Sanchit Balchandani's LinkedIn page.",
+      },
+      {
+        name: 'GitHub',
+        url: 'http://github.com/inovizz',
+        ariaLabel: "Hyperlink to Sanchit Balchandani's GitHub page.",
+      },
+      {
+        name: 'Globe',
+        url: 'https://inovizz.com',
+        ariaLabel: "Hyperlink to Sanchit Balchandani's website.",
       },
     ],
   },

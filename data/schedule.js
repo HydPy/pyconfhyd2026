@@ -64,11 +64,14 @@ export const SCHEDULE = {
           ],
           location: 'Track 3',
           abstract:
-            'Although Python is widely used, real parallelism still hurts. HPC and AI systems are limited by GIL, intensive multiprocessing, and blind execution. This workshop demonstrates how genuine parallelism, isolation, and observability in PEP 684, 554, and 669 ultimately resolve this issue.',
+            'Building an LLM agent is simple; making it production-ready is not. This hands-on workshop bridges the gap between a fragile prototype and a robust system by teaching you how to diagnose failures, measure performance, and secure agentic workflows. Using Python and real-world scenarios, you will move beyond basic prompting to implement professional engineering discipline through observability, automated evaluations, and active security guardrails.',
           highlights: [
-            'Breaking the GIL: Leveraging sub-interpreters for multi-core scaling without the overhead of multiprocessing. Agent-Style Execution: Building isolated, safe execution environments for AI-focused tasks.',
-            'Modern Observability: Using PEP 669 hooks to detect infinite loops and unsafe behavior with minimal performance impact.',
-            'Performance Engineering: Measuring trade-offs and design patterns for modern HPC systems.',
+            'Full-Lifecycle Engineering: Transition from "vibe-based" development to data-driven engineering using a deliberately fragile mini-project.',
+            'Deep Observability: Go beyond basic logging to track distributed traces, token usage, and intermediate reasoning steps using OpenTelemetry and tools like Langfuse or Arize.',
+            'Performance & Cost Optimization: Learn to identify cacheable prompts and monitor latency to reduce operational overhead.',
+            'Modern Evaluation Frameworks: Use DeepEval to run metric-based tests and treat prompts as versioned, testable assets rather than static strings.',
+            'Advanced Security Guardrails: Implement multi-layered defense strategies—including NeMo Guardrails and NLP-based checks—to prevent prompt injection and data leakage.',
+            'Hands-on Implementation: A practical session balancing "light theory" with heavy coding to solve real-world issues like invalid tool calls and silent errors.',
           ],
         },
       ],
