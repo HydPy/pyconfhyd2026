@@ -658,6 +658,60 @@ export const SPEAKERS = [
       },
     ],
   },
+  {
+    name: 'Sanchit Balchandani',
+    slug: 'sanchit-balchandani',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'Engineering Manager at EPAM',
+    bio: 'Sanchit Balchandani is an Engineering Manager at EPAM India, where he leads the Python Practice in India. He has over 16 years of experience in software engineering, with a focus on Python backend systems, distributed architectures, developer platforms, and applied Generative AI.He has been actively involved in the Python and open-source community, contributing as both a volunteer and community lead across various initiatives and conferences. His interests include agent-based systems, retrieval-augmented generation, developer productivity with GenAI, and applying AI responsibly in real-world engineering systems.',
+    imgUrl: '/images/speakers/sanchit-balchandani.jpg',
+    imgAlt: 'Picture of Sanchit Balchandani.',
+    socials: [
+      {
+        name: 'X',
+        url: 'http://x.com/inovizz',
+        ariaLabel: "Hyperlink to Sanchit Balchandani's X page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/inovizz/',
+        ariaLabel: "Hyperlink to Sanchit Balchandani's LinkedIn page.",
+      },
+      {
+        name: 'GitHub',
+        url: 'http://github.com/inovizz',
+        ariaLabel: "Hyperlink to Sanchit Balchandani's GitHub page.",
+      },
+      {
+        name: 'Globe',
+        url: 'https://inovizz.com',
+        ariaLabel: "Hyperlink to Sanchit Balchandani's website.",
+      },
+    ],
+  },
+  {
+    name: 'Dineshsuriya D',
+    slug: 'dineshsuriya-d',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'Software Engineer at EPAM Systems',
+    bio: 'Dineshsuriya D is a Software Engineer at EPAM Systems working on enterprise Generative AI systems.He builds agentic workflows,RAG pipelines, and scalable AI backends, and contributes to open source projects like Microsoft Agent Framework and GraphRAG.',
+    imgUrl: '/images/speakers/dineshsuriya-d.png',
+    imgAlt: 'Picture of Dineshsuriya D.',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/dinesh106/',
+        ariaLabel: "Hyperlink to Dineshsuriya D's LinkedIn page.",
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/droideronline',
+        ariaLabel: "Hyperlink to Dineshsuriya D's GitHub page.",
+      },
+    ],
+  },
 
   {
     name: 'PyConf Hyderabad Team',

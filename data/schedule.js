@@ -56,8 +56,23 @@ export const SCHEDULE = {
           time: '10:00 - 12:50 PM',
           type: 'Workshop',
           discordChannelLink: '',
-          title: 'TBA',
+          title:
+            'Engineering Trustworthy LLM Agents: Observability, Evals, and Security Guardrails',
+          speakers: [
+            getSpeaker('sanchit-balchandani'),
+            getSpeaker('dineshsuriya-d'),
+          ],
           location: 'Track 3',
+          abstract:
+            'Building an LLM agent is simple; making it production-ready is not. This hands-on workshop bridges the gap between a fragile prototype and a robust system by teaching you how to diagnose failures, measure performance, and secure agentic workflows. Using Python and real-world scenarios, you will move beyond basic prompting to implement professional engineering discipline through observability, automated evaluations, and active security guardrails.',
+          highlights: [
+            'Full-Lifecycle Engineering: Transition from "vibe-based" development to data-driven engineering using a deliberately fragile mini-project.',
+            'Deep Observability: Go beyond basic logging to track distributed traces, token usage, and intermediate reasoning steps using OpenTelemetry and tools like Langfuse or Arize.',
+            'Performance & Cost Optimization: Learn to identify cacheable prompts and monitor latency to reduce operational overhead.',
+            'Modern Evaluation Frameworks: Use DeepEval to run metric-based tests and treat prompts as versioned, testable assets rather than static strings.',
+            'Advanced Security Guardrails: Implement multi-layered defense strategies—including NeMo Guardrails and NLP-based checks—to prevent prompt injection and data leakage.',
+            'Hands-on Implementation: A practical session balancing "light theory" with heavy coding to solve real-world issues like invalid tool calls and silent errors.',
+          ],
         },
       ],
       [
