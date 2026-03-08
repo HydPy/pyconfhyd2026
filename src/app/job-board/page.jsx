@@ -35,6 +35,7 @@ const fetchJobsData = async () => {
     const jobsData = await fetchSheetData(sheetId, sheetIndex);
     const approvedJobs = jobsData
       .filter((job) => job.Approved === 'TRUE')
+      .sort((a, b) => new Date(b.Timestamp) - new Date(a.Timestamp))
       .map((row) => ({
         email: row['Email'],
         companyName: row['Company Name'],
