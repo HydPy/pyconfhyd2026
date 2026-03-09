@@ -296,11 +296,12 @@ export const SCHEDULE = {
           speakers: [getSpeaker('manoj-ampolu')],
         },
         {
-          title: 'TBA',
+          title:
+            'Python Concurrency Chaos: Async, Threads, GIL-free, and Beyond',
           type: 'Talk',
           time: '02:10 - 02:40 PM',
           location: 'Track 3',
-          // speakers: [getSpeaker('muhammed-mizaj')],
+          speakers: [getSpeaker('vivek-keshore')],
         },
       ],
       [
