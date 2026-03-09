@@ -191,6 +191,13 @@ export const SPONSORS = {
         },
       ],
     },
+    {
+      name: 'Logitech',
+      imgUrl: '/images/sponsors/logitech.png',
+      imgAlt: 'Logitech logo',
+      hyperLink: '',
+      socials: [],
+    },
   ],
   Silver: [
     {
