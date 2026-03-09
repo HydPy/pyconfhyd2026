@@ -690,6 +690,51 @@ export const SPEAKERS = [
       },
     ],
   },
+  {
+    name: 'Usha Rengaraju',
+    slug: 'usha-rengaraju',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title:
+      'AI Developer , Kaggle GrandMaster , open source contributor and Google Developer Expert in AI',
+    bio: 'Usha is an AI Developer , Kaggle GrandMaster , open source contributor and Google Developer Expert in AI . She organized NeuroAI which is India’s first-ever research symposium in the interface of Neuroscience and Data Science. She also organized the Neurodiversity India Summit which is India’s first ever conference in Neurodiversity. She is one of the winners of “ML in Action” competition organized by the ML Developer programs team at Google and her team won first place in WiDS 2022 Datathon organized by Stanford University . She is also the winner of Kaggle ML Research spotlight for 2022 , winner of TensorFlow Community Spotlight 2023 and recipient of Intel Developer spotlight (twice) and featured in Intel Developer’s success story .',
+    imgUrl: '/images/speakers/usha-rengaraju.jpg',
+    imgAlt: 'Picture of Usha Rengaraju.',
+    socials: [
+      {
+        name: 'X',
+        url: 'https://x.com/URengaraju',
+        ariaLabel: "Hyperlink to Usha Rengaraju's X page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/usha-rengaraju-b570b7a2/',
+        ariaLabel: "Hyperlink to Usha Rengaraju's LinkedIn page.",
+      },
+    ],
+  },
+  {
+    name: 'Lakshman Pethani',
+    slug: 'lakshman-pethani',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: '',
+    bio: '',
+    imgUrl: '/images/speakers/placeholder-1.svg',
+    imgAlt: 'Picture of Lakshman Pethani.',
+    socials: [
+      // {
+      //   name: 'X',
+      //   url: 'https://x.com/URengaraju',
+      //   ariaLabel: "Hyperlink to Usha Rengaraju's X page.",
+      // },
+      // {
+      //   name: 'LinkedIn',
+      //   url: 'https://www.linkedin.com/in/usha-rengaraju-b570b7a2/',
+      //   ariaLabel: "Hyperlink to Usha Rengaraju's LinkedIn page.",
+      // },
+    ],
+  },
 
   {
     name: 'PyConf Hyderabad Team',

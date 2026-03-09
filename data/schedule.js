@@ -283,10 +283,15 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Panel Discussion - TBA',
+          title: 'AI in SDLC - Panel Discussion',
           type: 'Panel',
           time: '02:10 - 02:40 PM',
           location: 'Track 1 | Main Stage',
+          speakers: [
+            getSpeaker('usha-rengaraju'),
+            getSpeaker('anand-s'),
+            getSpeaker('lakshman-pethani'),
+          ],
         },
         {
           title: 'Designing production grade data pipelines With Dagster',
