@@ -175,6 +175,29 @@ export const SPONSORS = {
       hyperLink: '/blogs',
       socials: [],
     },
+    {
+      name: 'FreJun Teler',
+      imgUrl: '/images/sponsors/frejun-teler.jpeg',
+      imgAlt: 'FreJun Teler logo',
+      hyperLink: '/blogs/frejun-teler-gold-sponsor/',
+      socials: [
+        {
+          name: 'X',
+          url: 'https://x.com/FreJunTeler',
+          ariaLabel: 'Hyperlink to FreJun Teler X page.',
+        },
+        {
+          name: 'LinkedIn',
+          url: 'https://in.linkedin.com/company/frejun',
+          ariaLabel: 'Hyperlink to FreJun Teler LinkedIn page.',
+        },
+        {
+          name: 'Globe',
+          url: 'https://frejun.ai/',
+          ariaLabel: 'Hyperlink to FreJun Teler website.',
+        },
+      ],
+    },
   ],
   Silver: [
     {
