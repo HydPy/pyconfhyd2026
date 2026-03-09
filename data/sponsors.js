@@ -169,13 +169,6 @@ export const SPONSORS = {
       ],
     },
     {
-      name: 'Logitech',
-      imgUrl: '/images/sponsors/logitech.png',
-      imgAlt: 'Logitech logo',
-      hyperLink: '/blogs',
-      socials: [],
-    },
-    {
       name: 'FreJun Teler',
       imgUrl: '/images/sponsors/frejun-teler.jpeg',
       imgAlt: 'FreJun Teler logo',
@@ -197,6 +190,13 @@ export const SPONSORS = {
           ariaLabel: 'Hyperlink to FreJun Teler website.',
         },
       ],
+    },
+    {
+      name: 'Logitech',
+      imgUrl: '/images/sponsors/logitech.png',
+      imgAlt: 'Logitech logo',
+      hyperLink: '',
+      socials: [],
     },
   ],
   Silver: [
