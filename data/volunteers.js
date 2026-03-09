@@ -2,7 +2,7 @@ export const VOLUNTEERS = [
   {
     name: 'Koti Vellanki',
     role: 'Platform & Ticketing WG Lead',
-    bio: 'Professional DevOps Engineer, Volunteer, Conference organizer. ',
+    bio: 'A DevOps Engineer, Volunteer, Organizer for various  tech conferences across the globe.',
     imgUrl: '/images/volunteers/koti-vellanki.jpg',
     imgAlt: "Koti Vellanki's picture",
     socials: [
@@ -248,7 +248,7 @@ export const VOLUNTEERS = [
   {
     name: 'Saketh Reddy Bejadi',
     role: 'Technology WG Volunteer',
-    bio: "I'm Saketh Reddy, an aspiring Full Stack Developer specializing in the MERN stack. I have professional internship experience in Frontend Development at Prysm Finance, Beyond core development, I actively explore AI integrations and modern web technologies to build intelligent, efficient, and impactful digital solutions.",
+    bio: 'Frontend Developer Intern at Prysm Finance and a Computer Science student at CMR Institute of Technology, Hyderabad. Passionate about building scalable web applications using MERN stack. Interested in creating impactful products and solving real-world problems through technology.',
     imgUrl: '/images/volunteers/saketh-reddy-bejadi.jpeg',
     imgAlt: "Saketh Reddy Bejadi's picture",
     socials: [
@@ -304,6 +304,54 @@ export const VOLUNTEERS = [
         name: 'Instagram',
         url: 'https://www.instagram.com/ashoktankala/',
         ariaLabel: "Hyperlink to Ashok Tankala's Instagram page.",
+      },
+    ],
+  },
+  {
+    name: 'Praneet Mokkapati',
+    role: 'CFP WG Volunteer',
+    bio: 'Praneet Mokkapati is a technologist, mentor, and storyteller who has spent over two decades at the intersection of innovation, community, and human potential. Trained in the language of AI, cloud systems, and emerging technologies, he has helped founders, creators, and businesses turn bold ideas into meaningful products that touch the real world.',
+    imgUrl: '/images/volunteers/praneet-mokkapati.jpg',
+    imgAlt: "Praneet Mokkapati's picture",
+    socials: [
+      {
+        name: 'X',
+        url: 'https://x.com/growingsmart',
+        ariaLabel: "Hyperlink to Praneet Mokkapati's X page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/praneet-mokkapati/',
+        ariaLabel: "Hyperlink to Praneet Mokkapati's LinkedIn page.",
+      },
+      {
+        name: 'Instagram',
+        url: 'https://www.instagram.com/praneetmokkapati/',
+        ariaLabel: "Hyperlink to Praneet Mokkapati's Instagram page.",
+      },
+    ],
+  },
+  {
+    name: 'Rajat Rajdeep',
+    role: 'Technology WG Lead',
+    bio: '',
+    imgUrl: '/images/volunteers/rajat-rajdeep.jpg',
+    imgAlt: "Rajat Rajdeep's picture",
+    socials: [
+      {
+        name: 'X',
+        url: 'https://twitter.com/RajatRajdeep',
+        ariaLabel: "Hyperlink to Rajat Rajdeep's X page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/rajatrajdeep',
+        ariaLabel: "Hyperlink to Rajat Rajdeep's LinkedIn page.",
+      },
+      {
+        name: 'Link',
+        url: 'https://rajatrajdeep.in/',
+        ariaLabel: "Hyperlink to Rajat Rajdeep's Instagram page.",
       },
     ],
   },
