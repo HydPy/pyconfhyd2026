@@ -690,6 +690,23 @@ export const SPEAKERS = [
       },
     ],
   },
+  {
+    name: 'Vivek Keshore',
+    slug: 'vivek-keshore',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'Software Architect, EPAM Systems',
+    bio: 'Vivek is working with EPAM as Software Architect & a Python engineer with 13+ years of experience. Outside of work, he enjoys exploring how technology and creativity intersect and contributing to the growth of the Python community.',
+    imgUrl: '/images/volunteers/vivek-keshore.jpeg',
+    imgAlt: 'Picture of Vivek Keshore.',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/vivek-keshore/',
+        ariaLabel: "Hyperlink to Vivek Keshore's LinkedIn page.",
+      },
+    ],
+  },
 
   {
     name: 'PyConf Hyderabad Team',
