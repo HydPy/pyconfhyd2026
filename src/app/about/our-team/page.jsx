@@ -7,6 +7,15 @@ const sortedVolunteers = [...VOLUNTEERS].sort((a, b) =>
   a.name.localeCompare(b.name)
 );
 
+export const metadata = {
+  title: 'Our Team',
+  description: 'Learn about the team behind PyConf Hyderabad',
+  openGraph: {
+    title: 'Our Team',
+    description: 'Learn about the team behind PyConf Hyderabad',
+  },
+};
+
 export default function Page() {
   return (
     <section className="flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto">
