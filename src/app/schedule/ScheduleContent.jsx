@@ -101,7 +101,7 @@ const KeynoteBadge = ({ className = '' }) => {
 const SpeakerCard = ({ speaker }) => {
   return (
     <div className="flex flex-row items-center my-1">
-      <div className="w-12 h-12 md:w-16 md:h-16">
+      <div className="w-12 h-12 md:w-16 md:h-16 shrink-0">
         <div className="relative shadow-md h-full w-full rounded-full overflow-hidden border-1">
           {speaker.imgUrl ? (
             <Image
@@ -148,6 +148,37 @@ const TbaPanel = () => (
       Sessions for this day will be published soon.
     </Span>
   </div>
+);
+
+const OpenSpaceItem = ({ time, location, locationHref, company, logo }) => (
+  <article
+    tabIndex="0"
+    className="flex flex-col justify-between w-full focus:outline-none focus:ring-2 focus:ring-primary-600 mb-6 shadow-md rounded-sm transition-transform transform hover:scale-[1.02] bg-gray-50 dark:bg-gray-900 border-primary-800 border-l-4"
+  >
+    <div className="md:px-6 md:pt-6 md:pb-4 p-4 flex flex-col flex-1 justify-center">
+      <header className="flex flex-wrap justify-between items-center mb-3 gap-2">
+        <TimeBadge time={time} />
+        <LocationBadge location={location} href={locationHref} />
+      </header>
+      <div className="flex flex-row items-center justify-center gap-4 mt-2 md:flex-1">
+        {logo && (
+          <div className="relative w-16 h-16 shrink-0">
+            <Image
+              src={logo}
+              alt={`${company} logo`}
+              fill
+              className="object-contain"
+            />
+          </div>
+        )}
+        {company && (
+          <Span level={2} className="text-gray-800 dark:text-gray-200 font-semibold">
+            {company}
+          </Span>
+        )}
+      </div>
+    </div>
+  </article>
 );
 
 const ScheduleItem = ({
@@ -330,19 +361,30 @@ export default function ScheduleContent() {
               key={index}
               className={`flex flex-col md:flex-row gap-4 w-full ${session.length == 1 ? 'md:w-3/4' : ''}`}
             >
-              {session.map((parallelSession, subIndex) => (
-                <ScheduleItem
-                  key={subIndex}
-                  time={parallelSession.time}
-                  title={parallelSession.title}
-                  discordChannelLink={parallelSession.discordChannelLink}
-                  location={parallelSession.location}
-                  locationHref={buildTrackHref(parallelSession.location)}
-                  speakers={parallelSession.speakers}
-                  isKeynote={parallelSession.keynote}
-                  isBreak={parallelSession.break}
-                />
-              ))}
+              {session.map((parallelSession, subIndex) =>
+                parallelSession.type === 'Open Space' ? (
+                  <OpenSpaceItem
+                    key={subIndex}
+                    time={parallelSession.time}
+                    location={parallelSession.location}
+                    locationHref={buildTrackHref(parallelSession.location)}
+                    company={parallelSession.company}
+                    logo={parallelSession.logo}
+                  />
+                ) : (
+                  <ScheduleItem
+                    key={subIndex}
+                    time={parallelSession.time}
+                    title={parallelSession.title}
+                    discordChannelLink={parallelSession.discordChannelLink}
+                    location={parallelSession.location}
+                    locationHref={buildTrackHref(parallelSession.location)}
+                    speakers={parallelSession.speakers}
+                    isKeynote={parallelSession.keynote}
+                    isBreak={parallelSession.break}
+                  />
+                )
+              )}
             </div>
           ))
         )}

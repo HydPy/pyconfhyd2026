@@ -250,6 +250,15 @@ export const SCHEDULE = {
             getSpeaker('benjamin-alladi'),
           ],
         },
+        {
+          title: '',
+          company: 'M37 Labs',
+          logo: '/images/sponsors/m37-labs.png',
+          type: 'Open Space',
+          time: '11:45 - 12:15 PM',
+          location: 'Track 4 | Open Space',
+          speakers: [],
+        },
       ],
       [
         {
@@ -327,6 +336,15 @@ export const SCHEDULE = {
           time: '02:45 - 03:15 PM',
           location: 'Track 3',
           speakers: [getSpeaker('akhil-teja')],
+        },
+        {
+          title: '',
+          company: 'DP World',
+          logo: '/images/sponsors/dp-world.png',
+          type: 'Open Space',
+          time: '02:45 - 03:15 PM',
+          location: 'Track 4 | Open Space',
+          speakers: [],
         },
       ],
       [
