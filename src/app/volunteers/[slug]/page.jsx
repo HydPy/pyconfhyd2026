@@ -66,7 +66,7 @@ export default async function VolunteerPage({ params }) {
               {volunteer.title}
             </Span>
           )}
-           {volunteer.role && (
+          {volunteer.role && (
             <Span
               level={2}
               className="text-center text-gray-950 dark:text-gray-50 font-semibold"
@@ -89,7 +89,9 @@ export default async function VolunteerPage({ params }) {
             </>
           )}
           {volunteer.socials && volunteer.socials.length > 0 && (
-            <div className={`flex my-4 gap-4 ${!volunteer.bio && "justify-center"}`}>
+            <div
+              className={`flex my-4 gap-4 ${!volunteer.bio && 'justify-center'}`}
+            >
               {volunteer.socials.map((social, index) => (
                 <Link
                   key={index}
