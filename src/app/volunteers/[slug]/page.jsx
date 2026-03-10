@@ -89,7 +89,7 @@ export default async function VolunteerPage({ params }) {
             </>
           )}
           {volunteer.socials && volunteer.socials.length > 0 && (
-            <div className="flex my-4 gap-4">
+            <div className={`flex my-4 gap-4 ${!volunteer.bio && "justify-center"}`}>
               {volunteer.socials.map((social, index) => (
                 <Link
                   key={index}
