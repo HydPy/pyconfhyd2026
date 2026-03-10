@@ -167,12 +167,15 @@ const OpenSpaceItem = ({ time, location, locationHref, company, logo }) => (
               src={logo}
               alt={`${company} logo`}
               fill
-              className="object-contain"
+              className="dark:bg-gray-100 object-contain"
             />
           </div>
         )}
         {company && (
-          <Span level={2} className="text-gray-800 dark:text-gray-200 font-semibold">
+          <Span
+            level={2}
+            className="text-gray-800 dark:text-gray-200 font-semibold"
+          >
             {company}
           </Span>
         )}
