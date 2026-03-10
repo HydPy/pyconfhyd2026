@@ -253,10 +253,12 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'TBA',
+          title:
+            'Agents, APIs, and Outcomes: Building Enterprise AI That Works',
           type: 'Talk',
           time: '12:20 - 12:50 PM',
           location: 'Track 1 | Main Stage',
+          speakers: [getSpeaker('som-dutta')],
         },
         {
           title: 'Apache Ray: Scaling and Distributing ML Applications',
