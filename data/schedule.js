@@ -55,7 +55,8 @@ export const SCHEDULE = {
         {
           time: '10:00 - 12:50 PM',
           type: 'Workshop',
-          discordChannelLink: '',
+          discordChannelLink:
+            'https://discord.com/channels/1301212203336073226/1480788721182707822',
           title:
             'Engineering Trustworthy LLM Agents: Observability, Evals, and Security Guardrails',
           speakers: [
