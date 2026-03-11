@@ -771,7 +771,7 @@ export const SPEAKERS = [
     activeSpeakerPage: true,
     title: 'Director of AIML at Tiger Analytics',
     bio: '',
-    imgUrl: '/images/speakers/chakravarthy-ch.jpg',
+    imgUrl: '/images/speakers/chakravarthy-ch.jpeg',
     imgAlt: 'Picture of Chakravarthy Ch.',
     socials: [
       {
