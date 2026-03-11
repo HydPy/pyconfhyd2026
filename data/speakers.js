@@ -691,6 +691,40 @@ export const SPEAKERS = [
     ],
   },
   {
+    name: 'Vivek Keshore',
+    slug: 'vivek-keshore',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'Software Architect, EPAM Systems',
+    bio: 'Vivek is working with EPAM as Software Architect & a Python engineer with 13+ years of experience. Outside of work, he enjoys exploring how technology and creativity intersect and contributing to the growth of the Python community.',
+    imgUrl: '/images/volunteers/vivek-keshore.jpeg',
+    imgAlt: 'Picture of Vivek Keshore.',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/vivek-keshore/',
+        ariaLabel: "Hyperlink to Vivek Keshore's LinkedIn page.",
+      },
+    ],
+  },
+  {
+    name: 'Som Dutta',
+    slug: 'som-dutta',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'Group Vice President of AI at DP World',
+    bio: 'Som Dutta is Group Vice President of AI at DP World, where he and his team are leveraging Agentic LLM (Large Language Model) workflows to streamline operations across the company’s core business units. Key focus areas are: Enterprise Intelligence, with a focus on developing AI agents for enterprise data, Search and Retrieval, Predictive AI for Logistics, as well as Ports & Terminals where his team is building AI-powered yard optimization, dynamic scheduling and KPI tracking models to enhance port operations and terminal efficiency. Som brings over 19 years of expertise in using the power of AI and Data Sciences to transform businesses across various sectors. Prior to joining DP World, he was the Head of AI and Data Sciences for the Ola Group, across all their verticals including Electric Vehicles, Maps, Mobility and Ola Financial Services.  In his long career, Som has helped drive AI transformations that resulted in substantial and sustained growth, and has fostered customer-centric cultures.  He holds a Ph.D. degree in Theoretical Physics from The University of Rochester, New York.',
+    imgUrl: '/images/speakers/som-dutta.jpeg',
+    imgAlt: 'Picture of Som Dutta.',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/som-dutta-391811/',
+        ariaLabel: "Hyperlink to Som Dutta's LinkedIn page.",
+      },
+    ],
+  },
+  {
     name: 'Usha Rengaraju',
     slug: 'usha-rengaraju',
     type: 'Session',

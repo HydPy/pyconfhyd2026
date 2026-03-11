@@ -7,8 +7,17 @@ import DPWorldPlatinumSponsorMdx from '@/blogs/dp-world-platinum-sponsor.mdx';
 import EpamGoldSponsorMdx from '@/blogs/epam-gold-sponsor.mdx';
 import ZentropyTechnologiesSilverSponsorMdx from '@/blogs/zentropy-technologies-silver-sponsor.mdx';
 import TigerAnalyticsGoldSponsorMdx from '@/blogs/tiger-analytics-gold-sponsor.mdx';
+import FreJunTelerGoldSponsorMdx from '@/blogs/frejun-teler-gold-sponsor.mdx';
 
 export const BLOGS = [
+  {
+    slug: 'frejun-teler-gold-sponsor',
+    title: 'Announcing FreJun Teler as our Gold Sponsor',
+    markdownComponent: <FreJunTelerGoldSponsorMdx />,
+    author: 'PyConf Hyderabad Team',
+    publishedAt: 'March 9, 2026',
+    socials: getSponsor('FreJun Teler').socials,
+  },
   {
     slug: 'tiger-analytics-gold-sponsor',
     title: 'Announcing Tiger Analytics as our Gold Sponsor',

@@ -14,7 +14,7 @@ export const SCHEDULE = {
       [
         {
           title: 'Registrations',
-          time: '09:00 - 10:00 AM',
+          time: '08:45 - 10:00 AM',
           location: 'Registration Desk',
         },
       ],
@@ -25,7 +25,7 @@ export const SCHEDULE = {
           discordChannelLink:
             'https://discord.com/channels/1301212203336073226/1475140722394136768',
           title: 'Optimizing Pytorch Models',
-          location: 'Track 1',
+          location: 'Track 1 | Tesla + Turing',
           speakers: [getSpeaker('jaidev-deshpande')],
           abstract:
             'Most AI models never leave a Jupyter notebook. This workshop shows how to turn real-world PyTorch codebases into deployable, efficient binaries—covering practical techniques for optimizing and exporting complex models to production at low cost.',
@@ -43,7 +43,7 @@ export const SCHEDULE = {
             'https://discord.com/channels/1301212203336073226/1475140876203331645',
           title: 'PEP 684 + 554 + 669 True Parallelism in Python',
           speakers: [getSpeaker('ramachandra-vikas-chamarthi')],
-          location: 'Track 2',
+          location: 'Track 2 | Aryabhata + Hoppers',
           abstract:
             'Although Python is widely used, real parallelism still hurts. HPC and AI systems are limited by GIL, intensive multiprocessing, and blind execution. This workshop demonstrates how genuine parallelism, isolation, and observability in PEP 684, 554, and 669 ultimately resolve this issue.',
           highlights: [
@@ -55,14 +55,15 @@ export const SCHEDULE = {
         {
           time: '10:00 - 12:50 PM',
           type: 'Workshop',
-          discordChannelLink: '',
+          discordChannelLink:
+            'https://discord.com/channels/1301212203336073226/1480788721182707822',
           title:
             'Engineering Trustworthy LLM Agents: Observability, Evals, and Security Guardrails',
           speakers: [
             getSpeaker('sanchit-balchandani'),
             getSpeaker('dineshsuriya-d'),
           ],
-          location: 'Track 3',
+          location: 'Track 3 | Varahimira + Bhaskar',
           abstract:
             'Building an LLM agent is simple; making it production-ready is not. This hands-on workshop bridges the gap between a fragile prototype and a robust system by teaching you how to diagnose failures, measure performance, and secure agentic workflows. Using Python and real-world scenarios, you will move beyond basic prompting to implement professional engineering discipline through observability, automated evaluations, and active security guardrails.',
           highlights: [
@@ -89,7 +90,7 @@ export const SCHEDULE = {
           discordChannelLink:
             'https://discord.com/channels/1301212203336073226/1475141021699539205',
           title: 'Designing Reliable Agentic AI for Real-World Systems',
-          location: 'Track 1',
+          location: 'Track 1 | Tesla + Turing',
           speakers: [getSpeaker('sonu-kumar')],
           abstract:
             'While many AI projects rely on "vibe coding" and prompt-heavy hacks, this workshop demonstrates why disciplined system design is the only way to move agentic AI from a prototype to a reliable production environment.',
@@ -108,7 +109,7 @@ export const SCHEDULE = {
           title:
             'Mastering the Multi-Stack: Orchestrated Debugging with Python and Beyond',
           speakers: [getSpeaker('satyam-soni')],
-          location: 'Track 2',
+          location: 'Track 2 | Aryabhata + Hoppers',
           abstract:
             'In the era of microservices and full-stack applications, debugging a Python backend in isolation is rarely enough. Developers often find themselves juggling multiple terminal tabs to start a FastAPI server, a Vite frontend, and a debugger, leading to "context-switch fatigue." This workshop teaches you how to turn VS Code into a powerful orchestration engine.',
           highlights: [
@@ -126,7 +127,7 @@ export const SCHEDULE = {
           title:
             'Zero to Lakehouse Hero: Your Entire Data Lakehouse in Docker — Powered by Python & Apache',
           speakers: [getSpeaker('sourav-roy')],
-          location: 'Track 3',
+          location: 'Track 3 | Varahimira + Bhaskar',
           abstract:
             'Break free from vendor lock-in by building a fully functional, real-time data lakehouse using nothing but Python, Docker, and the Apache open-source ecosystem. This intensive, hands-on workshop guides you through spinning up a production-grade stack—including Kafka, Flink, Iceberg, and Paimon—to orchestrate seamless data flow from raw streams to interactive BI dashboards in Apache Superset.',
           highlights: [
@@ -147,7 +148,7 @@ export const SCHEDULE = {
       [
         {
           title: 'Registrations',
-          time: '08:00 - 09:00 AM',
+          time: '07:45 - 09:00 AM',
           location: 'Registration Desk',
         },
       ],
@@ -249,13 +250,24 @@ export const SCHEDULE = {
             getSpeaker('benjamin-alladi'),
           ],
         },
+        {
+          title: '',
+          company: 'M37 Labs',
+          logo: '/images/sponsors/m37-labs.png',
+          type: 'Open Space',
+          time: '11:45 - 12:15 PM',
+          location: 'Track 4 | Open Space',
+          speakers: [],
+        },
       ],
       [
         {
-          title: 'TBA',
+          title:
+            'Agents, APIs, and Outcomes: Building Enterprise AI That Works',
           type: 'Talk',
           time: '12:20 - 12:50 PM',
           location: 'Track 1 | Main Stage',
+          speakers: [getSpeaker('som-dutta')],
         },
         {
           title: 'Apache Ray: Scaling and Distributing ML Applications',
@@ -301,11 +313,12 @@ export const SCHEDULE = {
           speakers: [getSpeaker('manoj-ampolu')],
         },
         {
-          title: 'TBA',
+          title:
+            'Python Concurrency Chaos: Async, Threads, GIL-free, and Beyond',
           type: 'Talk',
           time: '02:10 - 02:40 PM',
           location: 'Track 3',
-          // speakers: [getSpeaker('muhammed-mizaj')],
+          speakers: [getSpeaker('vivek-keshore')],
         },
       ],
       [
@@ -328,6 +341,15 @@ export const SCHEDULE = {
           time: '02:45 - 03:15 PM',
           location: 'Track 3',
           speakers: [getSpeaker('akhil-teja')],
+        },
+        {
+          title: '',
+          company: 'DP World',
+          logo: '/images/sponsors/dp-world.png',
+          type: 'Open Space',
+          time: '02:45 - 03:15 PM',
+          location: 'Track 4 | Open Space',
+          speakers: [],
         },
       ],
       [
