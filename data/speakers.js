@@ -753,7 +753,7 @@ export const SPEAKERS = [
     type: 'Session',
     activeSpeakerPage: true,
     title: 'Director, Technology Solutions at EPAM Systems',
-    bio: ' Lakshman Peethani is a Director, Technology Solutions at EPAM Systems, based in Hyderabad, India. He brings extensive experience in enterprise technology solutions with a strong focus on AI platforms, application modernization, enterprise architecture, and large-scale program delivery. Within EPAM’s Global Delivery organization, he leads strategic technology initiatives and works closely with clients to drive AI-led transformation and platform modernization. His work spans AI advisory and consulting, enabling AI-driven SDLC productivity, modernizing enterprise systems, and designing scalable platform architectures integrated with complex enterprise ecosystems. Lakshman is recognized for his expertise in AI platforms and development frameworks, AI migration and modernization through re-architecture and transformation and technical leadership.',
+    bio: 'Lakshman Peethani is a Director, Technology Solutions at EPAM Systems, based in Hyderabad, India. He brings extensive experience in enterprise technology solutions with a strong focus on AI platforms, application modernization, enterprise architecture, and large-scale program delivery. Within EPAM’s Global Delivery organization, he leads strategic technology initiatives and works closely with clients to drive AI-led transformation and platform modernization. His work spans AI advisory and consulting, enabling AI-driven SDLC productivity, modernizing enterprise systems, and designing scalable platform architectures integrated with complex enterprise ecosystems. Lakshman is recognized for his expertise in AI platforms and development frameworks, AI migration and modernization through re-architecture and transformation and technical leadership.',
     imgUrl: '/images/speakers/lakshman-pethani.jpg',
     imgAlt: 'Picture of Lakshman Pethani.',
     socials: [
@@ -761,6 +761,23 @@ export const SPEAKERS = [
         name: 'LinkedIn',
         url: 'https://www.linkedin.com/in/peethani/',
         ariaLabel: "Hyperlink to Lakshman Pethani's LinkedIn page.",
+      },
+    ],
+  },
+  {
+    name: 'Chakravarthy Ch',
+    slug: 'chakravarthy-ch',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'Director of AIML at Tiger Analytics',
+    bio: '',
+    imgUrl: '/images/speakers/chakravarthy-ch.jpg',
+    imgAlt: 'Picture of Chakravarthy Ch.',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/chakravarthy-ch/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BEo3r9eWjQ5OwNkNz%2FtHGmA%3D%3D',
+        ariaLabel: "Hyperlink to Chakravarthy Ch's LinkedIn page.",
       },
     ],
   },

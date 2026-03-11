@@ -211,10 +211,12 @@ export const SCHEDULE = {
           speakers: [getSpeaker('ria-bhatia')],
         },
         {
-          title: 'TBA',
+          title:
+            'Optimization at Scale: Engineering Production-Ready Decision Systems in Python',
           type: 'Talk',
           time: '10:55 - 11:25 AM',
           location: 'Track 3',
+          speakers: [getSpeaker('chakravarthy-ch')],
         },
       ],
       [
