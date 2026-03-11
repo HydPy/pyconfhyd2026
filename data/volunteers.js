@@ -526,4 +526,19 @@ export const VOLUNTEERS = [
       },
     ],
   },
+  {
+    name: 'Bongi Rakesh',
+    slug: 'bongi-rakesh',
+    role: 'Event Coordinator Volunteer',
+    bio: '',
+    imgUrl: '/images/volunteers/bongi-rakesh.jpeg',
+    imgAlt: "Bongi Rakesh's picture",
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/rakesh-bongi/',
+        ariaLabel: "Hyperlink to Bongi Rakesh's LinkedIn page.",
+      },
+    ],
+  },
 ];
