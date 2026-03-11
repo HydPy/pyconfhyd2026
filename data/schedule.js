@@ -10,6 +10,7 @@ export const SCHEDULE = {
     title: 'Workshop',
     date: CONFERENCE.workshopDate,
     day: CONFERENCE.workshopDay,
+    venueName:"EPAM Systems",
     sessions: [
       [
         {
@@ -144,6 +145,7 @@ export const SCHEDULE = {
     title: 'Conference',
     date: CONFERENCE.conferenceDate,
     day: CONFERENCE.conferenceDay,
+    venueName:"Engineering Staff College of India",
     sessions: [
       [
         {
