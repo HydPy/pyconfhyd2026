@@ -724,6 +724,63 @@ export const SPEAKERS = [
       },
     ],
   },
+  {
+    name: 'Usha Rengaraju',
+    slug: 'usha-rengaraju',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title:
+      'AI Developer , Kaggle GrandMaster , open source contributor and Google Developer Expert in AI',
+    bio: 'Usha is an AI Developer , Kaggle GrandMaster , open source contributor and Google Developer Expert in AI . She organized NeuroAI which is India’s first-ever research symposium in the interface of Neuroscience and Data Science. She also organized the Neurodiversity India Summit which is India’s first ever conference in Neurodiversity. She is one of the winners of “ML in Action” competition organized by the ML Developer programs team at Google and her team won first place in WiDS 2022 Datathon organized by Stanford University . She is also the winner of Kaggle ML Research spotlight for 2022 , winner of TensorFlow Community Spotlight 2023 and recipient of Intel Developer spotlight (twice) and featured in Intel Developer’s success story .',
+    imgUrl: '/images/speakers/usha-rengaraju.jpg',
+    imgAlt: 'Picture of Usha Rengaraju.',
+    socials: [
+      {
+        name: 'X',
+        url: 'https://x.com/URengaraju',
+        ariaLabel: "Hyperlink to Usha Rengaraju's X page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/usha-rengaraju-b570b7a2/',
+        ariaLabel: "Hyperlink to Usha Rengaraju's LinkedIn page.",
+      },
+    ],
+  },
+  {
+    name: 'Lakshman Pethani',
+    slug: 'lakshman-pethani',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'Director, Technology Solutions at EPAM Systems',
+    bio: 'Lakshman Peethani is a Director, Technology Solutions at EPAM Systems, based in Hyderabad, India. He brings extensive experience in enterprise technology solutions with a strong focus on AI platforms, application modernization, enterprise architecture, and large-scale program delivery. Within EPAM’s Global Delivery organization, he leads strategic technology initiatives and works closely with clients to drive AI-led transformation and platform modernization. His work spans AI advisory and consulting, enabling AI-driven SDLC productivity, modernizing enterprise systems, and designing scalable platform architectures integrated with complex enterprise ecosystems. Lakshman is recognized for his expertise in AI platforms and development frameworks, AI migration and modernization through re-architecture and transformation and technical leadership.',
+    imgUrl: '/images/speakers/lakshman-pethani.jpg',
+    imgAlt: 'Picture of Lakshman Pethani.',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/peethani/',
+        ariaLabel: "Hyperlink to Lakshman Pethani's LinkedIn page.",
+      },
+    ],
+  },
+  {
+    name: 'Chakravarthy Ch',
+    slug: 'chakravarthy-ch',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'Director of AIML at Tiger Analytics',
+    bio: '',
+    imgUrl: '/images/speakers/chakravarthy-ch.jpeg',
+    imgAlt: 'Picture of Chakravarthy Ch.',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/chakravarthy-ch/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BEo3r9eWjQ5OwNkNz%2FtHGmA%3D%3D',
+        ariaLabel: "Hyperlink to Chakravarthy Ch's LinkedIn page.",
+      },
+    ],
+  },
 
   {
     name: 'PyConf Hyderabad Team',
