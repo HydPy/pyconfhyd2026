@@ -337,22 +337,27 @@ export default function ScheduleContent() {
       )}
       <div className="flex justify-center gap-4 mb-8">
         {visibleDays.map((day) => (
-          <button
-            key={day}
-            onClick={() => setActiveDay(day)}
-            className={`flex flex-col items-center px-6 md:px-12 py-3 border-2 border-gray-900 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all ${
-              currentDay === day
-                ? 'bg-primary-800 dark:bg-primary-800 text-white dark:text-gray-50 border-4 -translate-y-1 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]'
-                : 'bg-background-light dark:bg-gray-900 text-gray-950 dark:text-gray-50 opacity-85 hover:opacity-100 hover:bg-accent-50 dark:hover:bg-gray-700'
-            }`}
-          >
-            <Heading tagLevel={2} level={5}>
-              {SCHEDULE[day].title}
-            </Heading>
-            <Span level={3}>
-              {SCHEDULE[day].date} &#x2022; {SCHEDULE[day].day}
-            </Span>
-          </button>
+          <>
+            <button
+              key={day}
+              onClick={() => setActiveDay(day)}
+              className={`flex flex-col items-center px-6 md:px-12 py-3 border-2 border-gray-900 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all ${
+                currentDay === day
+                  ? 'bg-primary-800 dark:bg-primary-800 text-white dark:text-gray-50 border-4 -translate-y-1 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]'
+                  : 'bg-background-light dark:bg-gray-900 text-gray-950 dark:text-gray-50 opacity-85 hover:opacity-100 hover:bg-accent-50 dark:hover:bg-gray-700'
+              }`}
+            >
+              <Heading tagLevel={2} level={5}>
+                {SCHEDULE[day].title}
+              </Heading>
+              <Span level={3}>
+                {SCHEDULE[day].date} &#x2022; {SCHEDULE[day].day}
+              </Span>
+              <Span level={4}>
+                {SCHEDULE[day].venueName}
+              </Span>
+            </button>
+          </>
         ))}
       </div>
       <div className="flex flex-col items-center space-y-4">
