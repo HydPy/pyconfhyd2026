@@ -90,7 +90,7 @@ const SponsorsSection = () => {
       >
         {SPONSORS_INFO.title}
       </Heading>
-      <SponsorDescription />
+      {/* <SponsorDescription /> */}
       {SPONSORS && <SponsorCategoryGrid />}
       <SpeakerCreative />
     </section>
