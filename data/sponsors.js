@@ -170,7 +170,7 @@ export const SPONSORS = {
     },
     {
       name: 'FreJun Teler',
-      imgUrl: '/images/sponsors/frejun-teler.jpeg',
+      imgUrl: '/images/sponsors/frejun-teler.png',
       imgAlt: 'FreJun Teler logo',
       hyperLink: '/blogs/frejun-teler-gold-sponsor/',
       socials: [

@@ -11,7 +11,7 @@ export default function Volunteer({ volunteer }) {
     <div className="flex flex-col items-center p-4 rounded-lg bg-gray-50 dark:bg-gray-800 gap-4 shadow-xl transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
       <Link
         className="flex flex-col items-center w-full"
-        href={`/volunteers/${slug}`}
+        href={`/about/our-team/${slug}`}
       >
         <div className="relative w-20 h-20 md:w-28 md:h-28 rounded-full overflow-hidden flex-shrink-0">
           <Image

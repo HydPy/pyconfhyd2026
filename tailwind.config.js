@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        heading: ['"Bungee"', 'sans-serif'],
-        body: ['"Belanosima"', 'sans-serif'],
+        heading: ['var(--font-bungee)', 'sans-serif'],
+        body: ['var(--font-belanosima)', 'sans-serif'],
       },
       colors: {
         primary: {
