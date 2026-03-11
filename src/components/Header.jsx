@@ -146,6 +146,7 @@ const Header = ({ themeToggle }) => {
             alt={ASSETS.navbarimgAlt}
             width={150}
             height={93}
+            priority={true}
           />
         </Link>
         <div className="flex items-center gap-1">
