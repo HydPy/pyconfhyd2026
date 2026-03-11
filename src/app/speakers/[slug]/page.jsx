@@ -51,7 +51,7 @@ const getTalkDetailsBySlug = (slug) => {
   Object.values(SCHEDULE).forEach((day) => {
     day.sessions.forEach((sessionGroup) => {
       sessionGroup.forEach((session) => {
-        // Check if the speaker is assigned to the session
+        // Regular sessions: check session.speakers
         if (session.speakers) {
           session.speakers.forEach((speaker) => {
             if (speaker.slug === slug) {
@@ -59,6 +59,20 @@ const getTalkDetailsBySlug = (slug) => {
                 day: day.title,
                 date: day.date,
                 ...session,
+              });
+            }
+          });
+        }
+        // Lightning talk sessions: check each sub-talk's speaker
+        if (session.type === 'Lightning Talk' && session.talks) {
+          session.talks.forEach((talk) => {
+            if (talk.speaker?.slug === slug) {
+              talkDetails.push({
+                day: day.title,
+                date: day.date,
+                type: session.type,
+                location: session.location,
+                ...talk,
               });
             }
           });

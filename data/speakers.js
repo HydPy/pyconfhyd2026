@@ -781,6 +781,23 @@ export const SPEAKERS = [
       },
     ],
   },
+  {
+    name: 'Nikita Bhatnagar',
+    slug: 'nikita-bhatnagar',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'SSE at Frejun',
+    bio: 'Backend Engineer at FreJun, a calling automation & cloud telephony company. Her work focuses on designing and building scalable APIs and backend services in Python that power real-time voice applications and communication workflows. She is particularly interested in distributed system architecture, event-driven communication platforms, and building reliable CPaaS infrastructure',
+    imgUrl: '/images/speakers/nikita-bhatnagar.jpg',
+    imgAlt: 'Picture of Nikita Bhatnagar.',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/nikita-bhatnagar-bb87a1210',
+        ariaLabel: "Hyperlink to Nikita Bhatnagar's LinkedIn page.",
+      },
+    ],
+  },
 
   {
     name: 'PyConf Hyderabad Team',

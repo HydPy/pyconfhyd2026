@@ -1,5 +1,6 @@
 import { SPEAKERS } from '@/speakers';
 import { CONFERENCE } from '@/conference';
+import { type } from 'os';
 
 export const getSpeaker = (slug) => {
   return SPEAKERS.find((speaker) => speaker.slug === slug);
@@ -80,7 +81,7 @@ export const SCHEDULE = {
         {
           title: 'Lunch Break',
           time: '12:50 - 02:00 PM',
-          location: 'Dining Area | Ground Floor',
+          location: 'Dining Area | First Floor',
         },
       ],
       [
@@ -329,10 +330,22 @@ export const SCHEDULE = {
           type: 'Lightning Talk',
           time: '02:45 - 03:15 PM',
           location: 'Track 1 | Main Stage',
-          companies: [
-            { name: 'Epam Systems', logo: '/images/sponsors/epam.png' },
-            { name: 'Straive', logo: '/images/sponsors/straive.png' },
-            { name: 'FreJun Teler', logo: '/images/sponsors/frejun-teler.png' },
+          talks: [
+            {
+              title: 'AI Driven Modernization',
+              time: '02:45 - 02:55 PM',
+              speaker: getSpeaker('lakshman-pethani'),
+            },
+            {
+              title: 'Engineering for Real time Constraints in Voice Systems',
+              time: '02:55 - 03:05 PM',
+              speaker: getSpeaker('nikita-bhatnagar'),
+            },
+            {
+              title: 'TBA',
+              time: '03:05 - 03:15 PM',
+              speaker: null,
+            },
           ],
         },
         {
@@ -398,7 +411,7 @@ export const SCHEDULE = {
           type: 'Lightning Talk',
           time: '04:15 - 04:45 PM',
           location: 'Track 1 | Main Stage',
-          companies: [],
+          talks: [],
         },
       ],
       [
