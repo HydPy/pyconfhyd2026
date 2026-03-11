@@ -752,21 +752,16 @@ export const SPEAKERS = [
     slug: 'lakshman-pethani',
     type: 'Session',
     activeSpeakerPage: true,
-    title: '',
-    bio: '',
-    imgUrl: '/images/speakers/placeholder-1.svg',
+    title: 'Director, Technology Solutions at EPAM Systems',
+    bio: ' Lakshman Peethani is a Director, Technology Solutions at EPAM Systems, based in Hyderabad, India. He brings extensive experience in enterprise technology solutions with a strong focus on AI platforms, application modernization, enterprise architecture, and large-scale program delivery. Within EPAM’s Global Delivery organization, he leads strategic technology initiatives and works closely with clients to drive AI-led transformation and platform modernization. His work spans AI advisory and consulting, enabling AI-driven SDLC productivity, modernizing enterprise systems, and designing scalable platform architectures integrated with complex enterprise ecosystems. Lakshman is recognized for his expertise in AI platforms and development frameworks, AI migration and modernization through re-architecture and transformation and technical leadership.',
+    imgUrl: '/images/speakers/lakshman-pethani.jpg',
     imgAlt: 'Picture of Lakshman Pethani.',
     socials: [
-      // {
-      //   name: 'X',
-      //   url: 'https://x.com/URengaraju',
-      //   ariaLabel: "Hyperlink to Usha Rengaraju's X page.",
-      // },
-      // {
-      //   name: 'LinkedIn',
-      //   url: 'https://www.linkedin.com/in/usha-rengaraju-b570b7a2/',
-      //   ariaLabel: "Hyperlink to Usha Rengaraju's LinkedIn page.",
-      // },
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/peethani/',
+        ariaLabel: "Hyperlink to Lakshman Pethani's LinkedIn page.",
+      },
     ],
   },
 
