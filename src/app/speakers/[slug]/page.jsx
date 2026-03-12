@@ -151,6 +151,9 @@ export default async function SpeakerPage({ params }) {
                 key={index}
                 className="mb-2 text-gray-600 dark:text-gray-400"
               >
+                {index > 0 && (
+                  <hr className="my-4 border-gray-200 dark:border-gray-700" />
+                )}
                 <ul className="list-disc ml-4">
                   <li>
                     <Paragraph>

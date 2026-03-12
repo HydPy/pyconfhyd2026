@@ -342,7 +342,7 @@ export const SCHEDULE = {
               speaker: getSpeaker('nikita-bhatnagar'),
             },
             {
-              title: 'TBA',
+              title: 'Lightning Talk by Straive',
               time: '03:05 - 03:15 PM',
               speaker: null,
             },
