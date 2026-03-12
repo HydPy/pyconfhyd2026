@@ -344,9 +344,10 @@ export const SCHEDULE = {
               speaker: getSpeaker('nikita-bhatnagar'),
             },
             {
-              title: 'Lightning Talk by Straive',
+              title:
+                'What Does Your Codebase Say About You When Nobody’s Looking?',
               time: '03:05 - 03:15 PM',
-              speaker: null,
+              speaker: getSpeaker('jai-prakash'),
             },
           ],
         },

@@ -210,8 +210,8 @@ const LightningTalkItem = ({ time, location, locationHref, title, talks }) => (
       </Span>
       {talks && talks.length > 0 && (
         <div className="flex flex-col mt-3 divide-y divide-gray-200 dark:divide-gray-700">
-          {talks.map((talk, index) => (
-            <div key={index} className="flex flex-col pt-3 pb-2 gap-2">
+          {talks.map((talk) => (
+            <div key={talk.title} className="flex flex-col pt-3 pb-2 gap-2">
               <TimeBadge time={talk.time} size="sm" />
               <Span
                 level={4}
@@ -283,13 +283,19 @@ const ScheduleItem = ({
                   href={`/speakers/${speaker.slug}`}
                   target="_self"
                   className="flex flex-col space-y-2 my-1"
-                  key={index}
+                  key={speaker.slug}
                   title={`Hyperlink to Speaker Details of ${speaker.name}`}
                 >
-                  <SpeakerCard key={index} speaker={speaker} />
+                  <SpeakerCard
+                    key={`speaker-card-${speaker.slug}`}
+                    speaker={speaker}
+                  />
                 </Link>
               ) : (
-                <SpeakerCard key={index} speaker={speaker} />
+                <SpeakerCard
+                  key={`speaker-card-${speaker.slug}`}
+                  speaker={speaker}
+                />
               )
             )}
         </div>
@@ -392,10 +398,9 @@ export default function ScheduleContent() {
       )}
       <div className="flex justify-center gap-4 mb-8">
         {visibleDays.map((day) => (
-          <>
-            <button
-              key={day}
-              onClick={() => setActiveDay(day)}
+          <button
+            key={day}
+            onClick={() => setActiveDay(day)}
               className={`flex flex-col items-center px-6 md:px-12 py-3 border-2 border-gray-900 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all ${
                 currentDay === day
                   ? 'bg-primary-800 dark:bg-primary-800 text-white dark:text-gray-50 border-4 -translate-y-1 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]'
@@ -410,7 +415,6 @@ export default function ScheduleContent() {
               </Span>
               <Span level={4}>{SCHEDULE[day].venueName}</Span>
             </button>
-          </>
         ))}
       </div>
       <div className="flex flex-col items-center space-y-4">
@@ -426,7 +430,7 @@ export default function ScheduleContent() {
                 if (parallelSession.type === 'Lightning Talk') {
                   return (
                     <LightningTalkItem
-                      key={subIndex}
+                      key={parallelSession.title}
                       time={parallelSession.time}
                       title={parallelSession.title}
                       location={parallelSession.location}
@@ -438,7 +442,7 @@ export default function ScheduleContent() {
                 if (parallelSession.type === 'Open Space') {
                   return (
                     <OpenSpaceItem
-                      key={subIndex}
+                      key={parallelSession.company}
                       time={parallelSession.time}
                       location={parallelSession.location}
                       locationHref={buildTrackHref(parallelSession.location)}

@@ -798,6 +798,23 @@ export const SPEAKERS = [
       },
     ],
   },
+  {
+    name: 'Jai Prakash',
+    slug: 'jai-prakash',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'Lead Data Science Engineer, Straive',
+    bio: '',
+    imgUrl: '/images/speakers/jai-prakash.jpeg',
+    imgAlt: 'Picture of Jai Prakash.',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/s-jaiprakash',
+        ariaLabel: "Hyperlink to Jai Prakash's LinkedIn page.",
+      },
+    ],
+  },
 
   {
     name: 'PyConf Hyderabad Team',
