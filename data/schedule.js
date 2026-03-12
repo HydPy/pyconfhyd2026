@@ -326,7 +326,7 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Lightning Talks - Gold Sponsors',
+          title: 'Lightning Talks',
           type: 'Lightning Talk',
           time: '02:45 - 03:15 PM',
           location: 'Track 1 | Main Stage',
@@ -407,7 +407,7 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Lightning Talks - General',
+          title: 'Lightning Talks',
           type: 'Lightning Talk',
           time: '04:15 - 04:45 PM',
           location: 'Track 1 | Main Stage',
