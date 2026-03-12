@@ -421,7 +421,7 @@ export const VOLUNTEERS = [
     slug: 'jai-prakash',
     role: 'CFP WG Volunteer',
     bio: '',
-    imgUrl: '/images/volunteers/jai-prakash.png',
+    imgUrl: '/images/volunteers/jai-prakash.jpeg',
     imgAlt: "Jai Prakash's picture",
     socials: [
       {
@@ -456,7 +456,7 @@ export const VOLUNTEERS = [
     slug: 'appana-mukesh',
     role: 'Hall Monitor Volunteer',
     bio: '',
-    imgUrl: '/images/volunteers/appana-mukesh.png',
+    imgUrl: '/images/volunteers/appana-mukesh.jpeg',
     imgAlt: "Appana Mukesh's picture",
     socials: [
       {
@@ -523,6 +523,21 @@ export const VOLUNTEERS = [
         name: 'LinkedIn',
         url: 'https://www.linkedin.com/in/snehithallamraju/',
         ariaLabel: "Hyperlink to Snehith Allamraju's LinkedIn page.",
+      },
+    ],
+  },
+  {
+    name: 'Bongi Rakesh',
+    slug: 'bongi-rakesh',
+    role: 'Event Coordinator Volunteer',
+    bio: '',
+    imgUrl: '/images/volunteers/bongi-rakesh.jpeg',
+    imgAlt: "Bongi Rakesh's picture",
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/rakesh-bongi/',
+        ariaLabel: "Hyperlink to Bongi Rakesh's LinkedIn page.",
       },
     ],
   },

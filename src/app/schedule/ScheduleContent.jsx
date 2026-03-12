@@ -184,6 +184,46 @@ const OpenSpaceItem = ({ time, location, locationHref, company, logo }) => (
   </article>
 );
 
+const LightningTalkItem = ({ time, location, locationHref, title, companies }) => (
+  <article
+    tabIndex="0"
+    className="flex flex-col justify-between w-full focus:outline-none focus:ring-2 focus:ring-primary-600 mb-6 shadow-md rounded-sm transition-transform transform hover:scale-[1.02] bg-gray-50 dark:bg-gray-900 border-primary-800 border-l-4"
+  >
+    <div className="md:px-6 md:pt-6 md:pb-4 p-4 flex flex-col md:flex-1">
+      <header className="flex flex-wrap justify-between items-center mb-3 gap-2">
+        <TimeBadge time={time} />
+        <LocationBadge location={location} href={locationHref} />
+      </header>
+      <Span level={2} className="text-gray-800 dark:text-gray-200 font-semibold mb-3">
+        {title}
+      </Span>
+      {companies && companies.length > 0 && (
+        <div className="flex flex-row flex-wrap items-center gap-4 mt-2">
+          {companies.map((company, index) => (
+            <div key={index} className="flex flex-row items-center gap-2">
+              {company.logo && (
+                <div className="relative w-10 h-10 shrink-0">
+                  <Image
+                    src={company.logo}
+                    alt={`${company.name} logo`}
+                    fill
+                    className="object-contain dark:bg-gray-100 rounded-sm"
+                  />
+                </div>
+              )}
+              {company.name && (
+                <Span level={4} className="text-gray-800 dark:text-gray-200 font-medium">
+                  {company.name}
+                </Span>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  </article>
+);
+
 const ScheduleItem = ({
   time,
   title,
@@ -337,22 +377,27 @@ export default function ScheduleContent() {
       )}
       <div className="flex justify-center gap-4 mb-8">
         {visibleDays.map((day) => (
-          <button
-            key={day}
-            onClick={() => setActiveDay(day)}
-            className={`flex flex-col items-center px-6 md:px-12 py-3 border-2 border-gray-900 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all ${
-              currentDay === day
-                ? 'bg-primary-800 dark:bg-primary-800 text-white dark:text-gray-50 border-4 -translate-y-1 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]'
-                : 'bg-background-light dark:bg-gray-900 text-gray-950 dark:text-gray-50 opacity-85 hover:opacity-100 hover:bg-accent-50 dark:hover:bg-gray-700'
-            }`}
-          >
-            <Heading tagLevel={2} level={5}>
-              {SCHEDULE[day].title}
-            </Heading>
-            <Span level={3}>
-              {SCHEDULE[day].date} &#x2022; {SCHEDULE[day].day}
-            </Span>
-          </button>
+          <>
+            <button
+              key={day}
+              onClick={() => setActiveDay(day)}
+              className={`flex flex-col items-center px-6 md:px-12 py-3 border-2 border-gray-900 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all ${
+                currentDay === day
+                  ? 'bg-primary-800 dark:bg-primary-800 text-white dark:text-gray-50 border-4 -translate-y-1 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]'
+                  : 'bg-background-light dark:bg-gray-900 text-gray-950 dark:text-gray-50 opacity-85 hover:opacity-100 hover:bg-accent-50 dark:hover:bg-gray-700'
+              }`}
+            >
+              <Heading tagLevel={2} level={5}>
+                {SCHEDULE[day].title}
+              </Heading>
+              <Span level={3}>
+                {SCHEDULE[day].date} &#x2022; {SCHEDULE[day].day}
+              </Span>
+              <Span level={4}>
+                {SCHEDULE[day].venueName}
+              </Span>
+            </button>
+          </>
         ))}
       </div>
       <div className="flex flex-col items-center space-y-4">
@@ -364,17 +409,32 @@ export default function ScheduleContent() {
               key={index}
               className={`flex flex-col md:flex-row gap-4 w-full ${session.length == 1 ? 'md:w-3/4' : ''}`}
             >
-              {session.map((parallelSession, subIndex) =>
-                parallelSession.type === 'Open Space' ? (
-                  <OpenSpaceItem
-                    key={subIndex}
-                    time={parallelSession.time}
-                    location={parallelSession.location}
-                    locationHref={buildTrackHref(parallelSession.location)}
-                    company={parallelSession.company}
-                    logo={parallelSession.logo}
-                  />
-                ) : (
+              {session.map((parallelSession, subIndex) => {
+                if (parallelSession.type === 'Open Space') {
+                  return (
+                    <OpenSpaceItem
+                      key={subIndex}
+                      time={parallelSession.time}
+                      location={parallelSession.location}
+                      locationHref={buildTrackHref(parallelSession.location)}
+                      company={parallelSession.company}
+                      logo={parallelSession.logo}
+                    />
+                  );
+                }
+                if (parallelSession.type === 'Lightning Talk') {
+                  return (
+                    <LightningTalkItem
+                      key={subIndex}
+                      time={parallelSession.time}
+                      title={parallelSession.title}
+                      location={parallelSession.location}
+                      locationHref={buildTrackHref(parallelSession.location)}
+                      companies={parallelSession.companies}
+                    />
+                  );
+                }
+                return (
                   <ScheduleItem
                     key={subIndex}
                     time={parallelSession.time}
@@ -386,8 +446,8 @@ export default function ScheduleContent() {
                     isKeynote={parallelSession.keynote}
                     isBreak={parallelSession.break}
                   />
-                )
-              )}
+                );
+              })}
             </div>
           ))
         )}

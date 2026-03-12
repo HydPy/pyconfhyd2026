@@ -10,6 +10,7 @@ export const SCHEDULE = {
     title: 'Workshop',
     date: CONFERENCE.workshopDate,
     day: CONFERENCE.workshopDay,
+    venueName:"EPAM Systems",
     sessions: [
       [
         {
@@ -144,6 +145,7 @@ export const SCHEDULE = {
     title: 'Conference',
     date: CONFERENCE.conferenceDate,
     day: CONFERENCE.conferenceDay,
+    venueName:"Engineering Staff College of India",
     sessions: [
       [
         {
@@ -243,10 +245,12 @@ export const SCHEDULE = {
           ],
         },
         {
-          title: 'TBA',
+          title:
+            'Optimization at Scale: Engineering Production-Ready Decision Systems in Python',
           type: 'Talk',
           time: '10:55 - 11:25 AM',
           location: 'Track 3',
+          speakers: [getSpeaker('chakravarthy-ch')],
         },
       ],
       [
@@ -411,10 +415,15 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Lightning Talks - TBA',
-          type: 'Talk',
+          title: 'Lightning Talks - Gold Sponsors',
+          type: 'Lightning Talk',
           time: '02:45 - 03:15 PM',
           location: 'Track 1 | Main Stage',
+          companies: [
+            { name: 'Epam Systems', logo: '/images/sponsors/epam.png' },
+            { name: 'Straive', logo: '/images/sponsors/straive.png' },
+            { name: 'FreJun Teler', logo: '/images/sponsors/frejun-teler.png' },
+          ],
         },
         {
           title: 'Python + Rust for High-Performance Systems',
@@ -514,10 +523,11 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Lightning Talks - TBA',
-          type: 'Talk',
+          title: 'Lightning Talks - General',
+          type: 'Lightning Talk',
           time: '04:15 - 04:45 PM',
           location: 'Track 1 | Main Stage',
+          companies: [],
         },
       ],
       [

@@ -24,7 +24,7 @@ const SpeakerCreative = () => {
 
 const SponsorCategoryGrid = () => {
   return (
-    <div className="flex flex-col items-center mt-8">
+    <div className="flex flex-col items-center">
       {Object.keys(SPONSORS).map((sponsorType) => {
         const list = SPONSORS[sponsorType] || [];
         if (list.length === 0) return null;
@@ -90,7 +90,7 @@ const SponsorsSection = () => {
       >
         {SPONSORS_INFO.title}
       </Heading>
-      <SponsorDescription />
+      {/* <SponsorDescription /> */}
       {SPONSORS && <SponsorCategoryGrid />}
       <SpeakerCreative />
     </section>
