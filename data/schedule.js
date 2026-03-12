@@ -10,7 +10,7 @@ export const SCHEDULE = {
     title: 'Workshop',
     date: CONFERENCE.workshopDate,
     day: CONFERENCE.workshopDay,
-    venueName:"EPAM Systems",
+    venueName: 'EPAM Systems',
     sessions: [
       [
         {
@@ -81,7 +81,7 @@ export const SCHEDULE = {
         {
           title: 'Lunch Break',
           time: '12:50 - 02:00 PM',
-          location: 'Dining Area | Ground Floor',
+          location: 'Dining Area | First Floor',
         },
       ],
       [
@@ -145,7 +145,7 @@ export const SCHEDULE = {
     title: 'Conference',
     date: CONFERENCE.conferenceDate,
     day: CONFERENCE.conferenceDay,
-    venueName:"Engineering Staff College of India",
+    venueName: 'Engineering Staff College of India',
     sessions: [
       [
         {
@@ -257,7 +257,7 @@ export const SCHEDULE = {
         {
           title: '',
           company: 'M37 Labs',
-          logo: '/images/sponsors/m37-labs.png',
+          logo: '/images/sponsors/m37-labs-1.png',
           type: 'Open Space',
           time: '11:45 - 12:15 PM',
           location: 'Track 4 | Open Space',
