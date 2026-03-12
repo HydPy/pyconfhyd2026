@@ -509,7 +509,7 @@ export const VOLUNTEERS = [
   {
     name: 'Snehith Allamraju',
     slug: 'snehith-allamraju',
-    role: 'Sponsorship WG Volunteer',
+    role: 'Sponsorship WG Lead',
     bio: '',
     imgUrl: '/images/volunteers/snehith-allamraju.jpg',
     imgAlt: "Snehith Allamraju's picture",
