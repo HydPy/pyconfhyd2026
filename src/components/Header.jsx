@@ -97,6 +97,29 @@ const Header = ({ themeToggle }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [dropDownPath, setDropDownPath] = useState(null);
   const navbarRef = useRef(null);
+  const [isAlertVisible, setIsAlertVisible] = useState(true);
+  const [alertHeight, setAlertHeight] = useState(0);
+  const lastScrollY = useRef(0);
+  const alertRef = useRef(null);
+
+  useEffect(() => {
+    if (alertRef.current) {
+      setAlertHeight(alertRef.current.offsetHeight);
+    }
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY.current) {
+        setIsAlertVisible(false);
+      } else {
+        setIsAlertVisible(true);
+      }
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const pathname = usePathname(); // Extracts the current path
   const searchParams = useSearchParams(); // Extracts the query parameters
@@ -131,10 +154,19 @@ const Header = ({ themeToggle }) => {
   };
 
   return (
-    <header className="bg-gray-50 dark:bg-gray-900 shadow-lg fixed top-0 left-0 right-0 z-10">
-      <InfoAlert>
-        <Span>{MESSAGES.TICKETS_DISCOUNT_MSG}</Span>
-      </InfoAlert>
+    <header
+      className="bg-gray-50 dark:bg-gray-900 shadow-lg fixed top-0 left-0 right-0 z-10 transition-transform duration-300 ease-in-out"
+      style={{
+        transform: isAlertVisible
+          ? 'translateY(0)'
+          : `translateY(-${alertHeight}px)`,
+      }}
+    >
+      <div ref={alertRef}>
+        <InfoAlert>
+          <Span>{MESSAGES.TICKETS_DISCOUNT_MSG}</Span>
+        </InfoAlert>
+      </div>
       <nav className="flex flex-wrap items-center justify-between py-4 px-8 mx-auto">
         <Link
           href="/"
