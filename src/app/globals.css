@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Bungee&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html,
 body {
-  font-family: 'Belanosima', sans-serif;
+  font-family: var(--font-belanosima), sans-serif;
   overflow-x: hidden;
 }
 
@@ -15,7 +15,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Bungee', sans-serif;
+  font-family: var(--font-bungee), sans-serif;
 }
 
 * {

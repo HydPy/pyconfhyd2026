@@ -243,10 +243,12 @@ export const SCHEDULE = {
           ],
         },
         {
-          title: 'TBA',
+          title:
+            'Optimization at Scale: Engineering Production-Ready Decision Systems in Python',
           type: 'Talk',
           time: '10:55 - 11:25 AM',
           location: 'Track 3',
+          speakers: [getSpeaker('chakravarthy-ch')],
         },
       ],
       [
@@ -306,6 +308,15 @@ export const SCHEDULE = {
             'Streaming at Scale (WebRTC): Implementing the LiveKit protocol and WebSockets to achieve the ultra-low latency required for natural, "face-to-face" human-AI conversation.',
           ],
         },
+        {
+          title: '',
+          company: 'M37 Labs',
+          logo: '/images/sponsors/m37-labs.png',
+          type: 'Open Space',
+          time: '11:45 - 12:15 PM',
+          location: 'Track 4 | Open Space',
+          speakers: [],
+        },
       ],
       [
         {
@@ -358,10 +369,15 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Panel Discussion - TBA',
+          title: 'AI in SDLC - Panel Discussion',
           type: 'Panel',
           time: '02:10 - 02:40 PM',
           location: 'Track 1 | Main Stage',
+          speakers: [
+            getSpeaker('usha-rengaraju'),
+            getSpeaker('anand-s'),
+            getSpeaker('lakshman-pethani'),
+          ],
         },
         {
           title: 'Designing production grade data pipelines With Dagster',
@@ -431,6 +447,15 @@ export const SCHEDULE = {
             'Server-Sent Events (SSE): Master the art of pushing real-time updates from the server to the client to keep the game state in sync.',
             'Concurrency without Chaos: Discover how to identify and prevent race conditions using Locks and other synchronization primitives within a shared game state.',
           ],
+        },
+        {
+          title: '',
+          company: 'DP World',
+          logo: '/images/sponsors/dp-world.png',
+          type: 'Open Space',
+          time: '02:45 - 03:15 PM',
+          location: 'Track 4 | Open Space',
+          speakers: [],
         },
       ],
       [
