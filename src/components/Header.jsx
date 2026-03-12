@@ -167,7 +167,7 @@ const Header = ({ themeToggle }) => {
           <Span>{MESSAGES.TICKETS_DISCOUNT_MSG}</Span>
         </InfoAlert>
       </div>
-      <nav className="flex flex-wrap items-center justify-between py-4 px-8 mx-auto">
+      <nav className="flex flex-wrap items-center justify-between py-3 px-8 mx-auto">
         <Link
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -176,8 +176,8 @@ const Header = ({ themeToggle }) => {
           <Image
             src={ASSETS.navbarLogoUrl}
             alt={ASSETS.navbarimgAlt}
-            width={150}
-            height={93}
+            width={140}
+            height={83}
             priority={true}
           />
         </Link>

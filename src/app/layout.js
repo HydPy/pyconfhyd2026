@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
       <body className={`flex flex-col min-h-screen bg-background-light dark:bg-background-dark text-gray-900 dark:text-gray-100 ${belanosima.variable} ${bungee.variable}`}>
         <ThemeProvider>
           <Header themeToggle={<ThemeToggle />} />
-          <main className="flex-grow pt-40 sm:pt-36">{children}</main>
+          <main className="flex-grow pt-36 sm:pt-32">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>
