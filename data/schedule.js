@@ -10,7 +10,7 @@ export const SCHEDULE = {
     title: 'Workshop',
     date: CONFERENCE.workshopDate,
     day: CONFERENCE.workshopDay,
-    venueName:"EPAM Systems",
+    venueName: 'EPAM Systems',
     sessions: [
       [
         {
@@ -145,7 +145,7 @@ export const SCHEDULE = {
     title: 'Conference',
     date: CONFERENCE.conferenceDate,
     day: CONFERENCE.conferenceDay,
-    venueName:"Engineering Staff College of India",
+    venueName: 'Engineering Staff College of India',
     sessions: [
       [
         {
@@ -227,6 +227,14 @@ export const SCHEDULE = {
           time: '10:55 - 11:25 AM',
           location: 'Track 1 | Main Stage',
           speakers: [getSpeaker('abhijith-reddy')],
+          abstract:
+            'In this session, we will unpack the ASBL Engineering Charter, exploring how a culture of ownership, velocity, and AI-first automation solves complex real-world challenges. We’ll discuss the practical application of AI in streamlining sales workflows, optimizing construction timelines, and building dependable resident ecosystems. Join us to see how applying high-velocity software patterns to the built environment creates more than just buildings—it creates a scalable, intelligent future for urban development.',
+          highlights: [
+            'The "Tech-Native" Builder: How applying a software engineering mindset transforms traditional real estate workflows.',
+            'AI Beyond the Hype: Practical use cases for AI in construction optimization, sales automation, and financial forecasting.',
+            'The Engineering Charter: Lessons in building a high-velocity culture that prioritizes ownership and automated decision-making.',
+            'End-to-End Synergy: Bridging the gap between code and concrete to improve the resident experience from day one.',
+          ],
         },
         {
           title:
@@ -251,6 +259,14 @@ export const SCHEDULE = {
           time: '10:55 - 11:25 AM',
           location: 'Track 3',
           speakers: [getSpeaker('chakravarthy-ch')],
+          abstract:
+            'This session breaks down the journey of transforming a Python-based optimization prototype into a robust, production-ready system. We move beyond "solver tuning" to look at the holistic engineering of decision systems. We will explore how refining model formulation, streamlining data ingestion, and implementing distributed computing can drastically reduce latency.',
+          highlights: [
+            'The Scalability Wall: Identifying why traditional Python optimization prototypes fail in production.',
+            'Architecting for Speed: Strategies for simplifying inputs and refining model formulations for faster convergence.',
+            'Beyond the GIL: Leveraging distributed computing and efficient data processing to handle high-concurrency workloads.',
+            'Production Patterns: Practical "Lessons Learned" for data scientists transitioning from experimentation to reliable system engineering.',
+          ],
         },
       ],
       [
@@ -328,6 +344,14 @@ export const SCHEDULE = {
           time: '12:20 - 12:50 PM',
           location: 'Track 1 | Main Stage',
           speakers: [getSpeaker('som-dutta')],
+          abstract:
+            'This session explores the engineering journey of deploying Enterprise AI across terminal optimization, document understanding, and multi-step workflow automation. We will unpack the critical architectural patterns required to make AI safe and dependable—including rigorous evaluation harnesses, latency management, and standardized platforms that allow a single proven pattern to scale across global deployments.',
+          highlights: [
+            'The Production-First Framework: Why starting with the end-to-end workflow is the only way to ensure AI adds real business value.',
+            'Decision Intelligence at Scale: Combining optimization and machine learning to solve high-concurrency logistics challenges.',
+            'The Engineering of Reliability: Implementing evaluation harnesses and governance to ensure "safe" AI in real-world environments.',
+            'From Copilots to Agents: Moving from simple chat interfaces to autonomous systems that execute complex, multi-step tasks via APIs.',
+          ],
         },
         {
           title: 'Apache Ray: Scaling and Distributing ML Applications',
