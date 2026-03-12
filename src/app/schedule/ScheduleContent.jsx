@@ -40,8 +40,15 @@ const TimeBadge = ({ time, size = 'md' }) => (
   <div
     className={`self-start inline-flex items-center bg-accent-900 dark:bg-accent-500 text-gray-50 dark:text-gray-950 rounded-full ${size === 'sm' ? 'px-2 py-0.5' : 'px-3 py-1.5'}`}
   >
-    <Icon name="Clock" size={size === 'sm' ? 12 : 16} className={size === 'sm' ? 'mr-1' : 'mr-2'} />
-    <Span level={6} className={`font-medium ${size === 'sm' ? 'text-xs' : 'md:text-md text-xs'}`}>
+    <Icon
+      name="Clock"
+      size={size === 'sm' ? 12 : 16}
+      className={size === 'sm' ? 'mr-1' : 'mr-2'}
+    />
+    <Span
+      level={6}
+      className={`font-medium ${size === 'sm' ? 'text-xs' : 'md:text-md text-xs'}`}
+    >
       {time}
     </Span>
   </div>
@@ -195,7 +202,10 @@ const LightningTalkItem = ({ time, location, locationHref, title, talks }) => (
         <TimeBadge time={time} />
         <LocationBadge location={location} href={locationHref} />
       </header>
-      <Span level={2} className="text-gray-800 dark:text-gray-200 font-semibold">
+      <Span
+        level={2}
+        className="text-gray-800 dark:text-gray-200 font-semibold"
+      >
         {title}
       </Span>
       {talks && talks.length > 0 && (
@@ -203,7 +213,10 @@ const LightningTalkItem = ({ time, location, locationHref, title, talks }) => (
           {talks.map((talk, index) => (
             <div key={index} className="flex flex-col pt-3 pb-2 gap-2">
               <TimeBadge time={talk.time} size="sm" />
-              <Span level={4} className="text-gray-800 dark:text-gray-200 font-medium">
+              <Span
+                level={4}
+                className="text-gray-800 dark:text-gray-200 font-medium"
+              >
                 {talk.title}
               </Span>
               {talk.speaker &&
@@ -379,22 +392,25 @@ export default function ScheduleContent() {
       )}
       <div className="flex justify-center gap-4 mb-8">
         {visibleDays.map((day) => (
-          <button
-            key={day}
-            onClick={() => setActiveDay(day)}
-            className={`flex flex-col items-center px-6 md:px-12 py-3 border-2 border-gray-900 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all ${
-              currentDay === day
-                ? 'bg-primary-800 dark:bg-primary-800 text-white dark:text-gray-50 border-4 -translate-y-1 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]'
-                : 'bg-background-light dark:bg-gray-900 text-gray-950 dark:text-gray-50 opacity-85 hover:opacity-100 hover:bg-accent-50 dark:hover:bg-gray-700'
-            }`}
-          >
-            <Heading tagLevel={2} level={5}>
-              {SCHEDULE[day].title}
-            </Heading>
-            <Span level={3}>
-              {SCHEDULE[day].date} &#x2022; {SCHEDULE[day].day}
-            </Span>
-          </button>
+          <>
+            <button
+              key={day}
+              onClick={() => setActiveDay(day)}
+              className={`flex flex-col items-center px-6 md:px-12 py-3 border-2 border-gray-900 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all ${
+                currentDay === day
+                  ? 'bg-primary-800 dark:bg-primary-800 text-white dark:text-gray-50 border-4 -translate-y-1 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]'
+                  : 'bg-background-light dark:bg-gray-900 text-gray-950 dark:text-gray-50 opacity-85 hover:opacity-100 hover:bg-accent-50 dark:hover:bg-gray-700'
+              }`}
+            >
+              <Heading tagLevel={2} level={5}>
+                {SCHEDULE[day].title}
+              </Heading>
+              <Span level={3}>
+                {SCHEDULE[day].date} &#x2022; {SCHEDULE[day].day}
+              </Span>
+              <Span level={4}>{SCHEDULE[day].venueName}</Span>
+            </button>
+          </>
         ))}
       </div>
       <div className="flex flex-col items-center space-y-4">
