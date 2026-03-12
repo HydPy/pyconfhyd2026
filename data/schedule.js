@@ -307,7 +307,7 @@ export const SCHEDULE = {
           speakers: [
             getSpeaker('usha-rengaraju'),
             getSpeaker('anand-s'),
-            getSpeaker('lakshman-pethani'),
+            getSpeaker('lakshman-peethani'),
           ],
         },
         {
@@ -336,7 +336,7 @@ export const SCHEDULE = {
             {
               title: 'AI Driven Modernization',
               time: '02:45 - 02:55 PM',
-              speaker: getSpeaker('lakshman-pethani'),
+              speaker: getSpeaker('lakshman-peethani'),
             },
             {
               title: 'Engineering for Real time Constraints in Voice Systems',
