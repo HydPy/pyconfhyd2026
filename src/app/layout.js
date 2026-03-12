@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
           content="Z4hozcIBBrLFjoeT038NmGotLZIkhtLRTMF8aJIAosQ"
         />
       </head>
-      <body className={`flex flex-col min-h-screen bg-background-light dark:bg-background-dark text-gray-900 dark:text-gray-100 ${belanosima.variable} ${bungee.variable}`}>
+      <body suppressHydrationWarning className={`flex flex-col min-h-screen bg-background-light dark:bg-background-dark text-gray-900 dark:text-gray-100 ${belanosima.variable} ${bungee.variable}`}>
         <ThemeProvider>
           <Header themeToggle={<ThemeToggle />} />
           <main className="flex-grow pt-40 sm:pt-36">{children}</main>
