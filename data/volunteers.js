@@ -591,4 +591,19 @@ export const VOLUNTEERS = [
       },
     ],
   },
+  {
+    name: 'Joanna Calamus Nagelli',
+    slug: 'joanna-calamus-nagelli',
+    role: 'Technology WG Volunteer',
+    bio: 'Always exploring different areas of tech and trying out new things. I enjoy open source and learning by building and experimenting. Volunteering with the Technology Work Group at PyConf Hyderabad 2026.',
+    imgUrl: '/images/volunteers/joanna-calamus-nagelli.jpg',
+    imgAlt: "Joanna Calamus Nagelli's picture",
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://in.linkedin.com/in/joanna-calamus-nagelli',
+        ariaLabel: "Hyperlink to Joanna Calamus Nagelli's LinkedIn page.",
+      },
+    ],
+  },
 ];
