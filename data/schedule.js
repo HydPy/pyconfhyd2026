@@ -371,18 +371,19 @@ export const SCHEDULE = {
         },
         {
           title:
-            'From Python to Pocket: Fine-Tuning Gemma with LoRA for On-Device AI',
+            'Small Models, Big Impact: Why Your Next Production System Doesn’t Need a GPT',
           type: 'Talk',
           time: '12:20 - 12:50 PM',
           location: 'Track 3',
-          speakers: [getSpeaker('dinoy-raj-k')],
+          speakers: [getSpeaker('gokulavasan-murali')],
           abstract:
-            'While cloud LLMs offer immense power, production-grade applications often require the privacy, speed, and cost-efficiency that only on-device execution can provide. This session deconstructs the end-to-end Python workflow for transforming Google’s Gemma model into a specialized, mobile-ready AI using Parameter-Efficient Fine-Tuning (PEFT) and the LoRA technique. ',
+            'In production, large-scale language models (LLMs) often present prohibitive costs, latency, and operational constraints. In this session, we will explore an emerging architectural paradigm: the distributed "intelligence layer." We will examine how a suite of small, specialized, and often localized models are being orchestrated to manage critical pipeline functions—such as classification, extraction, and verification—while reserving larger models for the final generative steps. We will discuss how to shift the perspective of model selection from a single benchmark to a core architectural decision, based on latency, reliability, and deployment flexibility.',
           highlights: [
-            'PEFT & LoRA Mastery: A deep dive into using the Python PEFT library to inject low-rank adaptation layers, enabling high-quality fine-tuning without the massive hardware overhead.',
-            "The Gemma Workflow: Step-by-step guidance on fine-tuning the Gemma-2B or 7B backbone with domain-specific datasets while preserving the core model's intelligence.",
-            'Conversion & Optimization: How to leverage the MediaPipe Python APIs to convert fine-tuned checkpoints into highly optimized formats compatible with mobile hardware.',
-            'On-Device Deployment: Navigating the MediaPipe LLM Inference SDK to bridge Python-trained models with native Android applications.',
+            'The architectural shift from a centralized LLM to a distributed intelligence layer.',
+            'Decomposing the request lifecycle: classification, routing, and verification.',
+            'The role of compact language models (CLMs) in local deployments.',
+            'Quantization techniques and modern inference runtimes as infrastructure.',
+            'Model size as an architectural trade-off for cost, latency, and reliability.',
           ],
         },
       ],
