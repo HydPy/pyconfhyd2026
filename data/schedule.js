@@ -16,7 +16,7 @@ export const SCHEDULE = {
       [
         {
           title: 'Registrations',
-          time: '08:45 - 10:00 AM',
+          time: '08:00 - 10:00 AM',
           location: 'Registration Desk',
         },
       ],
@@ -151,7 +151,7 @@ export const SCHEDULE = {
       [
         {
           title: 'Registrations',
-          time: '07:45 - 09:00 AM',
+          time: '07:30 - 09:00 AM',
           location: 'Registration Desk',
         },
       ],
