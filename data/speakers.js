@@ -805,6 +805,29 @@ export const SPEAKERS = [
       },
     ],
   },
+  {
+    name: 'Snehith Allamraju (Moderator)',
+    slug: 'snehith-allamraju',
+    type: 'Panel',
+    activeSpeakerPage: false,
+    title:
+      'Lead Data Science Engineer, StraiveDirector, Data & Analytics at RSM US LLP',
+    bio: '',
+    imgUrl: '/images/volunteers/snehith-allamraju.jpg',
+    imgAlt: 'Picture of Snehith Allamraju.',
+    socials: [
+      {
+        name: 'X',
+        url: 'https://x.com/watrutalkin',
+        ariaLabel: "Hyperlink to Snehith Allamraju's X page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/snehithallamraju/',
+        ariaLabel: "Hyperlink to Snehith Allamraju's LinkedIn page.",
+      },
+    ],
+  },
 
   {
     name: 'PyConf Hyderabad Team',

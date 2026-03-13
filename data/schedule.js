@@ -386,6 +386,13 @@ export const SCHEDULE = {
             'Model size as an architectural trade-off for cost, latency, and reliability.',
           ],
         },
+        {
+          title: 'Community Connect Arena',
+          type: 'Talk',
+          time: '12:20 - 12:50 PM',
+          location: 'Track 4',
+          speakers: null,
+        },
       ],
       [
         {
@@ -405,6 +412,7 @@ export const SCHEDULE = {
             getSpeaker('usha-rengaraju'),
             getSpeaker('anand-s'),
             getSpeaker('lakshman-peethani'),
+            getSpeaker('snehith-allamraju'),
           ],
         },
         {
