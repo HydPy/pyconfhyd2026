@@ -571,7 +571,7 @@ export const VOLUNTEERS = [
     slug: 'sanchit-balchandani',
     role: 'Volunteer',
     bio: 'Sanchit Balchandani is an Engineering Manager at EPAM India, where he leads the Python Practice in India. He has over 16 years of experience in software engineering, specializing in Python backend systems, distributed architectures, developer platforms, and applied Generative AI.  He is actively involved in the Python and open-source community as a volunteer and contributor. His current interests include agent-based systems, retrieval-augmented generation (RAG), developer productivity with GenAI, and building intelligent platforms that help teams modernize and understand complex software systems.',
-    imgUrl: '/images/volunteers/sanchit-balchandani.jpg',
+    imgUrl: '/images/speakers/sanchit-balchandani.jpg',
     imgAlt: "Sanchit Balchandani's picture",
     socials: [
       {
