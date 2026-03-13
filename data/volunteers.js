@@ -326,7 +326,7 @@ export const VOLUNTEERS = [
   {
     name: 'Praneet Mokkapati',
     slug: 'praneet-mokkapati',
-    role: 'CFP WG Volunteer',
+    role: 'Session Management WG Lead',
     bio: 'Praneet Mokkapati is a technologist, mentor, and storyteller who has spent over two decades at the intersection of innovation, community, and human potential. Trained in the language of AI, cloud systems, and emerging technologies, he has helped founders, creators, and businesses turn bold ideas into meaningful products that touch the real world.',
     imgUrl: '/images/volunteers/praneet-mokkapati.jpg',
     imgAlt: "Praneet Mokkapati's picture",
@@ -454,7 +454,7 @@ export const VOLUNTEERS = [
   {
     name: 'Appana Mukesh',
     slug: 'appana-mukesh',
-    role: 'Hall Monitor Volunteer',
+    role: 'Session Management Volunteer',
     bio: '',
     imgUrl: '/images/volunteers/appana-mukesh.jpeg',
     imgAlt: "Appana Mukesh's picture",
@@ -509,7 +509,7 @@ export const VOLUNTEERS = [
   {
     name: 'Snehith Allamraju',
     slug: 'snehith-allamraju',
-    role: 'Sponsorship WG Volunteer',
+    role: 'Sponsorship WG Lead',
     bio: '',
     imgUrl: '/images/volunteers/snehith-allamraju.jpg',
     imgAlt: "Snehith Allamraju's picture",
@@ -529,7 +529,7 @@ export const VOLUNTEERS = [
   {
     name: 'Bongi Rakesh',
     slug: 'bongi-rakesh',
-    role: 'Event Coordinator Volunteer',
+    role: 'Session Management Volunteer',
     bio: '',
     imgUrl: '/images/volunteers/bongi-rakesh.jpeg',
     imgAlt: "Bongi Rakesh's picture",
@@ -538,6 +538,71 @@ export const VOLUNTEERS = [
         name: 'LinkedIn',
         url: 'https://www.linkedin.com/in/rakesh-bongi/',
         ariaLabel: "Hyperlink to Bongi Rakesh's LinkedIn page.",
+      },
+    ],
+  },
+  {
+    name: 'Amritha Madam',
+    slug: 'amritha-madam',
+    role: 'Communications WG Lead',
+    bio: 'Amritha Madam is an Associate Lead Information Designer at Gramener. Amritha is passionate about understanding users problems and providing solutions based on their needs, ensuring the designs are both effective and user-centric.',
+    imgUrl: '/images/volunteers/amritha-madam.jpg',
+    imgAlt: "Amritha Madam's picture",
+    socials: [
+      {
+        name: 'X',
+        url: 'https://x.com/amritha_madam',
+        ariaLabel: "Hyperlink to Amritha Madam's X page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'http://linkedin.com/in/amritha-madam-932a88144',
+        ariaLabel: "Hyperlink to Amritha Madam's LinkedIn page.",
+      },
+      {
+        name: 'Instagram',
+        url: 'https://www.instagram.com/madam_amritha',
+        ariaLabel: "Hyperlink to Amritha Madam's Instagram page.",
+      },
+    ],
+  },
+  {
+    name: 'Sanchit Balchandani',
+    slug: 'sanchit-balchandani',
+    role: 'Volunteer',
+    bio: 'Sanchit Balchandani is an Engineering Manager at EPAM India, where he leads the Python Practice in India. He has over 16 years of experience in software engineering, specializing in Python backend systems, distributed architectures, developer platforms, and applied Generative AI.  He is actively involved in the Python and open-source community as a volunteer and contributor. His current interests include agent-based systems, retrieval-augmented generation (RAG), developer productivity with GenAI, and building intelligent platforms that help teams modernize and understand complex software systems.',
+    imgUrl: '/images/speakers/sanchit-balchandani.jpg',
+    imgAlt: "Sanchit Balchandani's picture",
+    socials: [
+      {
+        name: 'X',
+        url: 'http://x.com/inovizz',
+        ariaLabel: "Hyperlink to Sanchit Balchandani's X page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'http://linkedin.com/in/inovizz',
+        ariaLabel: "Hyperlink to Sanchit Balchandani's LinkedIn page.",
+      },
+      {
+        name: 'Instagram',
+        url: 'http://instagram.com/inovizz',
+        ariaLabel: "Hyperlink to Sanchit Balchandani's Instagram page.",
+      },
+    ],
+  },
+  {
+    name: 'Joanna Calamus',
+    slug: 'joanna-calamus',
+    role: 'Technology WG Volunteer',
+    bio: 'Always exploring different areas of tech and trying out new things. I enjoy open source and learning by building and experimenting.',
+    imgUrl: '/images/volunteers/joanna-calamus.jpg',
+    imgAlt: "Joanna Calamus's picture",
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://in.linkedin.com/in/joanna-calamus-nagelli',
+        ariaLabel: "Hyperlink to Joanna Calamus's LinkedIn page.",
       },
     ],
   },
