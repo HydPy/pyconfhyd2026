@@ -10,8 +10,8 @@ export default function manifest(): MetadataRoute.Manifest {
       'PyConf Hyderabad 2026 is the regional gathering of Pythonistas and the largest Python Conference in Hyderabad.',
     start_url: '/',
     display: 'standalone',
-    background_color: '#ffffff',
-    theme_color: '#000000',
+    background_color: '#FFF8F3',
+    theme_color: '#E68D00',
     icons: [
       {
         src: '/images/pyconf-icon-192x192.png',
