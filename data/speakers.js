@@ -810,8 +810,7 @@ export const SPEAKERS = [
     slug: 'snehith-allamraju',
     type: 'Panel',
     activeSpeakerPage: false,
-    title:
-      'Lead Data Science Engineer, StraiveDirector, Data & Analytics at RSM US LLP',
+    title: 'Director, Data & Analytics at RSM US LLP',
     bio: '',
     imgUrl: '/images/volunteers/snehith-allamraju.jpg',
     imgAlt: 'Picture of Snehith Allamraju.',
