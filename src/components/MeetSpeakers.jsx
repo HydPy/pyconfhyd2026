@@ -29,6 +29,7 @@ const SpeakerAvatar = ({ speaker }) => {
       tabIndex={0}
       onKeyDown={handleKeyDown}
       aria-label={`View ${speaker.name}'s profile`}
+      title={`View ${speaker.name}'s profile`}
     >
       <Image
         src={speaker.imgUrl}
