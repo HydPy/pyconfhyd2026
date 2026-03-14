@@ -611,7 +611,7 @@ export const VOLUNTEERS = [
     slug: 'sumalatha-s',
     role: 'Event Coordinator Volunteer',
     bio: '',
-    imgUrl: '/images/speakers/sumalatha-s.jpg',
+    imgUrl: '/images/volunteers/sumalatha-s.jpg',
     imgAlt: "Sumalatha S's picture",
     socials: [],
   },
