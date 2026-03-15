@@ -827,6 +827,33 @@ export const SPEAKERS = [
       },
     ],
   },
+  {
+    name: 'Praneet Mokkapati',
+    slug: 'praneet-mokkapati',
+    type: 'Session',
+    activeSpeakerPage: true,
+    title: 'Leadership and Executive Coach | Entrepreneur | Author',
+    bio: 'Praneet Mokkapati is a technologist, mentor, and storyteller who has spent over two decades at the intersection of innovation, community, and human potential. Trained in the language of AI, cloud systems, and emerging technologies, he has helped founders, creators, and businesses turn bold ideas into meaningful products that touch the real world.',
+    imgUrl: '/images/volunteers/praneet-mokkapati.jpg',
+    imgAlt: 'Picture of Praneet Mokkapati.',
+    socials: [
+      {
+        name: 'X',
+        url: 'https://x.com/growingsmart',
+        ariaLabel: "Hyperlink to Praneet Mokkapati's X page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/praneet-mokkapati/',
+        ariaLabel: "Hyperlink to Praneet Mokkapati's LinkedIn page.",
+      },
+      {
+        name: 'Instagram',
+        url: 'https://www.instagram.com/praneetmokkapati/',
+        ariaLabel: "Hyperlink to Praneet Mokkapati's Instagram page.",
+      },
+    ],
+  },
 
   {
     name: 'PyConf Hyderabad Team',

@@ -220,6 +220,17 @@ export const SCHEDULE = {
             'Concurrency & Race Conditions: Practical techniques for identifying bugs that only surface under high load or specific multi-threaded interleaving.',
           ],
         },
+        {
+          title:
+            'Careers in AI',
+          type: 'Talk',
+          time: '10:20 - 10:50 AM',
+          location: 'Track 4',
+          speakers: [getSpeaker('praneet-mokkapati')],
+          abstract:
+            '',
+          highlights: [],
+        },
       ],
       [
         {
@@ -445,6 +456,13 @@ export const SCHEDULE = {
             'Sub-interpreters (PEP 684): Understanding how interpreters provide a middle ground for true parallelism within a single process.',
             'Concurrency Pitfalls: Live-coding examples of race conditions and deadlocks that persist even in a GIL-free environment.',
           ],
+        },
+        {
+          title: 'Community Connect Arena',
+          type: 'Talk',
+          time: '12:20 - 12:50 PM',
+          location: 'Track 4',
+          speakers: null,
         },
       ],
       [
