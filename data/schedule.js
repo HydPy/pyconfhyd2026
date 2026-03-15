@@ -220,17 +220,6 @@ export const SCHEDULE = {
             'Concurrency & Race Conditions: Practical techniques for identifying bugs that only surface under high load or specific multi-threaded interleaving.',
           ],
         },
-        {
-          title:
-            'Careers in AI',
-          type: 'Talk',
-          time: '10:20 - 10:50 AM',
-          location: 'Track 4',
-          speakers: [getSpeaker('praneet-mokkapati')],
-          abstract:
-            '',
-          highlights: [],
-        },
       ],
       [
         {
@@ -460,7 +449,7 @@ export const SCHEDULE = {
         {
           title: 'Community Connect Arena',
           type: 'Talk',
-          time: '12:20 - 12:50 PM',
+          time: '02:10 - 02:40 PM',
           location: 'Track 4',
           speakers: null,
         },
@@ -584,6 +573,15 @@ export const SCHEDULE = {
             'Architecture of DeepSwingr: A walkthrough of the Python implementation—leveraging automatic differentiation to bridge the gap between a physical simulator and a learner.',
             'Solving the "Black Box" Problem: How embedding physical constraints ensures model predictions remain within the bounds of reality, increasing trust and interpretability',
           ],
+        },
+        {
+          title: 'Careers in AI',
+          type: 'Talk',
+          time: '03:40 - 04:10 PM',
+          location: 'Track 4',
+          speakers: [getSpeaker('praneet-mokkapati')],
+          abstract: '',
+          highlights: [],
         },
       ],
       [
