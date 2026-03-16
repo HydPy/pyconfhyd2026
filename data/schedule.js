@@ -575,7 +575,7 @@ export const SCHEDULE = {
           ],
         },
         {
-          title: 'Careers in AI',
+          title: 'Careers in the Age of AI',
           type: 'Talk',
           time: '03:40 - 04:10 PM',
           location: 'Track 4',
